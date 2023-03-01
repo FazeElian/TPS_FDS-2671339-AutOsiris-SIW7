@@ -1,0 +1,107 @@
+/*Presentación Superior Marca: Logo, Nombre y banner*/
+
+.presentacion_marca_y_menu_superior {
+    float:center;
+}
+
+.presentacion_marca_y_menu_superior ul{
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 15px ;
+    padding-bottom: 15px;
+    overflow: hidden;
+    background-color:black;
+    display: block;
+    border-radius: 10px;
+}
+
+.presentacion_marca_y_menu_superior{
+    background-color: black;
+}
+
+.presentacion_marca_y_menu_superior .banner_superior_presentacion_marca img{
+    align-items: right;
+    background-color: rgb(0, 0, 0);
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+    /*Banner 1 - Superior Presentación Marca*/
+    .banner_superior_presentacion_marca{
+        float:right;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .banner_superior_presentacion_marca ul{
+        list-style-type: none;
+        justify-content: space-around;
+        display: block;
+        padding-top: 10px;
+    }
+
+    .banner_superior_presentacion_marca img{
+        align-items: right;
+        width: 550px;
+        height:140px;
+        margin-top: 1px;
+        padding-top: 10px ;
+        padding-bottom: 15px;
+    }
+
+    /*Menú Superior Inicio*/
+    .menu_superior_inicio{
+        float: left;
+        width:100%;
+    }
+
+    .menu_superior_inicio a{
+        font-family: Helvetica;
+        font-size:11px;
+        text-decoration: none;
+        float:left;
+        padding: 10px;
+        padding-top: 1px;
+        padding-bottom: 0px;
+        margin: 10px;
+        background-color: black;
+        height: 0px;
+        }
+
+    .menu_superior_inicio li a:hover {
+        background-color: gray;
+        }
+    
+
+    .menu_superior_inicio  h1{
+        color: white;
+        text-align: left;
+        font-size: 18px;
+        font-family: Helvetica;
+        padding-bottom: 0px;
+    }
+
+        /*Icono Carrito de Compras*/
+        .menu_superior_inicio .carrito_icono_inicio img{
+            height: 50px;
+            width: 50px;
+            align-content: right;
+            padding-right: 50px;
+            padding-bottom: 0px;
+            padding-top: 1px;
+            margin: 0px;
+        }
+
+        /*Banner 2 Inicio*/
+        .banner_2_inicio{
+            width: 800px;
+            height: 400px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 0px;
+        }
+
+
+
+

@@ -1,0 +1,116 @@
+/*Presentación Superior Marca: Logo, Nombre y banner*/
+
+.presentacion_marca_y_menu_superior {
+    float:center;
+}
+
+.presentacion_marca_y_menu_superior ul{
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 15px ;
+    padding-bottom: 15px;
+    overflow: hidden;
+    background-color:black;
+    display: block;
+    border-radius: 10px;
+}
+
+.presentacion_marca_y_menu_superior{
+    background-color: black;
+}
+
+.presentacion_marca_y_menu_superior .banner_superior_presentacion_marca img{
+    align-items: right;
+    background-color: rgb(0, 0, 0);
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+    /*Banner 1 - Superior Presentación Marca*/
+    .banner_superior_presentacion_marca{
+        float:right;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .banner_superior_presentacion_marca ul{
+        list-style-type: none;
+        justify-content: space-around;
+        display: block;
+        padding-top: 10px;
+    }
+
+    .banner_superior_presentacion_marca img{
+        align-items: right;
+        width: 550px;
+        height:140px;
+        margin-top: 1px;
+        padding-top: 10px ;
+        padding-bottom: 15px;
+    }
+
+    /*Icono*/
+        .menu_superior_inicio .carrito_icono_inicio img{
+        height: 50px;
+        width: 50px;
+        align-content: right;
+        padding-right: 50px;
+        padding-bottom: 0px;
+        padding-top: 1px;
+        margin: 0px;
+    }
+
+/*Línea Superior Marca*/
+.linea_superior_marca{
+    background-color: black;
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 8px;
+    border-radius: 3px;
+}
+
+/*Contenedor Inicio de sesión*/
+.contenedor_inicio_sesion{
+    float: center;
+    background-color: blue;
+    width: 45%;
+    height: 800px;
+    padding: 10x;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.contenedor_inicio_sesion ul{
+    list-style-type: none;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor_inicio_sesion h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 60px;
+    padding-top: 100px;
+}
+
+.contenedor_inicio_sesion h2{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.contenedor_inicio_sesion sub{
+    color: white;
+    font-size: 20px;
+}
+
+.contenedor_inicio_sesion p{
+    color: white;
+    font-size: 12px;
+}
+
+
+
