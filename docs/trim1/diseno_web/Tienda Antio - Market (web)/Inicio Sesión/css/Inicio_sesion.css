@@ -73,44 +73,40 @@
 
 /*Contenedor Inicio de sesión*/
 .contenedor_inicio_sesion{
-    float: center;
-    background-color: blue;
-    width: 45%;
-    height: 800px;
-    padding: 10x;
-    margin: 15px;
-    border-radius: 12px;
-}
-
-.contenedor_inicio_sesion ul{
-    list-style-type: none;
-    display: block;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contenedor_inicio_sesion h1{
-    color: white;
-    font-size: 40px;
-    margin-top: 60px;
-    padding-top: 100px;
-}
-
-.contenedor_inicio_sesion h2{
-    color: white;
-    font-size: 20px;
+    float:center;
+    width: 35%;
+    height: 600px;
     padding: 5px;
+    border-radius: 3px;
 }
 
-.contenedor_inicio_sesion sub{
-    color: white;
-    font-size: 20px;
-}
+    /*Registrarse*/
+    .registrarse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+    }
 
-.contenedor_inicio_sesion p{
-    color: white;
-    font-size: 12px;
-}
+    .registrarse .form {
+        background-color: yellowgreen;
+        width: 400px;
+        border-radius: 8px;
+        padding: 20px 40px;
+        box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+      }
+      
+    .registrarse .title {
+        font-size: 50px;
+        margin-bottom: 50px;
+      }
+
+    .registrarse .inputContainer {
+        position: relative;
+        height: 45px;
+        width: 90%;
+        margin-bottom: 17px;
+      }
 
 
 
