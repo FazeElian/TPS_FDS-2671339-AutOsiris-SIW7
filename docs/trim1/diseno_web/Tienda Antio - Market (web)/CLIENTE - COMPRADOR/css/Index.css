@@ -13,7 +13,7 @@
     overflow: hidden;
     background-color:black;
     display: block;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 .presentacion_marca_y_menu_superior{
@@ -56,50 +56,49 @@
         width:100%;
     }
 
+    .menu_superior_inicio ul{
+        height: 100%;
+        border-radius: 0px;
+    }
+
     .menu_superior_inicio a{
         font-family: Helvetica;
         font-size:11px;
         text-decoration: none;
-        float:left;
+        float: left;
         padding: 10px;
-        padding-top: 1px;
+        padding-top: 0px;
         padding-bottom: 0px;
-        margin: 10px;
+        margin: 2px;
+        margin-bottom: 2px;
         background-color: black;
-        height: 0px;
         }
 
     .menu_superior_inicio li a:hover {
         background-color: gray;
+        border-radius: 0px;
         }
     
 
-    .menu_superior_inicio  h1{
+    .menu_superior_inicio  h2{
         color: white;
         text-align: left;
         font-size: 18px;
         font-family: Helvetica;
-        padding-bottom: 0px;
+        padding: 1px;
     }
-
-        /*Icono Carrito de Compras*/
-        .menu_superior_inicio .carrito_icono_inicio img{
-            height: 50px;
-            width: 50px;
-            align-content: right;
-            padding-right: 50px;
-            padding-bottom: 0px;
-            padding-top: 1px;
-            margin: 0px;
-        }
 
         /*Banner 2 Inicio*/
         .banner_2_inicio{
-            width: 800px;
-            height: 400px;
+            background-image: ("./images/banner_wireframe.jpg");
+        }
+
+        .banner_2_inicio ul{
             padding-top: 10px;
             padding-bottom: 10px;
-            margin: 0px;
+            padding-left: 0px;
+            padding-right: 300px;
+            margin-top: 20px;
         }
 
 
