@@ -11,18 +11,18 @@
     padding-top: 15px ;
     padding-bottom: 15px;
     overflow: hidden;
-    background-color:black;
+    background-color:#121142;
     display: block;
     border-radius: 0px;
 }
 
 .presentacion_marca_y_menu_superior{
-    background-color: black;
+    background-color: #121142;
 }
 
 .presentacion_marca_y_menu_superior .banner_superior_presentacion_marca img{
     align-items: right;
-    background-color: rgb(0, 0, 0);
+    background-color: #121142;
     padding-right: 20px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -31,7 +31,7 @@
     /*Banner 1 - Superior Presentación Marca*/
     .banner_superior_presentacion_marca{
         float:right;
-        background-color: rgb(0, 0, 0);
+        background-color: #121142;
     }
 
     .banner_superior_presentacion_marca ul{
@@ -71,7 +71,7 @@
         padding-bottom: 0px;
         margin: 2px;
         margin-bottom: 2px;
-        background-color: black;
+        background-color:#121142;
         }
 
     .menu_superior_inicio li a:hover {
@@ -88,6 +88,32 @@
         padding: 1px;
     }
 
+    /*Cuadro de Búsqueda Producto*/
+
+    .cuadro_de_busqueda .cuadro input{
+        float: lenter;
+        width: 200px;
+        height: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 250px;
+      }
+
+
+    /*Icono Carrito de Compras*/
+    .menu_superior_inicio .icono_carrito_compras a{
+        height: 0px;
+        width: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .icono_carrito_compras li{
+        float: right;
+        padding-right: 80px;
+        padding-bottom: 10px;
+    }
+
         /*Banner 2 Inicio*/
         .banner_2_inicio{
             background-image: ("./images/banner_wireframe.jpg");
@@ -99,6 +125,23 @@
             padding-left: 0px;
             padding-right: 300px;
             margin-top: 20px;
+        }
+
+        /*Imagen Celular Interfaz*/
+        .imagen_celular_interfaz img{
+            background-image: ("./images/banner_wireframe.jpg");
+        }
+
+        .imagen_celular_interfaz li{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 0px;
+            padding-right: 300px;
+            margin-top: 20px;
+        }
+
+        .imagen_celular_interfaz img{
+            align-items: right;
         }
 
 
