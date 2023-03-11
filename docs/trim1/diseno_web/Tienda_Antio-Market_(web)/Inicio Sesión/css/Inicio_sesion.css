@@ -1,3 +1,15 @@
+/*Body*/
+body{
+  background-color: gray;
+}
+
+/*H1*/
+h1{
+  color: black;
+  font-family: Arial;
+  font-size: 30px;
+}
+
 /*Presentación Superior Marca: Logo, Nombre y banner*/
 
 .presentacion_marca_y_menu_superior {
@@ -72,13 +84,14 @@
 }
 
 /*Contenedor Inicio de sesión*/
-    /*Registrarse*/
+    /*Registrarse e Iniciar Sesión*/
     .registrarse_inicio-sesion {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         margin-top: 250px;
+        padding-bottom: 300px;
       }
 
       .form {
@@ -137,7 +150,7 @@
         margin-left: auto;
         padding: 15px 30px;
         border: none;
-        background-color: gray;
+        background-color: black;
         color: white;
         border-radius: 6px;
         cursor: pointer;
@@ -146,7 +159,7 @@
       }
       
       .submitBtn:hover {
-        background-color: gray;
+        background-color: black;
         transform: translateY(-2px);
       }
 
@@ -160,7 +173,7 @@
       }
 
       .input:focus {
-        border: 2px solid gray;
+        border: 2px solid black;
       }
 
       .input:not(:placeholder-shown)+ .label {
@@ -170,6 +183,113 @@
         font-size: 14px;
         font-weight: 600;
       }
-
     
+/*FOOTER*/
+.footer{
+  height: 600px;
+}
+  /*Footer/Menu*/
+  .footer .footer_menu{
+    width: 20%;
+    height: 500px;
+  }
+  .footer .footer_menu ul{
+    list-style-type: none;
+    justify-content: space-around;
+    overflow: hidden;
+    background-color:black;
+    display: block;
+    border-radius: 1px;
+  }
 
+  .footer .footer_menu li a:hover{
+    background-color: gray;
+    border-radius: 0px;
+  }
+
+  .footer.footer_menu h1{
+    font-size: 30px;
+    font-family: Arial;
+    text-align: left;
+    color: white;
+  }
+
+  .footer .footer_menu h2{
+    font-size: 20px;
+    font-family: Arial;
+    text-align: left;
+    color: white;
+  }
+
+  /*Footer/Síguenos*/
+  .footer .footer_siguenos{
+    width: 35%;
+    height: 400px;
+  }
+
+  .footer .footer_siguenos ul{
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 15px ;
+    padding-bottom: 15px;
+    overflow: hidden;
+    background-color:black;
+    display: block;
+    border-radius: 1px;
+  }
+
+  .footer .footer_siguenos h1{
+    font-size: 30px;
+    font-family: Arial;
+    text-align: left;
+    color: white;
+  }
+
+  .footer .footer_siguenos img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 5px;
+    align-content: center;
+  }
+
+  /*Footer/Información - Descripción Miscelánea Osiris*/
+  .footer .footer_info_empresa{
+    width: 45%;
+    height: 400px;
+  }
+
+  .footer .footer_info_empresa ul{
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 15px ;
+    padding-bottom: 15px;
+    overflow: hidden;
+    background-color:black;
+    display: block;
+    border-radius: 1px;
+  }
+
+  .footer .footer_info_empresa h1{
+    font-size: 30px;
+    font-family: Arial;
+    text-align: left;
+    color: white;
+  }
+
+  .footer .footer_info_empresa p{
+    font-size: 15px;
+    font-family: Arial;
+    text-align: left;
+    color: white;
+  }
+
+  .footer .footer_info_empresa img{
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    margin: 5px;
+    align-content: center;
+  }
