@@ -1,0 +1,51 @@
+/*BODY*/
+body{
+    background-color: gray;
+}
+
+/*Menú Superior Inicio*/
+.menu_superior{
+    float: left;
+    width: 1200px;
+    height: 60px;
+}
+
+.menu_superior img{
+    width: 60px;
+    height: 60px;
+    background-image: ("images/wireframe_image.png");
+}
+
+.menu_superior ul{
+    float: left;
+    background-color:#121142;
+    width: 100%;
+    height: 60p
+}
+
+.menu_superior li a:hover {
+    background-color: gray;
+    border-radius: 0px;
+    }
+
+.menu_superior h2{
+    font-family: Helvetica;
+    font-size:18px;
+    text-decoration: none;
+}
+
+        /*Icono Carrito de Compras
+        .menu_superior_inicio .carrito_icono_inicio img{
+            height: 50px;
+            width: 50px;
+            align-content: right;
+            padding-right: 50px;
+            padding-bottom: 0px;
+            padding-top: 1px;
+            margin: 0px;
+        }
+        */
+
+
+
+
