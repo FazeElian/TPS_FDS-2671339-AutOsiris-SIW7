@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Administrador | Inicio </title>
+    <title> Administrador | Ventas </title>
     <!--Integración de Archivos a framework bootstrap : .css-->
     <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-    <!--Estilos Personalizados o propios (Van al final de los estilos)-->
+
+    <!-- Hoja de Estilos para todas la páginas index -->
+    <link rel="stylesheet" href="assets/css/index-pages.css">
+
+    <!-- Hoja de Estilos para esta página en específico -->
+    <link rel="stylesheet" href="assets/css/index-ventas.css">
+
+    <!--Hoja de Estilos principal de index.html-->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -103,134 +110,39 @@
 
 <!--Div de Contenido-->
 <div class="contenido_pag">
-    <!--<h1>: "Bienvenido "Administrador@"!-->
-    <h1> Bienvenido "Administrador@"! </h1>
+    <!-- Contenido - Contenedor Título de Ventana: Ventas -->
+    <div class="ctdo-titulo_Ventana">
+        <h1> Ventas </h1>
+    </div>
 
-    <!-- <p>: Información inicial de todo el negocio, actialización diaria y demás -->
-    <p> Texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto,
-        texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto,
-        texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto,
-        texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto,
-        texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto,
-        texto, texto, texto, texto, texto, texto, texto, texto, texto, texto, texto,
-        texto, texto, texto, texto, texto, texto, texto, texto, texto, texto.
-    </p>
+    <!-- Botones Registrar Venta -->
+    <div class="botones-reg_venta">
+        <!-- Botón 1: <h2>: Registrar venta -->
+        <button class="bott1-registrar_venta">
+            <a href="#"><h2> Registrar Venta </h2></a>
+        </button>
 
-    <!-- Ventas Hoy -->
-    <div class="ventas_hoy">
-        <!-- Ventas Hoy texto <h2> -->
-        <div class="vh_h2">
-            <h2> Ventas Hoy 31/03/23 </h2>
+        <button class="bott2-icono_plus">
+            <a href="#"><img src="assets/img/boton-circular-plus.png"></a>
+        </button>
+    </div>
+
+    <!-- Tipos de ventas: Digitales y Físicas -->
+    <div class="divs_ventas">
+        <!-- <div>:Ventas Digitales -->
+        <div class="v_digitales">
+            <a href="#"><img src="https://popupsmadrid.es/wp-content/uploads/2018/06/de-la-tienda-online-a-la-tienda-fisica.jpg"></a>
+            <a href="#"><h3> Digitales: De tu página web o App móvil </h3></a>
         </div>
-
-        <!-- Ventas Hoy Tabla <table> -->
-        <table class="tab_ventas_hoy">
-            <!-- Caraterísticas -->
-            <tr class="caract_productos">
-                <td> Descripción Producto </td>
-                <td> Cantidad </td>
-                <td> Precio </td>
-            </tr>
-
-            <!-- Ítems -->
-            <tr>
-                <td> Carpeta legajadora plástica </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <tr>
-                <td> Folder 0.5R </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-            <tr>
-                <td> Carpeta legajadora plástica </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <tr>
-                <td> Folder 0.5R </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-            <tr>
-                <td> Carpeta legajadora plástica </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <tr>
-                <td> Folder 0.5R </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-            <tr>
-                <td> Carpeta legajadora plástica </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <tr>
-                <td> Folder 0.5R </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-            <tr>
-                <td> Carpeta legajadora plástica </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <tr>
-                <td> Folder 0.5R </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <tr>
-                <td> Folder 0.5R </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <tr>
-                <td> Carpeta legajadora plástica </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <tr>
-                <td> Folder 0.5R </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <tr>
-                <td> Carpeta legajadora plástica </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <tr>
-                <td> Folder 0.5R </td>
-                <td> 2 </td>
-                <td> 12.000 $ </td>
-            </tr>
-
-            <!-- Total Fila Tabla -->
-            <tr class="total_tabla">
-                <td> Total:  </td>
-                <td> 16 </td>
-                <td> 260.000 $ </td>
-            </tr>
-        </table>
+        <!-- <div>:Ventas Físicas -->
+        <div class="v_fisicas">
+            <a href="#"><img src="https://xeral.net/wp-content/uploads/2020/05/tienda-online-tienda-fisica.jpg"></a>
+            <a href="#"><h3> Físicas: De tu Negocio Físico </h3></a>
+        </div>
     </div>
 </div>
 
-</body>
-</body>
+
 
 <!-- Footer -->
 <footer>
@@ -291,4 +203,3 @@
         </div>
     </div>
 </footer>
-</html>
