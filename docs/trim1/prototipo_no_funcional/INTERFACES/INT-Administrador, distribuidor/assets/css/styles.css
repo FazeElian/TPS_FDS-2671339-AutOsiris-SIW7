@@ -239,6 +239,7 @@
         height: 40px;
         background-color: white;
         color: black;
+        margin-top: -00px;
     }
 
     /* Caracteísticas de productos */
@@ -262,8 +263,8 @@
 
     /* Total Fila Tabla */
     .total_tabla{
-        background-color: white;
-        height: 35px;
+        background-color: gray;
+        height: 40px;
         text-align: center;
     }
 
