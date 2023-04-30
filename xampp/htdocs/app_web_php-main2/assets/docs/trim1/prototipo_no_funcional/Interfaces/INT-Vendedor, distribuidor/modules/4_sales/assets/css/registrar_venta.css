@@ -1,0 +1,258 @@
+/*Body*/
+.body{
+    background-color: #999999 !important;
+}
+
+*{
+    box-sizing: border-box;
+    /* margin: 0px;
+    padding: 0px;  */
+}
+
+
+/* Contenido - Contenedor Título de Ventana */
+.ctdo-titulo_Ventana{
+    float: left;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.ctdo-titulo_Ventana h1{
+    float: left;
+    color: black;
+    font-size: 30px;
+    font-family: Helvetica;
+    width: 100%;
+    margin: 0px;
+    margin-left: 10px;
+
+}
+
+/* Contenedor Formularios */
+.cont_forms{
+    float: left;
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+    /* Nombre */
+    .nombre{
+        float: left;
+        width: 22%;
+        height: 150px;
+        background-color: white;
+        margin: 0px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .nombre h2{
+        float: left;
+        width: 100%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        background-color: white;
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    .nombre input{
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    /* Fecha  */
+    .fecha{
+        float: left;
+        width: 9%;
+        height: 150px;
+        background-color: white;
+        margin: 0px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .fecha h2{
+        float: left;
+        width: 100%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        background-color: white;
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    .fecha input{
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    /* Cantidad */
+    .cantidad{
+        float: left;
+        width: 12%;
+        height: 150px;
+        background-color: white;
+        margin: 0px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .cantidad h2{
+        float: left;
+        width: 100%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        background-color: white;
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    /* id cantidad */
+    #cant{ 
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    /* Precio /u */
+    .precio_unidad{
+        float: left;
+        width: 12%;
+        height: 150px;
+        background-color: white;
+        margin: 0px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .precio_unidad h2{
+        float: left;
+        width: 100%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        background-color: white;
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    } 
+
+    .precio_unidad input{
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    /* Precio Total */
+    .precio_total{
+        float: left;
+        width: 20%;
+        height: 150px;
+        background-color: white;
+        margin: 0px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .precio_total h2{
+        float: left;
+        width: 100%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        background-color: white;
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    } 
+
+    .precio_total input{
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+/* Botones opciones */
+.botones_opciones{
+    float: left;
+    width: 100%;
+    height: 45px;
+    margin-top: 100px;
+}
+
+    /* Botón: Cancelar */
+    .bott_cancelar{
+        float: left;
+        width: 150px;
+        height: 45px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    .bott_cancelar h2{
+        float: left;
+        color: black;
+        font-size: 20px;
+        font-family: Helvetica;
+        margin: 5px;
+        margin-left: 20%;
+    }
+
+    .bott_cancelar a{
+        color: black;
+    }
+
+    /* Botón: Registrar */
+    .bott_registrar{
+        float: right;
+        width: 150px;
+        height: 45px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    .bott_registrar h2{
+        float: left;
+        color: black;
+        font-size: 20px;
+        font-family: Helvetica;
+        margin: 5px;
+        margin-left: 20%;
+    }
+
+    .bott_registrar a{
+        color: black;
+    }
+

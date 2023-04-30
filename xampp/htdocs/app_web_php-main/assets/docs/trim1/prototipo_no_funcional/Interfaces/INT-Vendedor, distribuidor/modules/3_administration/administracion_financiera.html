@@ -1,0 +1,3053 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Administración Financiera </title>
+    <!--Integración de Archivos a framework bootstrap : .css-->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    
+    <!--Hoja de Estilos principal de index.html-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Hoja de Estilos para este archivo -->
+    <link rel="stylesheet" href="assets/css/menu-administracion_financiera.css">
+
+    <!--Scripts Personalizados o propios (Van al final de los scripts)-->
+    <script src="assets/js/administracion_financiera.js"></script>
+
+    <script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function() {
+			// Espera a que el DOM esté completamente cargado antes de continuar
+			// Agrega un evento change al elemento select con el id "opciones"
+			document.getElementById("meses").addEventListener("change", function() {
+				// Obtiene el valor de la opción seleccionada en el select con el id "meses"
+				var opcionSeleccionada = document.getElementById("meses").value;
+				// Evalúa el valor de la opción seleccionada y muestra u oculta los div correspondientes
+				if (opcionSeleccionada == "Enero") {
+					document.getElementById("contenido-Enero").style.display = "block";
+
+				} else if (opcionSeleccionada == "Febrero") {
+					document.getElementById("contenido-Febrero").style.display = "block";
+
+				} else if (opcionSeleccionada == "Marzo") {
+					document.getElementById("contenido-Marzo").style.display = "block";
+
+                } else if (opcionSeleccionada == "Abril") {
+					document.getElementById("contenido-Abril").style.display = "block";
+
+                } else if (opcionSeleccionada == "Mayo") {
+					document.getElementById("contenido-Mayo").style.display = "block";
+
+                } else if (opcionSeleccionada == "Junio") {
+					document.getElementById("contenido-Junio").style.display = "block";
+
+                } else if (opcionSeleccionada == "Julio") {
+                    document.getElementById("contenido-Julio").style.display = "block";
+
+                } else if (opcionSeleccionada == "Agosto") {
+					document.getElementById("contenido-Agosto").style.display = "block";
+
+                } else if (opcionSeleccionada == "Septiembre") {
+					document.getElementById("contenido-Septiembre").style.display = "block";
+
+                } else if (opcionSeleccionada == "Octubre") {
+					document.getElementById("contenido-Octubre").style.display = "block";
+
+                } else if (opcionSeleccionada == "Noviembre") {
+					document.getElementById("contenido-Noviembre").style.display = "block";
+
+                } else if (opcionSeleccionada == "Diciembre") {
+					document.getElementById("contenido-Diciembre").style.display = "block";
+
+				} else {
+                    document.getElementById("").style.display = "block";
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+<body bgcolor="#999999">
+
+<!--Imagen Logo Empresa-->
+<div class="img_logo">
+    <a href="index.html"> <img src="assets/img/Logo S.I. AutOsiris.png"> </a>
+</div>
+
+<!--Menú Superior-->
+<section>
+<div class="menu_sup">
+    <!--Menú Nav-->
+    <div class="menu_nav">
+        <!--Nav 1: Inicio, Estadísticas, Productos-->
+        <div class="nav1">
+            <li>
+                <a href="index.html"> <h1> Inicio </h1> </a>
+                <a href="index-estadisticas.html"> <h1> Estadísticas </h1> </a>
+                <a href="index-ventas.html"> <h1> Ventas </h1> </a>
+                <a href="index-productos.html"> <h1> Productos </h1> </a>
+            </li>
+        </div>
+
+        <!--Nav 2: Nuevo Mensaje, Mensajes-->
+        <div class="nav2">
+            <li>
+                <a href="index-nuevo_mensaje.html"> <h1> Nuevo Mensaje </h1> </a>
+                <a href="index-mensajes.html"> <h1> Mensajes </h1> </a>
+
+            <!--Imagen Icono Mensajes-->
+                <a href="index-mensajes.html"> <img src="https://static.vecteezy.com/system/resources/previews/004/897/815/non_2x/message-icon-you-can-use-for-commercial-free-vector.jpg"> </a>
+            </li>
+        </div>
+    </div>
+</div></section>
+
+<!--Menú Lateral Izquierdo-->
+<div class="menu_lat_izq">
+
+    <!--Bloque lateral de menú-->
+    <div class="bloque_menu">
+    </div>
+
+    <!--Menú Lateral Nav-->
+    <div class="menu_lat_nav">
+        <nav>
+            <ul>
+                <li>
+                    <a href="administracion_financiera.html"> <h2> Administración Financiera </h2> </a>
+                </li>
+
+                <li>
+                    <a href="inventarios.html"> <h2> Inventarios </h2> </a>
+                </li>
+
+                <li>
+                    <a href="facturas.html"> <h2> Facturas </h2> </a>
+                </li>
+
+                <li>
+                    <a href="tu_distribuidor.html"> <h2> Tu Distribuidor </h2> </a>
+                </li>
+
+                <li>
+                    <a href="redes_sociales.html"> <h2> Redes Sociales </h2> </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!--Líneas separación de contenido-->
+ <div class="lineas_cont">
+</div>
+    <!--Línea 1-->
+    <div class="lin1">
+    </div>
+
+    <!--Línea 2-->
+    <div class="lin2">
+    </div>
+
+
+<!--Div de Contenido-->
+<div class="contenido_pag">
+    <!-- Contenido - Contenedor Título de Ventana: Administración Financiera -->
+    <div class="ctdo-titulo_Ventana">
+        <h1> Administración Financiera </h1>
+    </div>
+
+    <!-- Mes-->
+    <div class="mes">
+        <!-- SubTítulo: Mes -->
+        <div class="ctdo_subtitulo_mes">
+            <h2> Seleccionar Mes </h2>
+        </div>
+
+        <!-- Botón: Limpiar -->
+        <button class="bott_limpiar">
+            <a href="administracion_financiera.html"><h3> Limpiar </h3></a>
+        </button>
+    
+        <!-- Seleccionar mes -->
+        <select id="meses">
+            <option value="">Selecciona una opción</option>
+            <option value="Enero">Enero</option></a>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+        </select>
+                
+
+        <!-- Contenido meses -->
+            <!-- Mes: Enero -->
+            <div id="contenido-Enero" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Enero</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div>
+
+            <!-- Mes: Febrero -->
+            <div id="contenido-Febrero" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Febrero</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+    
+                    <!-- Costos Tabla <table> -->
+                    <table class="tab_costos">
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td class="Num_producto"> #Producto </td>
+                            <td class="Codigo"> Código </td>
+                            <td class="Nombre"> Nombre Producto </td>
+                            <td class="Cantidad"> Cantidad </td>
+                            <td class="Costo_unidad"> Costo/u </td>
+                            <td class="Costo_total"> Costo Total </td>
+                        </tr>
+    
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td> 001 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                            <td> Valor a calcular por el sistema </td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td> 002 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                            <td> Valor a calcular por el sistema </td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td> 003 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                            <td> Valor a calcular por el sistema </td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td> 004 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                            <td> Valor a calcular por el sistema </td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td> 005 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                            <td> Valor a calcular por el sistema </td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td> 006 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                            <td> Valor a calcular por el sistema </td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td> 007 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                            <td> Valor a calcular por el sistema </td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td> 008 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                            <td> Valor a calcular por el sistema </td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td> 009 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                            <td> Valor a calcular por el sistema </td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td> 010 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                            <td> Valor a calcular por el sistema </td>
+                        </tr>
+                    </table>
+    
+                    <!-- Ganancias Tabla <table> -->
+                        <table class="tab_ganancias">
+                            <!-- Título Ganancias -->
+                            <div class="titulo_ganancias">
+                                <h2>Ganancias</h2>
+                            </div>
+    
+                        <!-- <div>: Ordenar por: -->
+                        <div class="ordenar_por_ganancias">
+                            <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                        </div>
+                
+                        <!-- Barra de búsqueda de producto -->
+                        <div class="barra_busqueda_ganancias">
+                            <input type="text" placeholder= "Buscar Producto">
+                        </div>
+    
+                            <!-- Caraterísticas -->
+                            <tr class="caract_productos">
+                                <td> #Producto </td>
+                                <td> Nombre producto </td>
+                                <td> Precio de costo </td>
+                                <td> Precio de venta </td>
+                                <td> Ganancia $ </td>
+                                <td> Ganancia % </td>
+                            </tr>
+    
+                            <!-- Ítems -->
+                            <tr>
+                                <td> 1 </td>
+                                <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                                <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                            </tr>
+                            <tr>
+                                <td> 2 </td>
+                                <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                                <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                            </tr>
+                            <tr>
+                                <td> 3 </td>
+                                <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                                <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                            </tr>
+                            <tr>
+                                <td> 4 </td>
+                                <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                                <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                            </tr>
+                            <tr>
+                                <td> 5 </td>
+                                <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                                <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                            </tr>
+                            <tr>
+                                <td> 6 </td>
+                                <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                                <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                            </tr>
+                            <tr>
+                                <td> 7 </td>
+                                <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                                <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                            </tr>
+                            <tr>
+                                <td> 8 </td>
+                                <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                                <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                            </tr>
+                            <tr>
+                                <td> 9 </td>
+                                <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                                <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                            </tr>
+                            <tr>
+                                <td> 10 </td>
+                                <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                                <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td> Valor a calcular por el sistema </td>
+                                <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                            </tr>    
+                        </table>
+                </div>
+
+
+            <!-- Mes: Marzo -->
+            <div id="contenido-Marzo" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Marzo</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+
+                <!-- Líneas horizontales separación -->
+                <div class="lins_horizontales">
+                    <!-- Línea 1 -->
+                    <div class="lin1_horizontal">
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="lin2_horizontal">
+                    </div>
+                </div>
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div> 
+            
+            <!-- Mes: Abril -->
+            <div id="contenido-Abril" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Abril</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+
+                <!-- Líneas horizontales separación -->
+                <div class="lins_horizontales">
+                    <!-- Línea 1 -->
+                    <div class="lin1_horizontal">
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="lin2_horizontal">
+                    </div>
+                </div>
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div> 
+
+            <!-- Mes: Mayo -->
+            <div id="contenido-Mayo" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Mayo</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+
+                <!-- Líneas horizontales separación -->
+                <div class="lins_horizontales">
+                    <!-- Línea 1 -->
+                    <div class="lin1_horizontal">
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="lin2_horizontal">
+                    </div>
+                </div>
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div> 
+
+            <!-- Mes: Junio -->
+            <div id="contenido-Junio" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Junio</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+
+                <!-- Líneas horizontales separación -->
+                <div class="lins_horizontales">
+                    <!-- Línea 1 -->
+                    <div class="lin1_horizontal">
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="lin2_horizontal">
+                    </div>
+                </div>
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div> 
+
+            <!-- Mes: Julio -->
+            <div id="contenido-Julio" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Julio</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+
+                <!-- Líneas horizontales separación -->
+                <div class="lins_horizontales">
+                    <!-- Línea 1 -->
+                    <div class="lin1_horizontal">
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="lin2_horizontal">
+                    </div>
+                </div>
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div> 
+
+            <!-- Mes: Agosto -->
+            <div id="contenido-Agosto" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Agosto</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+
+                <!-- Líneas horizontales separación -->
+                <div class="lins_horizontales">
+                    <!-- Línea 1 -->
+                    <div class="lin1_horizontal">
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="lin2_horizontal">
+                    </div>
+                </div>
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div> 
+
+            <!-- Mes: Septiembre -->
+            <div id="contenido-Septiembre" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Septiembre</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+
+                <!-- Líneas horizontales separación -->
+                <div class="lins_horizontales">
+                    <!-- Línea 1 -->
+                    <div class="lin1_horizontal">
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="lin2_horizontal">
+                    </div>
+                </div>
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div> 
+
+            <!-- Mes: Octubre -->
+            <div id="contenido-Octubre" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Octubre</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+
+                <!-- Líneas horizontales separación -->
+                <div class="lins_horizontales">
+                    <!-- Línea 1 -->
+                    <div class="lin1_horizontal">
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="lin2_horizontal">
+                    </div>
+                </div>
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div> 
+
+            <!-- Mes: Noviembre -->
+            <div id="contenido-Noviembre" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Noviembre</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+
+                <!-- Líneas horizontales separación -->
+                <div class="lins_horizontales">
+                    <!-- Línea 1 -->
+                    <div class="lin1_horizontal">
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="lin2_horizontal">
+                    </div>
+                </div>
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div> 
+
+            <!-- Mes: Diciembre -->
+            <div id="contenido-Diciembre" style="display: none;">
+                <!-- Título de mes -->
+                <div class="titulo_mes">
+                    <h2>Costos Mes de Diciembre</h2>
+                </div>
+
+                <!-- <div>: Ordenar por: -->
+                <div class="ordenar_por">
+                    <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                </div>
+        
+                <!-- Barra de búsqueda de producto -->
+                <div class="barra_busqueda">
+                    <input type="text" placeholder= "Buscar Producto">
+                </div> 
+
+
+                <!-- Líneas horizontales separación -->
+                <div class="lins_horizontales">
+                    <!-- Línea 1 -->
+                    <div class="lin1_horizontal">
+                    </div>
+
+                    <!-- Línea 2 -->
+                    <div class="lin2_horizontal">
+                    </div>
+                </div>
+
+                <!-- Costos Tabla <table> -->
+                <table class="tab_costos">
+                    <!-- Caraterísticas -->
+                    <tr class="caract_productos">
+                        <td class="Num_producto"> #Producto </td>
+                        <td class="Codigo"> Código </td>
+                        <td class="Nombre"> Nombre Producto </td>
+                        <td class="Cantidad"> Cantidad </td>
+                        <td class="Costo_unidad"> Costo/u </td>
+                        <td class="Costo_total"> Costo Total </td>
+                    </tr>
+
+                    <!-- Ítems -->
+                    <tr>
+                        <td> 1 </td>
+                        <td> 001 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 002 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 3 </td>
+                        <td> 003 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 4 </td>
+                        <td> 004 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 5 </td>
+                        <td> 005 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 6 </td>
+                        <td> 006 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 7 </td>
+                        <td> 007 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 8 </td>
+                        <td> 008 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 9 </td>
+                        <td> 009 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                    <tr>
+                        <td> 10 </td>
+                        <td> 010 </td>
+                        <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                        <td><input type="number" placeholder="#" id="cantidad_producto"></td>
+                        <td><input type="text" placeholder="$$$" id="precio_costo_por_unidad"></td>
+                        <td> Valor a calcular por el sistema </td>
+                    </tr>
+                </table>
+
+                <!-- Ganancias Tabla <table> -->
+                    <table class="tab_ganancias">
+                        <!-- Título Ganancias -->
+                        <div class="titulo_ganancias">
+                            <h2>Ganancias</h2>
+                        </div>
+
+                    <!-- <div>: Ordenar por: -->
+                    <div class="ordenar_por_ganancias">
+                        <h2> Ordenar por: (Fecha, A-Z, Precio)</h2>
+                    </div>
+            
+                    <!-- Barra de búsqueda de producto -->
+                    <div class="barra_busqueda_ganancias">
+                        <input type="text" placeholder= "Buscar Producto">
+                    </div>
+
+                        <!-- Caraterísticas -->
+                        <tr class="caract_productos">
+                            <td> #Producto </td>
+                            <td> Nombre producto </td>
+                            <td> Precio de costo </td>
+                            <td> Precio de venta </td>
+                            <td> Ganancia $ </td>
+                            <td> Ganancia % </td>
+                        </tr>
+
+                        <!-- Ítems -->
+                        <tr>
+                            <td> 1 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 5 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 6 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 7 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 8 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 9 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>
+                        <tr>
+                            <td> 10 </td>
+                            <td><input type="text" placeholder="Nombre de Producto" id="nombre_producto"></td>
+                            <td><input type="text" placeholder="$$$" id="precio_costo_producto"></td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td> Valor a calcular por el sistema </td>
+                            <td><input type="text" placeholder="%" id="porc_ganancia_producto"></td>
+                        </tr>    
+                    </table>
+            </div> 
+    </div>
+</div>
+</body>
+</body>
+
+<!-- Footer -->
+<footer>
+    <!-- Caja de Footer -->
+    <div class="footer">
+
+        <!-- Caja 2: Tienda Online -->
+        <div class="cont1-tienda_online">
+            <!-- <h1>: Tienda Online -->
+                <h1> Tienda Online </h1>
+
+            <!-- Ítems de Caja  -->
+                <h2> Inicio </h2>
+                <h2> Novedades </h2>
+                <h2> Recomendados </h2>
+                <h2> Carrito de Compras </h2>
+        </div>
+
+        <!-- Caja 2: Administrador -->
+        <div class="cont2-administrador">
+            <!-- <h1>: Administrador -->
+                <h1> Administrador </h1>
+
+            <!-- Ítems de Caja  -->
+                <a href="administracion_financiera.html">
+                    <h2> Administración Financiera </h2>
+                </a>
+                <a href="facturas.html">
+                    <h2> Inventarios </h2>
+                </a>
+                <a href="tu_distribuidor.html">
+                    <h2> Facturas </h2>
+                </a>
+                <a href="redes_sociales.html">
+                    <h2> Tu Distribuidor </h2>
+                </a>
+                <a href="administracion_financiera.html">
+                    <h2> Redes Sociales </h2>
+                </a>           
+        </div>
+
+        <!-- Caja 3: Miscelánea Osiris (Info Empresa) -->
+        <div class="cont3-m_osiris">
+            <!-- <h1>: Miscelánea Osiris -->
+            <h1> Miscelánea </h1>
+            <h2> Osiris </h2>
+
+            <!-- <img>: Logo Empresa -->
+            <img src="assets/img/Logo S.I. AutOsiris.png">
+            <!-- <p>: Información acerca de la empresa -->
+            <p> Infomación acerca la empresa,Infomación acerca la empresa,
+                Infomación acerca la empresa,Infomación acerca la empresa,
+                Infomación acerca la empresa,Infomación acerca la empresa,
+                Infomación acerca la empresa,Infomación acerca la empresa,
+                Infomación acerca la empresa,Infomación acerca la empresa,
+                Infomación acerca la empresa.
+            </p>
+        </div>
+    </div>
+</footer>
+</html>

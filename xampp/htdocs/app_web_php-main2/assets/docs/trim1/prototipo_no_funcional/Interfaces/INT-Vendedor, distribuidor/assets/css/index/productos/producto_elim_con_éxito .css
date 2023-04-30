@@ -1,0 +1,44 @@
+/*Body*/
+.body{
+    background-color: #999999 !important;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px; 
+}
+
+
+/* Contenedor Ventana Mensaje de acción realizada con éxito */
+.cont_ventana{
+    float: left;
+    width: 700px;
+    height: 450px;
+    background-color: white;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cont_ventana img{
+    float: left;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cont_ventana h1{
+    float: left;
+    width: 100%;
+    color: black;
+    font-size: 30px;
+    font-family: Helvetica;
+    margin-top: 50%;
+    text-align: center;
+}

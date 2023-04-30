@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #EEE;
+}
+/* color blanco */
+.color-blanco{
+    background: #FFF;
+}
+/* Color gris claro */
+.color-gris-cla{
+    background: #BBB;
+}
+/* Color gris oscuro */
+.color-gris-osc{
+    background: #777;
+}
+/* Color negro */
+.color-negro{
+    background: #000;
+}
+.borde{
+    border: 1px solid #CCC;
+}
+.titulo{
+    width: 100%;
+    height: 70px;
+}
+/* Contenedor */
+.contenedor{
+    max-width: 1280px;
+    width: 95%;    
+    margin: auto;    
+}
+/* Navegador */
+nav{
+    width: 100%;
+    height: 50px;
+}
+/* Logo */
+.logo{
+    width: 20%;
+    height: 100%;    
+    float: left;
+}
+/* Menú */
+.menu{
+    width: 65%;
+    height: 100%;
+    float: left;
+}
+/* Ingreso */
+.ingreso{
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+/* Encabezado */
+header{
+    width: 100%;
+    height: 600px;
+}
+section{
+    width: 100%;
+    height: 600px;
+}
+/* Portafolio */
+.portafolio{}
+.port-col{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+}
+/* Nosotros */
+.nosotros{}
+.nos-fila-arr, 
+.nos-fila-cnt,
+.nos-fila-abj{
+    width: 100%;
+    height: 33.33%;
+}
+.nos-col-izq,
+.nos-col-der{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.nos-col-cnt{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+/* Contáctenos */
+.contacto{}
+.cont-col{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.cont-fila-arr{
+    width: 100%;
+    height: 70%;
+}
+.cont-fila-abj{
+    width: 100%;
+    height: 30%;
+}
+/* Pie de Página */
+footer{
+    width: 100%;
+    height: 70px;
+}
+
+@media (max-width: 992px) {
+    /* Contenedor */
+    .contenedor{        
+        width: 100%;
+    }
+    /* Navegador */
+    nav{
+        width: 100%;
+        height: 150px;
+    }
+    /* Logo */
+    .logo{
+        width: 100%;
+        height: 100px;
+    }
+    /* Menú */
+    .menu{
+        width: 80%;
+        height: 50px;        
+    }
+    /* Ingreso */
+    .ingreso{
+        width: 20%;
+        height: 50px;        
+    }
+    /* Nosotros */
+    .nosotros{}
+    .nos-fila-arr .nos-col-der,
+    .nos-fila-abj .nos-col-der,
+    .nos-fila-cnt .nos-col-izq{
+        display: none;
+    }
+    .nos-fila-arr .nos-col-izq,
+    .nos-fila-abj .nos-col-izq,
+    .nos-fila-cnt .nos-col-der{
+        width: 70%;
+    }
+    .nos-col-cnt{
+        background: #FFF;
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {        
+    /* Logo */
+    .logo{
+        width: 100%;
+        height: 50px;
+    }
+    /* Menú */
+    .menu{
+        width: 100%;
+        height: 50px;        
+    }
+    /* Ingreso */
+    .ingreso{
+        width: 100%;
+        height: 50px;        
+    }
+}

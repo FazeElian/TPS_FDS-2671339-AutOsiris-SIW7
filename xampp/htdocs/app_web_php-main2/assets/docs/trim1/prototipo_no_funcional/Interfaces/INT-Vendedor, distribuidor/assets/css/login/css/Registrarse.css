@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+/* Encabezado */
+.encabezado{
+    float: left;
+    width: 99%;
+    height: 150px;
+    background-color: gray;
+    border: 2px solid black;
+    margin: -10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+    /* Imagen Icono Logo Marca */
+    .imagen_logo img{
+        float: left;
+        width: 110px;
+        height: 110px;
+        margin: 20px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+
+    /* Texto Nombre Marca */
+    .encabezado h1{
+        float: left;
+        height: 40px;
+        background-color: gray;
+        color: black;
+        font-size: 30px;
+        font-family: Century;
+        margin: 0px;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+
+    /* Banner Empresa */
+    .banner_empresa img{
+        float: right;
+        width: 620px;
+        height: 110px;
+        margin: 20px;
+    }
+
+    /* Línea gruesa inferior */
+    .linea{
+        float: left;
+        width: 100%;
+        height: 20px;
+        background-color: white;
+        margin: 0px;
+    }
+
+/* Contenedor de Registro */
+.cont_registrarse{
+    float: left;
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    margin-top: 100px;
+}
+
+    /* Imagen Banner */
+    .imagen_banner img{
+        float: left;
+        width: 50%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    /* Contenedor de formulario */
+    .cont_form{
+        float: left;
+        width: 585px;
+        height: 80%;
+        background-color: gray;
+        border: 1px solid black;
+        margin: 40px;
+        margin-top: 60px;
+    }
+
+    .cont_form h3{
+        float: left;
+        color: black;
+        font-size: 30px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+
+    /* Correo Electrónico */
+    .cont_form h4{
+        float: left;
+        color: black;
+        font-size: 20px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: 135px;
+        margin-left: -166px;
+    }
+
+    .correo input{
+        float: left;
+        width: 60%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 170px;
+        margin-left: -176px;
+    }
+    
+    /* Contraseña */
+    .cont_form h5{
+        float: left;
+        color: black;
+        font-size: 20px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: 250px;
+        margin-left: -350px;
+    }
+
+    .contraseña input{
+        float: left;
+        width: 60%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 285px;
+        margin-left: -350px;
+    }
+
+    /* Mínimo 8 carácteres */
+    .min_8 h6{
+        float: left;
+        color: black;
+        font-size: 10px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: 315px;
+        margin-left: -350px;
+    }
+
+    /* Ya tiene una cuenta?, Iniciar sesión */
+    .ya_tiene_cuenta{
+        float: left;
+        color: black;
+        font-size: 14px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: 300px;
+        margin-left: 10px;
+    }
+
+    .ya_tiene_cuenta p{
+        float: left;
+        color: black;
+        font-size: 14px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: -150px;
+        margin-left: 40px;
+    }
+
+    .ya_tiene_cuenta h3{
+        float: left;
+        color: blue;
+        font-size: 14px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: -120px;
+        margin-left: 180px;
+    }
+
+    .ya_tiene_cuenta a{
+        float: left;
+        color: blue;
+        font-size: 14px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: -30px;
+        margin-left: 0px;
+    }
+
+    /* Botón: Registrarse */
+    .bott_registrarse{
+        float: left;
+        width: 150px;
+        height: 30px;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: -10px;
+        margin-left: 350px;
+    }
+
+    .bott_registrarse h2{
+        float: left;
+        font-size: 14px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: 5px;
+        margin-left: 22%;
+    }
+
+    .bott_registrarse a{
+        color: black;
+    }
+
+.footer{
+    margin-top: 500px;
+}

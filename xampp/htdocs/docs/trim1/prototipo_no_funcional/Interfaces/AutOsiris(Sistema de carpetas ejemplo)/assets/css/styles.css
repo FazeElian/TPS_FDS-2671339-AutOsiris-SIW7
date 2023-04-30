@@ -1,0 +1,474 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: white;
+    width: 80%;
+    align-content: center;
+}
+
+/*Divs Superiores*/
+    /*Caja 1*/
+    .caja1_sup{
+        float: left;
+        background-color:white;
+        width: 10%;
+        height: 90px;
+        text-align: right;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    /*Caja 2*/
+    .caja2_sup{
+        float: left;
+        background-color: white;
+        width: 75%;
+        height: 90px;
+        text-align: right;
+        border: 2px solid black;
+        padding: 10px;
+        word-spacing: 8px;
+    }
+
+    .caja2_sup h2{
+        font-size: 20px;
+        color:darkblue;
+        text-align: right;
+        margin: 40px;
+        padding-right: 10px;
+    }
+
+    /*Caja 3*/
+    .caja3_sup{
+        float: left;
+        background-color:white;
+        width: 15%;
+        height: 90px;
+        text-align: right;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .caja3_sup h2{
+        font-size: 20px;
+        color:darkblue;
+        text-align: center;
+        margin: 40px;
+    }
+
+/*Banner*/
+.banner{
+    float: left;
+    background-color:white;
+    width: 100%;
+    height: 800px;
+    align-content: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/*Portafolio*/
+.portafolio{
+    float: left;
+    background-color:white;
+    width: 100%;
+    height: 80px;
+    align-content: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.portafolio h1{
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+}
+
+    /*Caja 1*/
+    .caja1_port{
+        float: left;
+        background-color:white;
+        width: 34%;
+        height: 100%;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+        align-content: center;
+    }
+
+    .caja1_port h2{
+        font-size: 25px;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .caja1_port img{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+
+    .caja1_port p{
+        font-size: 20px;
+        text-align: left;
+        margin: 15px; 
+    }
+
+    .caja1_port h3{
+        font-size: 25px;
+        text-align: left;
+        margin: 45px;
+    }
+
+    /*Caja 2*/
+    .caja2_port{
+        float: left;
+        background-color:white;
+        width: 33%;
+        height: 100%;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+        align-content: center;
+    }
+
+    .caja2_port h2{
+        font-size: 25px;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .caja2_port img{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+
+    .caja2_port p{
+        font-size: 20px;
+        text-align: left;
+        margin: 15px;
+    }
+
+    .caja2_port h3{
+        font-size: 25px;
+        text-align: left;
+        margin: 45px;
+    }
+
+    /*Caja 3*/
+    .caja3_port{
+        float: left;
+        background-color:white;
+        width: 33%;
+        height: 100%;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+        align-content: center;
+    }
+
+    .caja3_port h2{
+        font-size: 25px;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .caja3_port img{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+
+    .caja3_port p{
+        font-size: 20px;
+        text-align: left;
+        margin: 15px;
+    }
+
+    .caja3_port h3{
+        font-size: 25px;
+        text-align: left;
+        margin: 45px;
+    }
+
+/*Quiénes Somos*/
+.quienes_somos{
+    float: left;
+    background-color:white;
+    width: 100%;
+    height: 80px;
+    align-content: center;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.quienes_somos h1{
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+}
+
+/*Fila 1*/
+    /*Contenedor 1*/
+    .f1_cont1{
+        float: left;
+        background-color:white;
+        width: 35%;
+        height: 220px;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .f1_cont1 h1{
+        font-size: 30px;
+        text-align: right;
+        margin: 15px;
+    }
+
+    .f1_cont1 p{
+        font-size: 20px;
+        text-align: left;
+        margin: 15px;
+    }
+
+    /*Contenedor 2*/
+    .f1_cont2{
+        float: left;
+        background-color:white;
+        width:25%;
+        height: 220px;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .f1_cont2 img{
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }
+
+    /*Contenedor 3*/
+    .f1_cont3{
+        float: left;
+        background-color:white;
+        width: 40%;
+        height: 220px;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+/*Fila 2*/
+    /*Contenedor 1*/
+    .f2_cont1{
+        float: left;
+        background-color:white;
+        width: 35%;
+        height: 220px;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    /*Contenedor 2*/
+    .f2_cont2{
+        float: left;
+        background-color:white;
+        width:25%;
+        height: 220px;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .f2_cont2 img{
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }
+
+    /*Contenedor 3*/
+    .f2_cont3{
+        float: left;
+        background-color:white;
+        width: 40%;
+        height: 220px;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .f2_cont3 h1{
+        font-size: 30px;
+        text-align: right;
+        margin: 15px;
+    }
+
+    .f2_cont3 p{
+        font-size: 20px;
+        text-align: left;
+        margin: 15px;
+    }
+
+/*Fila 3*/
+    /*Contenedor 1*/
+    .f3_cont1{
+        float: left;
+        background-color:white;
+        width: 35%;
+        height: 220px;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .f3_cont1 h1{
+        font-size: 30px;
+        text-align: right;
+        margin: 15px;
+    }
+
+    .f3_cont1 p{
+        font-size: 20px;
+        text-align: left;
+        margin: 15px;
+    }
+
+    /*Contenedor 2*/
+    .f3_cont2{
+        float: left;
+        background-color:white;
+        width:25%;
+        height: 220px;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .f3_cont2 img{
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }
+
+    /*Contenedor 3*/
+    .f3_cont3{
+        float: left;
+        background-color:white;
+        width: 40%;
+        height: 220px;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+/*Contáctenos*/
+    .contactenos{
+        float: left;
+        background-color:white;
+        width: 100%;
+        height: 80px;
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+    
+    .contactenos h1{
+        font-size: 25px;
+        text-align: center;
+        margin: 15px;
+    }
+    
+    /*Contacta con Nosotros*/
+    .contacta_con_nosotros{
+        float: left;
+        background-color:white;
+        width: 50%;
+        height: 500px; 
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    /*Contenedor Mapa*/
+    .cont_mapa{
+        float: left;
+        background-color:white;
+        width: 50%;
+        height: 350px; 
+        align-content: center;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .cont_mapa img{
+        width: 100%;
+        height: 100%;
+    }
+        /*Contenedor circulos*/
+        .cont_circulos{
+            float: left;
+            background-color:white;
+            width: 50%;
+            height: 150px; 
+            align-content: center;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+/*Divs Inferiores*/
+    /*Caja 1*/
+    .caja1_inf{
+        float: left;
+        background-color:white;
+        width: 10%;
+        height: 90px;
+        text-align: right;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    /*Caja 2*/
+    .caja2_inf{
+        float: left;
+        background-color: white;
+        width: 75%;
+        height: 90px;
+        text-align: right;
+        border: 2px solid black;
+        padding: 10px;
+        word-spacing: 8px;
+    }
+
+    .caja2_inf h2{
+        font-size: 20px;
+        color:darkblue;
+        text-align: right;
+        margin: 40px;
+        padding-right: 10px;
+    }
+
+    /*Caja 3*/
+    .caja3_inf{
+        float: left;
+        background-color:white;
+        width: 15%;
+        height: 90px;
+        text-align: right;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .caja3_inf h2{
+        font-size: 20px;
+        color:darkblue;
+        text-align: center;
+        margin: 40px;
+    }
