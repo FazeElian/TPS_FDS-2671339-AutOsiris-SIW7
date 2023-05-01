@@ -1,0 +1,52 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.contenido{
+    float: left;
+    width: 90%;
+    height: 650px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.logo{
+    float: left;
+    width: 20%;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.inicio{
+    float: left;
+    width: 59.65%;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.login{
+    float: left;
+    width: 20%;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.pie_de_pagina{
+    float: left;
+    width: 90%;
+    height: 150px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.borde{
+    border: 1px solid black;
+}
+
+h2{
+    text-align: center;
+}

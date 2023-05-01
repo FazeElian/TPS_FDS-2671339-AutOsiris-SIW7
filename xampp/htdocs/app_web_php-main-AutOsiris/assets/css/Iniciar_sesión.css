@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+/* Encabezado */
+.encabezado{
+    float: left;
+    width: 99%;
+    height: 150px;
+    background-color: gray;
+    border: 2px solid black;
+    margin: -10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+    /* Imagen Icono Logo Marca */
+    .imagen_logo img{
+        float: left;
+        width: 110px;
+        height: 110px;
+        margin: 20px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+
+    /* Texto Nombre Marca */
+    .encabezado h1{
+        float: left;
+        height: 40px;
+        background-color: gray;
+        color: black;
+        font-size: 30px;
+        font-family: Century;
+        margin: 0px;
+        margin-top: 80px;
+        margin-left: 10px;
+    }
+
+    /* Banner Empresa */
+    .banner_empresa img{
+        float: right;
+        width: 620px;
+        height: 110px;
+        margin: 20px;
+    }
+
+    /* Línea gruesa inferior */
+    .linea{
+        float: left;
+        width: 100%;
+        height: 20px;
+        background-color: white;
+        margin: 0px;
+    }
+
+/* Contenedor de Registro */
+.cont_iniciar_sesion{
+    float: left;
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+    /* Imagen Banner */
+    .imagen_banner img{
+        float: left;
+        width: 60%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    /* Contenedor de formulario */
+    .cont_form{
+        float: left;
+        width: 585px;
+        height: 80%;
+        background-color: gray;
+        border: 1px solid black;
+        margin: 40px;
+        margin-top: 60px;
+        margin-left: 90px;
+    }
+
+    .cont_form h3{
+        float: left;
+        color: black;
+        font-size: 30px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: 70px;
+        margin-left: 50px;
+    }
+
+    /* Correo Electrónico */
+    .cont_form h4{
+        float: left;
+        color: black;
+        font-size: 20px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: 150px;
+        margin-left: -166px;
+    }
+
+    .correo input{
+        float: left;
+        width: 60%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 185px;
+        margin-left: -176px;
+    }
+    
+    /* Contraseña */
+    .cont_form h5{
+        float: left;
+        color: black;
+        font-size: 20px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: 250px;
+        margin-left: -350px;
+    }
+
+    .contraseña input{
+        float: left;
+        width: 60%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 285px;
+        margin-left: -350px;
+    }
+
+    /* Botón: Registrarse */
+    .bott_iniciar_sesion{
+        float: left;
+        width: 150px;
+        height: 30px;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 270px;
+        margin-left: 350px;
+    }
+
+    .bott_iniciar_sesion h2{
+        float: left;
+        font-size: 14px;
+        font-family: Helvetica;
+        margin: 0px;
+        margin-top: 5px;
+        margin-left: 20%;
+    }
+
+    .bott_iniciar_sesion a{
+        color: black;
+    }
