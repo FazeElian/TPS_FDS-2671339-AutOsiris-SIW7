@@ -4,153 +4,74 @@
     margin: 0px;
 }
 
+/* Fondo de página web */
+#home {
+    clip-path: url(#cache);
+  }
+  
+  #red {
+    fill: none;
+    opacity: 0.15;
+    stroke: #CE1B5F;
+    stroke-width: 12;
+    stroke-miterlimit:10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+  }
+  
+  #blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: #06A1C4;
+    stroke-width: 12;
+    stroke-miterlimit:10;
+    animation: show 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  #light-blue {
+    fill: none;
+    opacity: 0.15;
+    stroke: #06A1C4;
+    stroke-width: 6;
+    stroke-miterlimit:10;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 800;
+    animation: draw 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;    
+  }
+  
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+   }
+      }
+  
+  @keyframes show {
+    0% {
+      opacity: 0.15;
+   }
+    50% {
+      opacity: 0.2;
+   }
+    100% {
+      opacity: 0.15;
+   }
+      }
+
+
 /* Menu Superior */
-.menu_sup{
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    width: 100%;
-    height: 120px;
-    background-color: white;
-    border: 2px solid black;
-    margin-top: 30px;
-    align-content: center;
-    justify-content: left;
-}
 
 /* Menu */
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    width: 74%;
-    height: 60px;
-    margin: 30px;
-    align-content: center;
-    justify-content: left;
-}
-
-.menu_sup li{
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    padding: 12px;
-    background-color: gray;
-    border: 1px solid black;
-    color: black;
-}
-
-#inicio{
-    background-color: aqua;
-}
-
-.inicio{
-    width: 150px;
-    height: 100%;
-    margin-left: 30px;
-    justify-content: center;
-}
-
-.nuestros_prod{
-    width: 500px;
-    height: 100%;
-    justify-content: center;
-}
-
-.nosotros{
-    width: 220px;
-    height: 100%;
-    justify-content: center;
-}
-
-.contactanos{
-    width: 220px;
-    height: 100%;
-    justify-content: center;
-}
 
 /*Login*/
-.items_login{
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    width: 22.85%;
-    height: 120px;
-    background-color: white;
-    border: 2px solid black;
-    align-content: center;
-    justify-content: center;
-    margin-right: 0px;
-}
-
-.items_login li{
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    padding: 12px;
-    background-color: gray;
-    margin-left: 20px;
-    color: black;
-}
-
-.iniciar_sesion{
-    width: 150px;
-    height: 100%;
-    justify-content: center;
-}
-
-#iniciar_sesion{
-    background-color: aqua;
-}
-
-.registrarse{
-    width: 120px;
-    height: 100%;
-    justify-content: center;
-}
-
-#registrarse{
-    background-color: darkblue;
-    color: white;
-}
 
 /*Banner Empresa*/
-.cont_banner{
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    width: 100%;
-    height: 600px;
-    background-color: white;
-    border: 2px solid black;
-    align-content: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-
-#ban_empresa{
-    width: 85%;
-    height: 92%;
-}
 
 /*Lineas de separación de contenido*/
-.lin1{
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    margin-top: 50px;
-}
-
-.lin2{
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    margin-top: 3px;
-}
