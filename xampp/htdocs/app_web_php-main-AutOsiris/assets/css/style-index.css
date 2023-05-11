@@ -1,6 +1,6 @@
 /*Body*/
 .body{
-    background-color: #999999 !important;
+    background-color: gray !important;
 }
 
 *{
@@ -14,7 +14,7 @@
     width: 100%;
     height: 80px;
     border: 2px solid black;
-    background-color: white;
+    background-color: #0F2C7A;
     margin-top: 25px;
 }
     /*Imagen Logo Empresa*/
@@ -33,7 +33,7 @@
             list-style: none;
             width: 60%;
             height: 50px;
-            background-color:white;
+            background-color:#0F2C7A;
             margin-top: 12px;
             margin-left: 20px;
         }
@@ -41,7 +41,7 @@
         .nav1 li h1{
             float: left;
             list-style: none;
-            color: black;
+            color: white;
             text-align: left;
             font-size: 16px;
             font-family: Helvetica;
@@ -60,14 +60,14 @@
             list-style: none;
             width: 31%;
             height: 50px;
-            background-color: white;
+            background-color: #0F2C7A;
             margin-top: 12px;
         }
 
         .nav2 li h1{
             float: left;
             list-style: none;
-            color: black;
+            color: white;
             text-align: left;
             font-size: 16px;
             font-family: Helvetica;
@@ -78,7 +78,7 @@
         .nav2 li h2{
             float: left;
             list-style: none;
-            color: black;
+            color: white;
             text-align: left;
             font-size: 16px;
             font-family: Helvetica;
@@ -119,7 +119,7 @@
         width: 50px;
         height: 60%;
         border: 2px solid black ;
-        background-color: white;
+        background-color: #0F2C7A;
         margin-top: 0px;
     }
 
@@ -129,12 +129,12 @@
         float: center;
         margin-top: 40px;
         border: 2px solid black ;
-        background-color: white;
+        background-color: #8486eb;
     }
 
 
     .menu_lat_nav li :hover{
-        background-color: #999999;
+        background-color: #d7d9e4;
     }
 
     .menu_lat_nav li{
@@ -149,6 +149,11 @@
         font-family: Helvetica;
         margin: 6px;
         margin-left: 25px;
+    }
+
+    .menu_lat_izq .cerrar_sesion{
+        background-color: rgb(224, 37, 37);
+        border: 1px solid black;
     }
 
     .menu_lat_izq li h2 :hover{

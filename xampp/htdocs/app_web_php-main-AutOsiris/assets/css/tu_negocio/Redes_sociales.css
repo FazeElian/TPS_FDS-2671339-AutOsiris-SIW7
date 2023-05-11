@@ -1,0 +1,96 @@
+/*Body*/
+.body{
+    background-color: #999999 !important;
+}
+
+*{
+    box-sizing: border-box;
+    /* margin: 0px;
+    padding: 0px;  */
+}
+
+
+/* Contenido - Contenedor Título de Ventana */
+.ctdo-titulo_Ventana{
+    float: left;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.ctdo-titulo_Ventana h1{
+    float: left;
+    color: black;
+    font-size: 30px;
+    font-family: Helvetica;
+    width: 100%;
+    margin: 0px;
+    margin-left: 10px;
+
+}
+
+/* Contenedor de Iconos de Redes Sociales */
+.cont-redes_sociales{
+    float: left;
+    width: 60%;
+    height: 250px;
+    margin-top: 150px;
+    margin-left: 20%;
+}
+
+/* WhatsApp */
+.whatsapp{
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.whatsapp h2{
+    float: left;
+    color: black;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+.whatsapp img{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-left: 28%;
+    margin-top: 20px;
+}
+
+/* Facebook */
+.facebook{
+    float: right;
+    width: 40%;
+    height: 100%;
+}
+
+.facebook h2{
+    float: right;
+    color: black;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 25px;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+.facebook img{
+    float: right;
+    width: 150px;
+    height: 150px;
+    margin-right: 28%;
+    margin-top: 20px;
+}

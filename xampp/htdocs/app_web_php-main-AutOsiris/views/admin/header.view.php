@@ -10,4 +10,6 @@
 
     <!--Estilos Personalizados o propios (Van al final de los estilos)-->
     <link rel="stylesheet" href="assets/css/Iniciar_sesión.css">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon-iniciar_sesion.png" type="image/x-icon">
+
 </head>

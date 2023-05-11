@@ -139,7 +139,7 @@
 
 <!-- Caja de texto: Visita ya nuestra tienda online -->
 <div class="visita_ya">
-<a href="?c=Tienda Online index">
+<a href="?c=Login">
 	<h1> Visita ya nuestra tienda online! </h1>
 	<h2> Click aquí </h2>
 </a>
@@ -148,7 +148,7 @@
 <!-- Tienda Online - Imagen Navegador -->
 <section class="nav_tienda">
     <!-- Imagen Navegador de Tienda Online -->
-	<a href="#"><img src="assets/img/TiendaOnline-navegador.png"></a>
+	<a href="?c=Login"><img src="assets/img/TiendaOnline-navegador.png"></a>
 
     <!-- Calendario -->
     <div id="calend"> 

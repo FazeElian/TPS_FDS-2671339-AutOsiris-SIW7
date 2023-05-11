@@ -16,10 +16,6 @@
     <div class="banner_empresa">
         <img src="assets/img/Logo_Osiris_Distribuidor.jpeg">
     </div>
-
-    <!-- Línea gruesa inferior -->
-    <div class="linea">
-    </div>
 </div>
 
 <!-- Contenedor de Registro -->

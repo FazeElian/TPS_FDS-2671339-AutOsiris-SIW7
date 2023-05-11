@@ -10,6 +10,7 @@
 
     <!--Estilos Personalizados o propios (Van al final de los estilos)-->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon-dashboard.png" type="image/x-icon">
 </head>
 <body bgcolor="#999999">
 
@@ -36,7 +37,7 @@
         <!--Nav 2: Nuevo Mensaje, Mensajes-->
         <div class="nav2">
             <li>
-                <a href="?c=Nuevo_mensaje"> <h1> Nuevo Mensaje </h1> </a>
+                <a href="?c=Nuevo_mensaje"> <h2> Nuevo Mensaje </h2> </a>
                 <a href="?c=Mensajes"> <h1> Mensajes </h1> </a>
 
             <!--Imagen Icono Mensajes-->
@@ -44,7 +45,7 @@
             </li>
         </div>
     </div>
-</div></section>
+</section>
 
 <!--Menú Lateral Izquierdo-->
 <div class="menu_lat_izq">
@@ -58,26 +59,26 @@
         <nav>
             <ul>
                 <li>
-                    <a href="administracion_financiera.html"> <h2> Administración Financiera </h2> </a>
+                    <a href="?c=Administracion_financiera"> <h2> Administración Financiera </h2> </a>
                 </li>
 
                 <li>
-                    <a href="inventarios.html"> <h2> Inventarios </h2> </a>
+                    <a href="?c=Inventarios"> <h2> Inventarios </h2> </a>
                 </li>
 
                 <li>
-                    <a href="facturas.html"> <h2> Facturas </h2> </a>
+                    <a href="?c=Facturas"> <h2> Facturas </h2> </a>
                 </li>
 
                 <li>
-                    <a href="tu_distribuidor.html"> <h2> Tu Distribuidor </h2> </a>
+                    <a href="?c=Tu_distribuidor"> <h2> Tu Distribuidor </h2> </a>
                 </li>
 
                 <li>
-                    <a href="redes_sociales.html"> <h2> Redes Sociales </h2> </a>
+                    <a href="?c=Redes_sociales"> <h2> Redes Sociales </h2> </a>
                 </li>
 
-                <li>
+                <li class="cerrar_sesion">
                     <a href="?c=Logout"> <h2> Cerrar Sesión </h2></a>
                 </li>
             </ul>
