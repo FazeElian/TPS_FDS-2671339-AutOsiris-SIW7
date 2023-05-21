@@ -1,0 +1,179 @@
+/* Contenedores Ítems de Distribuidor*/
+.divs-distribuidor{
+    float: left;
+    width: 100%;
+    height: 350px;
+    margin: 0px;
+}
+
+    /* <div>:Administración Financiera */
+    .dist-administración_financiera{
+        float: left;
+        width: 45%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 20px;
+        border-radius: 3px;
+    }
+
+    .dist-administración_financiera img{
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .dist-administración_financiera h3{
+        float: left;
+        color: black;
+        font-size: 17px;
+        width: 100%;
+        height: 35px;
+        margin: 0px;
+        margin-top: -100px;
+        padding-top: 6px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    /* <div>:Inventarios */ 
+    .dist-inventarios{
+        float: right;
+        width: 45%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 20px;
+        border-radius: 3px;
+    }
+
+    .dist-inventarios img{
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .dist-inventarios h3{
+        float: left;
+        color: black;
+        font-size: 17px;
+        width: 100%;
+        height: 35px;
+        margin: 0px;
+        margin-top: -100px;
+        padding-top: 6px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    /* <div>:Facturas */
+    .dist-facturas{
+        float: left;
+        width: 45%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 20px;
+        border-radius: 3px;
+    }
+
+    .dist-facturas img{
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .dist-facturas h3{
+        float: left;
+        color: black;
+        font-size: 17px;
+        width: 100%;
+        height: 35px;
+        margin: 0px;
+        margin-top: -100px;
+        padding-top: 6px;
+        background-color: white;
+        border: 1px solid black;
+    }
+    
+    /* <div>:Productos */ 
+    .dist-productos{
+        float: right;
+        width: 45%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 20px;
+        border-radius: 3px;
+    }
+
+    .dist-productos img{
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .dist-productos h3{
+        float: left;
+        color: black;
+        font-size: 17px;
+        width: 100%;
+        height: 35px;
+        margin: 0px;
+        margin-top: -100px;
+        padding-top: 6px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    /* <div>:Ventas */ 
+    .dist-ventas{
+        float: left;
+        width: 45%;
+        height: 100%;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 20px;
+        border-radius: 3px;
+        margin-left: 28%;
+        margin-bottom: 100px;
+    }
+
+    .dist-ventas img{
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        margin-bottom: 50px;
+        padding: 0px;
+    }
+
+    .dist-ventas h3{
+        float: left;
+        color: black;
+        font-size: 17px;
+        width: 100%;
+        height: 35px;
+        margin: 0px;
+        margin-top: -100px;
+        padding-top: 6px;
+        background-color: white;
+        border: 1px solid black;
+    }

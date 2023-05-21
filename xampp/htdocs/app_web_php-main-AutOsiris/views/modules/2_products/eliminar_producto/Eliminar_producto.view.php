@@ -110,7 +110,7 @@
 
     <!-- Botón: Eliminar producto -->
     <button class="eliminar_producto">
-        <a href="producto_elim_con_éxito.html"><h3> Eliminar producto </h3></a>
+        <a href="?c=Producto_eliminado_con_exito"><h3> Eliminar producto </h3></a>
     </button>
 </div>
 </body>

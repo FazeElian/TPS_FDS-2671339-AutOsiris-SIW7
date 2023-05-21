@@ -1,0 +1,295 @@
+/* Contenedor Formularios */
+.cont_forms{
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+    /* Nombre */
+    .nombre{
+        float: left;
+        width: 22%;
+        height: 150px;
+        background-color: white;
+        margin: 0px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .nombre h2{
+        float: left;
+        width: 100%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        background-color: white;
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    /* Fecha  */
+    .fecha{
+        float: left;
+        width: 9%;
+        height: 150px;
+        background-color: white;
+        margin: 0px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .fecha h2{
+        float: left;
+        width: 100%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        background-color: white;
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    /* Cantidad */
+    .cantidad{
+        float: left;
+        width: 12%;
+        height: 150px;
+        background-color: white;
+        margin: 0px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .cantidad h2{
+        float: left;
+        width: 100%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        background-color: white;
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    /* Precio /u */
+    .precio_unidad{
+        float: left;
+        width: 12%;
+        height: 150px;
+        background-color: white;
+        margin: 0px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .precio_unidad h2{
+        float: left;
+        width: 100%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        background-color: white;
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    } 
+
+    /* Precio Total */
+    .precio_total{
+        float: left;
+        width: 20%;
+        height: 150px;
+        background-color: white;
+        margin: 0px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .precio_total h2{
+        float: left;
+        width: 100%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        background-color: white;
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    } 
+
+    .precio_total h3{
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* Botones opciones */
+.botones_opciones{
+    float: left;
+    width: 100%;
+    height: 45px;
+    margin-top: 100px;
+}
+
+    /* Botón: Cancelar */
+    .bott_cancelar{
+        float: left;
+        width: 150px;
+        height: 45px;
+        background-color: white;
+        border: 1px solid black;
+        margin-top: auto;
+        margin-left: 40px;
+    }
+
+    .bott_cancelar h2{
+        float: left;
+        color: black;
+        font-size: 20px;
+        font-family: Helvetica;
+        margin: 5px;
+        margin-left: 20%;
+    }
+
+    .bott_cancelar a{
+        color: black;
+    }
+
+    /* Botón: Registrar */
+    .bott_registrar{
+        float: right;
+        width: 150px;
+        height: 45px;
+        background-color: white;
+        border: 1px solid black;
+        margin-top: auto;
+        margin-right: 110px;
+    }
+
+    .bott_registrar h2{
+        float: left;
+        color: black;
+        font-size: 20px;
+        font-family: Helvetica;
+        margin: 5px;
+        margin-left: 20%;
+    }
+
+    .bott_registrar a{
+        color: black;
+    }
+
+    /* Botón: Añadir Fila */
+    .añadir_fila{
+        float: left;
+        width: 200px;
+        height: 40px;
+        background-color: rgb(29, 29, 235);
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 100px;
+        border-radius: 10px;
+        margin-left: 40px;
+    }
+
+    .añadir_fila h3{
+        float: left;
+        color: whitesmoke;
+        width: 100%;
+        font-size: 18px;
+        font-family: Helvetica;
+        margin-top: 8px;
+    }
+
+    .añadir_fila a{
+        color: black;
+    }
+
+    /* Botón: Eliminar Fila */
+    .eliminar_fila{
+        float: left;
+        width: 200px;
+        height: 40px;
+        background-color: red;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 100px;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+
+    .eliminar_fila h3{
+        float: left;
+        color: whitesmoke;
+        width: 100%;
+        font-size: 18px;
+        font-family: Helvetica;
+        margin-top: 8px;
+    }
+
+    .eliminar_fila a{
+        color: black;
+    }
+
+/* Columnas de Tabla */
+    /* Nombre */
+    #colNombre{
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        margin-bottom: 5px;
+    }
+
+    /* Fecha */
+    #colFecha{
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        margin-bottom: 5px;
+    }
+
+    /* Cantidad */
+    #colCant{ 
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        margin-bottom: 5px;
+    }
+
+    /* Precio Unidad */
+    #colPrecioUnidad{
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        margin-bottom: 5px;
+    }
+
+    /* Precio Total */
+    #colPrecioTotal{
+        float: left;
+        width: 100%;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        margin-top: 0px;
+    }
