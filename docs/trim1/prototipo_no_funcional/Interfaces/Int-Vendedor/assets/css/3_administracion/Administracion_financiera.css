@@ -1,0 +1,437 @@
+/* Mes  */
+.mes{
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+    /* Subtítulo: Mes */
+    .ctdo_subtitulo_mes h2{
+        float: left;
+        color: black;
+        font-size: 25px;
+        font-family: Helvetica;
+        width: 100%;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    /* Botón: Limpiar */
+    .bott_limpiar{
+        float: left;
+        width: 100px;
+        height: 35px;
+        margin-top: 20px;
+        margin-left: -2px;
+        border: 1px solid black;
+    }
+
+    .bott_limpiar h3{
+        float: left;
+        color: black;
+        font-size: 15px;
+        font-family: Helvetica;
+        margin-top: 5px;
+    }
+
+    /* Seleccionar mes */
+    #meses{
+        float: left;
+        color: black;
+        font-size: 15px;
+        width: 100px;
+        height: 80%;
+        margin-top: -85px;
+        margin-left: 1100px;
+    }
+
+/* Contenido meses */
+#contenido-Enero, #contenido-Febrero,
+#contenido-Marzo, #contenido-Abril,
+#contenido-Mayo, #contenido-Junio,
+#contenido-Julio,#contenido-Agosto,
+#contenido-Septiembre, #contenido-Octubre,
+#contenido-Noviembre, #contenido-Diciembre{
+    float: left;
+    width: 100%;
+    height: 1000px;
+    margin-top: 100px;
+}
+
+.titulo_mes{
+    float: left;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+    margin-top: -40px;
+}
+
+.titulo_mes h2{
+    float: left;
+    color: black;
+    font-size: 35px;
+    font-family: Helvetica;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* <div>: Ordenar por: */
+.ordenar_por{
+    float: left;
+    width: 40%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.ordenar_por h2{
+    float: left;
+    color: black;
+    font-size: 15px;
+    font-family: Helvetica;
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* Barra de búsqueda de producto */
+.barra_busqueda input{
+    float: right;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0px;
+    margin-top: 5px;   
+    margin-bottom: 30px;
+}
+
+.barra_busqueda input{
+    float: right;
+    width: 30%;
+    height: 30px;
+}
+
+/*Costos Tabla <table>*/
+.tab_costos {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    margin-top: 100px;
+}
+
+/* TD Clases */
+    /* #Producto */
+    .Num_producto {
+        width: 10%;
+    }
+
+    /* Código */
+    .Codigo {
+        width: 10%;
+    }
+
+    /* Nombre */
+    .Nombre {
+        width: 40%;
+    }
+
+    /* Cantidad */
+    .Cantidad {
+        width: 10%;
+        text-align: center;
+    }
+
+    /* Costo Unidad */
+    .Costo_unidad {
+        width: 15%;
+        text-align: center;
+    }
+
+    /* Costo Total */
+    .Costo_total{
+        width: 15%;
+        text-align: center;
+    }
+
+    /* Caracteísticas de productos */
+    .caract_productos{
+        background-color: gray;
+        height: 50px;
+        text-align: center;
+    }
+
+    /* Celdas */
+    .tab_costos td{
+        border: 1px solid black;
+        text-align: center;
+        height: 40px;
+    }
+
+    /* Texto */
+    .tab_costos {
+        color: black;
+        text-align: center;
+    }
+
+    /* Total Fila Tabla */
+    .total_tabla{
+        background-color: white;
+        height: 35px;
+        text-align: center;
+    }
+    /* Opciones de edición de producto: Código de producto */
+    #codigo_producto{
+        width: 100%;
+        height: 100%;
+        border: black;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* Opciones de edición de producto: Precio de Costo Por unidad */
+    #cantidad_producto{
+        width: 100%;
+        height: 100%;
+        border: black;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* Opciones de edición de producto: Precio de Costo Por unidad */
+    #precio_costo_por_unidad{
+        width: 100%;
+        height: 100%;
+        border: black;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* Botón: Añadir Fila */
+    .añadir_fila{
+        float: left;
+        width: 200px;
+        height: 40px;
+        background-color: rgb(29, 29, 235);
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    .añadir_fila h3{
+        float: left;
+        color: whitesmoke;
+        width: 100%;
+        font-size: 18px;
+        font-family: Helvetica;
+        margin-top: 8px;
+    }
+
+    .añadir_fila a{
+        color: black;
+    }
+
+    /* Botón: Eliminar Fila */
+    .eliminar_fila{
+        float: left;
+        width: 200px;
+        height: 40px;
+        background-color: red;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 30px;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+
+    .eliminar_fila h3{
+        float: left;
+        color: whitesmoke;
+        width: 100%;
+        font-size: 18px;
+        font-family: Helvetica;
+        margin-top: 8px;
+    }
+
+    .eliminar_fila a{
+        color: black;
+    }
+    
+/*Ganancias Tabla <table>*/
+.tab_ganancias {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    margin-top: 150px;
+}
+
+.titulo_ganancias{
+    float: left;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+    margin-top: 80px;
+}
+
+.titulo_ganancias h2{
+    float: left;
+    color: black;
+    font-size: 35px;
+    font-family: Helvetica;
+    margin-top: 10px;
+}
+
+    /* <div>: Ordenar por: */
+    .ordenar_por_ganancias{
+        float: left;
+        width: 40%;
+        height: 30px;
+        background-color: white;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 10px;
+    }
+
+    #ordenar_por{
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Barra de búsqueda de producto */
+    .barra_busqueda_ganancias input{
+        float: right;
+        overflow: hidden;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 3px;
+        margin: 0px;
+        margin-top: 5px;   
+    }
+
+    .barra_busqueda_ganancias input{
+        float: right;
+        width: 30%;
+        height: 30px;
+    }
+
+    /* Tabla de Ganancias */
+    .tab_ganancias{
+        float: left;
+        margin-top: 30px;
+    }
+
+    /* Caracteísticas de productos */
+    .caract_productos{
+        background-color: gray;
+        height: 50px;
+        text-align: center;
+    }
+
+    /* Celdas */
+    .tab_ganancias td{
+        border: 1px solid black;
+        text-align: center;
+        height: 40px;
+    }
+
+    /* Texto */
+    .tab_ganancias {
+        color: black;
+        text-align: center;
+    }
+
+    /* Total Fila Tabla */
+    .total_tabla{
+        background-color: white;
+        height: 35px;
+        text-align: center;
+    }
+
+    /* Opciones de edición de producto: Nombre*/
+    #nombre_producto{
+        width: 100%;
+        height: 100%;
+        border: black;
+        font-size: 15px;
+        text-align: left;
+        margin-left: 1px;
+    }
+
+    /* Opciones de edición de producto: Precio de Costo*/
+    #precio_costo_producto{
+        width: 100%;
+        height: 100%;
+        border: black;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* Opciones de edición de producto: Porcentaje de ganancia*/
+    #porc_ganancia_producto{
+        width: 100%;
+        height: 100%;
+        border: black;
+        font-size: 15px;
+        text-align: center;
+    }
+
+/* Botones Opciones Cambios */
+    /* Botón: Cancelar */
+    .cancelar{
+        float: left;
+        width: 150px;
+        height: 40px;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    .cancelar h3{
+        float: left;
+        font-size: 18px;
+        font-family: Helvetica;
+        margin-top: 5px;
+        margin-left: 20%;
+    }
+
+    .cancelar a{
+        color: black;
+    }
+
+    /* Botón: Guardar Cambios */
+    .guardar_cambios{
+        float: right;
+        width: 200px;
+        height: 40px;
+        border: 1px solid black;
+        margin: 0px;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+
+    .guardar_cambios h3{
+        float: left;
+        font-size: 18px;
+        font-family: Helvetica;
+        margin-top: 5px;
+        margin-left: 12%;
+    }
+
+    .guardar_cambios a{
+        color: black;
+    }

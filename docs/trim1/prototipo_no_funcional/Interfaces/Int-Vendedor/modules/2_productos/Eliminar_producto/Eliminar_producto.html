@@ -1,0 +1,134 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Productos | Eliminar producto </title>
+    <!--Integración de Archivos a framework bootstrap : .css-->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <!-- Hoja de Estilos para este archivo -->
+    <!-- <link rel="stylesheet" href="assets/css/style-index.css"> -->
+
+    <!-- Estilos Fijos de Menús y contenido -->
+    <link rel="stylesheet" href="../../../assets/css/2_productos/Eliminar_producto/Eliminar_producto.css">
+
+    <!--Estilos Personalizados o propios (Van al final de los estilos)-->
+    <link rel="stylesheet" href="../../../assets/css/2_productos/styles-productos.css">
+
+    <!--Scripts Personalizados o propios (Van al final de los scripts)-->
+    <script src="../../assets/js/"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../../assets/icons/favicon-eliminar_producto.png" type="image/x-icon">
+</head>
+
+<body bgcolor="#999999">
+
+<!--Menú Superior-->
+<header class="menu_sup">
+    <!--Menú Nav-->
+    <div class="menu_nav">
+        <!--Imagen Logo Empresa-->
+        <div class="img_logo">
+            <a href="../../0_principal/index.html"> <img src="../../../assets/images/0_principal/Logo S.I. AutOsiris.png"> </a>
+        </div>
+
+        <!--Nav 1: Inicio, Estadísticas, Productos-->
+        <div class="nav1">
+            <li>
+
+                <!-- Items de menu -->
+                <div class="items_menu">
+                    <a href="../../0_principal/index.html"> <h1> Inicio </h1> </a>
+                    <a href="../../7_estadisticas/Estadisticas.html"> <h1> Estadísticas </h1> </a>
+                    <a href="../../4_ventas/Ventas.html"> <h1> Ventas </h1> </a>
+                    <a href="../../2_productos/Productos.html"> <h1> Productos </h1> </a>
+                </div>
+            </li>
+        </div>
+        </div>
+
+        <!--Nav 2: Nuevo Mensaje, Mensajes-->
+        <div class="nav2">
+            <li>
+                <a href="../../8_mensajes/Nuevo_Mensaje/Nuevo_mensaje.html"> <h1> Nuevo Mensaje </h1> </a>
+                <a href="../../8_mensajes/Mensajes/Mensajes.html"> <h1> Mensajes </h1> </a>
+            </li>
+        </div>
+
+        <!--Imagen Icono Mensajes-->
+        <div class="img_mensajes">
+            <a href="../../8_mensajes/Mensajes/Mensajes.html"> <img src="../../../assets/images/0_principal/Icono_mensajes.jpg"> </a>
+        </div>
+    </div>
+</header>
+
+<!-- Menú Lateral Izquierdo -->
+<div class="menu_lat_izq">
+
+    <!--Bloque lateral de menú-->
+    <div class="bloque_menu">
+    </div>
+
+    <!--Menú Lateral Nav-->
+    <section class="menu_lat_nav">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../3_administracion/Administracion_financiera.html"> <h2> Administración Financiera </h2> </a>
+                </li>
+
+                <li>
+                    <a href="../../5_inventarios/Inventarios.html"> <h2> Inventarios </h2> </a>
+                </li>
+
+                <li>
+                    <a href="../../6_facturas/Facturas.html"> <h2> Facturas </h2> </a>
+                </li>
+
+                <li>
+                    <a href="../../9_distribuidor/Tu_distribuidor/Tu_distribuidor.html"> <h2> Tu Distribuidor </h2> </a>
+                </li>
+
+                <li>
+                    <a href="../../10_redes_sociales/Redes_sociales.html"> <h2> Redes Sociales </h2> </a>
+                </li>
+                
+                <li class="cerrar_sesion">
+                    <a href="?c=Logout"> <h2> Cerrar Sesión </h2></a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+</div>
+
+<!--Líneas separación de contenido-->
+    <div class="lineas_cont">
+        <div class="lin1"></div>
+        <div class="lin2"></div>
+    </div>
+
+<main>
+<!--Div de Contenido-->
+<div class="contenido_pag">
+    <!-- Contenido - Contenedor Título de Ventana: Productos -->
+    <div class="ctdo-titulo_Ventana">
+        <h1> Eliminar Producto </h1>
+    </div>
+
+    <!-- <input>: Buscar producto -->
+    <input class="buscar_producto" id="buscar_producto" placeholder="  Buscar Producto...">
+
+    <!-- Botón: Cancelar -->
+    <button class="cancelar">
+        <a href="../Productos.html"><h3> Cancelar </h3></a>
+    </button>
+
+    <!-- Botón: Eliminar producto -->
+    <button class="eliminar_producto" onclick="alert('Producto Eliminado con éxito')">
+        <a href="../../0_principal/index.html"><h3> Eliminar Producto </h3></a>
+    </button>
+</div>
+</body>
+</body>
+</main>
