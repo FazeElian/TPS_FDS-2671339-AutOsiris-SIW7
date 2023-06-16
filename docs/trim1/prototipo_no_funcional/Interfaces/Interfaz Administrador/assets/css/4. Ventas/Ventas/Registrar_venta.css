@@ -1,0 +1,454 @@
+/* Contenedor Registro */
+.cont-registro{
+    display: flex;
+    width: 100%;
+    height: 8%;
+    border: 1px solid black;
+    background-color: #212EC2;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Info Registro */
+    .info-registro{
+        display: flex;
+        width: 85%;
+        height: 80%;
+        list-style: none;
+    }
+
+        /* Nombre producto */
+        .cont-nombre-prod{
+            display: flex;
+            width: 40%;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cont-nombre-prod li{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #nombre-prod{
+            width: 90%;
+            height: 22.5px;
+        }
+
+        /* Fecha de compra */
+        .cont-fecha-compra{
+            display: flex;
+            width: 15%;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cont-fecha-compra li{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #fecha-compra{
+            width: 90%;
+            height: 22.5px;
+        }
+
+        /* Cantidad */
+        .cont-cantidad{
+            display: flex;
+            width: 10%;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cont-cantidad li{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #cantidad{
+            width: 90%;
+            height: 22.5px;
+        }
+
+        /* Precio Unidad */
+        .cont-precio-unidad{
+            display: flex;
+            width: 17.5%;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cont-precio-unidad li{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #precio-unidad{
+            width: 90%;
+            height: 22.5px;
+        }
+
+        /* Precio Total */
+        .cont-precio-total{
+            display: flex;
+            width: 17.5%;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cont-precio-total li{
+            color: white;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #precio-total{
+            width: 90%;
+            height: 22.5px;
+        }
+
+/* Botones Opciones */
+.botones-opciones{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+        /* Botón: Cancelar */
+        .bott-cancelar{
+            display: flex;
+            width: 200px;
+            height: 100%;
+        }
+
+        .cancelar{
+            width: 100%;
+            border-radius: 7px;
+            border: 1px solid black;
+            background-color: red;
+        }
+
+        .cancelar h2{
+            color: white;
+            font-size: 20px;
+        }
+
+        /* Botón: Registrar Venta */
+        .bott-registrar-venta{
+            display: flex;
+            width: 200px;
+            height: 100%;
+        }
+
+        .registrar-venta{
+            width: 100%;
+            border-radius: 7px;
+            border: 1px solid black;
+            background-color: #212EC2;
+        }
+
+        .registrar-venta h2{
+            color: white;
+            font-size: 18px;
+        }
+
+/* @Media */
+    /* @Media 1024px */
+    @media(max-width:1024px){
+        /* Info Registro */
+        .info-registro{
+            display: flex;
+            width: 90%;
+            height: 80%;
+            list-style: none;
+        }
+            /* Nombre producto */
+            .cont-nombre-prod{
+                display: flex;
+                width: 35%;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .cont-nombre-prod li{
+                color: white;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            #nombre-prod{
+                width: 90%;
+                height: 20px;
+            }
+            /* Fecha de compra */
+            .cont-fecha-compra{
+                display: flex;
+                width: 15%;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .cont-fecha-compra li{
+                color: white;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            #fecha-compra{
+                width: 90%;
+                height: 20px;
+            }
+            /* Cantidad */
+            .cont-cantidad{
+                display: flex;
+                width: 10%;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .cont-cantidad li{
+                color: white;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            #cantidad{
+                width: 90%;
+                height: 20px;
+            }
+            /* Precio Unidad */
+            .cont-precio-unidad{
+                display: flex;
+                width: 17.5%;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .cont-precio-unidad li{
+                color: white;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            #precio-unidad{
+                width: 90%;
+                height: 20px;
+            }
+            /* Precio Total */
+            .cont-precio-total{
+                display: flex;
+                width: 17.5%;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .cont-precio-total li{
+                color: white;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            #precio-total{
+                width: 90%;
+                height: 20px;
+            }
+
+        /* Botones Opciones */
+        .botones-opciones{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            margin-top: 100px;
+            justify-content: space-between;
+        }
+
+                /* Botón: Cancelar */
+                .bott-cancelar{
+                    display: flex;
+                    width: 150px;
+                    height: 100%;
+                }
+
+                .cancelar{
+                    width: 100%;
+                    border-radius: 7px;
+                    border: 1px solid black;
+                    background-color: red;
+                }
+
+                .cancelar h2{
+                    color: white;
+                    font-size: 17px;
+                }
+
+                /* Botón: Registrar Venta */
+                .bott-registrar-venta{
+                    display: flex;
+                    width: 170px;
+                    height: 100%;
+                }
+
+                .registrar-venta{
+                    width: 100%;
+                    border-radius: 7px;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+                .registrar-venta h2{
+                    color: white;
+                    font-size: 17px;
+                }
+    }
+
+    /* @Media 768px */
+    @media(max-width:768px){
+        /* Contenedor Registro */
+        .cont-registro{
+            display: flex;
+            width: 100%;
+            height: 20%;
+            border: 1px solid black;
+            background-color: #212EC2;
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+            /* Info Registro */
+            .info-registro{
+                display: flex;
+                width: 80%;
+                height: 80%;
+                list-style: none;
+                flex-direction: column;
+            }
+                /* Nombre producto */
+                .cont-nombre-prod{
+                    display: flex;
+                    width: 85%;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .cont-nombre-prod li{
+                    color: white;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                #nombre-prod{
+                    width: 100%;
+                    height: 17px;
+                }
+                /* Fecha de compra */
+                .cont-fecha-compra{
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 20px;
+                }
+                .cont-fecha-compra li{
+                    color: white;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                #fecha-compra{
+                    width: 100%;
+                    height: 20px;
+                }
+                /* Cantidad */
+                .cont-cantidad{
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 20px;
+                }
+                .cont-cantidad li{
+                    color: white;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                #cantidad{
+                    width: 100%;
+                    height: 20px;
+                }
+                /* Precio Unidad */
+                .cont-precio-unidad{
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 20px;
+                }
+                .cont-precio-unidad li{
+                    color: white;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                #precio-unidad{
+                    width: 100%;
+                    height: 20px;
+                }
+                /* Precio Total */
+                .cont-precio-total{
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 20px;
+                }
+                .cont-precio-total li{
+                    color: white;
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+                #precio-total{
+                    width: 100%;
+                    height: 20px;
+                }
+
+            /* Botones Opciones */
+            .botones-opciones{
+                display: flex;
+                width: 100%;
+                height: 55px;
+                margin-top: 100px;
+                justify-content: space-between;
+            }
+
+                    /* Botón: Cancelar */
+                    .bott-cancelar{
+                        display: flex;
+                        width: 120px;
+                        height: 100%;
+                    }
+
+                    .cancelar{
+                        width: 100%;
+                        border-radius: 7px;
+                        border: 1px solid black;
+                        background-color: red;
+                    }
+
+                    .cancelar h2{
+                        color: white;
+                        font-size: 15px;
+                    }
+
+                    /* Botón: Registrar Venta */
+                    .bott-registrar-venta{
+                        display: flex;
+                        width: 100px;
+                        height: 100%;
+                    }
+
+                    .registrar-venta{
+                        width: 100%;
+                        border-radius: 7px;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    .registrar-venta h2{
+                        color: white;
+                        font-size: 15px;
+                    }
+    }

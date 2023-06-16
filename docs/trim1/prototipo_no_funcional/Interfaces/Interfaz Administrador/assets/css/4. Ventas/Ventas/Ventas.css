@@ -1,0 +1,183 @@
+/* Botón: Registrar venta */
+.registrar_venta{
+    display: flex;
+    width: 250px;
+    height: 35px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .registrar_venta h2{
+        color: black;
+        margin-left: 25px;
+        font-size: 17px;
+    }
+
+    .registrar_venta img{
+        display: flex;
+        width: 25px;
+        height: 80%;
+        align-items: flex-end;
+        margin-right: 25px;
+    }
+
+/* Ventas */
+.cont-ventas{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+    /* Ventas Digitales y Físicas*/
+    .vent-digitales{
+        display: flex;
+        width: 48%;
+        height: 100%;
+        border: 1px solid black;     
+        flex-direction: column;
+    }
+
+        .vent-digitales img{
+            width: 100%;
+            height: 90%;
+        }
+
+        /* Texto Contenedor */
+        .texto-digitales{
+            display: flex;
+            width: 100%;
+            height: 10%;
+            background-color: #212EC2;
+            border: 1px solid black;
+            border-left: 0;
+            border-right: 0;
+            justify-content: start;
+            align-items: center;
+        }
+
+            .texto-digitales h2{
+                color: white;
+                font-size: 18px;
+                margin: 5px 20px;
+            }
+
+/* @Media */
+    /* @Media 1024px */
+    @media(max-width: 1024px){
+        /* Ventas */
+        .cont-ventas{
+            display: flex;
+            width: 100%;
+            height: 15%;
+            margin-top: 30px;
+            flex-direction: column;
+        }
+
+            /* Ventas Digitales y Físicas*/
+            .vent-digitales{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                border: 1px solid black;
+                align-items: start;
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+
+            .vent-digitales img{
+                width: 100%;
+                height: 90%;
+            }
+
+                /* Texto Contenedor */
+                .texto-digitales{
+                    display: flex;
+                    width: 100%;
+                    height: 10%;
+                    background-color: #212EC2;
+                    border: 1px solid black;
+    
+                }
+
+                .texto-digitales h2{
+                    color: white;
+                    font-size: 18px;
+                    margin: 5px 20px;
+                }
+    }
+
+/* @Media 461px */
+@media(max-width:461px){
+    /* Botón: Registrar venta */
+    .registrar_venta{
+        display: flex;
+        width: 65%;
+        height: 28px;
+        background-color: white;
+        margin-top: 20px;
+        border-radius: 10px;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .registrar_venta h2{
+            color: black;
+            margin-left: 20px;
+            font-size: 12px;
+        }
+
+        .registrar_venta img{
+            display: flex;
+            width: 20px;
+            height: 80%;
+            align-items: flex-end;
+            margin-right: 15px;
+        }  
+
+    /* Ventas */
+    .cont-ventas{
+        display: flex;
+        width: 100%;
+        height: 8.5%;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+        /* Ventas Digitales y Físicas*/
+        .vent-digitales{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            align-items: start;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+            .vent-digitales img{
+                width: 100%;
+                height: 90%;
+            }
+
+            /* Texto Contenedor */
+            .texto-digitales{
+                display: flex;
+                width: 100%;
+                height: 10%;
+                background-color: #212EC2;
+                border: 1pxsolid black;
+            }
+
+                .texto-digitales h2{
+                    color: white;
+                    font-size: 8px;
+                    margin: 5px 20px;
+                }
+}

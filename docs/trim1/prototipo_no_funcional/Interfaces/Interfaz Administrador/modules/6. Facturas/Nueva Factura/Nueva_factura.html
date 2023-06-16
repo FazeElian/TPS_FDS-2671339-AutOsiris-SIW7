@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturas | Nueva Factura</title>
+    <link rel="shortcut icon" href="../../../assets/img/favicons/" type="image/x-icon">
+
+    <!-- Hoja/s de Estilos -->
+    <link rel="stylesheet" href="../../../assets/css/2. Dashboard/index.css">
+    <link rel="stylesheet" href="../../../assets/css/6. Facturas/Nueva Factura/Nueva_factura.css">
+
+    <!-- Scripts -->
+    <script defer src="../../../assets/js/2. Dashboard/index.js"></script>
+    <script defer src="../../../assets/js/6. Facturas/Nueva_factura.js"></script>
+</head>
+
+<body>
+    <!-- Menú Superior  -->
+    <header class="menu_sup">
+        <!-- Navegación de ítems Inicio -->
+        <nav class="nav-inicio">
+            <!-- Icono de Menú responsive -->
+            <button class="icono-menu">
+                <img src="../../../assets/img/menu-icono.png">
+            </button>
+
+            <ul class="lista_nav-inicio">
+                <li class="item_nav-inicio"><a href="../../2. Dashboard/index.html">Inicio</a></li>
+                <li class="item_nav-inicio"><a href="../../3. Estadisticas/Estadisticas.html">Estadísticas</a></li>
+                <li class="item_nav-inicio"><a href="../../4. Ventas/Ventas/Ventas.html">Ventas</a></li>
+                <li class="item_nav-inicio li-facturas"><a href="../Facturas.html">Facturas</a></li>
+                <li class="item_nav-inicio"><a href="../../5. Productos/Productos/Productos.html">Productos</a></li>
+                <li class="item_nav-inicio li-inventarios"><a href="../../5. Productos/Inventarios/Inventarios.html">Inventarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navegación de ítems Usuario -->
+        <nav class="nav-usuario">
+            <ul class="lista_nav-usuario">
+                <a href="../../1. Usuarios/1.3 Mi perfil/Mi-perfil.html"><li class="item_nav-usuario">Mi perfil</li></a>
+                <li class="item_nav-usuario cerrar_sesion">Cerrar sesión</li>
+            </ul>
+
+            <button class="icono-usuario">
+                <img src="../../../assets/img/usuario-icono.png">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenido de página -->
+    <section class="contenido-pag">
+        <!-- Titulo de ventana -->
+        <div class="titulo-ventana">
+            <h1>Nueva Factura</h1>
+        </div>
+
+        <!-- Información de factura -->
+        <div class="cont-info-factura">
+            <li class="li-nombre-factura"><h2>Nombre de Factura: </h2><input type="text" name="nombre-factura" id="nombre-factura" placeholder="  Ejemplo: Primera venta de la semana"></li>
+            <li class="li-fecha-creacion"><h2>Fecha de creación: </h2><input type="date" name="fecha-creacion" id="fecha-creacion"></li>
+        </div>
+
+        <!-- Contenedor de Factura -->
+        <div class="cont-factura">
+            <!-- Tabla de factura -->
+            <table id="tabla-factura">
+                <tr class="columnas">
+                  <td class="nombre-prod"><h2>Nombre producto</h2></td>
+                  <td class="cantidad"><h2>Cantidad</h2></td>
+                  <td class="precio-unidad"><h2>Precio /u</h2></td>
+                  <td class="precio-total"><h2>Precio Total</h2></td>
+                  <td class="bott-eliminar"><img src="../../../assets/img/icono-eliminar-rojo.png"></td>
+                </tr>
+                <tr class="fila-datos">
+                    <!-- <td class="nombre-prod-dato"><input type="text" name="nombre-prod-input" id="nombre-prod-input" placeholder="Escribe aquí nombre de producto"></td> -->
+                    <!-- <td class="cantidad-dato"><input type="number" name="cantidad-prod-input" id="cantidad-prod-input" placeholder="#"></td> -->
+                    <!-- <td class="precio-unidad-dato"><input type="text" name="precio-unidad-input" id="precio-unidad-input" placeholder="$"></td> -->
+                    <!-- <td class="precio-total-dato"><input type="text" name="precio-total-input" id="precio-total-input" placeholder="$$$"></td> -->
+                    <!-- <td class="elim-fila"><img src="../../../assets/img/icono-eliminar-rojo.png"></td> -->
+                </tr>
+              </table>
+
+            <!-- Opciones de Filas -->
+            <div class="opciones-filas">
+                <!-- Añadir Fila -->
+                <button class="añadir-fila" id="añadir-fila" onclick="agregarFilaFactura()">
+                    <h2>Añadir Fila</h2>
+                </button>
+            </div>
+
+            <!-- Opciones factura -->
+            <div class="opciones-factura">
+                <!-- Botón: Cancelar -->
+                <button class="bott-cancelar">
+                    <a href="../Facturas.html"><h2>Cancelar</h2></a>
+                </button>
+
+                <button class="bott-crear-factura" onclick="FacturaCreada()">
+                    <a href="../Facturas.html"><h2>Crear Factura</h2></a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Pie de página -->
+    <footer class="pie_de_pagina">
+        <div class="cont-footer">
+            <h2>©Todos los derechos reservados a Elián Ibarra, Juan Sebastián y Alan Prada</h2>
+            <h2>elianibarra77@gmail.com Aprendiz SENA , 2023</h2>
+        </div>
+    </footer>
+</body>
+</html>

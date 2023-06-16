@@ -1,0 +1,841 @@
+/* Botón Limpiar y Filtro: Seleccionar mes */
+.cont-limpiar_filtro{
+    display: flex;
+    width: 100%;
+    height: 32.5px;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+    /* Botón: Limpiar */
+    .cont-bott-limpiar{
+        display: flex;
+        width: 45%;
+        height: 100%;
+    }
+
+    .bott-limpiar{
+        width: 24%;
+        border: 1px solid black;
+        border-radius: 7px;
+    }
+
+    .bott-limpiar h2{
+        font-size: 18px;
+    }
+
+    /* Filtro: Seleccionar Mes */
+    .cont-seleccionar-mes{
+        display: flex;
+        width: 55%;
+        height: 100%;
+        justify-content: end;
+    }
+
+    #seleccionar-mes{
+        width: 50%;
+        font-size: 18px;
+    }
+
+/* Contenido Meses */
+#contenido-Enero, #contenido-Febrero,
+#contenido-Marzo, #contenido-Abril,
+#contenido-Mayo, #contenido-Junio,
+#contenido-Julio, #contenido-Agosto, 
+#contenido-Septiembre, #contenido-Octubre,
+#contenido-Noviembre, #contenido-Diciembre{
+    display: none;
+    flex-direction: column;
+}
+
+    /* Texto - Título: Productos */
+    .texto-productos{
+        display: flex;
+        width: 100%;
+        height: 45px;
+        background-color: #212EC2;
+        margin-top: 40px;
+        border: 1px solid black;
+        align-items: center;
+    }
+
+    .texto-productos h1{
+        color: white;
+        font-size: 21px;
+        margin-left: 15px;
+    }
+
+/* Tabla productos */
+.tabla-mes{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+    /* Columnas características de producto  */
+    .columnas-caract{
+        display: flex;
+        width: 100%;
+        height: 35px;
+        color: white;
+        justify-content: space-between;
+    }
+
+        /* Item de columna */
+        .item-columna{
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+        }
+
+            /* Nombre Producto */
+            .nombre-prod{
+                display: flex;
+                width: 54.5%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #212EC2;
+            }
+
+            /* Fecha Compra */
+            .fecha-compra{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #212EC2;
+            }
+
+            /* Cantidad */
+            .cantidad-prod{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #212EC2;
+            }
+
+            /* Precio Producto */
+            .precio-prod{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #212EC2;
+            }
+
+    /* Columnas datos de filas */
+    .filas-datos{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        color: black;
+        margin-top: 3px;
+        justify-content: space-between;
+    }
+        /* Ítem fila */
+        .item-fila{
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }   
+
+            /* Nombre de producto */
+            .nombre-prod-dato{
+                display: flex;
+                width: 54.5%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #C0C0C0;
+                
+            }
+
+            /* Fecha compra */
+            .fecha-compra-dato{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #C0C0C0;
+            }
+
+            /* Cantidad producto */
+            .cantidad-prod-dato{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #C0C0C0;
+            }
+
+            /* Precio producto */
+            .precio-prod-dato{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #C0C0C0;
+            }
+
+    /* Total */
+    .columna-total{
+        display: flex;
+        width: 100%;
+        height: 40px;
+        color: black;
+        margin-top: 3px;
+        justify-content: space-between;
+    }
+
+        /* Ítem Total */
+        .item-total{
+            font-size: 15px;
+            background-color: blue;
+            justify-content: center;
+            align-items: center;
+        }
+
+            /* Total texto */
+            .total{
+                display: flex;
+                width: 69.7%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #5C7362;
+            }
+
+            /* Total Cantidad */
+            .total-cantidad{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #5C7362;
+            }
+
+            /* Total Precio */
+            .total-precio{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #5C7362;
+            }
+
+/* @Media  */
+    /* @media 1024px */
+    @media(max-width:1024px){
+        /* Botón Limpiar y Filtro: Seleccionar mes */
+        .cont-limpiar_filtro{
+            display: flex;
+            width: 100%;
+            height: 25px;
+            margin-top: 30px;
+            justify-content: space-between;
+        }
+
+            /* Botón: Limpiar */
+            .cont-bott-limpiar{
+                display: flex;
+                width: 45%;
+                height: 100%;
+            }
+
+            .bott-limpiar{
+                width: 30%;
+                border: 1px solid black;
+                border-radius: 7px;
+            }
+
+            .bott-limpiar h2{
+                font-size: 15px;
+            }
+
+            /* Filtro: Seleccionar Mes */
+            .cont-seleccionar-mes{
+                display: flex;
+                width: 55%;
+                height: 100%;
+                justify-content: end;
+            }
+
+            #seleccionar-mes{
+                width: 65%;
+                font-size: 15px;
+            }
+
+        /* Texto - Título: Productos */
+        .texto-productos{
+            display: flex;
+            width: 100%;
+            height: 40px;
+            background-color: #212EC2;
+            margin-top: 40px;
+            border: 1px solid black;
+            align-items: center;
+        }
+
+        .texto-productos h1{
+            color: white;
+            font-size: 20px;
+            margin-left: 15px;
+        }
+
+    /* Tabla productos */
+    .tabla-mes{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+        /* Columnas características de producto  */
+        .columnas-caract{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            color: white;
+            justify-content: space-between;
+        }
+
+            /* Item de columna */
+            .item-columna{
+                justify-content: center;
+                align-items: center;
+                font-size: 12.5px;
+            }
+
+                /* Nombre Producto */
+                .nombre-prod{
+                    display: flex;
+                    width: 59.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+                /* Fecha Compra */
+                .fecha-compra{
+                    display: flex;
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+                /* Cantidad */
+                .cantidad-prod{
+                    display: flex;
+                    width: 10.1%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+                /* Precio Producto */
+                .precio-prod{
+                    display: flex;
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+        /* Columnas datos de filas */
+        .filas-datos{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            color: black;
+            margin-top: 3px;
+            justify-content: space-between;
+        }
+            /* Ítem fila */
+            .item-fila{
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+            }   
+
+                /* Nombre de producto */
+                .nombre-prod-dato{
+                    display: flex;
+                    width: 59.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                    
+                }
+
+                /* Fecha compra */
+                .fecha-compra-dato{
+                    display: flex;
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                }
+
+                /* Cantidad producto */
+                .cantidad-prod-dato{
+                    display: flex;
+                    width: 10.1%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                }
+
+                /* Precio producto */
+                .precio-prod-dato{
+                    display: flex;
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                }
+
+        /* Total */
+        .columna-total{
+            display: flex;
+            width: 100%;
+            height: 40px;
+            color: black;
+            margin-top: 3px;
+            justify-content: space-between;
+        }
+
+            /* Ítem Total */
+            .item-total{
+                font-size: 12.5px;
+                background-color: blue;
+                justify-content: center;
+                align-items: center;
+            }
+
+                /* Total texto */
+                .total{
+                    display: flex;
+                    width: 74.6%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #5C7362;
+                }
+
+                /* Total Cantidad */
+                .total-cantidad{
+                    display: flex;
+                    width: 10.15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #5C7362;
+                }
+
+                /* Total Precio */
+                .total-precio{
+                    display: flex;
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #5C7362;
+                }
+    }
+
+    /* @media 768px */
+    @media(max-width: 768px){
+        /* Texto - Título: Productos */
+        .texto-productos{
+            display: flex;
+            width: 100%;
+            height: 35px;
+            background-color: #212EC2;
+            margin-top: 40px;
+            border: 1px solid black;
+            align-items: center;
+        }
+
+        .texto-productos h1{
+            color: white;
+            font-size: 17.5px;
+            margin-left: 15px;
+        }
+
+        /* Tabla productos */
+        .tabla-mes{
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            flex-direction: column;
+        }
+
+            /* Columnas características de producto  */
+            .columnas-caract{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                color: white;
+                justify-content: space-between;
+            }
+
+                /* Item de columna */
+                .item-columna{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 10px;
+                }
+
+                    /* Nombre Producto */
+                    .nombre-prod{
+                        display: flex;
+                        width: 59.5%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Fecha Compra */
+                    .fecha-compra{
+                        display: flex;
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Cantidad */
+                    .cantidad-prod{
+                        display: flex;
+                        width: 10.1%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Precio Producto */
+                    .precio-prod{
+                        display: flex;
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+            /* Columnas datos de filas */
+            .filas-datos{
+                display: flex;
+                width: 100%;
+                height: 20px;
+                color: black;
+                margin-top: 3px;
+                justify-content: space-between;
+            }
+                /* Ítem fila */
+                .item-fila{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 7px;
+                }   
+
+                    /* Nombre de producto */
+                    .nombre-prod-dato{
+                        display: flex;
+                        width: 59.5%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                        
+                    }
+
+                    /* Fecha compra */
+                    .fecha-compra-dato{
+                        display: flex;
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Cantidad producto */
+                    .cantidad-prod-dato{
+                        display: flex;
+                        width: 10.1%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Precio producto */
+                    .precio-prod-dato{
+                        display: flex;
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+            /* Total */
+            .columna-total{
+                display: flex;
+                width: 100%;
+                height: 30px;
+                color: black;
+                margin-top: 3px;
+                justify-content: space-between;
+            }
+
+                /* Ítem Total */
+                .item-total{
+                    font-size: 10px;
+                    background-color: blue;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    /* Total texto */
+                    .total{
+                        display: flex;
+                        width: 74.6%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Total Cantidad */
+                    .total-cantidad{
+                        display: flex;
+                        width: 10.15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Total Precio */
+                    .total-precio{
+                        display: flex;
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+    }
+
+    /* @media 425px */
+    @media(max-width: 425px){
+        /* Botón Limpiar y Filtro: Seleccionar mes */
+        .cont-limpiar_filtro{
+            display: flex;
+            width: 100%;
+            height: 20px;
+            margin-top: 30px;
+            justify-content: space-between;
+        }
+
+            /* Botón: Limpiar */
+            .cont-bott-limpiar{
+                display: flex;
+                width: 45%;
+                height: 100%;
+            }
+
+            .bott-limpiar{
+                width: 60%;
+                border: 1px solid black;
+                border-radius: 7px;
+            }
+
+            .bott-limpiar h2{
+                font-size: 12px;
+            }
+
+            /* Filtro: Seleccionar Mes */
+            .cont-seleccionar-mes{
+                display: flex;
+                width: 50%;
+                height: 100%;
+                justify-content: end;
+            }
+
+            #seleccionar-mes{
+                width: 100%;
+                font-size: 12px;
+            }
+
+        /* Texto - Título: Productos */
+        .texto-productos{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            background-color: #212EC2;
+            margin-top: 30px;
+            border: 1px solid black;
+            align-items: center;
+        }
+
+        .texto-productos h1{
+            color: white;
+            font-size: 15px;
+            margin-left: 15px;
+        }
+
+        /* Tabla productos */
+        .tabla-mes{
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            flex-direction: column;
+        }
+
+            /* Columnas características de producto  */
+            .columnas-caract{
+                display: flex;
+                width: 100%;
+                height: 20px;
+                color: white;
+                justify-content: space-between;
+            }
+
+                /* Item de columna */
+                .item-columna{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 6px;
+                }
+
+                    /* Nombre Producto */
+                    .nombre-prod{
+                        display: flex;
+                        width: 50.5%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Fecha Compra */
+                    .fecha-compra{
+                        display: flex;
+                        width: 19.5%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Cantidad */
+                    .cantidad-prod{
+                        display: flex;
+                        width: 14%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Precio Producto */
+                    .precio-prod{
+                        display: flex;
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+            /* Columnas datos de filas */
+            .filas-datos{
+                display: flex;
+                width: 100%;
+                height: 20px;
+                color: black;
+                margin-top: 3px;
+                justify-content: space-between;
+            }
+                /* Ítem fila */
+                .item-fila{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 5px;
+                }   
+
+                    /* Nombre de producto */
+                    .nombre-prod-dato{
+                        display: flex;
+                        width: 50.5%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                        
+                    }
+
+                    /* Fecha compra */
+                    .fecha-compra-dato{
+                        display: flex;
+                        width: 19.5%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Cantidad producto */
+                    .cantidad-prod-dato{
+                        display: flex;
+                        width: 14%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Precio producto */
+                    .precio-prod-dato{
+                        display: flex;
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+            /* Total */
+            .columna-total{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                color: black;
+                margin-top: 3px;
+                justify-content: space-between;
+            }
+
+                /* Ítem Total */
+                .item-total{
+                    font-size: 6px;
+                    background-color: blue;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    /* Total texto */
+                    .total{
+                        display: flex;
+                        width: 70.2%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Total Cantidad */
+                    .total-cantidad{
+                        display: flex;
+                        width: 14%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Total Precio */
+                    .total-precio{
+                        display: flex;
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+    }

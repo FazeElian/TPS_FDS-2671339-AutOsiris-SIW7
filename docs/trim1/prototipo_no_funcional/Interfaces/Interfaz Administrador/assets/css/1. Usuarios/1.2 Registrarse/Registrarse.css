@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Century;
+}
+
+body{
+    background-color: #D9D9D9;
+}
+
+/* Contenedor Imagen Empresa */
+.imagen-empresa{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #212EC2;
+    border: 2px solid black;
+    margin-top: 30px;
+    align-items: center;
+}
+
+    .nav-empresa{
+        display: flex;
+        width: 40%;
+        height: 100%;
+        align-items: center;
+    }
+    
+    /* Logo */
+    .logo-empresa{
+        display: flex;
+        width: 80px;
+        height: 85%;
+        margin-left: 50px;
+    }
+
+    .logo-empresa img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Nombre Empresa */
+    .nombre-empresa{
+        display: flex;
+        width: auto;
+        height: 100%;
+        align-items: center;
+    }
+
+    .nombre-empresa h1{
+        color: white;
+        font-size: 27px;
+        margin-left: 40px;
+    }
+
+/* Contenido página */
+.cont-pagina{
+    display: flex;
+    width: 100%;
+    height: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Contenedor de Registro */
+    .cont-registro{
+        display: flex;
+        width: 45%;
+        height: 70%;
+        background-color: #212EC2;
+        border: 2px solid black;
+        flex-direction: column;
+    }
+
+    .cont-registro h1{
+        color: white;
+        font-size: 40px;
+        margin: 80px 60px;
+        margin-bottom: 50px;
+    }
+
+    .cont-registro li{
+        color: white;
+        display: flex;
+        margin: 0 60px 10px;
+        font-size: 17px;
+    }
+
+    .cont-registro input{
+        display: flex;
+        width: 50%;
+        height: 22.5px;
+        margin: 0 60px 40px;    
+        font-size: 15px;
+    }
+
+    .cont-registro h4{
+        color: white;
+        display: flex;
+        margin: -30px 60px;    
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    /* Botón Registrarse */
+    .bott-registrarme{
+        display: flex;
+        width: 25%;
+        height: 35px;
+        margin: 0 60px 10px;
+        background-color: #1988CF; 
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 60px;
+        cursor: pointer;
+    }
+
+    .bott-registrarme h2{
+        font-size: 18px;
+    }
+
+/* @Media */
+@media(max-width:1024px){
+    /* Logo */
+    .logo-empresa{
+        display: flex;
+        width: 80px;
+        height: 85%;
+        margin-left: 20px;
+    }
+
+    .nombre-empresa h1{
+        color: white;
+        font-size: 27px;
+        margin-left: 25px;
+    }
+
+/* Contenido página */
+.cont-pagina{
+    display: flex;
+    width: 100%;
+    height: 920px;
+}
+
+    /* Contenedor de Registro */
+    .cont-registro{
+        display: flex;
+        width: 50%;
+        height: 70%;
+        background-color: #212EC2;
+        border: 2px solid black;
+        flex-direction: column;
+    }
+
+    .cont-registro h1{
+        color: white;
+        font-size: 25px;
+        margin: 80px 60px;
+        margin-bottom: 50px;
+    }
+
+    .cont-registro li{
+        color: white;
+        display: flex;
+        margin: 0 60px 10px;
+        font-size: 12px;
+    }
+
+    .cont-registro input{
+        display: flex;
+        width: 50%;
+        height: 18px;
+        margin: 0 60px 20px;    
+        font-size: 12px;
+    }
+
+    #contraseña{
+        margin-bottom: 35px;
+    }
+
+    .cont-registro h4{
+        display: flex;
+        color: white;
+        display: flex;
+        margin: -30px 60px;    
+        font-size: 7.5px;
+        text-decoration: none;
+    }
+
+    /* Botón Registrarse */
+    .bott-registrarme{
+        display: flex;
+        width: 25%;
+        height: 35px;
+        margin: 0 60px 10px;
+        background-color: #1988CF; 
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 40px;
+        cursor: pointer;
+    }
+
+    .bott-registrarme h2{
+        font-size: 15px;
+    }
+}

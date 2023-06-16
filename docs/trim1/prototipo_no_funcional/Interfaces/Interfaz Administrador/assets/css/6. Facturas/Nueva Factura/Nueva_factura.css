@@ -1,0 +1,1282 @@
+/* Información de factura */
+.cont-info-factura{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #C0C0C0;
+    border: 1px solid black;
+    margin-top: 30px;
+    list-style: none;
+    flex-direction: column;
+}
+
+    /* Nombre factura */
+    .li-nombre-factura{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+    }
+
+    .li-nombre-factura h2{
+        display: flex;
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    #nombre-factura{
+        display: flex;
+        width: 60%;
+        height: 65%;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    /* Fecha de creación */
+    .li-fecha-creacion{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+    }
+
+    .li-fecha-creacion h2{
+        display: flex;
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    #fecha-creacion{
+        display: flex;
+        width: 60%;
+        height: 65%;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    /* Tabla factura */
+    #tabla-factura{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+        /* Columnas características de factura */
+        .columnas-caract{
+            display: flex;
+            width: 100%;
+            height: 35px;
+            color: white;
+            justify-content: space-between;
+        }
+
+            /* Columnas característica */
+            .columnas{
+                display: flex;
+                width: 100%;
+                height: 35px;
+                color: white;
+                justify-content: space-between;
+            }
+
+            /* Filas datos */
+            .fila-datos{
+                display: flex;
+                width: 100%;
+                height: 30px;
+                color: white;
+                justify-content: space-between;
+                color: black;
+                margin-top: 3px;
+            }
+
+            /* Nombre producto */
+            .nombre-prod{
+                display: flex;
+                width: 50%;
+                height: 100%;
+                background-color: #2121E3;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .nombre-prod h2{
+                font-size: 20px;
+            }
+
+            /* Cantidad */
+            .cantidad{
+                display: flex;
+                width: 12%;
+                height: 100%;
+                background-color: #2121E3;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cantidad h2{
+                font-size: 20px;
+            }
+
+            /* Precio unidad */
+            .precio-unidad{
+                display: flex;
+                width: 15.5%;
+                height: 100%;
+                background-color: #2121E3;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .precio-unidad h2{
+                font-size: 20px;
+            }
+
+            /* Precio total */
+            .precio-total{
+                display: flex;
+                width: 17%;
+                height: 100%;
+                background-color: #2121E3;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .precio-total h2{
+                font-size: 20px;
+            }
+
+            /* Botón Eliminar */
+            .bott-eliminar{
+                display: flex;
+                width: 5%;
+                height: 100%;
+                background-color: #2121E3;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bott-eliminar img{
+                display: flex;
+                width: 35%;
+                height: 80%;
+            }
+
+            /* Nombre producto */
+            .nombre-prod-dato{
+                display: flex;
+                width: 50%;
+                height: 100%;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #nombre-prod-input{
+                width: 100%;
+                height: 100%;
+                font-size: 15px;
+                background-color: #C0C0C0;
+                border: 0;
+            }
+
+            #nombre-prod-input::-webkit-input-placeholder {
+                text-align: center;
+            }
+
+            /* Cantidad producto */
+            .cantidad-dato{
+                display: flex;
+                width: 12%;
+                height: 100%;
+                background-color: #C0C0C0;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #cantidad-prod-input{
+                width: 100%;
+                height: 100%;
+                font-size: 15px;
+                background-color: #C0C0C0;
+                border: 0;
+            }
+
+            #cantidad-prod-input::-webkit-input-placeholder {
+                text-align: center;
+            }
+
+            /* Precio unidad */
+            .precio-unidad-dato{
+                display: flex;
+                width: 15.5%;
+                height: 100%;
+                background-color: #C0C0C0;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #precio-unidad-input{
+                width: 100%;
+                height: 100%;
+                font-size: 15px;
+                background-color: #C0C0C0;
+                border: 0;
+            }
+
+            #precio-unidad-input::-webkit-input-placeholder {
+                text-align: center;
+            }
+
+            /* Precio total */
+            .precio-total-dato{
+                display: flex;
+                width: 17%;
+                height: 100%;
+                background-color: #C0C0C0;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #precio-total-input{
+                width: 100%;
+                height: 100%;
+                font-size: 15px;
+                background-color: #C0C0C0;
+                border: 0;
+            }
+
+            #precio-total-input::-webkit-input-placeholder {
+                text-align: center;
+            }
+
+            /* Eliminar fila */
+            .elim-fila{
+                display: flex;
+                width: 5%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: white;
+                justify-content: center;
+                align-items: center;
+                justify-self: end;
+                cursor: pointer;
+            }
+
+            .elim-fila button{
+                background-color: white;
+                border: 0;
+            }
+
+            .elim-fila img{
+                display: flex;
+                width: 20px;
+                height: 22px;
+                cursor: pointer;
+                border: 0;
+            }
+        
+        /* Opciones de Filas */
+        .opciones-filas{
+            display: flex;
+            width: 100%;
+            height: 35px;
+            margin-top: -20px;
+        }       
+    
+            /* Añadir Fila */
+            .añadir-fila{
+                display: flex;
+                width: 200px;
+                border: 1px solid black;
+                background-color: #1988CF;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        
+                .añadir-fila h2{
+                    color: white;
+                    font-size: 18px;
+                }
+
+    /* Opciones factura */
+        .opciones-factura{
+            display: flex;
+            width: 100%;
+            height: 35px;
+            margin-top: 60px;
+            justify-content: space-between;
+        }
+
+            /* Botón: Cancelar */
+            .bott-cancelar{
+                display: flex;
+                width: 165px;
+                background-color: red;
+                border: 1px solid black;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bott-cancelar h2{
+                color: white;
+                font-size: 17px;
+            }
+
+            /* Botón: Crear factura */
+            .bott-crear-factura{
+                display: flex;
+                width: 200px;
+                background-color: #2121E3;
+                border: 1px solid black;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bott-crear-factura h2{
+                color: white;
+                font-size: 17px;
+            }
+
+/* @Media  */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        /* Información de factura */
+        .cont-info-factura{
+            display: flex;
+            width: 100%;
+            height: 100px;
+            background-color: #C0C0C0;
+            border: 1px solid black;
+            margin-top: 30px;
+            list-style: none;
+            flex-direction: column;
+        }
+
+            /* Nombre factura */
+            .li-nombre-factura{
+                display: flex;
+                width: 100%;
+                height: 50%;
+                align-items: center;
+            }
+
+            .li-nombre-factura h2{
+                display: flex;
+                font-size: 18px;
+                margin-left: 10px;
+            }
+
+            #nombre-factura{
+                display: flex;
+                width: 60%;
+                height: 50%;
+                font-size: 12px;
+                margin-left: 20px;
+            }
+
+            /* Fecha de creación */
+            .li-fecha-creacion{
+                display: flex;
+                width: 100%;
+                height: 50%;
+                align-items: center;
+            }
+
+            .li-fecha-creacion h2{
+                display: flex;
+                font-size: 18px;
+                margin-left: 10px;
+            }
+
+            #fecha-creacion{
+                display: flex;
+                width: 60%;
+                height: 50%;
+                font-size: 12px;
+                margin-left: 20px;
+            }
+
+            /* Tabla factura */
+            #tabla-factura{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                margin-top: 30px;
+                flex-direction: column;
+            }
+
+                /* Columnas características de factura */
+                .columnas-caract{
+                    display: flex;
+                    width: 100%;
+                    height: 30px;
+                    color: white;
+                    justify-content: space-between;
+                }
+
+                    /* Columnas característica */
+                    .columnas{
+                        display: flex;
+                        width: 100%;
+                        height: 35px;
+                        color: white;
+                        justify-content: space-between;
+                    }
+
+                    /* Filas datos */
+                    .fila-datos{
+                        display: flex;
+                        width: 100%;
+                        height: 30px;
+                        color: white;
+                        justify-content: space-between;
+                        color: black;
+                        margin-top: 3px;
+                    }
+
+                    /* Nombre producto */
+                    .nombre-prod{
+                        display: flex;
+                        width: 50%;
+                        height: 100%;
+                        background-color: #2121E3;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .nombre-prod h2{
+                        font-size: 18px;
+                    }
+
+                    /* Cantidad */
+                    .cantidad{
+                        display: flex;
+                        width: 12%;
+                        height: 100%;
+                        background-color: #2121E3;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .cantidad h2{
+                        font-size: 18px;
+                    }
+
+                    /* Precio unidad */
+                    .precio-unidad{
+                        display: flex;
+                        width: 15.5%;
+                        height: 100%;
+                        background-color: #2121E3;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .precio-unidad h2{
+                        font-size: 18px;
+                    }
+
+                    /* Precio total */
+                    .precio-total{
+                        display: flex;
+                        width: 17%;
+                        height: 100%;
+                        background-color: #2121E3;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .precio-total h2{
+                        font-size: 18px;
+                    }
+
+                    /* Botón Eliminar */
+                    .bott-eliminar{
+                        display: flex;
+                        width: 5%;
+                        height: 100%;
+                        background-color: #2121E3;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .bott-eliminar img{
+                        display: flex;
+                        width: 45%;
+                        height: 60%;
+                    }
+
+                    /* Nombre producto */
+                    .nombre-prod-dato{
+                        display: flex;
+                        width: 50%;
+                        height: 100%;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    #nombre-prod-input{
+                        width: 100%;
+                        height: 100%;
+                        font-size: 12px;
+                        background-color: #C0C0C0;
+                        border: 0;
+                    }
+
+                    #nombre-prod-input::-webkit-input-placeholder {
+                        text-align: center;
+                    }
+
+                    /* Cantidad producto */
+                    .cantidad-dato{
+                        display: flex;
+                        width: 12%;
+                        height: 100%;
+                        background-color: #C0C0C0;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    #cantidad-prod-input{
+                        width: 100%;
+                        height: 100%;
+                        font-size: 12px;
+                        background-color: #C0C0C0;
+                        border: 0;
+                    }
+
+                    #cantidad-prod-input::-webkit-input-placeholder {
+                        text-align: center;
+                    }
+
+                    /* Precio unidad */
+                    .precio-unidad-dato{
+                        display: flex;
+                        width: 15.5%;
+                        height: 100%;
+                        background-color: #C0C0C0;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    #precio-unidad-input{
+                        width: 100%;
+                        height: 100%;
+                        font-size: 12px;
+                        background-color: #C0C0C0;
+                        border: 0;
+                    }
+
+                    #precio-unidad-input::-webkit-input-placeholder {
+                        text-align: center;
+                    }
+
+                    /* Precio total */
+                    .precio-total-dato{
+                        display: flex;
+                        width: 17%;
+                        height: 100%;
+                        background-color: #C0C0C0;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    #precio-total-input{
+                        width: 100%;
+                        height: 100%;
+                        font-size: 12px;
+                        background-color: #C0C0C0;
+                        border: 0;
+                    }
+
+                    #precio-total-input::-webkit-input-placeholder {
+                        text-align: center;
+                    }
+
+                    /* Eliminar fila */
+                    .elim-fila{
+                        display: flex;
+                        width: 5%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: white;
+                        justify-content: center;
+                        align-items: center;
+                        justify-self: end;
+                        cursor: pointer;
+                    }
+
+                    .elim-fila button{
+                        background-color: white;
+                        border: 0;
+                    }
+
+                    .elim-fila img{
+                        display: flex;
+                        width: 18px;
+                        height: 20px;
+                        cursor: pointer;
+                        border: 0;
+                    }
+                
+                /* Opciones de Filas */
+                .opciones-filas{
+                    display: flex;
+                    width: 100%;
+                    height: 30px;
+                    margin-top: -20px;
+                }       
+            
+                    /* Añadir Fila */
+                    .añadir-fila{
+                        display: flex;
+                        width: 160px;
+                        border: 1px solid black;
+                        background-color: #1988CF;
+                        border-radius: 7px;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                
+                        .añadir-fila h2{
+                            color: white;
+                            font-size: 15px;
+                        }
+
+            /* Opciones factura */
+                .opciones-factura{
+                    display: flex;
+                    width: 100%;
+                    height: 30px;
+                    margin-top: 60px;
+                    justify-content: space-between;
+                }
+
+                    /* Botón: Cancelar */
+                    .bott-cancelar{
+                        display: flex;
+                        width: 140px;
+                        background-color: red;
+                        border: 1px solid black;
+                        border-radius: 7px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .bott-cancelar h2{
+                        color: white;
+                        font-size: 15px;
+                    }
+
+                    /* Botón: Crear factura */
+                    .bott-crear-factura{
+                        display: flex;
+                        width: 180px;
+                        background-color: #2121E3;
+                        border: 1px solid black;
+                        border-radius: 7px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .bott-crear-factura h2{
+                        color: white;
+                        font-size: 15px;
+                    }  
+    }
+
+    /* @media 768px */
+    @media(max-width: 768px){
+        /* Filas datos */
+        .fila-datos{
+            display: flex;
+            width: 100%;
+            height: 25px;
+            color: white;
+            justify-content: space-between;
+            color: black;
+            margin-top: 3px;
+        }
+
+        /* Nombre producto */
+        .nombre-prod{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            background-color: #2121E3;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nombre-prod h2{
+            font-size: 14px;
+        }
+
+        /* Cantidad */
+        .cantidad{
+            display: flex;
+            width: 12%;
+            height: 100%;
+            background-color: #2121E3;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cantidad h2{
+            font-size: 14px;
+        }
+
+        /* Precio unidad */
+        .precio-unidad{
+            display: flex;
+            width: 15.5%;
+            height: 100%;
+            background-color: #2121E3;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .precio-unidad h2{
+            font-size: 14px;
+        }
+
+        /* Precio total */
+        .precio-total{
+            display: flex;
+            width: 17%;
+            height: 100%;
+            background-color: #2121E3;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .precio-total h2{
+            font-size: 14px;
+        }
+
+        /* Botón Eliminar */
+        .bott-eliminar{
+            display: flex;
+            width: 5%;
+            height: 100%;
+            background-color: #2121E3;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bott-eliminar img{
+            display: flex;
+            width: 50%;
+            height: 50%;
+        }
+
+        /* Nombre producto */
+        .nombre-prod-dato{
+            display: flex;
+            width: 50%;
+            height: 100%;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nombre-prod-input{
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            background-color: #C0C0C0;
+            border: 0;
+        }
+
+        #nombre-prod-input::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        /* Cantidad producto */
+        .cantidad-dato{
+            display: flex;
+            width: 12%;
+            height: 100%;
+            background-color: #C0C0C0;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #cantidad-prod-input{
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            background-color: #C0C0C0;
+            border: 0;
+        }
+    
+        #cantidad-prod-input::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        /* Precio unidad */
+        .precio-unidad-dato{
+            display: flex;
+            width: 15.5%;
+            height: 100%;
+            background-color: #C0C0C0;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #precio-unidad-input{
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            background-color: #C0C0C0;
+            border: 0;
+        }
+
+        #precio-unidad-input::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        /* Precio total */
+        .precio-total-dato{
+            display: flex;
+            width: 17%;
+            height: 100%;
+            background-color: #C0C0C0;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #precio-total-input{
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            background-color: #C0C0C0;
+            border: 0;
+        }
+
+        #precio-total-input::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        /* Eliminar fila */
+        .elim-fila{
+            display: flex;
+            width: 5%;
+            height: 100%;
+            border: 1px solid black;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            justify-self: end;
+            cursor: pointer;
+        }
+
+        .elim-fila button{
+            background-color: white;
+            border: 0;
+        }
+
+        .elim-fila img{
+            display: flex;
+            width: 14px;
+            height: 17px;
+            cursor: pointer;
+            border: 0;
+        }
+    }
+
+    /* @media 435px */
+    @media(max-width: 425px){
+        /* Información de factura */
+        .cont-info-factura{
+            display: flex;
+            width: 100%;
+            height: 75px;
+            background-color: #C0C0C0;
+            border: 1px solid black;
+            margin-top: 15px;
+            list-style: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+            /* Nombre factura */
+            .li-nombre-factura{
+                display: flex;
+                width: 100%;
+                height: 50%;
+                align-items: center;
+            }
+
+            .li-nombre-factura h2{
+                display: flex;
+                font-size: 12px;
+                margin-left: 10px;
+            }
+
+            #nombre-factura{
+                display: flex;
+                width: 50%;
+                height: 35%;
+                font-size: 8px;
+                margin-left: 5px;
+            }
+
+            /* Fecha de creación */
+            .li-fecha-creacion{
+                display: flex;
+                width: 100%;
+                height: 50%;
+                align-items: center;
+            }
+
+            .li-fecha-creacion h2{
+                display: flex;
+                font-size: 12px;
+                margin-left: 10px;
+            }
+
+            #fecha-creacion{
+                display: flex;
+                width: 50%;
+                height: 35%;
+                font-size: 8px;
+                margin-left: 5px;
+            }
+
+            /* Tabla factura */
+            #tabla-factura{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                margin-top: 15px;
+                flex-direction: column;
+            }
+
+                /* Columnas características de factura */
+                .columnas-caract{
+                    display: flex;
+                    width: 100%;
+                    height: 22px;
+                    color: white;
+                    justify-content: space-between;
+                }
+
+                    /* Columnas característica */
+                    .columnas{
+                        display: flex;
+                        width: 100%;
+                        height: 22px;
+                        color: white;
+                        justify-content: space-between;
+                    }
+
+        /* Filas datos */
+        .fila-datos{
+            display: flex;
+            width: 100%;
+            height: 17px;
+            color: white;
+            justify-content: space-between;
+            color: black;
+            margin-top: 3px;
+        }
+
+        /* Nombre producto */
+        .nombre-prod{
+            display: flex;
+            width: 47%;
+            height: 100%;
+            background-color: #2121E3;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nombre-prod h2{
+            font-size: 8px;
+        }
+
+        /* Cantidad */
+        .cantidad{
+            display: flex;
+            width: 15%;
+            height: 100%;
+            background-color: #2121E3;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cantidad h2{
+            font-size: 8px;
+        }
+
+        /* Precio unidad */
+        .precio-unidad{
+            display: flex;
+            width: 15.5%;
+            height: 100%;
+            background-color: #2121E3;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .precio-unidad h2{
+            font-size: 8px;
+        }
+
+        /* Precio total */
+        .precio-total{
+            display: flex;
+            width: 17%;
+            height: 100%;
+            background-color: #2121E3;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .precio-total h2{
+            font-size: 8px;
+        }
+
+        /* Botón Eliminar */
+        .bott-eliminar{
+            display: flex;
+            width: 5%;
+            height: 100%;
+            background-color: #2121E3;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bott-eliminar img{
+            display: flex;
+            width: 65%;
+            height: 45%;
+        }
+
+        /* Nombre producto */
+        .nombre-prod-dato{
+            display: flex;
+            width: 47%;
+            height: 100%;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nombre-prod-input{
+            width: 100%;
+            height: 100%;
+            font-size: 5.5px;
+            background-color: #C0C0C0;
+            border: 0;
+        }
+
+        #nombre-prod-input::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        /* Cantidad producto */
+        .cantidad-dato{
+            display: flex;
+            width: 15%;
+            height: 100%;
+            background-color: #C0C0C0;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #cantidad-prod-input{
+            width: 100%;
+            height: 100%;
+            font-size: 5.5px;
+            background-color: #C0C0C0;
+            border: 0;
+        }
+    
+        #cantidad-prod-input::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        /* Precio unidad */
+        .precio-unidad-dato{
+            display: flex;
+            width: 15.5%;
+            height: 100%;
+            background-color: #C0C0C0;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #precio-unidad-input{
+            width: 100%;
+            height: 100%;
+            font-size: 5.5px;
+            background-color: #C0C0C0;
+            border: 0;
+        }
+
+        #precio-unidad-input::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        /* Precio total */
+        .precio-total-dato{
+            display: flex;
+            width: 17%;
+            height: 100%;
+            background-color: #C0C0C0;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #precio-total-input{
+            width: 100%;
+            height: 100%;
+            font-size: 5.5px;
+            background-color: #C0C0C0;
+            border: 0;
+        }
+
+        #precio-total-input::-webkit-input-placeholder {
+            text-align: center;
+        }
+
+        /* Eliminar fila */
+        .elim-fila{
+            display: flex;
+            width: 5%;
+            height: 100%;
+            border: 1px solid black;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            justify-self: end;
+            cursor: pointer;
+        }
+
+        .elim-fila button{
+            background-color: white;
+            border: 0;
+        }
+
+        .elim-fila img{
+            display: flex;
+            width: 7px;
+            height: 9px;
+            cursor: pointer;
+            border: 0;
+        }
+
+                /* Opciones de Filas */
+                .opciones-filas{
+                    display: flex;
+                    width: 100%;
+                    height: 30px;
+                    margin-top: -20px;
+                }       
+            
+                    /* Añadir Fila */
+                    .añadir-fila{
+                        display: flex;
+                        width: 70px;
+                        height: 20px;
+                        border: 1px solid black;
+                        background-color: #1988CF;
+                        border-radius: 7px;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                
+                        .añadir-fila h2{
+                            color: white;
+                            font-size: 8px;
+                        }
+
+            /* Opciones factura */
+                .opciones-factura{
+                    display: flex;
+                    width: 100%;
+                    height: 20px;
+                    margin-top:20px;
+                    justify-content: space-between;
+                }
+
+                    /* Botón: Cancelar */
+                    .bott-cancelar{
+                        display: flex;
+                        width: 65px;
+                        background-color: red;
+                        border: 1px solid black;
+                        border-radius: 7px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .bott-cancelar h2{
+                        color: white;
+                        font-size: 8px;
+                    }
+
+                    /* Botón: Crear factura */
+                    .bott-crear-factura{
+                        display: flex;
+                        width: 85px;
+                        background-color: #2121E3;
+                        border: 1px solid black;
+                        border-radius: 7px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .bott-crear-factura h2{
+                        color: white;
+                        font-size: 8px;
+                    }  
+    }

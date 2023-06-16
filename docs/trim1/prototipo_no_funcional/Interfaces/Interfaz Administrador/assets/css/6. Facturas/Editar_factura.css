@@ -1,0 +1,700 @@
+/* Contenedor de factura */
+.cont-factura{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+    /* Texto nombre factura */
+    .texto-factura{
+        display: flex;
+        width: 100%;
+        height: 40px;
+        background-color: #212EC2;
+        border: 1px solid black;
+        align-items: center;
+    }
+
+    .texto-factura h2{
+        color: white;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    /* Tabla factura */
+    .tabla-factura{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+        /* Columnas características  */
+        .columnas-caract{
+            width: 100%;
+            height: 35px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            /* Ítem columna */
+            .item-columna{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                color: white;
+            }
+
+                /* Nombre producto */
+                .nombre-prod{
+                    width: 54.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+                /* Cantidad producto */
+                .cantidad-prod{
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+                /* Precio unidad */
+                .precio-unidad{
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+                /* Precio Total */
+                .precio-total{
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+        /* Columnas filas */
+        .filas-datos{
+            width: 100%;
+            height: 28px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .filas-datos input{
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            text-align: center;
+            background-color: #C0C0C0;
+            border: 0;
+        }
+
+                /* Nombre producto */
+                .nombre-prod-dato{
+                    width: 54.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                }
+
+                /* Cantidad producto */
+                .cantidad-prod-dato{
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                }
+
+                /* Precio unidad */
+                .precio-unidad-dato{
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                }
+
+                /* Precio total */
+                .precio-total-dato{
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                }
+
+    /* Columnas Total */
+    .columnas-total{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3px;
+    }
+
+        /* Ítem total */
+        .item-total{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: black;
+        }
+
+            /* Texto total */
+            .texto-total{
+                width: 54.5%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #5C7362;
+            }
+
+            /* Cantidad */
+            .total-cantidad-prod{
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #5C7362;
+            }
+
+            /* Precio unidad */
+            .total-precio-unidad{
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #5C7362;
+            }
+
+            /* Precio unidad */
+            .total-precio-total{
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #5C7362;
+            }
+
+    /* Opciones factura */
+    .opciones-factura{
+        display: flex;
+        width: 100%;
+        height: 35px;
+        margin-top: 60px;
+        justify-content: space-between;
+    }
+
+        /* Botón: Cancelar */
+        .bott-cancelar{
+            display: flex;
+            width: 165px;
+            background-color: red;
+            border: 1px solid black;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bott-cancelar h2{
+            color: white;
+            font-size: 17px;
+        }
+
+        /* Botón: Guardar cambios */
+        .bott-guardar-cambios{
+            display: flex;
+            width: 200px;
+            background-color: #2121E3;
+            border: 1px solid black;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bott-guardar-cambios h2{
+            color: white;
+            font-size: 17px;
+        }
+
+/* @Media */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        /* Contenedor de factura */
+        .cont-factura{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin-top: 20px;
+            flex-direction: column;
+        }
+
+            /* Texto nombre factura */
+            .texto-factura{
+                display: flex;
+                width: 100%;
+                height: 32.5px;
+                background-color: #212EC2;
+                border: 1px solid black;
+                align-items: center;
+            }
+
+            .texto-factura h2{
+                color: white;
+                font-size: 14px;
+                margin-left: 20px;
+            }
+
+            /* Tabla factura */
+            .tabla-factura{
+                display: flex;
+                width: 100%;
+                height: auto;
+                margin-top: 25px;
+                flex-direction: column;
+            }
+
+                /* Columnas características  */
+                .columnas-caract{
+                    width: 100%;
+                    height: 35px;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                    /* Ítem columna */
+                    .item-columna{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 10px;
+                        color: white;
+                    }
+
+                        /* Nombre producto */
+                        .nombre-prod{
+                            width: 54.5%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                        /* Cantidad producto */
+                        .cantidad-prod{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                        /* Precio unidad */
+                        .precio-unidad{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                        /* Precio Total */
+                        .precio-total{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                /* Columnas filas */
+                .filas-datos{
+                    width: 100%;
+                    height: 28px;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .filas-datos input{
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                    text-align: center;
+                    background-color: #C0C0C0;
+                    border: 0;
+                }
+
+                        /* Nombre producto */
+                        .nombre-prod-dato{
+                            width: 54.5%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+                        /* Cantidad producto */
+                        .cantidad-prod-dato{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+                        /* Precio unidad */
+                        .precio-unidad-dato{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+                        /* Precio total */
+                        .precio-total-dato{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+            /* Columnas Total */
+            .columnas-total{
+                display: flex;
+                width: 100%;
+                height: 30px;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 3px;
+            }
+
+                /* Ítem total */
+                .item-total{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 10px;
+                    color: black;
+                }
+
+                    /* Texto total */
+                    .texto-total{
+                        width: 54.5%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Cantidad */
+                    .total-cantidad-prod{
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Precio unidad */
+                    .total-precio-unidad{
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Precio unidad */
+                    .total-precio-total{
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+            /* Opciones factura */
+            .opciones-factura{
+                display: flex;
+                width: 100%;
+                height: 35px;
+                margin-top: 60px;
+                justify-content: space-between;
+            }
+
+                /* Botón: Cancelar */
+                .bott-cancelar{
+                    display: flex;
+                    width: 165px;
+                    background-color: red;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bott-cancelar h2{
+                    color: white;
+                    font-size: 17px;
+                }
+
+                /* Botón: Guardar cambios */
+                .bott-guardar-cambios{
+                    display: flex;
+                    width: 200px;
+                    background-color: #2121E3;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bott-guardar-cambios h2{
+                    color: white;
+                    font-size: 17px;
+                }        
+    }
+
+    /* @media 425px */
+    @media(max-width: 425px){
+        /* Contenedor de factura */
+        .cont-factura{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin-top: 20px;
+            flex-direction: column;
+        }
+
+            /* Texto nombre factura */
+            .texto-factura{
+                display: flex;
+                width: 100%;
+                height: 32.5px;
+                background-color: #212EC2;
+                border: 1px solid black;
+                align-items: center;
+            }
+
+            .texto-factura h2{
+                color: white;
+                font-size: 10.5px;
+                margin-left: 10px;
+            }
+
+            /* Tabla factura */
+            .tabla-factura{
+                display: flex;
+                width: 100%;
+                height: auto;
+                margin-top: 5px;
+                flex-direction: column;
+            }
+
+                /* Columnas características  */
+                .columnas-caract{
+                    width: 100%;
+                    height: 20px;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                    /* Ítem columna */
+                    .item-columna{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 5px;
+                        color: white;
+                    }
+
+                        /* Nombre producto */
+                        .nombre-prod{
+                            width: 54%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                        /* Cantidad producto */
+                        .cantidad-prod{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                        /* Precio unidad */
+                        .precio-unidad{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                        /* Precio Total */
+                        .precio-total{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                            text-align: center;
+                        }
+
+                /* Columnas filas */
+                .filas-datos{
+                    width: 100%;
+                    height: 28px;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .filas-datos input{
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 8px;
+                    text-align: center;
+                    background-color: #C0C0C0;
+                    border: 0;
+                }
+
+                        /* Nombre producto */
+                        .nombre-prod-dato{
+                            width: 54%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+                        /* Cantidad producto */
+                        .cantidad-prod-dato{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+                        /* Precio unidad */
+                        .precio-unidad-dato{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+                        /* Precio total */
+                        .precio-total-dato{
+                            width: 15%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+            /* Columnas Total */
+            .columnas-total{
+                display: flex;
+                width: 100%;
+                height: 30px;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 3px;
+            }
+
+                /* Ítem total */
+                .item-total{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 6px;
+                    color: black;
+                }
+
+                    /* Texto total */
+                    .texto-total{
+                        width: 54%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Cantidad */
+                    .total-cantidad-prod{
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                        text-align: center;
+                    }
+
+                    /* Precio unidad */
+                    .total-precio-unidad{
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                        text-align: center;
+                    }
+
+                    /* Precio unidad */
+                    .total-precio-total{
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                        text-align: center;
+                    }
+
+            /* Opciones factura */
+            .opciones-factura{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                margin-top: 40px;
+                justify-content: space-between;
+            }
+
+                /* Botón: Cancelar */
+                .bott-cancelar{
+                    display: flex;
+                    width: 105px;
+                    background-color: red;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bott-cancelar h2{
+                    color: white;
+                    font-size: 10px;
+                }
+
+                /* Botón: Guardar cambios */
+                .bott-guardar-cambios{
+                    display: flex;
+                    width: 120px;
+                    background-color: #2121E3;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bott-guardar-cambios h2{
+                    color: white;
+                    font-size: 10px;
+                } 
+    }

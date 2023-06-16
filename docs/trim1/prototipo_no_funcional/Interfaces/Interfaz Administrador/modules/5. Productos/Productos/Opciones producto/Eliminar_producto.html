@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Eliminar Producto</title>
+    <link rel="shortcut icon" href="../../../assets/img/favicons/" type="image/x-icon">
+
+    <!-- Hoja/s de Estilos -->
+    <link rel="stylesheet" href="../../../../assets/css/2. Dashboard/index.css">
+    <link rel="stylesheet" href="../../../../assets/css/5. Productos/Opciones producto/Añadir_producto.css">
+    <link rel="stylesheet" href="">
+
+    <!-- Scripts -->
+    <script defer src="../../../../assets/js/2. Dashboard/index.js"></script>
+    <script defer src="../../../../assets/js/5. Productos/Eliminar_producto.js"></script>
+</head>
+
+<body>
+    <!-- Menú Superior  -->
+    <header class="menu_sup">
+        <!-- Navegación de ítems Inicio -->
+        <nav class="nav-inicio">
+            <!-- Icono de Menú responsive -->
+            <button class="icono-menu">
+                <img src="../../../../assets/img/menu-icono.png">
+            </button>
+
+            <ul class="lista_nav-inicio">
+                <li class="item_nav-inicio"><a href="../../../2. Dashboard/index.html">Inicio</a></li>
+                <li class="item_nav-inicio"><a href="../../../3. Estadisticas/Estadisticas.html">Estadísticas</a></li>
+                <li class="item_nav-inicio"><a href="../../../4. Ventas/Ventas/Ventas.html">Ventas</a></li>
+                <li class="item_nav-inicio li-facturas"><a href="../../../6. Facturas/Facturas.html">Facturas</a></li>
+                <li class="item_nav-inicio"><a href="../Productos.html">Productos</a></li>
+                <li class="item_nav-inicio li-inventarios"><a href="../../Inventarios/Inventarios.html">Inventarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navegación de ítems Usuario -->
+        <nav class="nav-usuario">
+            <ul class="lista_nav-usuario">
+                <a href="../../1. Usuarios/1.3 Mi perfil/Mi-perfil.html"><li class="item_nav-usuario">Mi perfil</li></a>
+                <li class="item_nav-usuario cerrar_sesion">Cerrar sesión</li>
+            </ul>
+
+            <button class="icono-usuario">
+                <img src="../../../../assets/img/usuario-icono.png">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenido de página -->
+    <section class="contenido-pag">
+        <!-- Titulo de ventana -->
+        <div class="titulo-ventana">
+            <h1 class="titulo">Eliminar Producto</h1>
+        </div>
+
+        <div class="buscar-producto">
+            <input type="search" name="buscar-producto" id="buscar-producto" placeholder="  Buscar producto">
+        </div>
+
+        <!-- Contenedor Eliminar producto -->
+        <div class="cont-anadir-producto">
+            <!-- Imagen Producto -->
+            <div class="cont-img-producto">
+                <img src="" id="imagenPrevisualizacion">
+                <input type="file" name="seleccionar-imagen" id="seleccionar-imagen">
+            </div>
+
+            <!-- Info producto -->
+            <div class="cont-info-producto">
+                <!-- Nombre producto -->
+                <div class="nombre-prod">
+                    <h1> Nombre producto </h1>
+                </div>
+
+                <!-- Descripción de producto -->
+                <div class="descripcion-prod">
+                    <p>Info producto, Info producto,Info producto,Info producto,Info producto,Info producto,
+                        Info producto,Info producto,Info producto,Info producto,Info producto,Info producto.
+                    </p>
+                </div>
+
+                <!-- Precio de producto -->
+                <div class="precio-prod">
+                    <h2> Precio: 12000</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones Opciones -->
+        <div class="botones-opciones">
+            <!-- Botón: Cancelar -->
+            <button class="bott-cancelar">
+                <a href="../Productos.html"><h2>Cancelar</h2></a>
+            </button>
+
+            <!-- Botón: Añadir Producto -->
+            <button class="bott-añadir-prod" onclick="ProductoEliminado()">
+                <a href="../Productos.html"><h2>Eliminar Producto</h2></a>
+            </button>
+        </div>
+    </section>
+</body>
+</html>
