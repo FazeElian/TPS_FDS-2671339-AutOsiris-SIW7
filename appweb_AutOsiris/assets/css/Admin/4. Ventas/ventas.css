@@ -1,0 +1,464 @@
+/* Botón: Registrar venta */
+.registrar_venta{
+    display: flex;
+    width: 250px;
+    height: 35px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .registrar_venta h2{
+        color: black;
+        margin-left: 25px;
+        font-size: 17px;
+    }
+
+    .registrar_venta img{
+        display: flex;
+        width: 25px;
+        height: 80%;
+        align-items: flex-end;
+        margin-right: 25px;
+    }
+
+/* Ventas */
+.cont-ventas{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+/* Tabla productos */
+.tabla-ventas{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    flex-direction: column;
+}
+
+    /* Columnas características de producto  */
+    .columnas-caract{
+        display: flex;
+        width: 100%;
+        height: 35px;
+        color: white;
+        justify-content: space-between;
+    }
+
+        /* Item de columna */
+        .item-columna{
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+        }
+
+            /* Nombre Producto */
+            .nombre-prod{
+                display: flex;
+                width: 54.5%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #212EC2;
+            }
+
+            /* Fecha Compra */
+            .fecha-compra{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #212EC2;
+            }
+
+            /* Cantidad */
+            .cantidad-prod{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #212EC2;
+            }
+
+            /* Precio Producto */
+            .precio-prod{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #212EC2;
+            }
+
+    /* Columnas datos de filas */
+    .filas-datos{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        color: black;
+        margin-top: 3px;
+        justify-content: space-between;
+    }
+        /* Ítem fila */
+        .item-fila{
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+        }   
+
+            /* Nombre de producto */
+            .nombre-prod-dato{
+                display: flex;
+                width: 54.5%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #C0C0C0;
+                
+            }
+
+            /* Fecha compra */
+            .fecha-compra-dato{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #C0C0C0;
+            }
+
+            /* Cantidad producto */
+            .cantidad-prod-dato{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #C0C0C0;
+            }
+
+            /* Precio producto */
+            .precio-prod-dato{
+                display: flex;
+                width: 15%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #C0C0C0;
+            }
+
+/* @Media */
+    /* @Media 1024px */
+    @media(max-width: 1024px){
+        /* Ventas */
+        .cont-ventas{
+            display: flex;
+            width: 100%;
+            height: 15%;
+            margin-top: 30px;
+            flex-direction: column;
+        }
+
+            /* Ventas Digitales y Físicas*/
+            .vent-digitales{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                border: 1px solid black;
+                align-items: start;
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+
+            .vent-digitales img{
+                width: 100%;
+                height: 90%;
+            }
+
+                /* Texto Contenedor */
+                .texto-digitales{
+                    display: flex;
+                    width: 100%;
+                    height: 10%;
+                    background-color: #212EC2;
+                    border: 1px solid black;
+    
+                }
+
+                .texto-digitales h2{
+                    color: white;
+                    font-size: 18px;
+                    margin: 5px 20px;
+                }
+
+    /* Tabla productos */
+    .tabla-ventas{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+        /* Columnas características de producto  */
+        .columnas-caract{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            color: white;
+            justify-content: space-between;
+        }
+
+            /* Item de columna */
+            .item-columna{
+                justify-content: center;
+                align-items: center;
+                font-size: 12.5px;
+            }
+
+                /* Nombre Producto */
+                .nombre-prod{
+                    display: flex;
+                    width: 59.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+                /* Fecha Compra */
+                .fecha-compra{
+                    display: flex;
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+                /* Cantidad */
+                .cantidad-prod{
+                    display: flex;
+                    width: 10.1%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+                /* Precio Producto */
+                .precio-prod{
+                    display: flex;
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                }
+
+        /* Columnas datos de filas */
+        .filas-datos{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            color: black;
+            margin-top: 3px;
+            justify-content: space-between;
+        }
+            /* Ítem fila */
+            .item-fila{
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+            }   
+
+                /* Nombre de producto */
+                .nombre-prod-dato{
+                    display: flex;
+                    width: 59.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                    
+                }
+
+                /* Fecha compra */
+                .fecha-compra-dato{
+                    display: flex;
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                }
+
+                /* Cantidad producto */
+                .cantidad-prod-dato{
+                    display: flex;
+                    width: 10.1%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                }
+
+                /* Precio producto */
+                .precio-prod-dato{
+                    display: flex;
+                    width: 15%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #C0C0C0;
+                }
+
+    }
+
+/* @Media 425px */
+@media(max-width:425px){
+    /* Botón: Registrar venta */
+    .registrar_venta{
+        display: flex;
+        width: 55%;
+        height: 25px;
+        background-color: white;
+        margin-top: 20px;
+        border-radius: 10px;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+        .registrar_venta h2{
+            color: black;
+            margin-left: 15px;
+            font-size: 10px;
+        }
+
+        .registrar_venta img{
+            display: flex;
+            width: 17.5px;
+            height: 80%;
+            align-items: flex-end;
+            margin-left: 5px;
+        }  
+
+    /* Ventas */
+    .cont-ventas{
+        display: flex;
+        width: 100%;
+        height: 8.5%;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+        /* Tabla productos */
+        .tabla-ventas{
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            flex-direction: column;
+        }
+
+            /* Columnas características de producto  */
+            .columnas-caract{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                color: white;
+                justify-content: space-between;
+            }
+
+                /* Item de columna */
+                .item-columna{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 8px;
+                }
+
+                    /* Nombre Producto */
+                    .nombre-prod{
+                        display: flex;
+                        width: 51.5%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Fecha Compra */
+                    .fecha-compra{
+                        display: flex;
+                        width: 17%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                        text-align: center;
+                    }
+
+                    /* Cantidad */
+                    .cantidad-prod{
+                        display: flex;
+                        width: 16.1%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                        text-align: center;
+                    }
+
+                    /* Precio Producto */
+                    .precio-prod{
+                        display: flex;
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+            /* Columnas datos de filas */
+            .filas-datos{
+                display: flex;
+                width: 100%;
+                height: 20px;
+                color: black;
+                margin-top: 3px;
+                justify-content: space-between;
+            }
+                /* Ítem fila */
+                .item-fila{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 7px;
+                }   
+
+                    /* Nombre de producto */
+                    .nombre-prod-dato{
+                        display: flex;
+                        width: 51.5%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                        
+                    }
+
+                    /* Fecha compra */
+                    .fecha-compra-dato{
+                        display: flex;
+                        width: 17%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Cantidad producto */
+                    .cantidad-prod-dato{
+                        display: flex;
+                        width: 16.1%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Precio producto */
+                    .precio-prod-dato{
+                        display: flex;
+                        width: 15%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+}
