@@ -50,6 +50,107 @@
                             <h1>Nombre Producto</h1>
                             <p>
                                 Descripción corta de producto, descripción corta de producto,
+                                Descripción corta de producto, descripción corta de producto.
+                            </p>
+
+                            <h2>Precio Producto: $$$</h2>
+                            <h3>Código producto: #001 </h3>
+                        </div>
+                    </form>
+
+                    <!-- Acciones Producto -->
+                    <div class="acciones-prod">
+                        <!-- Editar producto -->
+                        <button class="editar-prod">
+                            <a href="?c=EditarProducto"><h2>Editar</h2>
+                            <img src="assets/img/editar-icono.png"></a>
+                        </button>
+                        <!-- Eliminar producto -->
+                        <button class="eliminar-prod">
+                        <h2>Eliminar</h2>
+                            <img src="assets/img/eliminar-icono.png">
+                        </button>
+                    </div>
+                </div>
+                <!-- Contenedor de producto -->
+                <div class="cont-producto">
+                    <!-- Formulario de producto -->
+                    <form action="?c=AñadirProducto" method="post" class="form-producto">
+                        <div class="img-producto">
+                            <img src="">
+                        </div>
+
+                        <div class="info-producto">
+                            <h1>Nombre Producto</h1>
+                            <p>
+                                Descripción corta de producto, descripción corta de producto,
+                                Descripción corta de producto, descripción corta de producto.
+                            </p>
+
+                            <h2>Precio Producto: $$$</h2>
+                            <h3>Código producto: #001 </h3>
+                        </div>
+                    </form>
+
+                    <!-- Acciones Producto -->
+                    <div class="acciones-prod">
+                        <!-- Editar producto -->
+                        <button class="editar-prod">
+                            <a href="?c=EditarProducto"><h2>Editar</h2>
+                            <img src="assets/img/editar-icono.png"></a>
+                        </button>
+                        <!-- Eliminar producto -->
+                        <button class="eliminar-prod">
+                        <h2>Eliminar</h2>
+                            <img src="assets/img/eliminar-icono.png">
+                        </button>
+                    </div>
+                </div>
+                <!-- Contenedor de producto -->
+                <div class="cont-producto">
+                    <!-- Formulario de producto -->
+                    <form action="?c=AñadirProducto" method="post" class="form-producto">
+                        <div class="img-producto">
+                            <img src="">
+                        </div>
+
+                        <div class="info-producto">
+                            <h1>Nombre Producto</h1>
+                            <p>
+                                Descripción corta de producto, descripción corta de producto,
+                                Descripción corta de producto, descripción corta de producto.
+                            </p>
+
+                            <h2>Precio Producto: $$$</h2>
+                            <h3>Código producto: #001 </h3>
+                        </div>
+                    </form>
+
+                    <!-- Acciones Producto -->
+                    <div class="acciones-prod">
+                        <!-- Editar producto -->
+                        <button class="editar-prod">
+                            <a href="?c=EditarProducto"><h2>Editar</h2>
+                            <img src="assets/img/editar-icono.png"></a>
+                        </button>
+                        <!-- Eliminar producto -->
+                        <button class="eliminar-prod">
+                        <h2>Eliminar</h2>
+                            <img src="assets/img/eliminar-icono.png">
+                        </button>
+                    </div>
+                </div>
+                <!-- Contenedor de producto -->
+                <div class="cont-producto">
+                    <!-- Formulario de producto -->
+                    <form action="?c=AñadirProducto" method="post" class="form-producto">
+                        <div class="img-producto">
+                            <img src="">
+                        </div>
+
+                        <div class="info-producto">
+                            <h1>Nombre Producto</h1>
+                            <p>
                                 Descripción corta de producto, descripción corta de producto,
                                 Descripción corta de producto, descripción corta de producto.
                             </p>
@@ -83,5 +184,4 @@
                 </div>
             </div>
         </section>
-
     </section>

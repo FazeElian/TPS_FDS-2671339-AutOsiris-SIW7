@@ -13,9 +13,6 @@
 </head>
 <body>
     
-</body>
-</html>
-    
     <!-- Contenido de página -->
     <section class="contenido-pag">
         <!-- Titulo de ventana -->
@@ -99,7 +96,7 @@
                 <div class="opciones-inventario">
                     <!-- Botón: Cancelar -->
                     <button class="bott-cancelar">
-                        <a href="?c=Inventarios"><h2>Cancelar</h2></a>
+                        <a href="?c=Dashboard"><h2>Cancelar</h2></a>
                     </button>
 
                     <button class="bott-guardar-cambios" onclick="GuardarCambios()">

@@ -32,21 +32,17 @@ function agregarFilaFactura() {
   var botonEliminar = document.createElement("button");
   botonEliminar.innerHTML = "<td class='elim-fila'><img src='assets/img/icono-eliminar-rojo.png'></td>";
   botonEliminar.onclick = function() {
-      eliminarFila(this);
+      eliminarFilaFactura(this);
   };
   
   accion.appendChild(botonEliminar);
 }
 
-function eliminarFila(boton) {
-var filasDatos = boton.parentNode.parentNode;
-filasDatos.parentNode.removeChild(filasDatos);
-}
 
 // Eliminar Fila
 function eliminarFilaFactura(boton) {
-var filasDatos = boton.parentNode.parentNode;
-filasDatos.parentNode.removeChild(filasDatos);
+  var filasDatos = boton.parentNode.parentNode;
+  filasDatos.parentNode.removeChild(filasDatos);
 }
 
 // Cambios guardados

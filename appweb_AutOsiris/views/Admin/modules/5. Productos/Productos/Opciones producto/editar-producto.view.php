@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos | Editar Producto</title>
+    <title>Productos | Añadir Producto</title>
 
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="assets/css/Admin/5. Productos/Productos/Opciones producto/añadir-producto.css">
@@ -17,15 +16,11 @@
     <section class="contenido-pag">
         <!-- Titulo de ventana -->
         <div class="titulo-ventana">
-            <h1 class="titulo">Editar Producto</h1>
-        </div>
-
-        <div class="buscar-producto">
-            <input type="search" name="buscar-producto" id="buscar-producto" placeholder="  Buscar producto">
+            <h1 class="titulo">Añadir Producto</h1>
         </div>
 
         <!-- Contenedor Añadir producto -->
-        <div class="cont-anadir-producto">
+        <form action="?c=AñadirProducto" method="post" class="cont-anadir-producto">
             <!-- Imagen Producto -->
             <div class="cont-img-producto">
                 <img src="" id="imagenPrevisualizacion">
@@ -36,31 +31,33 @@
             <div class="cont-info-producto">
                 <!-- Nombre producto -->
                 <div class="nombre-prod">
-                    <input type="text" name="nombre-prod" id="nombre-prod" value="Nombre producto">
+                    <input type="text" name="nombreProducto" id="nombre-prod" value="  Cuaderno cuadriculado argollado">
+                </div>
+
+                <div class="cod-prod">
+                    <input type="text" name="codigoProducto" id="cod-prod" value="  Código Producto: CUC01">
                 </div>
 
                 <!-- Descripción de producto -->
                 <div class="descripcion-prod">
-                    <textarea type="text" name="descripcion-prod" id="descripcion-prod" value=""></textarea>
+                    <input type="text" name="descripcionProducto" id="descripcion-prod" value="  Cuaderno cuadriculado argollado 80 hojas marca Norma">
                 </div>
 
                 <!-- Precio de producto -->
                 <div class="precio-prod">
-                    <input type="text" name="precio-prod" id="precio-prod" value="Precio: 12.000 $">
+                    <input type="text" name="precioProducto" id="precio-prod" value="  Precio: 12 000 $">
                 </div>
             </div>
-        </div>
+        </form>
 
         <!-- Botones Opciones -->
         <div class="botones-opciones">
             <!-- Botón: Cancelar -->
             <button class="bott-cancelar">
-                <a href="../Productos.html"><h2>Cancelar</h2></a>
+                <a href="?c=Productos"><h2>Cancelar</h2></a>
             </button>
 
             <!-- Botón: Añadir Producto -->
-            <button class="bott-añadir-prod" onclick="CambiosGuardados()">
-                <a href="../Productos.html"><h2>Guardar Cambios</h2></a>
-            </button>
+            <button type="submit" name="btn-añadir" class="bott-añadir-prod">Actualizar producto</button>
         </div>
     </section>

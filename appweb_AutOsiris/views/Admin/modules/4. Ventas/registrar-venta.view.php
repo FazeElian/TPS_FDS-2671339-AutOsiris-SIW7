@@ -7,10 +7,10 @@
     <title>Ventas | Registrar Venta</title>
 
     <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="assets/css/Admin/4. Ventas/registrar-venta.css">
+    <link rel="stylesheet" href="assets/css/Admin/6. Facturas/Nueva factura/nueva-factura.css">
 
     <!-- Scripts -->
-    <script defer src="assets/js/Admin/4. Ventas/registrar_venta.js"></script>
+    <script defer src="assets/js/Admin/6. Facturas/nueva_factura.js"></script>
 </head>
 <body>
     <!-- Contenido de página -->
@@ -20,49 +20,45 @@
             <h1>Registrar Venta</h1>
         </div>
 
-        <!-- Contenedor Registro -->
-        <form action="?c=RegistrarVenta" method="post" class="cont-registro">
-            <!-- Info Registro -->
-            <div class="info-registro">
-                <div class="cont-nombre-prod">
-                    <li class="nombre-prod"> Nombre producto </li>
-                    <input type="text" name="nombreProducto" id="nombre-prod">
-                </div>
+        <!-- Contenedor de Factura -->
+        <div class="cont-factura">
+            <!-- Tabla de factura -->
+            <table id="tabla-factura">
+                <tr class="columnas">
+                  <td class="nombre-prod"><h2>Nombre producto</h2></td>
+                  <td class="cantidad"><h2>Cantidad</h2></td>
+                  <td class="precio-unidad"><h2>Precio /u</h2></td>
+                  <td class="precio-total"><h2>Precio Total</h2></td>
+                  <td class="bott-eliminar"><img src="assets/img/icono-eliminar-rojo.png"></td>
+                </tr>
+                <tr class="fila-datos">
+                    <!-- <td class="nombre-prod-dato"><input type="text" name="nombre-prod-input" id="nombre-prod-input" placeholder="Escribe aquí nombre de producto"></td> -->
+                    <!-- <td class="cantidad-dato"><input type="number" name="cantidad-prod-input" id="cantidad-prod-input" placeholder="#"></td> -->
+                    <!-- <td class="precio-unidad-dato"><input type="text" name="precio-unidad-input" id="precio-unidad-input" placeholder="$"></td> -->
+                    <!-- <td class="precio-total-dato"><input type="text" name="precio-total-input" id="precio-total-input" placeholder="$$$"></td> -->
+                    <!-- <td class="elim-fila"><img src="assets/img/icono-eliminar-rojo.png"></td> -->
+                </tr>
+              </table>
 
-                <div class="cont-fecha-compra">
-                    <li class="fecha-compra"> Fecha compra </li>
-                    <input type="date" name="fechaCompra" id="fecha-compra">
-                </div>
-
-                <div class="cont-cantidad">
-                    <li class="cantidad"> Cantidad </li>
-                    <input type="number" name="cantidadProducto" id="cantidad">
-                </div>
-
-                <div class="cont-precio-unidad">
-                    <li class="precio-unidad"> Precio /u</li>
-                    <input type="text" name="precioUnidadProducto" id="precio-unidad">
-                </div>
-
-                <div class="cont-precio-total">
-                    <li class="precio-total"> Precio Total</li>
-                    <input type="text" name="precioTotalProducto" id="precio-total">
-                </div>
-            </div>
-        </form>
-
-        <!-- Botones opciones -->
-        <div class="botones-opciones">
-            <!-- Botón: Cancelar -->
-            <div class="bott-cancelar">
-                <button class="cancelar">
-                    <a href="?c=Ventas"><h2>Cancelar</h2></a>
+            <!-- Opciones de Filas -->
+            <div class="opciones-filas">
+                <!-- Añadir Fila -->
+                <button class="añadir-fila" id="añadir-fila" onclick="agregarFilaFactura()">
+                    <h2>Añadir Fila</h2>
                 </button>
             </div>
 
-            <!-- Botón: Registrar Venta -->
-            <div class="bott-registrar-venta">
-                <button type="submit" name="btn-registrar" class="registrar-venta">Registrar</button>
-            </div>             
+            <!-- Opciones factura -->
+            <div class="opciones-factura">
+                <!-- Botón: Cancelar -->
+                <button class="bott-convertir">
+                    <a href="?c=NuevaFactura">Convertir Venta a Factura</a>
+                    <img src="assets/img/nueva_factura-icono.png">
+                </button>
+
+                <button class="bott-crear-factura" name="btn-nueva_factura">
+                    Registrar venta
+                </button>
+            </div>
         </div>
     </section>

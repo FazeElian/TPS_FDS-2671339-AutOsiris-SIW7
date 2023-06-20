@@ -7,7 +7,7 @@
     <title>Facturas | Nueva Factura</title>
 
     <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="assets/css/Admin/6. Facturas/Nueva Factura/nueva-factura.css">
+    <link rel="stylesheet" href="assets/css/Admin/6. Facturas/Nueva factura/nueva-factura.css">
 
     <!-- Scripts -->
     <script defer src="assets/js/Admin/6. Facturas/nueva_factura.js"></script>

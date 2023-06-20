@@ -52,7 +52,7 @@
                 <!-- Fila 1 - Productos -->
                 <div class="cont-productos1">
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -68,7 +68,7 @@
                         </div>
                     </div>           
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -84,7 +84,7 @@
                         </div>
                     </div>           
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -104,7 +104,7 @@
                 <!-- Fila 2 - Productos -->
                 <div class="cont-productos2">
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -120,7 +120,7 @@
                         </div>
                     </div>           
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -136,7 +136,7 @@
                         </div>
                     </div>           
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -156,7 +156,7 @@
                 <!-- Fila 3 Responsive - Productos -->
                 <div class="cont-productos3">
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -172,7 +172,7 @@
                         </div>
                     </div>           
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -188,7 +188,7 @@
                         </div>
                     </div>           
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -204,7 +204,7 @@
                         </div>
                     </div>           
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -220,7 +220,7 @@
                         </div>
                     </div>           
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -236,7 +236,7 @@
                         </div>
                     </div>           
                     <div class="contenedor_de_producto">
-                        <img src="../../assets/img/cuadenroi.webp">
+                        <img src="assets/img/cuaderno.webp">
                         
                         <div class="info-prod">
                             <div class="nombre-prod">

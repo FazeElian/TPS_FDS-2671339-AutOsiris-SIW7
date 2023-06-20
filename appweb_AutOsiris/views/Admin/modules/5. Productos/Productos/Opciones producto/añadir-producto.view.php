@@ -58,6 +58,6 @@
             </button>
 
             <!-- Botón: Añadir Producto -->
-            <button type="submit" name="btn-añadir">Añadir Producto</button>
+            <button type="submit" name="btn-añadir" class="bott-añadir-prod">Añadir Producto</button>
         </div>
     </section>
