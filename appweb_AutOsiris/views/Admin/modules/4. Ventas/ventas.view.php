@@ -16,15 +16,17 @@
             <h1>Ventas</h1>
         </div>
 
-        <!-- Botón: Registrar venta -->
-        <a href="?c=RegistrarVenta">
-        <button class="registrar_venta">
-            <h2>Registrar venta</h2>
+        <!-- Opciones de Ventas -->
+        <div class="opciones-venta">
+            <button class="registrar_venta">
+                <a href="?c=RegistrarVenta"><h2>Registrar venta</h2>
+                <img src="assets/img/anadir-icono.png"></a>
+            </button>
 
-            <!-- Icono añadir -->
-            <img src="assets/img/anadir-icono.png">
-        </button>
-        </a>
+            <div class="barra_busqueda">
+                <input type="search" name="barraBusquedaVentas" id="barra_busqueda" placeholder="  Busca aquí una venta">
+            </div>
+        </div>
 
         <!-- Ventas -->
         <div class="cont-ventas">

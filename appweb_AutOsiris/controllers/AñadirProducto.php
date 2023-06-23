@@ -13,18 +13,23 @@
     }
 
     #CU  - Añadir Producto
-    if (isset($_POST["btn-añadir"])){
+    if(isset($_POST["btn-añadir-producto"])){
+        $imagenProducto = $_POST["seleccionar-imagen"];
         $nombreProducto = $_POST["nombreProducto"];
+        $codigoProducto = $_POST["codigoProducto"];
+        $categoriaProducto = $_POST["selecccionarCategoriaProducto"];
+        $descripcionProducto = $_POST["descripcionProducto"];
+        $precioProducto = $_POST["precioProducto"];
 
-        $consultaSql = "INSERT INTO productos(codigoProducto, nombreProducto, descripcionProducto, imagenProducto, precioProducto, CATEGORIAS_idCategoria) 
-        VALUES ('[value-1]','[value-2]','[value-3]','[value-4]','[value-5]')";
+        $consultaSql = "INSERT INTO PRODUCTOS(codigoProducto, precioProducto, nombreProducto, descripcionProducto, imagenProducto, CATEGORIAS_idCategoria) 
+        VALUES ('$codigoProducto', '$precioProducto', '$nombreProducto', '$descripcionProducto', '$imagenProducto', '1')";
+
         $resultado = mysqli_query($conexion, $consultaSql);
 
-        if(!$resultado) {
-            echo "Registro fallido";
+        if(!$resultado){
+            die("Consulta fallida");
         }
 
-        header("Location: ?c=Productos");
-        echo "<script>alert('El producto ha sido registrado');</script>";
+        echo "<script>alert('El producto ha sido añadido');</script>";
     }
 ?>

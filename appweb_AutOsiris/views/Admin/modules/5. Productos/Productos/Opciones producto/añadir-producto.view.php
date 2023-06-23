@@ -1,3 +1,8 @@
+<?php
+    // Archivo conexión bbdd
+    include "models/DataBase.php";  
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +41,18 @@
 
                 <div class="cod-prod">
                     <input type="text" name="codigoProducto" id="cod-prod" placeholder="  Código Producto:">
+
+                    <!-- Seleccionar categoría de producto -->
+                    <select name="selecccionarCategoriaProducto" id="select-categoria-prod">
+                        <option value="Categoría">Categoría</option>
+                        <?php 
+                            $consulta = "SELECT * FROM CATEGORIAS";
+                            $resultado = mysqli_query($conexion, $consulta);
+
+                            while($categoria = mysqli_fetch_array($resultado)) { ?>
+                                <option value="Categoria"><?php echo $categoria["nombreCategoria"]; ?></option>
+                        <?php } ?>
+                    </select>
                 </div>
 
                 <!-- Descripción de producto -->
@@ -48,16 +65,16 @@
                     <input type="text" name="precioProducto" id="precio-prod" placeholder="  Precio:                                                                                                                                                                                                                                         $$$">
                 </div>
             </div>
+            
+            <!-- Botones Opciones -->
+            <div class="botones-opciones">
+                <!-- Botón: Cancelar -->
+                <button class="bott-cancelar">
+                    <a href="?c=Productos"><h2>Cancelar</h2></a>
+                </button>
+
+                <!-- Botón: Añadir Producto -->
+                <button type="submit" name="btn-añadir-producto" class="bott-añadir-prod">Añadir Producto</button>
+            </div>
         </form>
-
-        <!-- Botones Opciones -->
-        <div class="botones-opciones">
-            <!-- Botón: Cancelar -->
-            <button class="bott-cancelar">
-                <a href="?c=Productos"><h2>Cancelar</h2></a>
-            </button>
-
-            <!-- Botón: Añadir Producto -->
-            <button type="submit" name="btn-añadir" class="bott-añadir-prod">Añadir Producto</button>
-        </div>
     </section>

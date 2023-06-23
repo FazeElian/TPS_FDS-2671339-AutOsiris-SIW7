@@ -35,6 +35,7 @@
         <nav class="nav-usuario">
             <ul class="lista_nav-usuario">
                 <a href="?c=MiPerfil"><li class="item_nav-usuario">Mi perfil</li></a>
+                <a href="?c=Roles"><li class="item_nav-usuario">Roles</li></a>
                 <a href="?c=CerrarSesion"><li class="item_nav-usuario cerrar_sesion">Cerrar sesión</li></a>
             </ul>
             <button class="icono-usuario">

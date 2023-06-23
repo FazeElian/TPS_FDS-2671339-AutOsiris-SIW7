@@ -1,29 +1,59 @@
-/* Botón: Registrar venta */
-.registrar_venta{
+/* Opciones venta */
+.opciones-venta{
     display: flex;
-    width: 250px;
-    height: 35px;
-    background-color: white;
-    margin-top: 20px;
-    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
 }
+
+    .registrar_venta{
+        display: flex;
+        width: 20%;
+        height: 100%;
+        background-color: #D9D9D9;
+        border: 1px solid black;
+        border-radius: 7px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .registrar_venta a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
 
     .registrar_venta h2{
         color: black;
-        margin-left: 25px;
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .registrar_venta img{
         display: flex;
-        width: 25px;
-        height: 80%;
+        width: 35px;
+        height: 70%;
         align-items: flex-end;
-        margin-right: 25px;
+        margin-left: 15px;
     }
+
+    /* Barra búsqueda */
+    .barra_busqueda{
+        display: flex;
+        width: 55%;
+        height: 60%;
+        justify-content: end;
+    }
+
+    #barra_busqueda{
+        border-radius: 5px;
+        width: 50%;
+        font-size: 14px;
+        border: 1px solid black;
+    }   
 
 /* Ventas */
 .cont-ventas{
@@ -151,46 +181,62 @@
 /* @Media */
     /* @Media 1024px */
     @media(max-width: 1024px){
-        /* Ventas */
-        .cont-ventas{
+    /* Opciones venta */
+    .opciones-venta{
+        display: flex;
+        width: 100%;
+        height: 40px;
+        margin-top: 25px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .registrar_venta{
             display: flex;
-            width: 100%;
-            height: 15%;
-            margin-top: 30px;
-            flex-direction: column;
+            width: 30%;
+            height: 100%;
+            background-color: #D9D9D9;
+            border: 1px solid black;
+            border-radius: 7px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
         }
 
-            /* Ventas Digitales y Físicas*/
-            .vent-digitales{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                border: 1px solid black;
-                align-items: start;
-                flex-direction: column;
-                margin-bottom: 30px;
-            }
+        .registrar_venta a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
 
-            .vent-digitales img{
-                width: 100%;
-                height: 90%;
-            }
+        .registrar_venta h2{
+            color: black;
+            font-size: 17px;
+        }
 
-                /* Texto Contenedor */
-                .texto-digitales{
-                    display: flex;
-                    width: 100%;
-                    height: 10%;
-                    background-color: #212EC2;
-                    border: 1px solid black;
-    
-                }
+        .registrar_venta img{
+            display: flex;
+            width: 25px;
+            height: 65%;
+            align-items: flex-end;
+            margin-left: 15px;
+        }
 
-                .texto-digitales h2{
-                    color: white;
-                    font-size: 18px;
-                    margin: 5px 20px;
-                }
+        /* Barra búsqueda */
+        .barra_busqueda{
+            display: flex;
+            width: 55%;
+            height: 60%;
+            justify-content: end;
+        }
+
+        #barra_busqueda{
+            border-radius: 5px;
+            width: 50%;
+            font-size: 12px;
+            border: 1px solid black;
+        }   
 
     /* Tabla productos */
     .tabla-ventas{
@@ -310,32 +356,62 @@
 
 /* @Media 425px */
 @media(max-width:425px){
-    /* Botón: Registrar venta */
-    .registrar_venta{
+    /* Opciones venta */
+    .opciones-venta{
         display: flex;
-        width: 55%;
-        height: 25px;
-        background-color: white;
-        margin-top: 20px;
-        border-radius: 10px;
+        width: 100%;
+        height: 30px;
+        margin-top: 25px;
         justify-content: space-between;
         align-items: center;
-        cursor: pointer;
     }
+
+        .registrar_venta{
+            display: flex;
+            width: 45%;
+            height: 100%;
+            background-color: #D9D9D9;
+            border: 1px solid black;
+            border-radius: 7px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .registrar_venta a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
 
         .registrar_venta h2{
             color: black;
-            margin-left: 15px;
-            font-size: 10px;
+            font-size: 12px;
         }
 
         .registrar_venta img{
             display: flex;
-            width: 17.5px;
-            height: 80%;
+            width: 20px;
+            height: 65%;
             align-items: flex-end;
-            margin-left: 5px;
-        }  
+            margin-left: 7px;
+        }
+
+        /* Barra búsqueda */
+        .barra_busqueda{
+            display: flex;
+            width: 65%;
+            height: 60%;
+            justify-content: end;
+        }
+
+        #barra_busqueda{
+            border-radius: 5px;
+            width: 50%;
+            font-size: 9px;
+            border: 1px solid black;
+        }   
 
     /* Ventas */
     .cont-ventas{
@@ -462,3 +538,38 @@
                         background-color: #C0C0C0;
                     }
 }
+
+    /* @media 320px */
+    @media(max-width: 320px){
+        .registrar_venta{
+            display: flex;
+            width: 47%;
+            height: 100%;
+            background-color: #D9D9D9;
+            border: 1px solid black;
+            border-radius: 7px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .registrar_venta a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .registrar_venta h2{
+            color: black;
+            font-size: 9px;
+        }
+
+        .registrar_venta img{
+            display: flex;
+            width: 17px;
+            height: 65%;
+            align-items: flex-end;
+            margin-left: 5px;
+        }
+    }

@@ -10,16 +10,17 @@
 
     <!-- Scripts -->
     <script defer src="assets/js/Admin/5. Productos/Productos/añadir_producto.js"></script>
+    <script defer src="assets/js/Admin/5. Productos/Productos/editar_producto.js"></script>
 </head>
 <body>
     <!-- Contenido de página -->
     <section class="contenido-pag">
         <!-- Titulo de ventana -->
         <div class="titulo-ventana">
-            <h1 class="titulo">Añadir Producto</h1>
+            <h1 class="titulo">Editar Producto</h1>
         </div>
 
-        <!-- Contenedor Añadir producto -->
+        <!-- Contenedor Editar producto -->
         <form action="?c=AñadirProducto" method="post" class="cont-anadir-producto">
             <!-- Imagen Producto -->
             <div class="cont-img-producto">
@@ -36,6 +37,15 @@
 
                 <div class="cod-prod">
                     <input type="text" name="codigoProducto" id="cod-prod" value="  Código Producto: CUC01">
+
+                    <!-- Seleccionar categoría de producto -->
+                    <select name="selecccionarCategoriaProducto" id="select-categoria-prod">
+                        <!-- <option value="Categoría">Categoría</option> -->
+                        <option value="Papel">Papel</option>
+                        <option value="Cartón">Cartón</option>
+                        <option value="Plástico">Plástico</option>
+                        <option value="Electrónicos">Electrónicos</option>
+                    </select>
                 </div>
 
                 <!-- Descripción de producto -->
@@ -58,6 +68,6 @@
             </button>
 
             <!-- Botón: Añadir Producto -->
-            <button type="submit" name="btn-añadir" class="bott-añadir-prod">Actualizar producto</button>
+            <button type="submit" name="btn-añadir" class="bott-añadir-prod" onclick="ProductoActualizado()"><a href="?c=Productos">Actualizar producto</a></button>
         </div>
     </section>

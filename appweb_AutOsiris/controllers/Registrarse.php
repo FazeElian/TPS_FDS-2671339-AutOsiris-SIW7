@@ -20,7 +20,8 @@
         $nombreUsuario = $_POST["nombreUsuario"];
         $contraseña = $_POST["contraseña"];
 
-        $consultaSql = "INSERT INTO USUARIOS(nombrePersona, apellidoPersona, correoElectronico, nombreUsuario, contraseña) VALUES ('$nombrePersona','$apellidoPersona','$correoElectronico','$nombreUsuario','$contraseña')";
+        $consultaSql = "INSERT INTO USUARIO(nombre, apellido, correo, telefono, contraseña) 
+        VALUES ('$nombrePersona','$apellidoPersona','$correoElectronico','$nombreUsuario','$contraseña')";
 
         $resultado = mysqli_query($conexion, $consultaSql);
 

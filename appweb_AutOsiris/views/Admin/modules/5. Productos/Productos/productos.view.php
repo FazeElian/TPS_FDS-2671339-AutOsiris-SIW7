@@ -43,7 +43,7 @@
                     <!-- Formulario de producto -->
                     <form action="?c=AñadirProducto" method="post" class="form-producto">
                         <div class="img-producto">
-                            <img src="">
+                            <img src="assets/img/cuaderno.webp">
                         </div>
 
                         <div class="info-producto">
@@ -60,115 +60,19 @@
 
                     <!-- Acciones Producto -->
                     <div class="acciones-prod">
+                        <!-- Categoría de producto -->
+                        <div class="categoria-prod">
+                            <h2>Categoría Producto: Papel</h2>
+                        </div>
+
                         <!-- Editar producto -->
                         <button class="editar-prod">
                             <a href="?c=EditarProducto"><h2>Editar</h2>
                             <img src="assets/img/editar-icono.png"></a>
                         </button>
+
                         <!-- Eliminar producto -->
-                        <button class="eliminar-prod">
-                        <h2>Eliminar</h2>
-                            <img src="assets/img/eliminar-icono.png">
-                        </button>
-                    </div>
-                </div>
-                <!-- Contenedor de producto -->
-                <div class="cont-producto">
-                    <!-- Formulario de producto -->
-                    <form action="?c=AñadirProducto" method="post" class="form-producto">
-                        <div class="img-producto">
-                            <img src="">
-                        </div>
-
-                        <div class="info-producto">
-                            <h1>Nombre Producto</h1>
-                            <p>
-                                Descripción corta de producto, descripción corta de producto,
-                                Descripción corta de producto, descripción corta de producto.
-                            </p>
-
-                            <h2>Precio Producto: $$$</h2>
-                            <h3>Código producto: #001 </h3>
-                        </div>
-                    </form>
-
-                    <!-- Acciones Producto -->
-                    <div class="acciones-prod">
-                        <!-- Editar producto -->
-                        <button class="editar-prod">
-                            <a href="?c=EditarProducto"><h2>Editar</h2>
-                            <img src="assets/img/editar-icono.png"></a>
-                        </button>
-                        <!-- Eliminar producto -->
-                        <button class="eliminar-prod">
-                        <h2>Eliminar</h2>
-                            <img src="assets/img/eliminar-icono.png">
-                        </button>
-                    </div>
-                </div>
-                <!-- Contenedor de producto -->
-                <div class="cont-producto">
-                    <!-- Formulario de producto -->
-                    <form action="?c=AñadirProducto" method="post" class="form-producto">
-                        <div class="img-producto">
-                            <img src="">
-                        </div>
-
-                        <div class="info-producto">
-                            <h1>Nombre Producto</h1>
-                            <p>
-                                Descripción corta de producto, descripción corta de producto,
-                                Descripción corta de producto, descripción corta de producto.
-                            </p>
-
-                            <h2>Precio Producto: $$$</h2>
-                            <h3>Código producto: #001 </h3>
-                        </div>
-                    </form>
-
-                    <!-- Acciones Producto -->
-                    <div class="acciones-prod">
-                        <!-- Editar producto -->
-                        <button class="editar-prod">
-                            <a href="?c=EditarProducto"><h2>Editar</h2>
-                            <img src="assets/img/editar-icono.png"></a>
-                        </button>
-                        <!-- Eliminar producto -->
-                        <button class="eliminar-prod">
-                        <h2>Eliminar</h2>
-                            <img src="assets/img/eliminar-icono.png">
-                        </button>
-                    </div>
-                </div>
-                <!-- Contenedor de producto -->
-                <div class="cont-producto">
-                    <!-- Formulario de producto -->
-                    <form action="?c=AñadirProducto" method="post" class="form-producto">
-                        <div class="img-producto">
-                            <img src="">
-                        </div>
-
-                        <div class="info-producto">
-                            <h1>Nombre Producto</h1>
-                            <p>
-                                Descripción corta de producto, descripción corta de producto,
-                                Descripción corta de producto, descripción corta de producto.
-                            </p>
-
-                            <h2>Precio Producto: $$$</h2>
-                            <h3>Código producto: #001 </h3>
-                        </div>
-                    </form>
-
-                    <!-- Acciones Producto -->
-                    <div class="acciones-prod">
-                        <!-- Editar producto -->
-                        <button class="editar-prod">
-                            <a href="?c=EditarProducto"><h2>Editar</h2>
-                            <img src="assets/img/editar-icono.png"></a>
-                        </button>
-                        <!-- Eliminar producto -->
-                        <button class="eliminar-prod">
+                        <button class="eliminar-prod" onclick="ProductoEliminado()">
                         <h2>Eliminar</h2>
                             <img src="assets/img/eliminar-icono.png">
                         </button>
@@ -178,9 +82,16 @@
 
             <!-- Contenedor de opciones de producto -->
             <div class="opciones-producto">
+                <!-- Añadir producto -->
                 <div class="añadir-prod">
                     <a href="?c=AñadirProducto"><img src="assets/img/anadir-icono.png"></a>
-                    <a href="?c=AñadirProducto"><h1>Añadir producto</h1></a>
+                    <a href="?c=AñadirProducto"><h1>Añadir </h1><h1>producto</h1></a>
+                </div>
+
+                <!-- Categorías producto -->
+                <div class="añadir-prod">
+                    <a href="?c=CategoriasProductos"><img src="assets/img/categorias-icono.png"></a>
+                    <a href="?c=CategoriasProductos"><h1>Categorías </h1><h1>productos</h1></a>
                 </div>
             </div>
         </section>

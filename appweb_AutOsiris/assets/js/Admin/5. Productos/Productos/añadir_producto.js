@@ -23,3 +23,7 @@ $seleccionArchivos.addEventListener("change", () => {
 function ProductoAñadido(){
   alert("Producto Añadido con éxito");
 }
+
+function ProductoEliminado(){
+  alert("El producto ha sido eliminado");
+}

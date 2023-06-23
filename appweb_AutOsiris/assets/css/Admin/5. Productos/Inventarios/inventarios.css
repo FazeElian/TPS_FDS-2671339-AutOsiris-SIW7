@@ -61,7 +61,7 @@
 
     .texto-productos h1{
         color: white;
-        font-size: 21px;
+        font-size: 24px;
         margin-left: 15px;
     }
 
@@ -111,16 +111,7 @@
             /* Nombre Producto */
             .nombre-prod{
                 display: flex;
-                width: 46%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            /* Existencias Iniciales */
-            .existencias-prod{
-                display: flex;
-                width: 15.5%;
+                width: 46.5%;
                 height: 100%;
                 border: 1px solid black;
                 background-color: #212EC2;
@@ -129,7 +120,7 @@
             /* Entradas */
             .entradas-prod{
                 display: flex;
-                width: 6.5%;
+                width: 11.5%;
                 height: 100%;
                 border: 1px solid black;
                 background-color: #212EC2;
@@ -138,7 +129,7 @@
             /* Salidas */
             .salidas-prod{
                 display: flex;
-                width: 6%;
+                width: 11%;
                 height: 100%;
                 border: 1px solid black;
                 background-color: #212EC2;
@@ -147,7 +138,7 @@
             /* Stock */
             .stock-prod{
                 display: flex;
-                width: 8%;
+                width: 12%;
                 height: 100%;
                 border: 1px solid black;
                 background-color: #212EC2;
@@ -175,6 +166,13 @@
         color: white;
         color: black;
         margin-top: 3px;
+    }
+
+    .item-fila{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
     }
 
             /* Número de producto */
@@ -213,7 +211,7 @@
             /* Nombre producto */
             .nombre-prod-dato{
                 display: flex;
-                width: 46%;
+                width: 46.5%;
                 height: 100%;
                 border: 1px solid black;
                 background-color: #C0C0C0;
@@ -232,35 +230,15 @@
                 text-align: center;
             }
 
-            /* Existencias Iniciales */
-            .existencias-prod-dato{
-                display: flex;
-                width: 15.5%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #C0C0C0;
-            }
-
-            #existencias-prod-input{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                font-size: 15px;
-                border: 0;
-                background-color:#C0C0C0;
-            }
-
-            #existencias-prod-input::-webkit-input-placeholder {
-                text-align: center;
-            }
-
             /* Entradas */
             .entradas-prod-dato{
                 display: flex;
-                width: 6.5%;
+                width: 11.5%;
                 height: 100%;
                 border: 1px solid black;
-                background-color: #C0C0C0;  
+                background-color: #C0C0C0;
+                justify-content: center;
+                align-items: center;
             }
 
             #entradas-prod-input{
@@ -270,16 +248,17 @@
                 font-size: 15px;
                 border: 0;
                 background-color:#C0C0C0;
+                text-align: center;
             }
 
             #entradas-prod-input::-webkit-input-placeholder {
-                text-align: center;
+                align-items: center;
             }
 
             /* Salidas */
             .salidas-prod-dato{
                 display: flex;
-                width: 8%;
+                width: 11%;
                 height: 100%;
                 border: 1px solid black;
                 background-color: #C0C0C0;
@@ -292,6 +271,7 @@
                 font-size: 15px;
                 border: 0;
                 background-color:#C0C0C0;
+                text-align: center;
             }
 
             #salidas-prod-input::-webkit-input-placeholder {
@@ -301,10 +281,11 @@
             /* Stock */
             .stock-prod-dato{
                 display: flex;
-                width: 6%;
+                width: 12%;
                 height: 100%;
                 border: 1px solid black;
                 background-color: #C0C0C0;
+                text-align: center;
             }
 
             #stock-prod-input{
@@ -314,6 +295,7 @@
                 font-size: 15px;
                 border: 0;
                 background-color:#C0C0C0;
+                text-align: center;
             }
 
             #stock-prod-input::-webkit-input-placeholder {
@@ -347,131 +329,6 @@
                 justify-content: center;
                 align-items: center;
             }
-
-/* Tabla entradas y salidas */
-.tabla-entradas{
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-    flex-direction: column;
-}
-
-.tabla-salidas{
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-    flex-direction: column;
-}
-
-/* Filas datos entradas y salidas */
-.filas-datos-entradas{
-    display: flex;
-    width: 100%;
-    height: 30px;
-    color: white;
-    color: black;
-    margin-top: 3px;
-    justify-content: space-between;
-}
-
-.filas-datos-salidas{
-    display: flex;
-    width: 100%;
-    height: 30px;
-    color: white;
-    color: black;
-    margin-top: 3px;
-    justify-content: space-between;
-}
-
-    /* Fecha producto */
-    .fecha-prod{
-        display: flex;
-        width: 13%;
-        height: 100%;
-        border: 1px solid black;
-        background-color: #212EC2;
-    }
-
-    .fecha-prod-dato{
-        display: flex;
-        width: 13%;
-        height: 100%;
-        border: 1px solid black;
-        background-color: #212EC2;
-    }
-
-    #fecha-prod-input{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        font-size: 15px;
-        border: 0;
-        background-color:#C0C0C0;
-        text-align: center;
-    }
-
-    /* Número factura */
-    .num-factura{
-        display: flex;
-        width: 13%;
-        height: 100%;
-        border: 1px solid black;
-        background-color: #212EC2;
-    }
-
-    .num-factura-dato{
-        display: flex;
-        width: 13%;
-        height: 100%;
-        border: 1px solid black;
-        background-color: #212EC2;
-    }
-
-    #num-factura-input{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        font-size: 15px;
-        border: 0;
-        background-color:#C0C0C0;
-    }
-
-    #num-factura-input::-webkit-input-placeholder {
-        text-align: center;
-    }
-
-    /* Cantidad producto */
-    .cantidad-prod{
-        display: flex;
-        width: 10%;
-        height: 100%;
-        border: 1px solid black;
-        background-color: #212EC2;
-    }
-
-    .cantidad-prod-dato{
-        display: flex;
-        width: 10%;
-        height: 100%;
-        border: 1px solid black;
-        background-color: #212EC2;
-    }
-
-    #cantidad-prod-input{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        font-size: 15px;
-        border: 0;
-        background-color:#C0C0C0;
-    }
-
-    #cantidad-prod-input::-webkit-input-placeholder {
-        text-align: center;
-    }
 
     /* Opciones de Filas */
     .opciones-filas{
@@ -896,158 +753,31 @@
                         align-items: center;
                     }
 
-        /* Tabla entradas y salidas */
-        .tabla-entradas{
+    /* Opciones de Filas */
+    .opciones-filas{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        margin-top: 100px;
+    }       
+
+        /* Añadir Fila */
+        .añadir-fila{
             display: flex;
-            width: 100%;
-            height: auto;
-            margin-top: 30px;
-            flex-direction: column;
+            width: 140px;
+            border: 1px solid black;
+            background-color: #1988CF;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
         }
 
-        .tabla-salidas{
-            display: flex;
-            width: 100%;
-            height: auto;
-            margin-top: 30px;
-            flex-direction: column;
-        }
-
-        /* Filas datos entradas y salidas */
-        .filas-datos-entradas{
-            display: flex;
-            width: 100%;
-            height: 22px;
+        .añadir-fila h2{
             color: white;
-            color: black;
-            margin-top: 3px;
-            justify-content: space-between;
-            font-size: 10px;
+            font-size: 15px;
         }
-
-        .filas-datos-salidas{
-            display: flex;
-            width: 100%;
-            height: 22px;
-            color: white;
-            color: black;
-            margin-top: 3px;
-            justify-content: space-between;
-            font-size: 10px;
-        }
-
-            /* Fecha producto */
-            .fecha-prod{
-                display: flex;
-                width: 13%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            .fecha-prod-dato{
-                display: flex;
-                width: 13%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            #fecha-prod-input{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                font-size: 10px;
-                border: 0;
-                background-color:#C0C0C0;
-                text-align: center;
-            }
-
-            /* Número factura */
-            .num-factura{
-                display: flex;
-                width: 13%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            .num-factura-dato{
-                display: flex;
-                width: 13%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            #num-factura-input{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                font-size: 10px;
-                border: 0;
-                background-color:#C0C0C0;
-            }
-
-            #num-factura-input::-webkit-input-placeholder {
-                text-align: center;
-            }
-
-            /* Cantidad producto */
-            .cantidad-prod{
-                display: flex;
-                width: 10%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            .cantidad-prod-dato{
-                display: flex;
-                width: 10%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            #cantidad-prod-input{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                font-size: 10px;
-                border: 0;
-                background-color:#C0C0C0;
-            }
-
-            #cantidad-prod-input::-webkit-input-placeholder {
-                text-align: center;
-            }
-
-        /* Opciones de Filas */
-        .opciones-filas{
-            display: flex;
-            width: 100%;
-            height: 30px;
-            margin-top: 20px;
-        }       
-    
-            /* Añadir Fila */
-            .añadir-fila{
-                display: flex;
-                width: 160px;
-                border: 1px solid black;
-                background-color: #1988CF;
-                border-radius: 7px;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-            }
         
-                .añadir-fila h2{
-                    color: white;
-                    font-size: 15px;
-                }
-
         /* Opciones inventario */
         .opciones-inventario{
             display: flex;
@@ -1088,7 +818,6 @@
                 color: white;
                 font-size: 15px;
             }  
-
         }
 
     /* @media 768px */
@@ -1446,133 +1175,6 @@
                         justify-content: center;
                         align-items: center;
                     }
-
-        /* Tabla entradas y salidas */
-        .tabla-entradas{
-            display: flex;
-            width: 100%;
-            height: auto;
-            margin-top: 30px;
-            flex-direction: column;
-        }
-
-        .tabla-salidas{
-            display: flex;
-            width: 100%;
-            height: auto;
-            margin-top: 30px;
-            flex-direction: column;
-        }
-
-        /* Filas datos entradas y salidas */
-        .filas-datos-entradas{
-            display: flex;
-            width: 100%;
-            height: 22px;
-            color: white;
-            color: black;
-            margin-top: 3px;
-            justify-content: space-between;
-            font-size: 10px;
-        }
-
-        .filas-datos-salidas{
-            display: flex;
-            width: 100%;
-            height: 22px;
-            color: white;
-            color: black;
-            margin-top: 3px;
-            justify-content: space-between;
-            font-size: 10px;
-        }
-
-            /* Fecha producto */
-            .fecha-prod{
-                display: flex;
-                width: 16%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            .fecha-prod-dato{
-                display: flex;
-                width: 16%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            #fecha-prod-input{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                font-size: 10px;
-                border: 0;
-                background-color:#C0C0C0;
-                text-align: center;
-            }
-
-            /* Número factura */
-            .num-factura{
-                display: flex;
-                width: 13%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            .num-factura-dato{
-                display: flex;
-                width: 13%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            #num-factura-input{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                font-size: 10px;
-                border: 0;
-                background-color:#C0C0C0;
-            }
-
-            #num-factura-input::-webkit-input-placeholder {
-                text-align: center;
-            }
-
-            /* Cantidad producto */
-            .cantidad-prod{
-                display: flex;
-                width: 10%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            .cantidad-prod-dato{
-                display: flex;
-                width: 10%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            #cantidad-prod-input{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                font-size: 10px;
-                border: 0;
-                background-color:#C0C0C0;
-            }
-
-            #cantidad-prod-input::-webkit-input-placeholder {
-                text-align: center;
-            }
     }
 
     @media (Max-width: 425px){
@@ -1930,197 +1532,69 @@
                         align-items: center;
                     }
 
-        /* Tabla entradas y salidas */
-        .tabla-entradas{
+        /* Opciones de Filas */
+        .opciones-filas{
             display: flex;
             width: 100%;
-            height: auto;
-            margin-top: 30px;
-            flex-direction: column;
-        }
+            height: 25px;
+            margin-top: 100px;
+        }       
 
-        .tabla-salidas{
-            display: flex;
-            width: 100%;
-            height: auto;
-            margin-top: 30px;
-            flex-direction: column;
-        }
-
-        /* Filas datos entradas y salidas */
-        .filas-datos-entradas{
-            display: flex;
-            width: 100%;
-            height: 15px;
-            color: white;
-            color: black;
-            margin-top: 3px;
-            justify-content: space-between;
-            font-size: 6px;
-        }
-
-        .filas-datos-salidas{
-            display: flex;
-            width: 100%;
-            height: 22px;
-            color: white;
-            color: black;
-            margin-top: 3px;
-            justify-content: space-between;
-            font-size: 6px;
-        }
-
-            /* Fecha producto */
-            .fecha-prod{
+            /* Añadir Fila */
+            .añadir-fila{
                 display: flex;
-                width: 16%;
-                height: 100%;
+                width: 70px;
                 border: 1px solid black;
-                background-color: #212EC2;
+                background-color: #1988CF;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
             }
 
-            .fecha-prod-dato{
-                display: flex;
-                width: 16%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
+            .añadir-fila h2{
+                color: white;
+                font-size: 8px;
             }
-
-            #fecha-prod-input{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                font-size: 6px;
-                border: 0;
-                background-color:#C0C0C0;
-                text-align: center;
-            }
-
-            /* Número factura */
-            .num-factura{
-                display: flex;
-                width: 13%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            .num-factura-dato{
-                display: flex;
-                width: 13%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            #num-factura-input{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                font-size: 6px;
-                border: 0;
-                background-color:#C0C0C0;
-            }
-
-            #num-factura-input::-webkit-input-placeholder {
-                text-align: center;
-            }
-
-            /* Cantidad producto */
-            .cantidad-prod{
-                display: flex;
-                width: 10%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            .cantidad-prod-dato{
-                display: flex;
-                width: 10%;
-                height: 100%;
-                border: 1px solid black;
-                background-color: #212EC2;
-            }
-
-            #cantidad-prod-input{
-                display: flex;
-                width: 100%;
-                height: 100%;
-                font-size: 6px;
-                border: 0;
-                background-color:#C0C0C0;
-            }
-
-            #cantidad-prod-input::-webkit-input-placeholder {
-                text-align: center;
-            }              
-        
-            /* Opciones de Filas */
-                .opciones-filas{
-                    display: flex;
-                    width: 100%;
-                    height: 30px;
-                    margin-top: 20px;
-                }       
             
-                    /* Añadir Fila */
-                    .añadir-fila{
-                        display: flex;
-                        width: 70px;
-                        height: 20px;
-                        border: 1px solid black;
-                        background-color: #1988CF;
-                        border-radius: 7px;
-                        justify-content: center;
-                        align-items: center;
-                        cursor: pointer;
-                    }
-                
-                        .añadir-fila h2{
-                            color: white;
-                            font-size: 8px;
-                        }
-
             /* Opciones inventarios */
-                .opciones-inventarios{
+            .opciones-inventarios{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                margin-top:20px;
+                justify-content: space-between;
+            }
+
+                /* Botón: Cancelar */
+                .bott-cancelar{
                     display: flex;
-                    width: 100%;
-                    height: 20px;
-                    margin-top:20px;
-                    justify-content: space-between;
+                    width: 65px;
+                    background-color: red;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
                 }
 
-                    /* Botón: Cancelar */
-                    .bott-cancelar{
-                        display: flex;
-                        width: 65px;
-                        background-color: red;
-                        border: 1px solid black;
-                        border-radius: 7px;
-                        justify-content: center;
-                        align-items: center;
-                    }
+                .bott-cancelar h2{
+                    color: white;
+                    font-size: 8px;
+                }
 
-                    .bott-cancelar h2{
-                        color: white;
-                        font-size: 8px;
-                    }
+                /* Botón: Guardar cambios */
+                .bott-guardar-cambios{
+                    display: flex;
+                    width: 65px;
+                    background-color: #2121E3;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
 
-                    /* Botón: Guardar cambios */
-                    .bott-guardar-cambios{
-                        display: flex;
-                        width: 65px;
-                        background-color: #2121E3;
-                        border: 1px solid black;
-                        border-radius: 7px;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-                    .bott-guardar-cambios h2{
-                        color: white;
-                        font-size: 8px;
-                    }  
+                .bott-guardar-cambios h2{
+                    color: white;
+                    font-size: 8px;
+                }  
     }

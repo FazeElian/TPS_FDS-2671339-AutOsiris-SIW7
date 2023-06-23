@@ -51,63 +51,63 @@ document.addEventListener("DOMContentLoaded", function seleccionarMes() {
 //Filas Tablas
     // Filas Tabla Productos
         // Añadir Fila
-        var contadorFilasProductos = 1;
+//         var contadorFilasProductos = 1;
 
-        function añadirFilaProductos() {
-            var tablaProductos = document.getElementById("tabla-productos");
-            var filasDatos = tablaProductos.insertRow(tablaProductos.rows.length - 1);
+//         function añadirFilaProductos() {
+//             var tablaProductos = document.getElementById("tabla-productos");
+//             var filasDatos = tablaProductos.insertRow(tablaProductos.rows.length - 1);
             
-            // TR de Filas datos
-            filasDatos.className = "filas-datos";
+//             // TR de Filas datos
+//             filasDatos.className = "filas-datos";
             
-            var numeroFila = filasDatos.insertCell(0);
-            numeroFila.className = "num-prod-dato";
-            numeroFila.innerHTML = contadorFilasProductos++;
+//             var numeroFila = filasDatos.insertCell(0);
+//             numeroFila.className = "num-prod-dato";
+//             numeroFila.innerHTML = contadorFilasProductos++;
             
-            var codigoProducto = filasDatos.insertCell(1);
-            codigoProducto.className = "cod-prod-dato";
-            codigoProducto.innerHTML = "<td class='cod-prod-dato'><input type='text' placeholder='#001' id='cod-prod-input'></td>";
+//             var codigoProducto = filasDatos.insertCell(1);
+//             codigoProducto.className = "cod-prod-dato";
+//             codigoProducto.innerHTML = "<td class='cod-prod-dato'><input type='text' placeholder='#001' id='cod-prod-input'></td>";
 
-            var nombreProducto = filasDatos.insertCell(2);
-            nombreProducto.className = "nombre-prod-dato";
-            nombreProducto.innerHTML = "<td class='nombre-prod-dato'><input type='text' placeholder='Nombre Producto' id='nombre-prod-input'></td>";
+//             var nombreProducto = filasDatos.insertCell(2);
+//             nombreProducto.className = "nombre-prod-dato";
+//             nombreProducto.innerHTML = "<td class='nombre-prod-dato'><input type='text' placeholder='Nombre Producto' id='nombre-prod-input'></td>";
 
-            var existenciasProducto = filasDatos.insertCell(3);
-            existenciasProducto.className = "existencias-prod-dato";
-            existenciasProducto.innerHTML = "<td class='existencias-prod-dato'><input type='number' placeholder='#' id='existencias-prod-input'></td>";
+//             var existenciasProducto = filasDatos.insertCell(3);
+//             existenciasProducto.className = "existencias-prod-dato";
+//             existenciasProducto.innerHTML = "<td class='existencias-prod-dato'><input type='number' placeholder='#' id='existencias-prod-input'></td>";
 
-            var entradasProducto = filasDatos.insertCell(4);
-            entradasProducto.className = "entradas-prod-dato";
-            entradasProducto.innerHTML = "<td class='entradas-prod-dato'><input type='number' placeholder='#' id='entradas-prod-input'></td>";
+//             var entradasProducto = filasDatos.insertCell(4);
+//             entradasProducto.className = "entradas-prod-dato";
+//             entradasProducto.innerHTML = "<td class='entradas-prod-dato'><input type='number' placeholder='#' id='entradas-prod-input'></td>";
 
-            var salidasProducto = filasDatos.insertCell(5);
-            salidasProducto.className = "salidas-prod-dato";
-            salidasProducto.innerHTML = "<td class='salidas-prod-dato'><input type='number' placeholder='#' id='salidas-prod-input'></td>";
+//             var salidasProducto = filasDatos.insertCell(5);
+//             salidasProducto.className = "salidas-prod-dato";
+//             salidasProducto.innerHTML = "<td class='salidas-prod-dato'><input type='number' placeholder='#' id='salidas-prod-input'></td>";
 
-            var stockProducto = filasDatos.insertCell(5);
-            stockProducto.className = "stock-prod-dato";
-            stockProducto.innerHTML = "<td class='stock-prod-dato'><input type='number' placeholder='#' id='stock-prod-input'></td>";
+//             var stockProducto = filasDatos.insertCell(5);
+//             stockProducto.className = "stock-prod-dato";
+//             stockProducto.innerHTML = "<td class='stock-prod-dato'><input type='number' placeholder='#' id='stock-prod-input'></td>";
 
             
-            var accion = filasDatos.insertCell(7);
-            accion.id = "bott-eliminar-fila";
-            var botonEliminar = document.createElement("button");
-            botonEliminar.innerHTML = "<td class='elim-fila'><img src='assets/img/icono-eliminar-rojo.png'></td>";
-            botonEliminar.className = "elim-fila";
-            botonEliminar.onclick = function() {
-                eliminarFila(this);
-            };
+//             var accion = filasDatos.insertCell(7);
+//             accion.id = "bott-eliminar-fila";
+//             var botonEliminar = document.createElement("button");
+//             botonEliminar.innerHTML = "<td class='elim-fila'><img src='assets/img/icono-eliminar-rojo.png'></td>";
+//             botonEliminar.className = "elim-fila";
+//             botonEliminar.onclick = function() {
+//                 eliminarFila(this);
+//             };
             
-            accion.appendChild(botonEliminar);
-        }
+//             accion.appendChild(botonEliminar);
+//         }
         
-        // Eliminar Fila
-        function eliminarFila(boton) {
-            var filasDatos = boton.parentNode.parentNode;
-            filasDatos.parentNode.removeChild(filasDatos);
-        }
+//         // Eliminar Fila
+//         function eliminarFila(boton) {
+//             var filasDatos = boton.parentNode.parentNode;
+//             filasDatos.parentNode.removeChild(filasDatos);
+//         }
 
-// Alerta: Cambios Guardados
-function GuardarCambios(){
-    alert("Los cambios han sido guardados");
-}
+// // Alerta: Cambios Guardados
+// function GuardarCambios(){
+//     alert("Los cambios han sido guardados");
+// }
