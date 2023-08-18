@@ -1,0 +1,189 @@
+/* Tabla ventas */
+.tabla_ventas{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+    /* Columnas cartacterísticas */
+    .columnas-caract{
+        display: flex;
+        width: 100%;
+        height: 35px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .item-columna{
+        display: flex;
+        height: 100%;
+        font-size: 17px;
+        border: 1px solid black;
+        background-color: #212EC2;
+    }
+
+    /* Filas-datos */
+    .filas-datos{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .item-fila{
+        display: flex;
+        height: 100%;
+        font-size: 15px;
+        border: 1px solid black;
+        background-color: #C0C0C0;
+    }
+
+    .no, .no-dato{
+        width: 10%;
+    }
+
+    .producto, .producto-dato{
+        width: 30%;
+    }
+
+    .cantidad-prod, .cantidad-prod-dato{
+        width: 15%;
+    }
+
+    .precio-prod, .precio-prod-dato{
+        width: 20%;
+    }
+
+    .acciones, .acciones-dato{
+        width: 24.5%;
+    }
+
+/* Opciones inventario */
+.opciones-inventario{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+    /* Botón: Cancelar */
+    .bott-cancelar{
+        display: flex;
+        width: 165px;
+        background-color: red;
+        border: 1px solid black;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bott-cancelar h2{
+        color: white;
+        font-size: 17px;
+    }
+
+    /* Botón: Crear factura */
+    .bott-guardar-cambios{
+        display: flex;
+        width: 200px;
+        background-color: #2121E3;
+        border: 1px solid black;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bott-guardar-cambios h2{
+        color: white;
+        font-size: 17px;
+    }
+
+@media(max-width: 1024px){
+    /* Opciones inventario */
+    .opciones-inventario{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        margin-top: 60px;
+        justify-content: space-between;
+    }
+
+        /* Botón: Cancelar */
+        .bott-cancelar{
+            display: flex;
+            width: 140px;
+            background-color: red;
+            border: 1px solid black;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bott-cancelar h2{
+            color: white;
+            font-size: 15px;
+        }
+
+        /* Botón: Crear factura */
+        .bott-guardar-cambios{
+            display: flex;
+            width: 180px;
+            background-color: #2121E3;
+            border: 1px solid black;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bott-guardar-cambios h2{
+            color: white;
+            font-size: 15px;
+        }
+}
+
+@media(max-width: 425px){
+/* Opciones inventarios */
+.opciones-inventarios{
+    display: flex;
+    width: 100%;
+    height: 22px;
+    margin-top:20px;
+    justify-content: space-between;
+}
+
+    /* Botón: Cancelar */
+    .bott-cancelar{
+        display: flex;
+        width: 65px;
+        background-color: red;
+        border: 1px solid black;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bott-cancelar h2{
+        color: white;
+        font-size: 8px;
+    }
+
+    /* Botón: Guardar cambios */
+    .bott-guardar-cambios{
+        display: flex;
+        width: 95px;
+        background-color: #2121E3;
+        border: 1px solid black;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bott-guardar-cambios h2{
+        color: white;
+        font-size: 8px;
+    }
+}

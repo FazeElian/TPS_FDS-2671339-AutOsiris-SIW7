@@ -1,0 +1,114 @@
+/* Tipos de Ventas */
+.cont-ventas{
+    display: flex;
+    width: 100%;
+    height: 22%;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.venta a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+    /* Contenedor de Venta */
+    .venta{
+        display: flex;
+        width: 49.2%;
+        height: 100%;
+        flex-direction: column;
+        border: 1px solid black;
+    }
+
+    /* Imagen */
+    .img-venta{
+        display: flex;
+        width: 100%;
+        height: 90%;
+        background-color: aqua;
+    }
+
+    .img-venta img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Titulo */
+    .titulo-venta{
+        display: flex;
+        width: 100%;
+        height: 10%;
+        align-items: center;
+        background-color: #212EC2;
+        border-top: 1px solid black;
+    }
+
+    .titulo-venta a h2{
+        font-size: 18px;
+        color: white;
+        margin-left: 1rem;
+    }
+
+/* @media 1024px */
+@media (max-width: 1024px){
+    .cont-ventas{
+        height: 13%;
+    }
+
+    .img-venta{
+        height: 88%;
+    }
+
+    .titulo-venta{
+        height: 12%;
+    }
+
+    .titulo-venta a h2{
+        font-size: 14px;
+    }
+}
+
+/* @media 768px */
+@media(max-width: 768px){
+    .cont-ventas{
+        flex-direction: column;
+        height: 35%;
+    }
+
+    .venta{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+/* @media 425px */
+@media(max-width: 425px){
+    .cont-ventas{
+        height: 20%;
+    }
+
+    .venta{
+        margin-bottom: 10px;
+    }
+
+    .titulo-venta a h2{
+        font-size: 10px;
+        margin-left: 0.5rem;
+    }
+}
+
+/* @media 350px */
+@media(max-width: 350px){
+    .cont-ventas{
+        height: 15%;
+    }
+
+    .titulo-venta a h2{
+        font-size: 8px;
+    }
+}
