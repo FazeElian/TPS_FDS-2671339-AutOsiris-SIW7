@@ -149,4 +149,9 @@ class ProductController extends Controller
 
         return redirect()->route('products.index');
     }
+
+    public function mostrarValor() {
+        $valorBbdd = 1000000; // Este valor proviene de la base de datos
+        return view("Admin.product.index", ['price' => $valorBbdd]);
+    }
 }
