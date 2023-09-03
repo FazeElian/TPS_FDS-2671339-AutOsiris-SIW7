@@ -52,7 +52,7 @@
                             <h1>Nombre: {{ $product->name }}</h1>
                             <h4 class="title-descrip"><b>Descripción:</b></h4>
                             <p>{{ $product->description}} </p>
-                            <h2>Precio: {{ $product->price}} $</h2>
+                            <h2>Precio: {{ number_format($product->price, 0, ',', '.') }}</h2>
                             <h3>Código: {{ $product->code}} </h3>
                         </div>
                     </form>

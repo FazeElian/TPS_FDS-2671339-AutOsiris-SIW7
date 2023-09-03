@@ -18,29 +18,6 @@
         <div class="titulo-ventana">
             <h1>Ventas</h1>
         </div>
-
-        <!-- Tipos de Ventas -->
-        <div class="cont-ventas">
-            <!-- Ventas por Unidad -->
-            <div class="venta">
-                <div class="img-venta">
-                    <a href="{{ route("unit_sales.index") }}"><img src="{{ asset("assets/img/Admin/modules/venta-unidad.png") }}" alt=""></a>
-                </div>
-                <div class="titulo-venta">
-                    <a href="{{ route("unit_sales.index") }}"><h2>Ventas por una unidad de producto</h2></a>
-                </div>
-            </div>
-
-            <!-- Ventas Múltiples -->
-            <div class="venta">
-                <div class="img-venta">
-                    <a href="#"><img src="{{ asset("assets/img/Admin/modules/venta-multiple.webp") }}" alt=""></a>
-                </div>
-                <div class="titulo-venta">
-                    <a href="#"><h2>Ventas por múltiples productos</h2></a>
-                </div>
-            </div>
-        </div>
     </section>
 </body>
 </html>
