@@ -180,7 +180,7 @@
 .cont-busq_nueva-fact2{
     display: none;
 }
-                    
+
     /* Barra de búsqueda */
     #buscar-factura{
         display: flex;
@@ -408,7 +408,7 @@
         .cont-busq_nueva-fact2{
             display: none;
         }
-                            
+
             /* Barra de búsqueda */
             #buscar-factura{
                 display: flex;
@@ -643,7 +643,7 @@
         margin-top: 10px;
         align-items: center;
     }
-                        
+
         /* Barra de búsqueda */
         #buscar-factura2{
             display: flex;
@@ -883,7 +883,7 @@
         margin-top: 0;
         align-items: center;
     }
-                        
+
         /* Barra de búsqueda */
         #buscar-factura2{
             display: flex;

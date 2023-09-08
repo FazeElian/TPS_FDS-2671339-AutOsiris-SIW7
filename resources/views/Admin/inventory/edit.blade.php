@@ -25,7 +25,7 @@
             <!-- Opciones Inventario -->
             <div class="opciones-inventario">
                 <!-- Botón: Cancelar -->
-                <button>
+                <button class="dp-hidden">
                 </button>
                 <button class="bott-guardar-cambios">
                     <a href=""><h2>Actualizar Inventario</h2></a>

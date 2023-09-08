@@ -1,0 +1,65 @@
+/* Opciones de Factura/s */
+.opciones-factura{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+/* Contenedor de Opciones de Factura */
+.cont-opciones-factura{
+    width: 70%;
+}
+
+.cont-opciones-factura, .cont-busqueda{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+    /* Nueva Factura  y Roles de Factura*/
+    .cont-nueva-factura, .cont-roles-factura{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 100%;
+        font-size: 17.5px;
+        border: 0;
+        background-color: #A0A0A0;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .cont-nueva-factura:hover, .cont-roles-factura:hover{
+        background-color: #EEEEEE;
+        transition: 0.3s;
+    }
+
+    .cont-nueva-factura img, .cont-roles-factura img{
+        width: 36px;
+        height: 36px;
+        margin-right: 0.7rem;
+    }
+
+    .cont-roles-factura{
+        margin-left: 2rem;
+        width: 280px;
+    }
+
+/* Contenedor de búsqueda */
+.cont-busqueda{
+    width: 30%;
+    justify-content: end;
+}
+
+#buscarFactura{
+    display: flex;
+    width: 100%;
+    height: 32.5px;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 15px;
+}
