@@ -11,6 +11,9 @@
     {{-- Scripts Principales --}}
     <script defer src="{{ asset("assets/js/Admin/scripts.js") }}"></script>
 
+    {{-- Scripts de alertas --}}
+    <script defer src="{{ asset("assets/js/Admin/alerts.js") }}"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset("assets/img/Admin/favicon.png") }}" type="image/x-icon">
 </head>

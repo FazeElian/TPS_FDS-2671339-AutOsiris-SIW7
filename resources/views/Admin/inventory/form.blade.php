@@ -23,15 +23,15 @@
             <tr class="filas-datos">
                 <td class="nombre-prod-dato item-fila">
                     {{ Form::select('product_id', $products ,$inventory->product_id, ['class' => 'form-control' . ($errors->has('product_id') ? ' is-invalid' : ''), 'placeholder' => 'Seleccionar Producto']) }}
-                    {!! $errors->first('product_id', "El producto es un campo obligatorio") !!}
+                    {!! $errors->first('product_id', "<script> alert('El producto es un campo obligatorio'); </script>") !!}
                 </td>
                 <td class="entradas-prod-dato item-fila">
                     {{ Form::number('initial_stock', $inventory->initial_stock, ['class' => 'form-control' . ($errors->has('initial_stock') ? ' is-invalid' : ''), 'placeholder' => '#']) }}
-                    {!! $errors->first('initial_stock', "Las estradas del producto son un campo obligatorio") !!}
+                    {!! $errors->first('initial_stock', "<script> alert('Las estradas del producto son un campo obligatorio'); </script>") !!}
                 </td>
                 <td class="salidas-prod-dato item-fila">
                     {{ Form::number('output', $inventory->output, ['class' => 'form-control' . ($errors->has('output') ? ' is-invalid' : ''), 'placeholder' => '#']) }}
-                    {!! $errors->first('output', "Las salidas del producto son un campo obligatorio") !!}
+                    {!! $errors->first('output', "<script> alert('Las salidas del producto son un campo obligatorio'); </script>") !!}
                 </td>
             </tr>
     </table>

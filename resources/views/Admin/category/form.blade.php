@@ -18,7 +18,7 @@
         <tr class="filas-datos">
             <td class="cantidad-prod-dato item-fila">
                 {{ Form::text('name', $category->name, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => 'Escribe aquí nombre de nueva categoría', 'id' => 'nombre']) }}
-                {!! $errors->first('name', '<div class="character-error">El nombre de categoría es un dato obligatorio</div>') !!}
+                {!! $errors->first('name', "<script>alert('El nombre de la categoría es un dato obligatorio');") !!}
             </td>
 
             <td class="nombre-categoria-dato item-fila">

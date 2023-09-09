@@ -15,7 +15,7 @@ return new class extends Migration
             $table->engine="InnoDB";
             $table->bigIncrements('id');
             $table->string("name", 50);
-            $table->string("description", 150);
+            $table->string("description", 150)->default("Este rol no tiene una descripción");
             $table->timestamps();
         });
     }
