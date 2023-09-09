@@ -52,7 +52,7 @@ class ProductController extends Controller
 
      public function store(Request $request)
      {
-         request()->validate(Product::$rules);
+        request()->validate(Product::$rules);
 
         // Adjuntar imagen del producto
         if ($request->hasFile("image")) {

@@ -11,6 +11,9 @@
     {{-- Scripts Principales --}}
     <script defer src="{{ asset("assets/js/Admin/scripts.js") }}"></script>
 
+    {{-- Scripts de alertas --}}
+    <script defer src="{{ asset("assets/js/Admin/alerts.js") }}"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset("assets/img/Admin/favicon.png") }}" type="image/x-icon">
 </head>
@@ -46,13 +49,18 @@
             <nav class="nav-inicio">
                 <!-- Icono de Menú responsive -->
                 <button class="icono-menu">
-                    <img src="{{ asset("assets/img/Admin/modules/menu-icono.png") }}">
+                    <div class="icono-menu-responsive">
+                        <img src="{{ asset("assets/img/Admin/modules/menu-icono.png") }}">
+                    </div>
+                    <div class="icono-menu-pc">
+                        <a href="{{ route("home") }}"><img src="{{ asset("assets/img/Admin/modules/index.png") }}"></a>
+                    </div>
                 </button>
                 <ul class="lista_nav-inicio">
                     <li class="item_nav-inicio"><a href="{{ route("home") }}">Inicio</a></li>
                     <li class="item_nav-inicio"><a href="{{ route("statistics.index") }}">Estadísticas</a></li>
                     <li class="item_nav-inicio"><a href="{{ route("sales.index") }}">Ventas</a></li>
-                    <li class="item_nav-inicio li-facturas"><a href="">Facturas</a></li>
+                    <li class="item_nav-inicio li-facturas"><a href="{{ route("factures.index") }}">Facturas</a></li>
                     <li class="item_nav-inicio"><a href="{{ route("products.index") }}">Productos</a></li>
                     <li class="item_nav-inicio li-inventarios"><a href="{{ route("inventories.index") }}">Inventarios</a></li>
                 </ul>
@@ -62,8 +70,6 @@
             <nav class="nav-usuario">
                 <ul class="lista_nav-usuario">
                     <a href="{{ route("perfile.index") }}"><li class="item_nav-usuario">Mi perfil</li></a>
-                    <a href="{{ route("roles.index") }}"><li class="item_nav-usuario">Roles</li></a>
-
                     <a href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">

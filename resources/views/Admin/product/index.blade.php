@@ -45,7 +45,7 @@
                     <!-- Formulario de producto -->
                     <form action="{{ route("products.create") }}" method="post" class="form-producto">
                         <div class="img-producto">
-                            <img src="{{ asset("storage")."/".$product->image }}" alt="">
+                            <img src="{{ asset("storage")."/".$product->image }}" alt="Este producto no tiene una imagen">
                         </div>
 
                         <div class="info-producto">
