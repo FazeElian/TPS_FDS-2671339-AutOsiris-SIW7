@@ -63,7 +63,7 @@
                         <form action="{{ route('inventories.destroy', $inventory->id) }}" method="POST" class="eliminar-inventario">
                             @csrf
                             @method('DELETE')
-                            <button class="btn-eliminar-inventario">
+                            <button class="btn-eliminar-inventario" onclick="return confirm('¿Estás seguro de que deseas eliminar este inventario de producto?')">
                                 <h2>Eliminar</h2>
                                 <img src="{{ asset("assets/img/Admin/modules/eliminar-icono.png") }}">
                             </button>
