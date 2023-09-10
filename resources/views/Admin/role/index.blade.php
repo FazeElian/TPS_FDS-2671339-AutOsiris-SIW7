@@ -41,7 +41,7 @@
                         <form action="{{ route('roles.destroy', $role->id) }}" method="POST" class="eliminar-rol">
                             @csrf
                             @method('DELETE')
-                            <button class="btn-eliminar">
+                            <button class="btn-eliminar" onclick="return confirm('¿Estás seguro de que deseas eliminar este rol?')">
                                 <h2>Eliminar</h2>
                                 <img src="{{ asset("assets/img/Admin/modules/eliminar-icono.png") }}">
                             </button>

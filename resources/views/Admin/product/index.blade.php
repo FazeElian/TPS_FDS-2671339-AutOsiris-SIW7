@@ -74,7 +74,7 @@
                             <!-- Eliminar producto -->
                             @csrf
                             @method('DELETE')
-                            <button class="btn-eliminar" type="submit">
+                            <button class="btn-eliminar" type="submit" onclick="return confirm('¿Estás seguro de que deseas eliminar este producto?')">
                                 <h2>Eliminar</h2>
                                 <img src="{{ asset("assets/img/Admin/modules/eliminar-icono.png") }}">
                             </button>
