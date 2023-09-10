@@ -46,7 +46,7 @@ class RoleController extends Controller
         request()->validate(Role::$rules);
         $role = Role::create($request->all());
 
-        return redirect()->route("roles.index");
+        return redirect()->route("roles.index")->with("created", "Rol de factura creado");
     }
 
     /**
@@ -88,7 +88,7 @@ class RoleController extends Controller
 
         $role->update($request->all());
 
-        return redirect()->route("roles.index");
+        return redirect()->route("roles.index")->with("updated", "Los cambios de rol de factura han sido actualizados");
     }
 
     /**
@@ -100,6 +100,6 @@ class RoleController extends Controller
     {
         $role = Role::find($id)->delete();
 
-        return redirect()->route("roles.index");
+        return redirect()->route("roles.index")->with("deleted", "El rol de factura ha sido eliminado");
     }
 }

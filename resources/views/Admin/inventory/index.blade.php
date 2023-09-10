@@ -85,6 +85,27 @@
             <button class="bott-guardar-cambios">
                 <a href="{{ route("inventories.create") }}"><h2>Registrar Inventario</h2></a>
             </button>
+
+            {{-- Alerta de inventario de producto creado --}}
+            @if (session('created'))
+                <script>
+                    alert("{{ session('created') }}");
+                </script>
+            @endif
+
+            {{-- Alerta de inventario de producto actualizado --}}
+            @if (session('updated'))
+                <script>
+                    alert("{{ session('updated') }}");
+                </script>
+            @endif
+
+            {{-- Alerta de inventario de producto eliminado --}}
+            @if (session('deleted'))
+                <script>
+                    alert("{{ session('deleted') }}");
+                </script>
+            @endif
         </div>
     </section>
 </body>

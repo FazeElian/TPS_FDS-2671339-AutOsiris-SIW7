@@ -56,7 +56,7 @@
                         <form action="{{ route('categories.destroy', $category->id) }}" method="POST" class="eliminar-cat">
                             @csrf
                             @method('DELETE')
-                            <button class="btn-eliminar-cat">
+                            <button class="btn-eliminar-cat" onclick="return confirm('¿Estás seguro de que deseas eliminar esta categoría de producto?')">
                                 <h2>Eliminar</h2>
                                 <img src="{{ asset("assets/img/Admin/modules/eliminar-icono.png") }}">
                             </button>
@@ -80,10 +80,29 @@
             <button class="añadir-fila">
                 <a href="{{ route("categories.create") }}"><h2>Nueva Categoría</h2></a>
             </button>
+
+            {{-- Alerta de categoría de productos creada --}}
+            @if (session('created'))
+                <script>
+                    alert("{{ session('created') }}");
+                </script>
+            @endif
+
+            {{-- Alerta de categoría de productos actualizada --}}
+            @if (session('updated'))
+                <script>
+                    alert("{{ session('updated') }}");
+                </script>
+            @endif
+
+            {{-- Alerta de categoría de productos eliminada --}}
+            @if (session('deleted'))
+                <script>
+                    alert("{{ session('deleted') }}");
+                </script>
+            @endif
         </div>
     </section>
 </body>
 </html>
 
-{{-- Incluimos el footer --}}
-@extends("layouts.footerAdmin")

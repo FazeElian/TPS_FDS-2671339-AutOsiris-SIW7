@@ -68,7 +68,7 @@ class ProductController extends Controller
            $product = Product::create($request->all());
         }
 
-        return redirect()->route('products.index');
+        return redirect()->route('products.index')->with("created", "Producto creado con éxito");
      }
 
     /**
@@ -135,7 +135,7 @@ class ProductController extends Controller
             $product->save();
         }
 
-        return redirect()->route('products.index');
+        return redirect()->route('products.index')->with("updated", "Los cambios de producto han sido actualizados");
     }
 
     /**
@@ -147,7 +147,7 @@ class ProductController extends Controller
     {
         $product = Product::find($id)->delete();
 
-        return redirect()->route('products.index');
+        return redirect()->route('products.index')->with("deleted", "El producto ha sido eliminado");
     }
 
     public function mostrarValor() {
