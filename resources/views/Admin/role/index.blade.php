@@ -64,6 +64,27 @@
             <button class="añadir-fila">
                 <a href="{{ route("roles.create") }}"><h2>Añadir Rol</h2></a>
             </button>
+
+            {{-- Alerta de rol de facturas creado --}}
+            @if (session('created'))
+                <script>
+                    alert("{{ session('created') }}");
+                </script>
+            @endif
+
+            {{-- Alerta de rol de facturas actualizado --}}
+            @if (session('updated'))
+                <script>
+                    alert("{{ session('updated') }}");
+                </script>
+            @endif
+
+            {{-- Alerta de rol de facturas eliminado --}}
+            @if (session('deleted'))
+                <script>
+                    alert("{{ session('deleted') }}");
+                </script>
+            @endif
         </div>
     </section>
 </body>

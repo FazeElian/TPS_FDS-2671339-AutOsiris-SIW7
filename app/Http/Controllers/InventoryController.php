@@ -57,7 +57,7 @@ class InventoryController extends Controller
         // Actualizar el resultado
         $inventory->save();
 
-        return redirect()->route('inventories.index');
+        return redirect()->route('inventories.index')->with("created", "El inventario de producto fue registrado");
     }
 
     /**
@@ -106,7 +106,7 @@ class InventoryController extends Controller
         $inventory->stock = $result;
         $inventory->save();
 
-        return redirect()->route('inventories.index');
+        return redirect()->route('inventories.index')->with("updated", "Los cambios de inventario de producto han sido actualizados");
     }
 
     /**
@@ -118,6 +118,6 @@ class InventoryController extends Controller
     {
         $inventory = Inventory::find($id)->delete();
 
-        return redirect()->route('inventories.index');
+        return redirect()->route('inventories.index')->with("deleted", "El inventario de producto ha sido eliminado");
     }
 }

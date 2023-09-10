@@ -47,7 +47,7 @@ class CategoryController extends Controller
 
         $category = Category::create($request->all());
 
-        return redirect()->route('categories.index');
+        return redirect()->route('categories.index')->with("created", "La categoría de productos ha sido creada");
     }
 
     /**
@@ -89,7 +89,7 @@ class CategoryController extends Controller
 
         $category->update($request->all());
 
-        return redirect()->route('categories.index');
+        return redirect()->route('categories.index')->with("updated", "Los cambios de categoría de productos han sido actualizados");
     }
 
     /**
@@ -101,6 +101,6 @@ class CategoryController extends Controller
     {
         $category = Category::find($id)->delete();
 
-        return redirect()->route('categories.index');
+        return redirect()->route('categories.index')->with("deleted", "La categoría de productos ha sido eliminada");
     }
 }
