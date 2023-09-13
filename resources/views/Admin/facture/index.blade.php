@@ -53,6 +53,9 @@
             <tr>
                 <td>{{ ++$i }}</td>
                 <td>{{ $facture->role->name }}</td>
+                <td>{{ $facture->product->name }}</td>
+                <td>{{ $facture->price_product }}</td>
+                <td>{{ $facture->amountProduct }}</td>
                 <td>{{ $facture->date }}</td>
                 <td>
                     <form action="{{ route('factures.destroy',$facture->id) }}" method="POST">

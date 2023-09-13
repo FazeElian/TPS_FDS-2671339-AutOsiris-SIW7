@@ -21,6 +21,7 @@ class Facture extends Model
 {
 
     static $rules = [
+        "id" => "id",
 		'role_id' => 'required',
 		'date' => 'required',
     ];
@@ -32,7 +33,7 @@ class Facture extends Model
      *
      * @var array
      */
-    protected $fillable = ['role_id','date'];
+    protected $fillable = ["id", 'role_id','date'];
 
 
     /**
@@ -43,14 +44,8 @@ class Facture extends Model
         return $this->hasOne('App\Models\Role', 'id', 'role_id');
     }
 
-    // Calcular total de Factura
-    // public function calcularTotal()
-    // {
-    //     $total = $this->elementosFactura->sum(function ($elemento) {
-    //         return $elemento->cantidad * $elemento->precio;
-    //     });
-
-    //     $this->total = $total;
-    //     $this->save();
-    // }
+    public function product(){
+        return $this->belongsToMany(Product::class, 'factures')
+        ->withPivot('amountProduct', 'totalProduct'); // Añade columnas
+    }
 }

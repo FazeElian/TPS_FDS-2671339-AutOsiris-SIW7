@@ -50,4 +50,9 @@ class Product extends Model
     {
         return $this->hasOne('App\Models\Category', 'id', 'categorie_id');
     }
+
+    public function facture(){
+        return $this->belongsToMany(Facture::class, 'factures')
+        ->withPivot('amountProduct', 'totalProduct'); // Añade columnas
+    }
 }
