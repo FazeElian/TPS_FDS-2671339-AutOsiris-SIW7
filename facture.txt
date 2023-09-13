@@ -1,0 +1,18 @@
+                                    @foreach ($factures as $facture)
+                                        <tr>
+                                            <td>{{ ++$i }}</td>
+
+											<td>{{ $facture->role_id }}</td>
+											<td>{{ $facture->date }}</td>
+
+                                            <td>
+                                                <form action="{{ route('factures.destroy',$facture->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('factures.show',$facture->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('factures.edit',$facture->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    @endforeach
