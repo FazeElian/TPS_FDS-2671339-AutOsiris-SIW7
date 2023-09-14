@@ -7,6 +7,9 @@
 
     {{-- Hoja de estilos para este archivo --}}
     <link rel="stylesheet" href="{{ asset("assets/css/Admin/modules/Categories/form-styles.css") }}">
+
+    {{-- Scripts para validación de formulario --}}
+    <script defer src="{{ asset("assets/js/Admin/modules/Categories/categoriesValidation.js") }}"></script>
 </head>
 <body>
     <table class="tabla-categorias" id="tabla-categorias">

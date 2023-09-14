@@ -49,27 +49,7 @@
             </div>
         </div>
 
-        @forelse ($factures as $facture)
-            <tr>
-                <td>{{ ++$i }}</td>
-                <td>{{ $facture->role->name }}</td>
-                <td>{{ $facture->product->name }}</td>
-                <td>{{ $facture->price_product }}</td>
-                <td>{{ $facture->amountProduct }}</td>
-                <td>{{ $facture->date }}</td>
-                <td>
-                    <form action="{{ route('factures.destroy',$facture->id) }}" method="POST">
-                        <a class="btn btn-sm btn-primary " href="{{ route('factures.show',$facture->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
-                        <a class="btn btn-sm btn-success" href="{{ route('factures.edit',$facture->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
-                    </form>
-                </td>
-            </tr>
-        @empty
-            {{-- <tr>No hay registros de facturas</tr> --}}
-        @endforelse
+
 
         {{-- Paginación de registros --}}
         {!! $factures->links() !!}

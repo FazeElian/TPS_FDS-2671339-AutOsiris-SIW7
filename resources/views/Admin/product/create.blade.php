@@ -17,7 +17,7 @@
         <div class="titulo-ventana">
             <h1 class="titulo">Crear Producto</h1>
         </div>
-        <form method="POST" action="{{ route('products.store') }}"  role="form" enctype="multipart/form-data">
+        <form method="POST" action="{{ route('products.store') }}"  role="form" enctype="multipart/form-data" id="form-products">
             @csrf
             @include("Admin.product.form")
 

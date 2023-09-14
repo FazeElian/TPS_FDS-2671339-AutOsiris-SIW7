@@ -20,7 +20,7 @@
                 <h1>Crear Rol</h1>
             </div>
 
-            <form method="POST" action="{{ route('roles.store') }}"  role="form" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('roles.store') }}"  role="form" enctype="multipart/form-data" id="form-roles">
                 @csrf
                 @include('Admin.role.form')
 
