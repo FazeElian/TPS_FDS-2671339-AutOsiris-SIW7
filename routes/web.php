@@ -42,7 +42,7 @@ Route::resource('products', ProductController::class)->middleware("auth");
 Route::resource('perfile', Perfile::class)->middleware("auth");
 
 // Ruta Roles
-Route::resource('factures/roles', RoleController::class)->middleware("auth");
+Route::resource('roles', RoleController::class)->middleware("auth");
 
 // Ruta Estadísticas
 Route::resource('statistics', Statistics::class)->middleware("auth");

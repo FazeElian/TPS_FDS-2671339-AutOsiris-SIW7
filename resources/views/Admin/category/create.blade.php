@@ -16,7 +16,7 @@
             <h1 class="titulo">Crear Categoría</h1>
         </div>
         @includeif('partials.errors')
-            <form method="POST" action="{{ route('categories.store') }}"  role="form" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('categories.store') }}"  role="form" enctype="multipart/form-data" id="form-categories">
                 @csrf
                 @include('Admin.category.form')
 
@@ -24,7 +24,6 @@
                 <div class="opciones-categorias">
                     <!-- Botón: Cancelar -->
                     <a href="{{ route("categories.index") }}" class="bott-cancelar"><h2>Cancelar</h2></a>
-
                     <button class="bott-guardar-cambios" name="btn-actualizar-categoria" type="submit">
                         <a href=""><h2>Crear Categoría</h2></a>
                     </button>

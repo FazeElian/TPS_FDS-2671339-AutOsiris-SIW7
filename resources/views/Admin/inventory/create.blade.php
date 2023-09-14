@@ -19,7 +19,7 @@
             <h1>Registrar Inventario</h1>
         </div>
         @includeif('partials.errors')
-            <form method="POST" action="{{ route('inventories.store') }}"  role="form" enctype="multipart/form-data">
+            <form method="POST" action="{{ route('inventories.store') }}"  role="form" enctype="multipart/form-data" id="form-inventories">
                 @csrf
                 @include('Admin.inventory.form')
 
