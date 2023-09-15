@@ -41,7 +41,7 @@ document.getElementById("form-products").addEventListener("submit", function(eve
         // Código - Caracteres máximos
         var maxLengthCode = 20; // Cantidad de caracteres
 
-        if (nombre.length >= maxLengthCode) {
+        if (codigo.length >= maxLengthCode) {
             alert("El código de producto excede la cantidad de caracteres");
             return;
         }
