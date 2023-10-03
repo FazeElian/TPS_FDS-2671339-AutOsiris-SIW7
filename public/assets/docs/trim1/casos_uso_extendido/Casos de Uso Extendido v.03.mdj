@@ -216,9 +216,9 @@
 										"$ref": "AAAAAAGK2RioxDuzOMM="
 									},
 									"font": "Arial;13;0",
-									"left": 328.72998046875,
+									"left": 327.27001953125,
 									"top": 117,
-									"width": 120.92626953125,
+									"width": 109.31005859375,
 									"height": 13,
 									"text": "CUE01 - Registrarse"
 								},
@@ -231,7 +231,7 @@
 									"font": "Arial;13;1",
 									"left": 309,
 									"top": 117,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -489,9 +489,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 441.5,
-											"top": 309.5,
+											"top": 315,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "Ingresar datos de Usuario",
 											"wordWrap": true
 										},
@@ -525,9 +525,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 436.5,
-									"top": 302.5,
+									"top": 308,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK2RlT1jv+C0g="
 									},
@@ -2444,9 +2444,9 @@
 										"$ref": "AAAAAAGK2RuUS0bpoxA="
 									},
 									"font": "Arial;13;0",
-									"left": 312.72998046875,
+									"left": 311.27001953125,
 									"top": 101,
-									"width": 130.3271484375,
+									"width": 120.5009765625,
 									"height": 13,
 									"text": "CUE02 - Iniciar sesión"
 								},
@@ -2459,7 +2459,7 @@
 									"font": "Arial;13;1",
 									"left": 293,
 									"top": 101,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -2717,9 +2717,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 433.5,
-											"top": 293.5,
+											"top": 299,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "Ingresar datos de Usuario",
 											"wordWrap": true
 										},
@@ -2753,9 +2753,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 428.5,
-									"top": 286.5,
+									"top": 292,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK2RuUS0b5XB0="
 									},
@@ -4359,9 +4359,9 @@
 										"$ref": "AAAAAAGK2R0eJVXZji4="
 									},
 									"font": "Arial;13;0",
-									"left": 312.72998046875,
+									"left": 311.27001953125,
 									"top": 117,
-									"width": 183.0888671875,
+									"width": 163.068359375,
 									"height": 13,
 									"text": "CUE03 - Recuperar contraseña"
 								},
@@ -4374,7 +4374,7 @@
 									"font": "Arial;13;1",
 									"left": 293,
 									"top": 117,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -4632,9 +4632,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 433.5,
-											"top": 317,
+											"top": 322.5,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "Ingresar datos de Usuario",
 											"wordWrap": true
 										},
@@ -4668,9 +4668,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 428.5,
-									"top": 310,
+									"top": 315.5,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK2R0eJVXpt2w="
 									},
@@ -5957,9 +5957,9 @@
 										"$ref": "AAAAAAGK2SDy4mi3Gc4="
 									},
 									"font": "Arial;13;0",
-									"left": 320.72998046875,
+									"left": 319.27001953125,
 									"top": 109,
-									"width": 134.65625,
+									"width": 121.9482421875,
 									"height": 13,
 									"text": "CUE04 - Cerrar Sesión"
 								},
@@ -5972,7 +5972,7 @@
 									"font": "Arial;13;1",
 									"left": 301,
 									"top": 109,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -7263,9 +7263,9 @@
 										"$ref": "AAAAAAGK2SMs6XOjyEw="
 									},
 									"font": "Arial;13;0",
-									"left": 280.72998046875,
+									"left": 279.27001953125,
 									"top": 117,
-									"width": 146.24072265625,
+									"width": 136.38916015625,
 									"height": 13,
 									"text": "CUE05 - Añadir producto"
 								},
@@ -7278,7 +7278,7 @@
 									"font": "Arial;13;1",
 									"left": 261,
 									"top": 117,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -10459,9 +10459,9 @@
 										"$ref": "AAAAAAGK2SkV0aZmhZY="
 									},
 									"font": "Arial;13;0",
-									"left": 304.72998046875,
+									"left": 303.27001953125,
 									"top": 101,
-									"width": 164.2998046875,
+									"width": 150.8427734375,
 									"height": 13,
 									"text": "CUE06 - Consultar producto"
 								},
@@ -10474,7 +10474,7 @@
 									"font": "Arial;13;1",
 									"left": 285,
 									"top": 101,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -12065,9 +12065,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 457.5,
-											"top": 189.5,
+											"top": 195,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "CUE05 - Añadir producto",
 											"wordWrap": true
 										},
@@ -12101,9 +12101,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 452.5,
-									"top": 182.5,
+									"top": 188,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK2S+qxNRokGI="
 									},
@@ -13361,9 +13361,9 @@
 										"$ref": "AAAAAAGK2SwrOb0zjJ4="
 									},
 									"font": "Arial;13;0",
-									"left": 304.72998046875,
+									"left": 303.27001953125,
 									"top": 61,
-									"width": 142.62255859375,
+									"width": 132.0537109375,
 									"height": 13,
 									"text": "CUE07 - Editar producto"
 								},
@@ -13376,7 +13376,7 @@
 									"font": "Arial;13;1",
 									"left": 285,
 									"top": 61,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -16149,9 +16149,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 473.5,
-											"top": 141.5,
+											"top": 147,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "CUE05 - Añadir producto",
 											"wordWrap": true
 										},
@@ -16185,9 +16185,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 468.5,
-									"top": 134.5,
+									"top": 140,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK2TC87N66aFA="
 									},
@@ -17115,9 +17115,9 @@
 										"$ref": "AAAAAAGK2TJnC+s0wcg="
 									},
 									"font": "Arial;13;0",
-									"left": 296.72998046875,
+									"left": 295.27001953125,
 									"top": 93,
-									"width": 155.6162109375,
+									"width": 145.77734375,
 									"height": 13,
 									"text": "CUE08 - Eliminar producto"
 								},
@@ -17130,7 +17130,7 @@
 									"font": "Arial;13;1",
 									"left": 277,
 									"top": 93,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -17662,9 +17662,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 409.5,
-											"top": 197.5,
+											"top": 203,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "CUE05 - Añadir producto",
 											"wordWrap": true
 										},
@@ -17698,9 +17698,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 404.5,
-									"top": 190.5,
+									"top": 196,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK2TJnDOvBIm0="
 									},
@@ -18429,9 +18429,9 @@
 										"$ref": "AAAAAAGK2TbNGgDmk6Q="
 									},
 									"font": "Arial;13;0",
-									"left": 280.72998046875,
+									"left": 279.27001953125,
 									"top": 101,
-									"width": 223.55517578125,
+									"width": 200.62109375,
 									"height": 13,
 									"text": "CUE09 - Crear categoría de productos"
 								},
@@ -18444,7 +18444,7 @@
 									"font": "Arial;13;1",
 									"left": 261,
 									"top": 101,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -20357,9 +20357,9 @@
 										"$ref": "AAAAAAGK2TmYUSNMp3k="
 									},
 									"font": "Arial;13;0",
-									"left": 272.72998046875,
+									"left": 271.27001953125,
 									"top": 101,
-									"width": 246.68603515625,
+									"width": 222.3046875,
 									"height": 13,
 									"text": "CUE10 - Consultar categoría de productos"
 								},
@@ -20372,7 +20372,7 @@
 									"font": "Arial;13;1",
 									"left": 253,
 									"top": 101,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -20429,9 +20429,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 425.5,
-											"top": 279.5,
+											"top": 285,
 											"width": 126,
-											"height": 33,
+											"height": 22,
 											"text": "Ingresar a la vista de Categorías de productos",
 											"wordWrap": true
 										},
@@ -20465,9 +20465,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 420.5,
-									"top": 272.5,
+									"top": 278,
 									"width": 136,
-									"height": 45,
+									"height": 34,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK2TmYUSNRhrY="
 									},
@@ -22463,9 +22463,9 @@
 										"$ref": "AAAAAAGK2TsrSDSPs64="
 									},
 									"font": "Arial;13;0",
-									"left": 304.72998046875,
+									"left": 303.27001953125,
 									"top": 61,
-									"width": 224.0439453125,
+									"width": 203.033203125,
 									"height": 13,
 									"text": "CUE11 - Editar categoría de productos"
 								},
@@ -22478,7 +22478,7 @@
 									"font": "Arial;13;1",
 									"left": 285,
 									"top": 61,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -24905,9 +24905,9 @@
 										"$ref": "AAAAAAGK2X0htVDgSIg="
 									},
 									"font": "Arial;13;0",
-									"left": 296.72998046875,
+									"left": 295.27001953125,
 									"top": 93,
-									"width": 238.00244140625,
+									"width": 217.2392578125,
 									"height": 13,
 									"text": "CUE12 - Eliminar categoría de productos"
 								},
@@ -24920,7 +24920,7 @@
 									"font": "Arial;13;1",
 									"left": 277,
 									"top": 93,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -26219,9 +26219,9 @@
 										"$ref": "AAAAAAGK4nJ8G4vtNP8="
 									},
 									"font": "Arial;13;0",
-									"left": 288.72998046875,
+									"left": 287.27001953125,
 									"top": 85,
-									"width": 232.2197265625,
+									"width": 212.91650390625,
 									"height": 13,
 									"text": "CUE13 - Registrar inventario a producto"
 								},
@@ -26234,7 +26234,7 @@
 									"font": "Arial;13;1",
 									"left": 269,
 									"top": 85,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -27941,9 +27941,9 @@
 										"$ref": "AAAAAAGK4nYitZFfuHo="
 									},
 									"font": "Arial;13;0",
-									"left": 272.72998046875,
+									"left": 271.27001953125,
 									"top": 101,
-									"width": 242.3505859375,
+									"width": 222.3173828125,
 									"height": 13,
 									"text": "CUE14 - Consultar inventario de producto"
 								},
@@ -27956,7 +27956,7 @@
 									"font": "Arial;13;1",
 									"left": 253,
 									"top": 101,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -30041,9 +30041,9 @@
 										"$ref": "AAAAAAGK4nthULIh+xk="
 									},
 									"font": "Arial;13;0",
-									"left": 304.72998046875,
+									"left": 303.27001953125,
 									"top": 61,
-									"width": 220.67333984375,
+									"width": 203.5283203125,
 									"height": 13,
 									"text": "CUE15 - Editar inventario de producto"
 								},
@@ -30056,7 +30056,7 @@
 									"font": "Arial;13;1",
 									"left": 285,
 									"top": 61,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -32788,9 +32788,9 @@
 										"$ref": "AAAAAAGK4oFx1srTVE0="
 									},
 									"font": "Arial;13;0",
-									"left": 288.72998046875,
+									"left": 287.27001953125,
 									"top": 85,
-									"width": 130.32080078125,
+									"width": 119.0283203125,
 									"height": 13,
 									"text": "CUE16 - Crear factura"
 								},
@@ -32803,7 +32803,7 @@
 									"font": "Arial;13;1",
 									"left": 269,
 									"top": 85,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -35136,9 +35136,9 @@
 										"$ref": "AAAAAAGK4oZ6yoF+MvQ="
 									},
 									"font": "Arial;13;0",
-									"left": 304.72998046875,
+									"left": 303.27001953125,
 									"top": 61,
-									"width": 131.7744140625,
+									"width": 121.9228515625,
 									"height": 13,
 									"text": "CUE17 - Editar factura"
 								},
@@ -35151,7 +35151,7 @@
 									"font": "Arial;13;1",
 									"left": 285,
 									"top": 61,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -35409,9 +35409,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 457.5,
-											"top": 349.5,
+											"top": 355,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "Cambiar datos de factura",
 											"wordWrap": true
 										},
@@ -35445,9 +35445,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 452.5,
-									"top": 342.5,
+									"top": 348,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK4oZ6yoGOgDU="
 									},
@@ -37572,9 +37572,9 @@
 										"$ref": "AAAAAAGK4ohn7Y6Brkg="
 									},
 									"font": "Arial;13;0",
-									"left": 272.72998046875,
+									"left": 271.27001953125,
 									"top": 93,
-									"width": 153.45166015625,
+									"width": 140.7119140625,
 									"height": 13,
 									"text": "CUE18 - Consultar factura"
 								},
@@ -37587,7 +37587,7 @@
 									"font": "Arial;13;1",
 									"left": 253,
 									"top": 93,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -39997,9 +39997,9 @@
 										"$ref": "AAAAAAGK4ooc06D77C4="
 									},
 									"font": "Arial;13;0",
-									"left": 296.72998046875,
+									"left": 295.27001953125,
 									"top": 93,
-									"width": 144.76806640625,
+									"width": 135.646484375,
 									"height": 13,
 									"text": "CUE19 - Eliminar factura"
 								},
@@ -40012,7 +40012,7 @@
 									"font": "Arial;13;1",
 									"left": 277,
 									"top": 93,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -41104,7 +41104,7 @@
 			"_parent": {
 				"$ref": "AAAAAAFF+h6SjaM2Hec="
 			},
-			"name": "CUE20 - Crear rol de factura",
+			"name": "CUE20 - Crear cliente",
 			"ownedElements": [
 				{
 					"_type": "UMLUseCaseDiagram",
@@ -41112,7 +41112,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5pjuDnD5240="
 					},
-					"name": "CUE20 - Crear rol de factura",
+					"name": "CUE20 - Crear cliente",
 					"ownedViews": [
 						{
 							"_type": "UMLActorView",
@@ -41171,7 +41171,7 @@
 											"top": 160,
 											"width": 220.6982421875,
 											"height": 11,
-											"text": "(from CUE20 - Crear rol de factura)"
+											"text": "(from CUE20 - Crear cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -41313,9 +41313,9 @@
 									"font": "Arial;13;0",
 									"left": 280.72998046875,
 									"top": 101,
-									"width": 166.45166015625,
+									"width": 128.15625,
 									"height": 13,
-									"text": "CUE20 - Crear rol de factura"
+									"text": "CUE20 - Crear cliente"
 								},
 								{
 									"_type": "LabelView",
@@ -41386,7 +41386,7 @@
 											"top": 188.5,
 											"width": 126,
 											"height": 33,
-											"text": "Ingresar a la vista de Creación de nuevo Rol de Factura",
+											"text": "Ingresar a la vista de Creación de nuevo Cliente",
 											"wordWrap": true
 										},
 										{
@@ -41401,7 +41401,7 @@
 											"top": -208,
 											"width": 220.6982421875,
 											"height": 11,
-											"text": "(from CUE20 - Crear rol de factura)"
+											"text": "(from CUE20 - Crear cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -41587,7 +41587,7 @@
 											"top": 297.5,
 											"width": 126,
 											"height": 22,
-											"text": "Ingresar datos de Rol de Factura",
+											"text": "Ingresar datos de Cliente",
 											"wordWrap": true
 										},
 										{
@@ -41602,7 +41602,7 @@
 											"top": -112,
 											"width": 220.6982421875,
 											"height": 11,
-											"text": "(from CUE20 - Crear rol de factura)"
+											"text": "(from CUE20 - Crear cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -41802,7 +41802,7 @@
 											"top": -96,
 											"width": 200.634765625,
 											"height": 10,
-											"text": "(from CUE20 - Crear rol de factura)"
+											"text": "(from CUE20 - Crear cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -42001,7 +42001,7 @@
 											"top": -48,
 											"width": 200.634765625,
 											"height": 10,
-											"text": "(from CUE20 - Crear rol de factura)"
+											"text": "(from CUE20 - Crear cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -42953,7 +42953,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5pjuDnD5240="
 					},
-					"name": "Ingresar a la vista de Creación de nuevo Rol de Factura"
+					"name": "Ingresar a la vista de Creación de nuevo Cliente"
 				},
 				{
 					"_type": "UMLUseCase",
@@ -42961,7 +42961,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5pjuDnD5240="
 					},
-					"name": "Ingresar datos de Rol de Factura",
+					"name": "Ingresar datos de Cliente",
 					"ownedElements": [
 						{
 							"_type": "UMLExtend",
@@ -43032,7 +43032,7 @@
 			"_parent": {
 				"$ref": "AAAAAAFF+h6SjaM2Hec="
 			},
-			"name": "CUE21 - Consultar rol de factura",
+			"name": "CUE21 - Consultar cliente",
 			"ownedElements": [
 				{
 					"_type": "UMLUseCaseDiagram",
@@ -43040,7 +43040,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5pt4PXgLZ9o="
 					},
-					"name": "CUE21 - Consultar rol de factura",
+					"name": "CUE21 - Consultar cliente",
 					"ownedViews": [
 						{
 							"_type": "UMLActorView",
@@ -43099,7 +43099,7 @@
 											"top": 160,
 											"width": 240.2705078125,
 											"height": 11,
-											"text": "(from CUE21 - Consultar rol de factura)"
+											"text": "(from CUE21 - Consultar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -43241,9 +43241,9 @@
 									"font": "Arial;13;0",
 									"left": 272.72998046875,
 									"top": 101,
-									"width": 189.58251953125,
+									"width": 151.287109375,
 									"height": 13,
-									"text": "CUE21 - Consultar rol de factura"
+									"text": "CUE21 - Consultar cliente"
 								},
 								{
 									"_type": "LabelView",
@@ -43314,7 +43314,7 @@
 											"top": 285,
 											"width": 126,
 											"height": 22,
-											"text": "Ingresar a la vista de Roles de Facturas",
+											"text": "Ingresar a la vista de Clientes",
 											"wordWrap": true
 										},
 										{
@@ -43329,7 +43329,7 @@
 											"top": -16,
 											"width": 240.2705078125,
 											"height": 11,
-											"text": "(from CUE21 - Consultar rol de factura)"
+											"text": "(from CUE21 - Consultar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -43786,10 +43786,10 @@
 											},
 											"font": "Arial;11;1",
 											"left": 424.5,
-											"top": 365.5,
+											"top": 371,
 											"width": 120,
-											"height": 22,
-											"text": "Filtrar rol de factura de productos por",
+											"height": 11,
+											"text": "Filtrar cliente por",
 											"wordWrap": true
 										},
 										{
@@ -43804,7 +43804,7 @@
 											"top": -32,
 											"width": 240.2705078125,
 											"height": 11,
-											"text": "(from CUE21 - Consultar rol de factura)"
+											"text": "(from CUE21 - Consultar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -43822,9 +43822,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 419.5,
-									"top": 358.5,
+									"top": 364,
 									"width": 130,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5pt4Pngz55s="
 									},
@@ -44004,7 +44004,7 @@
 											"top": 64,
 											"width": 218.427734375,
 											"height": 10,
-											"text": "(from CUE21 - Consultar rol de factura)"
+											"text": "(from CUE21 - Consultar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -44555,10 +44555,10 @@
 											},
 											"font": "Arial;11;1",
 											"left": 425.5,
-											"top": 194,
+											"top": 199.5,
 											"width": 126,
-											"height": 22,
-											"text": "CUE20 - Crear rol de factura",
+											"height": 11,
+											"text": "CUE20 - Crear cliente",
 											"wordWrap": true
 										},
 										{
@@ -44573,7 +44573,7 @@
 											"top": -240,
 											"width": 240.2705078125,
 											"height": 11,
-											"text": "(from CUE21 - Consultar rol de factura)"
+											"text": "(from CUE21 - Consultar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -44591,9 +44591,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 420.5,
-									"top": 187,
+									"top": 192.5,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5pt4PnhZLqg="
 									},
@@ -45089,7 +45089,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5pt4PXgLZ9o="
 					},
-					"name": "Ingresar a la vista de Roles de Facturas"
+					"name": "Ingresar a la vista de Clientes"
 				},
 				{
 					"_type": "UMLUseCase",
@@ -45097,7 +45097,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5pt4PXgLZ9o="
 					},
-					"name": "Filtrar rol de factura de productos por",
+					"name": "Filtrar cliente por",
 					"ownedElements": [
 						{
 							"_type": "UMLExtend",
@@ -45128,7 +45128,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5pt4PXgLZ9o="
 					},
-					"name": "CUE20 - Crear rol de factura"
+					"name": "CUE20 - Crear cliente"
 				}
 			]
 		},
@@ -45138,7 +45138,7 @@
 			"_parent": {
 				"$ref": "AAAAAAFF+h6SjaM2Hec="
 			},
-			"name": "CUE22 - Editar rol de factura",
+			"name": "CUE22 - Editar cliente",
 			"ownedElements": [
 				{
 					"_type": "UMLUseCaseDiagram",
@@ -45146,7 +45146,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5puR83zDKxk="
 					},
-					"name": "CUE22 - Editar rol de factura",
+					"name": "CUE22 - Editar cliente",
 					"ownedViews": [
 						{
 							"_type": "UMLActorView",
@@ -45205,7 +45205,7 @@
 											"top": 224,
 											"width": 221.11181640625,
 											"height": 11,
-											"text": "(from CUE22 - Editar rol de factura)"
+											"text": "(from CUE22 - Editar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -45347,9 +45347,9 @@
 									"font": "Arial;13;0",
 									"left": 304.72998046875,
 									"top": 61,
-									"width": 167.9052734375,
+									"width": 129.60986328125,
 									"height": 13,
-									"text": "CUE22 - Editar rol de factura"
+									"text": "CUE22 - Editar cliente"
 								},
 								{
 									"_type": "LabelView",
@@ -45420,7 +45420,7 @@
 											"top": 254,
 											"width": 126,
 											"height": 22,
-											"text": "Seleccionar Rol de Factura a editar",
+											"text": "Seleccionar Cliente a editar",
 											"wordWrap": true
 										},
 										{
@@ -45435,7 +45435,7 @@
 											"top": -64,
 											"width": 221.11181640625,
 											"height": 11,
-											"text": "(from CUE22 - Editar rol de factura)"
+											"text": "(from CUE22 - Editar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -45621,7 +45621,7 @@
 											"top": 365.5,
 											"width": 126,
 											"height": 22,
-											"text": "Cambiar datos de Rol de factura",
+											"text": "Cambiar datos de Cliente",
 											"wordWrap": true
 										},
 										{
@@ -45636,7 +45636,7 @@
 											"top": 16,
 											"width": 221.11181640625,
 											"height": 11,
-											"text": "(from CUE22 - Editar rol de factura)"
+											"text": "(from CUE22 - Editar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -45681,7 +45681,7 @@
 									},
 									"visible": false,
 									"font": "Arial;11;0",
-									"left": -80,
+									"left": -88,
 									"width": 10,
 									"height": 10
 								},
@@ -45696,7 +45696,7 @@
 									},
 									"visible": false,
 									"font": "Arial;11;0",
-									"left": -80,
+									"left": -88,
 									"width": 10,
 									"height": 10
 								},
@@ -45711,7 +45711,7 @@
 									},
 									"visible": false,
 									"font": "Arial;11;0",
-									"left": -80,
+									"left": -88,
 									"width": 10,
 									"height": 10
 								},
@@ -45726,7 +45726,7 @@
 									},
 									"visible": false,
 									"font": "Arial;11;0",
-									"left": -80,
+									"left": -88,
 									"width": 10,
 									"height": 10
 								},
@@ -45741,7 +45741,7 @@
 									},
 									"visible": false,
 									"font": "Arial;11;0",
-									"left": -80,
+									"left": -88,
 									"width": 10,
 									"height": 10
 								}
@@ -45831,7 +45831,7 @@
 											"top": 48,
 											"width": 201.0107421875,
 											"height": 10,
-											"text": "(from CUE22 - Editar rol de factura)"
+											"text": "(from CUE22 - Editar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -46030,7 +46030,7 @@
 											"top": 96,
 											"width": 201.0107421875,
 											"height": 10,
-											"text": "(from CUE22 - Editar rol de factura)"
+											"text": "(from CUE22 - Editar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -46950,10 +46950,10 @@
 											},
 											"font": "Arial;11;1",
 											"left": 457.5,
-											"top": 149.5,
+											"top": 155,
 											"width": 126,
-											"height": 22,
-											"text": "CUE20 - Crear rol de factura",
+											"height": 11,
+											"text": "CUE20 - Crear cliente",
 											"wordWrap": true
 										},
 										{
@@ -46968,7 +46968,7 @@
 											"top": -32,
 											"width": 221.11181640625,
 											"height": 11,
-											"text": "(from CUE22 - Editar rol de factura)"
+											"text": "(from CUE22 - Editar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -46986,9 +46986,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 452.5,
-									"top": 142.5,
+									"top": 148,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5puR9H0gckg="
 									},
@@ -47480,7 +47480,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5puR83zDKxk="
 					},
-					"name": "Seleccionar Rol de Factura a editar"
+					"name": "Seleccionar Cliente a editar"
 				},
 				{
 					"_type": "UMLUseCase",
@@ -47488,7 +47488,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5puR83zDKxk="
 					},
-					"name": "Cambiar datos de Rol de factura",
+					"name": "Cambiar datos de Cliente",
 					"ownedElements": [
 						{
 							"_type": "UMLExtend",
@@ -47570,7 +47570,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5puR83zDKxk="
 					},
-					"name": "CUE20 - Crear rol de factura"
+					"name": "CUE20 - Crear cliente"
 				}
 			]
 		},
@@ -47580,7 +47580,7 @@
 			"_parent": {
 				"$ref": "AAAAAAFF+h6SjaM2Hec="
 			},
-			"name": "CUE23 - Eliminar rol de factura",
+			"name": "CUE23 - Eliminar cliente",
 			"ownedElements": [
 				{
 					"_type": "UMLUseCaseDiagram",
@@ -47588,7 +47588,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5puhAX+SyYY="
 					},
-					"name": "CUE23 - Eliminar rol de factura",
+					"name": "CUE23 - Eliminar cliente",
 					"ownedViews": [
 						{
 							"_type": "UMLActorView",
@@ -47647,7 +47647,7 @@
 											"top": 160,
 											"width": 239.04052734375,
 											"height": 11,
-											"text": "(from CUE23 - Eliminar rol de factura)"
+											"text": "(from CUE23 - Eliminar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -47789,9 +47789,9 @@
 									"font": "Arial;13;0",
 									"left": 296.72998046875,
 									"top": 93,
-									"width": 180.89892578125,
+									"width": 142.603515625,
 									"height": 13,
-									"text": "CUE23 - Eliminar rol de factura"
+									"text": "CUE23 - Eliminar cliente"
 								},
 								{
 									"_type": "LabelView",
@@ -47859,10 +47859,10 @@
 											},
 											"font": "Arial;11;1",
 											"left": 409.5,
-											"top": 327.5,
+											"top": 333,
 											"width": 126,
-											"height": 33,
-											"text": "Dar click en el botón \"Eliminar\" del rol de factura",
+											"height": 22,
+											"text": "Dar click en el botón \"Eliminar\" del cliente",
 											"wordWrap": true
 										},
 										{
@@ -47877,7 +47877,7 @@
 											"top": 80,
 											"width": 239.04052734375,
 											"height": 11,
-											"text": "(from CUE23 - Eliminar rol de factura)"
+											"text": "(from CUE23 - Eliminar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -47895,9 +47895,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 404.5,
-									"top": 320.5,
+									"top": 326,
 									"width": 136,
-									"height": 45,
+									"height": 34,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5puhAX+jXDU="
 									},
@@ -48334,10 +48334,10 @@
 											},
 											"font": "Arial;11;1",
 											"left": 409.5,
-											"top": 197.5,
+											"top": 203,
 											"width": 126,
-											"height": 22,
-											"text": "CUE20 - Crear rol de factura",
+											"height": 11,
+											"text": "CUE20 - Crear cliente",
 											"wordWrap": true
 										},
 										{
@@ -48352,7 +48352,7 @@
 											"top": 64,
 											"width": 239.04052734375,
 											"height": 11,
-											"text": "(from CUE23 - Eliminar rol de factura)"
+											"text": "(from CUE23 - Eliminar cliente)"
 										},
 										{
 											"_type": "LabelView",
@@ -48370,9 +48370,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 404.5,
-									"top": 190.5,
+									"top": 196,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5puhAX+6nc8="
 									},
@@ -48868,7 +48868,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5puhAX+SyYY="
 					},
-					"name": "Dar click en el botón \"Eliminar\" del rol de factura"
+					"name": "Dar click en el botón \"Eliminar\" del cliente"
 				},
 				{
 					"_type": "UMLUseCase",
@@ -48884,7 +48884,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5puhAX+SyYY="
 					},
-					"name": "CUE20 - Crear rol de factura"
+					"name": "CUE20 - Crear cliente"
 				}
 			]
 		},
@@ -49101,9 +49101,9 @@
 										"$ref": "AAAAAAGK5p8F/IfIcwo="
 									},
 									"font": "Arial;13;0",
-									"left": 288.72998046875,
+									"left": 287.27001953125,
 									"top": 85,
-									"width": 142.60986328125,
+									"width": 129.8828125,
 									"height": 13,
 									"text": "CUE24 - Registrar venta"
 								},
@@ -49116,7 +49116,7 @@
 									"font": "Arial;13;1",
 									"left": 269,
 									"top": 85,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -51449,9 +51449,9 @@
 										"$ref": "AAAAAAGK5p+af4tOvUQ="
 									},
 									"font": "Arial;13;0",
-									"left": 304.72998046875,
+									"left": 303.27001953125,
 									"top": 61,
-									"width": 123.83349609375,
+									"width": 113.99462890625,
 									"height": 13,
 									"text": "CUE25 - Editar venta"
 								},
@@ -51464,7 +51464,7 @@
 									"font": "Arial;13;1",
 									"left": 285,
 									"top": 61,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -51521,9 +51521,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 457.5,
-											"top": 250,
+											"top": 255.5,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "Seleccionar venta a editar",
 											"wordWrap": true
 										},
@@ -51557,9 +51557,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 452.5,
-									"top": 243,
+									"top": 248.5,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5p+af4tTNJM="
 									},
@@ -52767,9 +52767,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 457.5,
-											"top": 149.5,
+											"top": 155,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "CUE25 - Registrar venta",
 											"wordWrap": true
 										},
@@ -52803,9 +52803,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 452.5,
-									"top": 142.5,
+									"top": 148,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5p+agIuQphc="
 									},
@@ -53885,9 +53885,9 @@
 										"$ref": "AAAAAAGK5qA8JJGMi7g="
 									},
 									"font": "Arial;13;0",
-									"left": 272.72998046875,
+									"left": 271.27001953125,
 									"top": 93,
-									"width": 153.45166015625,
+									"width": 140.7119140625,
 									"height": 13,
 									"text": "CUE18 - Consultar factura"
 								},
@@ -53900,7 +53900,7 @@
 									"font": "Arial;13;1",
 									"left": 253,
 									"top": 93,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -55203,9 +55203,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 425.5,
-											"top": 189.5,
+											"top": 195,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "CUE24 - Registrar venta",
 											"wordWrap": true
 										},
@@ -55239,9 +55239,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 420.5,
-									"top": 182.5,
+									"top": 188,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5qA8JZHOtrs="
 									},
