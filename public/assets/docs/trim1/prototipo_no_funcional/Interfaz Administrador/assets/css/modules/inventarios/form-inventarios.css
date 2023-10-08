@@ -1,0 +1,246 @@
+/* Tabla productos */
+.tabla-productos{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+    /* Columnas características de producto  */
+    .columnas-caract{
+        display: flex;
+        width: 100%;
+        height: 40px;
+        color: white;
+        justify-content: space-between;
+    }
+
+    .item-columna{
+        font-size: 14.5px;
+    }
+
+    /* Nombre Producto */
+    .nombre-prod{
+        display: flex;
+        width: 59.7%;
+        height: 100%;
+        border: 1px solid black;
+        background-color: #212EC2;
+    }
+
+    /* Entradas */
+    .entradas-prod{
+        display: flex;
+        width: 20%;
+        height: 100%;
+        border: 1px solid black;
+        background-color: #212EC2;
+    }
+
+    /* Salidas */
+    .salidas-prod{
+        display: flex;
+        width: 20%;
+        height: 100%;
+        border: 1px solid black;
+        background-color: #212EC2;
+    }
+
+/* Columnas datos de filas */
+.filas-datos{
+    display: flex;
+    width: 100%;
+    height: 32px;
+    color: white;
+    color: black;
+    margin-top: 3px;
+}
+
+.item-fila{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.item-fila input, select{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #C0C0C0;
+    font-size: 15px;
+}
+
+.item-fila input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    /* Nombre de producto */
+    .nombre-prod-dato{
+        display: flex;
+        width: 59.7%;
+        height: 100%;
+        border: 1px solid black;
+        background-color: #C0C0C0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #seleccionar-prod{
+        padding: 0 7.5px 0;
+    }
+
+    /* Entrada de producto */
+    .entradas-prod-dato{
+        display: flex;
+        width: 20%;
+        height: 100%;
+        border: 1px solid black;
+        background-color: #C0C0C0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Salida de producto */
+    .salidas-prod-dato{
+        display: flex;
+        width: 20%;
+        height: 100%;
+        border: 1px solid black;
+        background-color: #C0C0C0;
+        justify-content: center;
+        align-items: center;
+    }
+
+/* Opciones inventario */
+.opciones-inventario{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+    /* Botón: Cancelar */
+    .bott-cancelar{
+        display: flex;
+        width: 165px;
+        background-color: red;
+        border: 1px solid black;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bott-cancelar h2{
+        color: white;
+        font-size: 17px;
+    }
+
+    /* Botón: Registrar inventario */
+    .bott-guardar-cambios{
+        display: flex;
+        width: 200px;
+        background-color: #2121E3;
+        border: 1px solid black;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bott-guardar-cambios a h2{
+        color: white;
+        font-size: 17px;
+    }
+
+
+/* @media */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        .tabla-productos{
+            margin-top: 1rem;
+        }
+
+        .columnas-caract{
+            height: 30px;
+        }
+
+        .item-columna, .item-fila input, select{
+            font-size: 12px;
+        }
+
+        .filas-datos{
+            height: 25px;
+        }
+
+        .bott-guardar-cambios{
+            width: 180px;
+            height: 30px;
+        }
+
+        .bott-guardar-cambios a h2{
+            font-size: 13.5px;
+        }
+    }
+
+    /* @media 768px */
+    @media(max-width: 768px){
+        .tabla-productos{
+            margin-top: 0.8rem;
+        }
+
+        .columnas-caract{
+            height: 27.5px;
+        }
+
+        .item-columna, .item-fila input, select{
+            font-size: 10px;
+        }
+
+        .filas-datos{
+            height: 22px;
+        }
+
+        .bott-guardar-cambios{
+            width: 160px;
+            height: 27.5px;
+        }
+
+        .bott-guardar-cambios a h2{
+            font-size: 12px;
+        }
+    }
+
+    /* @media 425px */
+    @media(max-width: 425px){
+        .columnas-caract{
+            height: 25px;
+        }
+
+        .item-columna{
+            font-size: 8.5px;
+        }
+
+        .filas-datos{
+            height: 20px;
+        }
+
+        .item-fila input, select{
+            font-size: 8px;
+        }
+        
+
+        .bott-guardar-cambios{
+            width: 150px;
+            height: 25px;
+        }
+
+        .bott-guardar-cambios a h2{
+            font-size: 9.5px;
+        }
+    }

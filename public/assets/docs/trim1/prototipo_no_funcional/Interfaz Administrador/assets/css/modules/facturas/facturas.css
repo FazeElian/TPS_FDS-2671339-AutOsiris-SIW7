@@ -1,0 +1,144 @@
+/* Opciones de Factura/s */
+.opciones-factura{
+    display: flex;
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+/* Contenedor de Opciones de Factura */
+.cont-opciones-factura{
+    width: 70%;
+}
+
+.cont-opciones-factura, .cont-busqueda{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+    /* Nueva Factura  y Roles de Factura*/
+    .cont-nueva-factura, .cont-roles-factura{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 100%;
+        font-size: 17.5px;
+        border: 0;
+        background-color: #A0A0A0;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .cont-nueva-factura:hover, .cont-roles-factura:hover{
+        background-color: #EEEEEE;
+        transition: 0.3s;
+    }
+
+    .cont-nueva-factura img, .cont-roles-factura img{
+        width: 36px;
+        height: 36px;
+        margin-right: 0.7rem;
+    }
+
+    .cont-roles-factura{
+        margin-left: 2rem;
+        width: 280px;
+    }
+
+/* Contenedor de búsqueda */
+.cont-busqueda{
+    width: 30%;
+    height: 100%;
+    justify-content: end;
+}
+
+#buscarFactura{
+    display: flex;
+    width: 100%;
+    height: 32.5px;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: 0 10px 0;
+    font-size: 15px;
+}
+
+/* @media */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        .opciones-factura{
+            height: 40px;
+        }
+
+        .cont-nueva-factura, .cont-roles-factura{
+            width: 200px;
+            font-size: 15px;
+        }
+
+        .cont-nueva-factura img, .cont-roles-factura img{
+            width: 28px;
+            height: 28px;
+        }
+
+        #buscarFactura{
+            height: 25px;
+            font-size: 12px;
+        }
+    }
+
+    @media(max-width: 768px){
+        .opciones-factura{
+            height: 150px;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .cont-opciones-factura{
+            align-items: start;
+            justify-content: start;
+            margin-top: 1rem;
+        }
+
+        .cont-nueva-factura, .cont-roles-factura{
+            width: 220px;
+            margin: 0;
+            height: 90%;
+        }
+
+        .cont-roles-factura{
+            margin-left: 1rem;
+        }
+
+        .cont-busqueda{
+            justify-content: end;
+            margin-top: 0.7rem;
+        }
+
+        #buscarFactura{
+            width: 60%;
+            margin: 0;
+            height: 28px;
+            justify-self: end;
+        }
+
+        .cont-busqueda, .cont-opciones-factura{
+            width: 100%;
+            height: 50%;
+        }
+    }
+
+    /* @media 425px */
+    @media(max-width: 425px){
+        .cont-nueva-factura, .cont-roles-factura{
+            height: 80%;
+            font-size: 13.5px;
+        }
+
+        .cont-nueva-factura img, .cont-roles-factura img{
+            width: 25px;
+            height: 25px;
+            margin-right: 3px;
+        }
+    }
