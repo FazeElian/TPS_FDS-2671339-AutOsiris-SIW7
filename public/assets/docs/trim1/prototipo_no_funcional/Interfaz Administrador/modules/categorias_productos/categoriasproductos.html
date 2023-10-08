@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador | Categorías | Productos</title>
+
+    <!-- Hoja de estilos generales -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+    <!-- Hoja de estilos de este archivo  -->
+    <link rel="stylesheet" href="../../assets/css/modules/categorias_productos/categorias_productos.css">
+
+    <!-- Scripts Generales -->
+    <script defer src="../../assets/js/modules/scripts.js"></script>
+
+    <!-- Scripts para este archivo -->
+    <script defer src="../../assets/js/modules/categorias_productos/alertasCategoriasProductos.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/img/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="menu_sup">
+        <nav class="nav-inicio">
+            <!-- Icono de Menú responsive -->
+            <button class="icono-menu">
+                <div class="icono-menu-responsive">
+                    <img src="../../assets/img/menu-icono.png">
+                </div>
+                <div class="icono-menu-pc">
+                    <a href="../../index.html"><img src="../../assets/img/index.png"></a>
+                </div>
+            </button>
+            <ul class="lista_nav-inicio">
+                <li class="item_nav-inicio"><a href="../../index.html">Inicio</a></li>
+                <li class="item_nav-inicio"><a href="../estadisticas/estadisticas.html">Estadísticas</a></li>
+                <li class="item_nav-inicio"><a href="../ventas/ventas.html">Ventas</a></li>
+                <li class="item_nav-inicio li-facturas"><a href="../facturas/facturas.html">Facturas</a></li>
+                <li class="item_nav-inicio"><a href="../productos/Productos.html">Productos</a></li>
+                <li class="item_nav-inicio li-inventarios"><a href="../inventarios/inventarios.html">Inventarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navegación de ítems Usuario -->
+        <nav class="nav-usuario">
+            <ul class="lista_nav-usuario">
+                <a href="../perfil/Perfil.html"><li class="item_nav-usuario">Mi perfil</li></a>
+                <a href="#"><li class="item_nav-usuario cerrar_sesion">Cerrar Sesión</li>
+                </a>
+            </ul>
+
+            <button class="icono-usuario">
+                <img src="../../assets/img/usuario-icono.png">
+            </button>
+        </nav>
+    </header>
+
+<!-- Contenido de página -->
+<section class="contenido-pag">
+    <!-- Titulo de ventana -->
+    <div class="titulo-ventana">
+        <h1 class="titulo">Categorías</h1>
+    </div>
+
+    <!-- Barra de búsqueda -->
+    <div class="cont-barra-busqueda">
+        <input type="search" name="barraBusquedaCategorias" id="barraBusqueda" placeholder="Buscar categoría">
+    </div>
+
+    <!-- Tabla categorías -->
+    <table class="tabla-categorias" id="tabla-categorias">
+        <!-- Columnas -->
+        <tr class="columnas-caract">
+            <td class="no item-columna">No</td>
+            <td class="cantidad-prod item-columna">Nombre</td>
+            <td class="nombre-categoria item-columna">Descripción</td>
+            <td class="opciones-categoria item-columna">Opciones</td>
+        </tr>
+
+        <tr class="filas-datos">
+            <td class="no-dato item-fila">1</td>
+            <td class="cantidad-prod-dato item-fila">Cuadernos</td>
+            <td class="nombre-categoria-dato item-fila">Todos los tipos de cuadernos</td>
+            <td class="opciones-categoria-dato item-fila">
+                <button class="editar-cat">
+                    <a href="editarCategoriaProductos.html">
+                        <h2>Editar</h2>
+                        <img src="../../assets/img/editar-icono.png">
+                    </a>
+                </button>
+                <form action="" method="POST" class="eliminar-cat">
+                    <button class="btn-eliminar-cat" onclick="categoriaEliminada()">
+                        <h2>Eliminar</h2>
+                        <img src="../../assets/img/eliminar-icono.png">
+                    </button>
+                </form>
+            </td>
+        </tr>
+
+        <tr class="filas-datos">
+            <td class="no-dato item-fila">2</td>
+            <td class="cantidad-prod-dato item-fila">Lapiceros</td>
+            <td class="nombre-categoria-dato item-fila">Todos los tipos de lapiceros</td>
+            <td class="opciones-categoria-dato item-fila">
+                <button class="editar-cat">
+                    <a href="editarCategoriaProductos.html">
+                        <h2>Editar</h2>
+                        <img src="../../assets/img/editar-icono.png">
+                    </a>
+                </button>
+                <form action="" method="POST" class="eliminar-cat">
+                    <button class="btn-eliminar-cat" onclick="categoriaEliminada()">
+                        <h2>Eliminar</h2>
+                        <img src="../../assets/img/eliminar-icono.png">
+                    </button>
+                </form>
+            </td>
+        </tr>
+
+        <tr class="filas-datos">
+            <td class="no-dato item-fila">3</td>
+            <td class="cantidad-prod-dato item-fila">Lápices</td>
+            <td class="nombre-categoria-dato item-fila">Todos los tipos de lápices</td>
+            <td class="opciones-categoria-dato item-fila">
+                <button class="editar-cat">
+                    <a href="editarCategoriaProductos.html">
+                        <h2>Editar</h2>
+                        <img src="../../assets/img/editar-icono.png">
+                    </a>
+                </button>
+                <form action="" method="POST" class="eliminar-cat">
+                    <button class="btn-eliminar-cat" onclick="categoriaEliminada()">
+                        <h2>Eliminar</h2>
+                        <img src="../../assets/img/eliminar-icono.png">
+                    </button>
+                </form>
+            </td>
+        </tr>
+        <!-- No hay Registros Categorías -->
+        <!-- <tr class="filas-datos">
+            <td class="no-records item-fila">No hay Registros de Categorías de productos</td>
+        </tr> -->
+    </table>
+
+    <!-- Opciones Categorías -->
+    <div class="opciones-categorias">
+        <button class="añadir-fila">
+            <a href="crearCategoriaProductos.html"><h2>Nueva Categoría</h2></a>
+        </button>
+    </div>
+</section>

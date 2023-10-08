@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador | Productos</title>
+
+    <!-- Hoja de estilos generales -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+    <!-- Hoja de estilos de este archivo  -->
+    <link rel="stylesheet" href="../../assets/css/modules/productos/productos.css">
+
+    <!-- Scripts Generales -->
+    <script defer src="../../assets/js/modules/scripts.js"></script>
+
+    <!-- Scripts para este archivo -->
+    <script defer src="../../assets/js/modules/productos/alertasProductos.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/img/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="menu_sup">
+        <nav class="nav-inicio">
+            <!-- Icono de Menú responsive -->
+            <button class="icono-menu">
+                <div class="icono-menu-responsive">
+                    <img src="../../assets/img/menu-icono.png">
+                </div>
+                <div class="icono-menu-pc">
+                    <a href="../../index.html"><img src="../../assets/img/index.png"></a>
+                </div>
+            </button>
+            <ul class="lista_nav-inicio">
+                <li class="item_nav-inicio"><a href="../../index.html">Inicio</a></li>
+                <li class="item_nav-inicio"><a href="../estadisticas/estadisticas.html">Estadísticas</a></li>
+                <li class="item_nav-inicio"><a href="../ventas/ventas.html">Ventas</a></li>
+                <li class="item_nav-inicio li-facturas"><a href="../facturas/facturas.html">Facturas</a></li>
+                <li class="item_nav-inicio"><a href="../productos/productos.html">Productos</a></li>
+                <li class="item_nav-inicio li-inventarios"><a href="../inventarios/inventarios.html">Inventarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navegación de ítems Usuario -->
+        <nav class="nav-usuario">
+            <ul class="lista_nav-usuario">
+                <a href="../perfil/Perfil.html"><li class="item_nav-usuario">Mi perfil</li></a>
+                <a href="#"><li class="item_nav-usuario cerrar_sesion">Cerrar Sesión</li>
+                </a>
+            </ul>
+
+            <button class="icono-usuario">
+                <img src="../../assets/img/usuario-icono.png">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenido de página -->
+    <section class="contenido-pag">
+        <!-- Titulo de ventana -->
+        <div class="titulo-ventana">
+            <h1 class="titulo">Productos</h1>
+        </div>
+
+        <!-- Filtros de búsqueda -->
+        <div class="filtros-busqueda">
+            <div class="ordenar_por">
+                <select name="ordenar_por" id="ordenar_por">
+                    <option value="Ordenar Por">Ordenar Por</option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Precio">Precio</option>
+                </select>
+            </div>
+
+            <div class="barra_busqueda">
+                <input type="search" name="barra_busqueda" id="barra_busqueda" placeholder="Buscar Producto">
+            </div>
+        </div>
+
+        <!-- Sección de lista de productos -->
+        <section class="productos">
+            <!-- Contenedor de todas las cajas de todos los productos -->
+            <section class="sect-productos">
+                    <!-- Contenedor de producto -->
+                    <div class="cont-producto">
+                        <!-- Formulario de producto -->
+                        <form action="" method="post" class="form-producto">
+                            <div class="img-producto">
+                                <img src="../../assets/img/cuaderno.webp" alt="Este producto no tiene una imagen">
+                            </div>
+
+                            <div class="info-producto">
+                                <h1>Nombre: Cuaderno Argollado 80 Hojas</h1>
+                                <h4 class="title-descrip"><b>Descripción:</b></h4>
+                                <p>Cuaderno Argollado 80 Hojas marca norma con hojas cuadriculadas y aros de aluminio</p>
+                                <h2>Precio: 10.000 $</h2>
+                                <h3>Código: CUE01 </h3>
+                            </div>
+                        </form>
+
+                        <!-- Acciones Producto -->
+                        <div class="acciones-prod">
+                            <!-- Categoría de producto -->
+                            <div class="categoria-prod">
+                                <h2>Categoría Producto: Cuadernos</h2>
+                            </div>
+
+                            <!-- Editar producto -->
+                            <button class="editar-prod">
+                                <a href="editarProducto.html"><h2>Editar</h2>
+                                <img src="../../assets/img/editar-icono.png"></a>
+                            </button>
+
+                            <form action="" method="POST" class="eliminar-prod">
+                                <!-- Eliminar producto -->
+                                <button class="btn-eliminar" type="submit" onclick="productoEliminado()">
+                                    <h2>Eliminar</h2>
+                                    <img src="../../assets/img/eliminar-icono.png">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contenedor de producto -->
+                    <div class="cont-producto">
+                        <!-- Formulario de producto -->
+                        <form action="" method="post" class="form-producto">
+                            <div class="img-producto">
+                                <img src="../../assets/img/cuaderno.webp" alt="Este producto no tiene una imagen">
+                            </div>
+
+                            <div class="info-producto">
+                                <h1>Nombre: Cuaderno Argollado 80 Hojas</h1>
+                                <h4 class="title-descrip"><b>Descripción:</b></h4>
+                                <p>Cuaderno Argollado 80 Hojas marca norma con hojas cuadriculadas y aros de aluminio</p>
+                                <h2>Precio: 10.000 $</h2>
+                                <h3>Código: CUE01 </h3>
+                            </div>
+                        </form>
+
+                        <!-- Acciones Producto -->
+                        <div class="acciones-prod">
+                            <!-- Categoría de producto -->
+                            <div class="categoria-prod">
+                                <h2>Categoría Producto: Cuadernos</h2>
+                            </div>
+
+                            <!-- Editar producto -->
+                            <button class="editar-prod">
+                                <a href="editarProducto.html"><h2>Editar</h2>
+                                <img src="../../assets/img/editar-icono.png"></a>
+                            </button>
+
+                            <form action="" method="POST" class="eliminar-prod">
+                                <!-- Eliminar producto -->
+                                <button class="btn-eliminar" type="submit" onclick="productoEliminado()">
+                                    <h2>Eliminar</h2>
+                                    <img src="../../assets/img/eliminar-icono.png">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contenedor de producto -->
+                    <div class="cont-producto">
+                        <!-- Formulario de producto -->
+                        <form action="" method="post" class="form-producto">
+                            <div class="img-producto">
+                                <img src="../../assets/img/cuaderno.webp" alt="Este producto no tiene una imagen">
+                            </div>
+
+                            <div class="info-producto">
+                                <h1>Nombre: Cuaderno Argollado 80 Hojas</h1>
+                                <h4 class="title-descrip"><b>Descripción:</b></h4>
+                                <p>Cuaderno Argollado 80 Hojas marca norma con hojas cuadriculadas y aros de aluminio</p>
+                                <h2>Precio: 10.000 $</h2>
+                                <h3>Código: CUE01 </h3>
+                            </div>
+                        </form>
+
+                        <!-- Acciones Producto -->
+                        <div class="acciones-prod">
+                            <!-- Categoría de producto -->
+                            <div class="categoria-prod">
+                                <h2>Categoría Producto: Cuadernos</h2>
+                            </div>
+
+                            <!-- Editar producto -->
+                            <button class="editar-prod">
+                                <a href="editarProducto.html"><h2>Editar</h2>
+                                <img src="../../assets/img/editar-icono.png"></a>
+                            </button>
+
+                            <form action="" method="POST" class="eliminar-prod">
+                                <!-- Eliminar producto -->
+                                <button class="btn-eliminar" type="submit" onclick="productoEliminado()">
+                                    <h2>Eliminar</h2>
+                                    <img src="../../assets/img/eliminar-icono.png">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contenedor de producto -->
+                    <div class="cont-producto">
+                        <!-- Formulario de producto -->
+                        <form action="" method="post" class="form-producto">
+                            <div class="img-producto">
+                                <img src="../../assets/img/cuaderno.webp" alt="Este producto no tiene una imagen">
+                            </div>
+
+                            <div class="info-producto">
+                                <h1>Nombre: Cuaderno Argollado 80 Hojas</h1>
+                                <h4 class="title-descrip"><b>Descripción:</b></h4>
+                                <p>Cuaderno Argollado 80 Hojas marca norma con hojas cuadriculadas y aros de aluminio</p>
+                                <h2>Precio: 10.000 $</h2>
+                                <h3>Código: CUE01 </h3>
+                            </div>
+                        </form>
+
+                        <!-- Acciones Producto -->
+                        <div class="acciones-prod">
+                            <!-- Categoría de producto -->
+                            <div class="categoria-prod">
+                                <h2>Categoría Producto: Cuadernos</h2>
+                            </div>
+
+                            <!-- Editar producto -->
+                            <button class="editar-prod">
+                                <a href="editarProducto.html"><h2>Editar</h2>
+                                <img src="../../assets/img/editar-icono.png"></a>
+                            </button>
+
+                            <form action="" method="POST" class="eliminar-prod">
+                                <!-- Eliminar producto -->
+                                <button class="btn-eliminar" type="submit" onclick="productoEliminado()">
+                                    <h2>Eliminar</h2>
+                                    <img src="../../assets/img/eliminar-icono.png">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contenedor de producto -->
+                    <div class="cont-producto">
+                        <!-- Formulario de producto -->
+                        <form action="" method="post" class="form-producto">
+                            <div class="img-producto">
+                                <img src="../../assets/img/cuaderno.webp" alt="Este producto no tiene una imagen">
+                            </div>
+
+                            <div class="info-producto">
+                                <h1>Nombre: Cuaderno Argollado 80 Hojas</h1>
+                                <h4 class="title-descrip"><b>Descripción:</b></h4>
+                                <p>Cuaderno Argollado 80 Hojas marca norma con hojas cuadriculadas y aros de aluminio</p>
+                                <h2>Precio: 10.000 $</h2>
+                                <h3>Código: CUE01 </h3>
+                            </div>
+                        </form>
+
+                        <!-- Acciones Producto -->
+                        <div class="acciones-prod">
+                            <!-- Categoría de producto -->
+                            <div class="categoria-prod">
+                                <h2>Categoría Producto: Cuadernos</h2>
+                            </div>
+
+                            <!-- Editar producto -->
+                            <button class="editar-prod">
+                                <a href="editarProducto.html"><h2>Editar</h2>
+                                <img src="../../assets/img/editar-icono.png"></a>
+                            </button>
+
+                            <form action="" method="POST" class="eliminar-prod">
+                                <!-- Eliminar producto -->
+                                <button class="btn-eliminar" type="submit" onclick="productoEliminado()">
+                                    <h2>Eliminar</h2>
+                                    <img src="../../assets/img/eliminar-icono.png">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Cuando no hay registros de Productos -->
+                    <!-- <div class="no-records-prod">
+                        <h2>No hay productos</h2>
+                    </div> -->
+            </section>
+                <!-- Contenedor de opciones de producto -->
+                <div class="opciones-producto">
+                    <!-- Añadir producto -->
+                    <div class="añadir-prod">
+                        <a href="anadirProducto.html"><img src="../../assets/img/anadir-icono.png"></a>
+                        <a href="anadirProducto.html"><h1>Añadir </h1><h1>producto</h1></a>
+                    </div>
+
+                    <!-- Categorías producto -->
+                    <div class="añadir-prod">
+                        <a href="../categorias_productos/categoriasProductos.html"><img src="../../assets/img/categorias-icono.png"></a>
+                        <a href="../categorias_productos/categoriasProductos.html"><h1>Categorías </h1><h1>productos</h1></a>
+                    </div>
+                </div>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,930 @@
+/* Tabla clientes */
+.tabla-clientes{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+    /* Columnas características de cliente */
+    .columnas-caract{
+        display: flex;
+        width: 100%;
+        height: 35px;
+        justify-content: space-between;
+    }
+
+    .item-columna{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        color: white;
+        background-color: #212EC2;
+    }
+
+        /* No */
+        .no{
+            width: 5%;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+        /* Nombre de cliente */
+        .nombre-cliente{
+            width: 32%;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+        /* Descripción cliente */
+        .descripcion-cliente{
+            width: 42.5%;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+        /* Acciones de cliente */
+        .acciones-cliente{
+            width: 20%;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+    /* Filas datos */
+    .filas-datos{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        justify-content: space-between;
+        background-color: #F1F1F1;
+    }
+
+    .filas-datos input{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        background-color: #D9D9D9;
+        border: 0;
+    }
+
+    .item-fila{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        color: black;
+        background-color: #D9D9D9;
+    }
+
+    /* Form */
+    .form{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+        /* No */
+        .no-dato{
+            display: flex;
+            width: 5%;
+            height: 100%;
+            border: 1px solid black;
+            font-size: 15px;
+            color: black;
+            background-color: #D9D9D9;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Nombre de cliente */
+        .nombre-cliente-dato{
+            display: flex;
+            width: 32%;
+            height: 100%;
+            border: 1px solid black;
+            font-size: 15px;
+            color: black;
+            background-color: #D9D9D9;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Descripción cliente */
+        .descripcion-cliente-dato{
+            display: flex;
+            width: 42.5%;
+            height: 100%;
+            border: 1px solid black;
+            font-size: 15px;
+            color: black;
+            background-color: #D9D9D9;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Acciones de cliente */
+        .acciones-cliente-dato{
+            display: flex;
+            width: 20%;
+            height: 100%;
+            justify-content: space-between;
+            background-color: #D9D9D9;
+        }
+
+        .acciones-cliente-dato h2{
+            font-size: 15px;
+        }
+
+            /* Botón: Editar */
+            .btn-editar{
+                display: flex;
+                width: 49.5%;
+                height: 100%;
+                background-color: #1988CF;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .btn-editar img{
+                display: flex;
+                width: 15px;
+                height: 15px;
+                margin-left: 7px;
+            }
+
+            /* Botón: Eliminar */
+            .btn-eliminar{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-color: red;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .btn-eliminar img{
+                display: flex;
+                width: 15px;
+                height: 15px;
+                margin-left: 7px;
+            }
+
+            .eliminar-cliente{
+                display: flex;
+                width: 50%;
+                height: 100%;
+                background-color: red;
+                border: 0;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+    /* Opciones de Filas */
+    .opciones-filas{
+        display: flex;
+        width: 100%;
+        height: 35px;
+        margin-top: 100px;
+    }
+
+        /* Añadir Fila */
+        .añadir-fila{
+            display: flex;
+            width: 200px;
+            border: 1px solid black;
+            background-color: #2121E3;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .añadir-fila h2{
+            color: white;
+            font-size: 18px;
+        }
+
+    /* Opciones clientes */
+    .opciones-clientes{
+        display: flex;
+        width: 100%;
+        height: 35px;
+        margin-top: 60px;
+        justify-content: space-between;
+    }
+
+        /* Botón: Cancelar */
+        .bott-cancelar{
+            display: flex;
+            width: 165px;
+            background-color: red;
+            border: 1px solid black;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bott-cancelar h2{
+            color: white;
+            font-size: 17px;
+        }
+
+        /* Botón: Crear factura */
+        .bott-guardar-cambios{
+            display: flex;
+            width: 200px;
+            background-color: #2121E3;
+            border: 1px solid black;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bott-guardar-cambios h2{
+            color: white;
+            font-size: 17px;
+        }
+
+/* @media */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        /* Tabla clientes */
+        .tabla-clientes{
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 20px;
+            flex-direction: column;
+        }
+
+            /* Columnas características de cliente */
+            .columnas-caract{
+                display: flex;
+                width: 100%;
+                height: 30px;
+                justify-content: space-between;
+            }
+
+            .item-columna{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 15px;
+                color: white;
+                background-color: #212EC2;
+            }
+
+                /* No */
+                .no{
+                    width: 5%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+                /* Nombre de cliente */
+                .nombre-cliente{
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+                /* Descripción cliente */
+                .descripcion-cliente{
+                    width: 44.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+                /* Acciones de cliente */
+                .acciones-cliente{
+                    width: 20%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+            /* Filas datos */
+            .filas-datos{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                justify-content: space-between;
+                background-color: #F1F1F1;
+            }
+
+            .filas-datos input{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: 12px;
+                color: black;
+                background-color: #D9D9D9;
+                border: 0;
+            }
+
+            .item-fila{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                color: black;
+                background-color: #D9D9D9;
+            }
+
+                /* No */
+                .no-dato{
+                    display: flex;
+                    width: 5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: black;
+                    background-color: #D9D9D9;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                /* Nombre de cliente */
+                .nombre-cliente-dato{
+                    display: flex;
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: black;
+                    background-color: #D9D9D9;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                /* Descripción cliente */
+                .descripcion-cliente-dato{
+                    display: flex;
+                    width: 44.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: black;
+                    background-color: #D9D9D9;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                /* Acciones de cliente */
+                .acciones-cliente-dato{
+                    display: flex;
+                    width: 20%;
+                    height: 100%;
+                    justify-content: space-between;
+                    background-color: #D9D9D9;
+                }
+
+                .acciones-cliente-dato h2{
+                    font-size: 12px;
+                }
+
+                    /* Botón: Editar */
+                    .btn-editar{
+                        display: flex;
+                        width: 49.5%;
+                        height: 100%;
+                        background-color: #1988CF;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .btn-editar img{
+                        display: flex;
+                        width: 12px;
+                        height: 12px;
+                        margin-left: 7px;
+                    }
+
+                    /* Botón: Eliminar */
+                    .btn-eliminar{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        background-color: red;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .btn-eliminar img{
+                        display: flex;
+                        width: 12px;
+                        height: 12px;
+                        margin-left: 7px;
+                    }
+
+    /* Opciones de Filas */
+    .opciones-filas{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        margin-top: 100px;
+    }
+
+        /* Añadir Fila */
+        .añadir-fila{
+            display: flex;
+            width: 140px;
+            border: 1px solid black;
+            background-color: #1988CF;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .añadir-fila h2{
+            color: white;
+            font-size: 15px;
+        }
+
+    /* Opciones clientes */
+        .opciones-clientes{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            margin-top: 60px;
+            justify-content: space-between;
+        }
+
+            /* Botón: Cancelar */
+            .bott-cancelar{
+                display: flex;
+                width: 140px;
+                background-color: red;
+                border: 1px solid black;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bott-cancelar h2{
+                color: white;
+                font-size: 15px;
+            }
+
+            /* Botón: Crear factura */
+            .bott-guardar-cambios{
+                display: flex;
+                width: 180px;
+                background-color: #2121E3;
+                border: 1px solid black;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bott-guardar-cambios h2{
+                color: white;
+                font-size: 15px;
+            }
+        }
+
+    /* @media 768px */
+    @media (max-width: 768px){
+        /* Tabla clientes */
+        .tabla-clientes{
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 15px;
+            flex-direction: column;
+        }
+
+            /* Columnas características de cliente */
+            .columnas-caract{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                justify-content: space-between;
+            }
+
+            .item-columna{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 12px;
+                color: white;
+                background-color: #212EC2;
+            }
+
+                /* Id de cliente */
+                .no{
+                    width: 5%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+                /* Nombre de cliente */
+                .nombre-cliente{
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+                /* Descripción cliente */
+                .descripcion-cliente{
+                    width: 44.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+                /* Acciones de cliente */
+                .acciones-cliente{
+                    width: 20%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+            /* Filas datos */
+            .filas-datos{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                justify-content: space-between;
+                background-color: #F1F1F1;
+            }
+
+            .filas-datos input{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: 10px;
+                color: black;
+                background-color: #D9D9D9;
+                border: 0;
+            }
+
+            .item-fila{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+                color: black;
+                background-color: #D9D9D9;
+            }
+
+                /* Id de cliente */
+                .no-dato{
+                    display: flex;
+                    width: 5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    font-size: 10px;
+                    color: black;
+                    background-color: #D9D9D9;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                /* Nombre de cliente */
+                .nombre-cliente-dato{
+                    display: flex;
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: black;
+                    background-color: #D9D9D9;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                /* Descripción cliente */
+                .descripcion-cliente-dato{
+                    display: flex;
+                    width: 44.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: black;
+                    background-color: #D9D9D9;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                /* Acciones de cliente */
+                .acciones-cliente-dato{
+                    display: flex;
+                    width: 20%;
+                    height: 100%;
+                    justify-content: space-between;
+                    background-color: #D9D9D9;
+                }
+
+                .acciones-cliente-dato h2{
+                    font-size: 10px;
+                }
+
+                    /* Botón: Editar */
+                    .btn-editar{
+                        display: flex;
+                        width: 49.5%;
+                        height: 100%;
+                        background-color: #1988CF;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .btn-editar img{
+                        display: flex;
+                        width: 10px;
+                        height: 10px;
+                        margin-left: 4px;
+                    }
+
+                    /* Botón: Eliminar */
+                    .btn-eliminar{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        background-color: red;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .btn-eliminar img{
+                        display: flex;
+                        width: 10px;
+                        height: 10px;
+                        margin-left: 4px;
+                    }
+    }
+
+    /* @media 425px */
+    @media(max-width: 425px){
+        /* Tabla clientes */
+        .tabla-clientes{
+            display: flex;
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 15px;
+            flex-direction: column;
+        }
+
+            /* Columnas características de cliente */
+            .columnas-caract{
+                display: flex;
+                width: 100%;
+                height: 20px;
+                justify-content: space-between;
+            }
+
+            .item-columna{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 8px;
+                color: white;
+                background-color: #212EC2;
+            }
+
+                /* Id de cliente */
+                .no{
+                    width: 5%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+                /* Nombre de cliente */
+                .nombre-cliente{
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+                /* Descripción cliente */
+                .descripcion-cliente{
+                    width: 44.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+                /* Acciones de cliente */
+                .acciones-cliente{
+                    width: 20%;
+                    height: 100%;
+                    border: 1px solid black;
+                }
+
+            /* Filas datos */
+            .filas-datos{
+                display: flex;
+                width: 100%;
+                height: 15px;
+                justify-content: space-between;
+                background-color: #F1F1F1;
+            }
+
+            .filas-datos input{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: 7px;
+                color: black;
+                background-color: #D9D9D9;
+                border: 0;
+            }
+
+            .item-fila{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                    font-size: 7px;
+                color: black;
+                background-color: #D9D9D9;
+            }
+
+                /* Id de cliente */
+                .no-dato{
+                    display: flex;
+                    width: 5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: black;
+                    background-color: #D9D9D9;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                /* Nombre de cliente */
+                .nombre-cliente-dato{
+                    display: flex;
+                    width: 30%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: black;
+                    background-color: #D9D9D9;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                /* Descripción cliente */
+                .descripcion-cliente-dato{
+                    display: flex;
+                    width: 44.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    color: black;
+                    background-color: #D9D9D9;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                /* Acciones de cliente */
+                .acciones-cliente-dato{
+                    display: flex;
+                    width: 20%;
+                    height: 100%;
+                    justify-content: space-between;
+                    background-color: #D9D9D9;
+                }
+
+                .acciones-cliente-dato h2{
+                    display: none;
+                }
+
+                    /* Botón: Editar */
+                    .btn-editar{
+                        display: flex;
+                        width: 49.5%;
+                        height: 100%;
+                        background-color: #1988CF;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .btn-editar img{
+                        display: flex;
+                        width: 8px;
+                        height: 8px;
+                        margin-left: 0;
+                    }
+
+                    /* Botón: Eliminar */
+                    .btn-eliminar{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        background-color: red;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .btn-eliminar img{
+                        display: flex;
+                        width: 8px;
+                        height: 8px;
+                        margin-left: 0;
+                    }
+
+    /* Opciones de Filas */
+    .opciones-filas{
+        display: flex;
+        width: 100%;
+        height: 25px;
+        margin-top: 100px;
+    }
+
+        /* Añadir Fila */
+        .añadir-fila{
+            display: flex;
+            width: 70px;
+            border: 1px solid black;
+            background-color: #1988CF;
+            border-radius: 7px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .añadir-fila h2{
+            color: white;
+            font-size: 8px;
+        }
+
+
+            /* Opciones clientes */
+            .opciones-clientes{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                margin-top:20px;
+                justify-content: space-between;
+            }
+
+                /* Botón: Cancelar */
+                .bott-cancelar{
+                    display: flex;
+                    width: 65px;
+                    background-color: red;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bott-cancelar h2{
+                    color: white;
+                    font-size: 8px;
+                }
+
+                /* Botón: Guardar cambios */
+                .bott-guardar-cambios{
+                    display: flex;
+                    width: 80px;
+                    background-color: #2121E3;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bott-guardar-cambios h2{
+                    color: white;
+                    font-size: 8px;
+                }
+    }

@@ -1,0 +1,916 @@
+/* Barra de búsqueda */
+.cont-barra-busqueda{
+    display: flex;
+    width: 100%;
+    height: 32px;
+    margin-top: 25px;
+    justify-content: end;
+}
+
+    #barraBusqueda{
+        display: flex;
+        width: 35%;
+        height: 100%;
+        font-size: 15px;
+        border-radius: 7px;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+/* Tabla categorías */
+.tabla-categorias{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+    /* Columnas características */
+    .columnas-caract{
+        display: flex;
+        width: 100%;
+        height: 35px;
+        color: white;
+        justify-content: space-between;
+    }
+
+    /* Item columna */
+    .item-columna{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        /* No */
+        .no{
+            display: flex;
+            width: 5%;
+            height: 100%;
+            border: 1px solid black;
+            background-color: #212EC2;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Nombre de categoría */
+        .nombre-categoria{
+            display: flex;
+            width: 45%;
+            height: 100%;
+            border: 1px solid black;
+            background-color: #212EC2;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Cantidad productos */
+        .cantidad-prod{
+            display: flex;
+            width: 24.5%;
+            height: 100%;
+            border: 1px solid black;
+            background-color: #212EC2;
+            font-size: 20px;
+        }
+
+        /* Opciones categoría */
+        .opciones-categoria{
+            display: flex;
+            width: 25%;
+            height: 100%;
+            border: 1px solid black;
+            background-color: #212EC2;
+            font-size: 20px;
+        }
+
+    /* Filas datos */
+    .filas-datos{
+        display: flex;
+        width: 100%;
+        height: 30px;
+        color: black;
+        margin-top: 3px;
+    }
+
+    /* Item fila */
+    .item-fila{
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    /* Form */
+    .form{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+        /* No */
+        .no-dato{
+            display: flex;
+            width: 5%;
+            height: auto;
+            border: 1px solid black;
+            background-color: #D9D9D9;
+            font-size: 17px;
+            flex-direction: column;
+        }
+
+        /* Nombre categoria */
+        .nombre-categoria-dato{
+            display: flex;
+            width: 45%;
+            height: auto;
+            border: 1px solid black;
+            background-color: #D9D9D9;
+            font-size: 17px;
+            flex-direction: column;
+        }
+
+        /* Cantidad productos */
+        .cantidad-prod-dato{
+            display: flex;
+            width: 24.5%;
+            height: auto;
+            border: 1px solid black;
+            background-color: #D9D9D9;
+            font-size: 17px;
+        }
+
+        /* Opciones categoría */
+        .opciones-categoria-dato{
+            display: flex;
+            width: 25%;
+            height: 100%;
+            justify-content: space-between;
+        }
+
+            /* Botón: Editar */
+            .editar-cat{
+                display: flex;
+                width: 49%;
+                height: 100%;
+                background-color: #1988CF;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .editar-cat h2{
+                font-size: 17px;
+            }
+
+            .editar-cat img{
+                display: flex;
+                width: 15px;
+                height: 15px;
+                margin-left: 10px;
+                margin-top: 2px;
+            }
+
+            .editar-cat a{
+                display: flex;
+            }
+
+            /* Botón: Editar */
+            .eliminar-cat{
+                display: flex;
+                width: 50%;
+                height: 100%;
+                background-color: red;
+                border: 1px solid black;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .eliminar-cat h2{
+                font-size: 17px;
+            }
+
+            .eliminar-cat img{
+                display: flex;
+                width: 15px;
+                height: 15px;
+                margin-left: 10px;
+            }
+
+            .eliminar-cat a{
+                display: flex;
+            }
+
+            .btn-eliminar-cat{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-color: red;
+                border: 0;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+        /* Fila nueva categoría */
+        .fila-nueva-categoria{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            color: black;
+            margin-top: 3px;
+            justify-content: space-between;
+        }
+
+
+            /* Nombre categoría input */
+            #NCategoriaNombreProducto{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-color: #D9D9D9;
+                border: 0;
+                font-size: 15px;
+                text-align: center;
+            }
+
+            #NCategoriaNombreProducto::-webkit-input-placeholder{
+                text-align: center;
+            }
+
+            /* Cantidad productos */
+            #NCategoriaCantidadProductos{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-color: #D9D9D9;
+                border: 0;
+                font-size: 15px;
+                text-align: center;
+            }
+
+            #NCategoriaCantidadProductos::-webkit-input-placeholder{
+                text-align: center;
+            }
+
+        /* Opciones Categorías */
+        .opciones-categorias{
+            display: flex;
+            width: 100%;
+            height: 35px;
+            margin-top: 60px;
+            justify-content: space-between;
+        }
+
+        /* Opciones de Filas */
+        .opciones-filas{
+            display: flex;
+            width: 100%;
+            height: 35px;
+            margin-top: 100px;
+        }
+
+            /* Añadir Fila */
+            .añadir-fila{
+                display: flex;
+                width: 200px;
+                border: 1px solid black;
+                background-color: #1988CF;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .añadir-fila h2{
+                color: white;
+                font-size: 18px;
+            }
+
+            /* Botón: Cancelar */
+            .bott-cancelar{
+                display: flex;
+                width: 165px;
+                background-color: red;
+                border: 1px solid black;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bott-cancelar h2{
+                color: white;
+                font-size: 17px;
+            }
+
+            /* Botón: Crear factura */
+            .bott-guardar-cambios{
+                display: flex;
+                width: 200px;
+                background-color: #2121E3;
+                border: 1px solid black;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bott-guardar-cambios h2{
+                color: white;
+                font-size: 17px;
+            }
+
+/* @media */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        /* Barra de búsqueda */
+        .cont-barra-busqueda{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            margin-top: 25px;
+            justify-content: end;
+        }
+
+            #barraBusqueda{
+                display: flex;
+                width: 35%;
+                height: 100%;
+                font-size: 15px;
+                border-radius: 7px;
+                border: 1px solid black;
+            }
+
+        /* Tabla categorías */
+        .tabla-categorias{
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin-top: 25px;
+            flex-direction: column;
+        }
+
+            /* Columnas características */
+            .columnas-caract{
+                display: flex;
+                width: 100%;
+                height: 30px;
+                color: white;
+                justify-content: space-between;
+            }
+
+            /* Item columna */
+            .item-columna{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+                /* No */
+                .no{
+                    width: 5%;
+                    font-size: 15px;
+                }
+
+                /* Nombre de categoría */
+                .nombre-categoria{
+                    display: flex;
+                    width: 50%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                    font-size: 15px;
+                }
+
+                /* Cantidad productos */
+                .cantidad-prod{
+                    display: flex;
+                    width: 19.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                    font-size: 15px;
+                }
+
+                /* Opciones categoría */
+                .opciones-categoria{
+                    display: flex;
+                    width: 25%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                    font-size: 15px;
+                }
+
+            /* Filas datos */
+            .filas-datos{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                color: black;
+                margin-top: 3px;
+            }
+
+            /* Item fila */
+            .item-fila{
+                justify-content: center;
+                align-items: center;
+            }
+
+                /* No */
+                .no-dato{
+                    width: 5%;
+                    font-size: 12px;
+                }
+
+                /* Nombre categoria */
+                .nombre-categoria-dato{
+                    display: flex;
+                    width: 50%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #D9D9D9;
+                    font-size: 12px;
+                }
+
+                /* Cantidad productos */
+                .cantidad-prod-dato{
+                    display: flex;
+                    width: 19.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #D9D9D9;
+                    font-size: 12px;
+                }
+
+                /* Opciones categoría */
+                .opciones-categoria-dato{
+                    display: flex;
+                    width: 25%;
+                    height: 100%;
+                    justify-content: space-between;
+                }
+
+                    /* Botón: Editar */
+                    .editar-cat{
+                        display: flex;
+                        width: 49%;
+                        height: 100%;
+                        background-color: #1988CF;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .editar-cat h2, .eliminar-cat h2{
+                        font-size: 12px;
+                    }
+
+                    .editar-cat img, .eliminar-cat img{
+                        display: flex;
+                        width: 12px;
+                        height: 12px;
+                        margin-left: 7px;
+                        margin-top: 0;
+                    }
+
+                    /* Botón: Editar */
+                    .eliminar-cat{
+                        display: flex;
+                        width: 50%;
+                        height: 100%;
+                        background-color: red;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                /* Fila nueva categoría */
+                .fila-nueva-categoria{
+                    display: flex;
+                    width: 100%;
+                    height: 30px;
+                    color: black;
+                    margin-top: 3px;
+                    justify-content: space-between;
+                }
+
+                    /* Nombre categoría input */
+                    #NCategoriaNombreProducto{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #D9D9D9;
+                        border: 0;
+                    font-size: 12px;
+                    }
+
+                    #NCategoriaNombreProducto::-webkit-input-placeholder{
+                        text-align: center;
+                    }
+
+                    /* Cantidad productos */
+                    #NCategoriaCantidadProductos{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #D9D9D9;
+                        border: 0;
+                    font-size: 12px;
+                    }
+
+                    #NCategoriaCantidadProductos::-webkit-input-placeholder{
+                        text-align: center;
+                    }
+
+        /* Opciones de Filas */
+        .opciones-filas{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            margin-top: 100px;
+        }
+
+            /* Añadir Fila */
+            .añadir-fila{
+                display: flex;
+                width: 180px;
+                border: 1px solid black;
+                background-color: #1988CF;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .añadir-fila h2{
+                color: white;
+                font-size: 15px;
+            }
+
+            /* Opciones categorias */
+            .opciones-categorias{
+                display: flex;
+                width: 100%;
+                height: 30px;
+                margin-top: 60px;
+                justify-content: space-between;
+            }
+
+                /* Botón: Cancelar */
+                .bott-cancelar{
+                    display: flex;
+                    width: 140px;
+                    background-color: red;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bott-cancelar h2{
+                    color: white;
+                    font-size: 15px;
+                }
+
+                /* Botón: Crear factura */
+                .bott-guardar-cambios{
+                    display: flex;
+                    width: 180px;
+                    background-color: #2121E3;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bott-guardar-cambios h2{
+                    color: white;
+                    font-size: 15px;
+                }
+    }
+
+    /* @media 768px */
+    @media(max-width: 768px){
+        /* Barra de búsqueda */
+        .cont-barra-busqueda{
+            display: flex;
+            width: 100%;
+            height: 20px;
+            margin-top: 15px;
+            justify-content: end;
+        }
+
+            #barraBusqueda{
+                display: flex;
+                width: 40%;
+                height: 100%;
+                font-size: 9px;
+                border-radius: 7px;
+                border: 1px solid black;
+            }
+
+        /* Tabla categorías */
+        .tabla-categorias{
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+            flex-direction: column;
+        }
+
+            /* Columnas características */
+            .columnas-caract{
+                display: flex;
+                width: 100%;
+                height: 22px;
+                color: white;
+                justify-content: space-between;
+            }
+
+            /* Item columna */
+            .item-columna{
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+                /* No */
+                .no{
+                    width: 5%;
+                    font-size: 9px;
+                }
+
+                /* Nombre de categoría */
+                .nombre-categoria{
+                    display: flex;
+                    width: 48%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                    font-size: 9px;
+                }
+
+                /* Cantidad productos */
+                .cantidad-prod{
+                    display: flex;
+                    width: 24.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                    font-size: 9px;
+                }
+
+                /* Opciones categoría */
+                .opciones-categoria{
+                    display: flex;
+                    width: 22%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #212EC2;
+                    font-size: 9px;
+                }
+
+            /* Filas datos */
+            .filas-datos{
+                display: flex;
+                width: 100%;
+                height: 18px;
+                color: black;
+                margin-top: 3px;
+            }
+
+            /* Item fila */
+            .item-fila{
+                justify-content: center;
+                align-items: center;
+            }
+
+                /* No */
+                .no-dato{
+                    width: 5%;
+                    font-size: 7px;
+                }
+
+                /* Nombre categoria */
+                .nombre-categoria-dato{
+                    display: flex;
+                    width: 48%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #D9D9D9;
+                    font-size: 7px;
+                }
+
+                /* Cantidad productos */
+                .cantidad-prod-dato{
+                    display: flex;
+                    width: 24.5%;
+                    height: 100%;
+                    border: 1px solid black;
+                    background-color: #D9D9D9;
+                    font-size: 7px;
+                }
+
+                /* Opciones categoría */
+                .opciones-categoria-dato{
+                    display: flex;
+                    width: 22%;
+                    height: 100%;
+                    justify-content: space-between;
+                }
+
+                    /* Botón: Editar */
+                    .editar-cat{
+                        display: flex;
+                        width: 49%;
+                        height: 100%;
+                        background-color: #1988CF;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .editar-cat h2{
+                        display: none;
+                    }
+
+                    .editar-cat img{
+                        display: flex;
+                        width: 10px;
+                        height: 10px;
+                        margin-left: 0;
+                    }
+
+                    /* Botón: Editar */
+                    .eliminar-cat{
+                        display: flex;
+                        width: 50%;
+                        height: 100%;
+                        background-color: red;
+                        border: 1px solid black;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+
+                    .eliminar-cat h2{
+                        display: none;
+                    }
+
+                    .eliminar-cat img{
+                        display: flex;
+                        width: 10px;
+                        height: 10px;
+                        margin-left: 0;
+                    }
+
+                /* Fila nueva categoría */
+                .fila-nueva-categoria{
+                    display: flex;
+                    width: 100%;
+                    height: 30px;
+                    color: black;
+                    margin-top: 3px;
+                    justify-content: space-between;
+                }
+
+                    /* Nombre categoría input */
+                    #NCategoriaNombreProducto{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #D9D9D9;
+                        border: 0;
+                        font-size: 7px;
+                    }
+
+                    #NCategoriaNombreProducto::-webkit-input-placeholder{
+                        text-align: center;
+                    }
+
+                    /* Cantidad productos */
+                    #NCategoriaCantidadProductos{
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #D9D9D9;
+                        border: 0;
+                    font-size: 7px;
+                    }
+
+                    #NCategoriaCantidadProductos::-webkit-input-placeholder{
+                        text-align: center;
+                    }
+
+            /* Opciones de Filas */
+            .opciones-filas{
+                display: flex;
+                width: 100%;
+                height: 24px;
+                margin-top: 100px;
+            }
+    
+                /* Añadir Fila */
+                .añadir-fila{
+                    display: flex;
+                    width: 115px;
+                    height: 24px;
+                    border: 1px solid black;
+                    background-color: #1988CF;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                }
+    
+                .añadir-fila h2{
+                    color: white;
+                    font-size: 9px;
+                }
+    }
+
+    /* @media 425px */
+    @media(max-width: 425px){
+        #barraBusqueda{
+            width: 50%;
+        }
+
+
+        /* Opciones de Filas */
+        .opciones-filas{
+            display: flex;
+            width: 100%;
+            height: 25px;
+            margin-top: 100px;
+        }
+
+            /* Añadir Fila */
+            .añadir-fila{
+                display: flex;
+                width: 90px;
+                border: 1px solid black;
+                background-color: #1988CF;
+                border-radius: 7px;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .añadir-fila h2{
+                color: white;
+                font-size: 8px;
+            }
+
+            /* Opciones categorias */
+            .opciones-categorias{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                margin-top:20px;
+                justify-content: space-between;
+            }
+
+                /* Botón: Cancelar */
+                .bott-cancelar{
+                    display: flex;
+                    width: 65px;
+                    background-color: red;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bott-cancelar h2{
+                    color: white;
+                    font-size: 8px;
+                }
+
+                /* Botón: Guardar cambios */
+                .bott-guardar-cambios{
+                    display: flex;
+                    width: 65px;
+                    background-color: #2121E3;
+                    border: 1px solid black;
+                    border-radius: 7px;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bott-guardar-cambios h2{
+                    color: white;
+                    font-size: 8px;
+                }
+
+                .item-columna{
+                    font-size: 8px;
+                }
+
+                .editar-cat img, .eliminar-cat img{
+                    width: 8px;
+                    height: 8px;
+                }
+    }

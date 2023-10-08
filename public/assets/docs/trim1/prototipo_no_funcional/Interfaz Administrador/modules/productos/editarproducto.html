@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos | Editar</title>
+
+    <!-- Hoja de estilos generales -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+    <!-- Hoja de estilos de este archivo  -->
+    <link rel="stylesheet" href="../../assets/css/modules/productos/form-productos.css">
+
+    <!-- Scripts Generales -->
+    <script defer src="../../assets/js/modules/scripts.js"></script>
+
+    <!-- Scripts para este archivo -->
+    <script defer src="../../assets/js/modules/productos/alertasProductos.js"></script>
+    <script defer src="../../assets/js/modules/productos/validacionFormularios.js"></script>
+    <script defer src="../../assets/js/modules/productos/anadirProducto.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/img/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="menu_sup">
+        <nav class="nav-inicio">
+            <!-- Icono de Menú responsive -->
+            <button class="icono-menu">
+                <div class="icono-menu-responsive">
+                    <img src="../../assets/img/menu-icono.png">
+                </div>
+                <div class="icono-menu-pc">
+                    <a href="../../index.html"><img src="../../assets/img/index.png"></a>
+                </div>
+            </button>
+            <ul class="lista_nav-inicio">
+                <li class="item_nav-inicio"><a href="../../index.html">Inicio</a></li>
+                <li class="item_nav-inicio"><a href="../estadisticas/estadisticas.html">Estadísticas</a></li>
+                <li class="item_nav-inicio"><a href="../ventas/ventas.html">Ventas</a></li>
+                <li class="item_nav-inicio li-facturas"><a href="../facturas/facturas.html">Facturas</a></li>
+                <li class="item_nav-inicio"><a href="productos.html">Productos</a></li>
+                <li class="item_nav-inicio li-inventarios"><a href="../inventarios/inventarios.html">Inventarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navegación de ítems Usuario -->
+        <nav class="nav-usuario">
+            <ul class="lista_nav-usuario">
+                <a href="../perfil/Perfil.html"><li class="item_nav-usuario">Mi perfil</li></a>
+                <a href="#"><li class="item_nav-usuario cerrar_sesion">Cerrar Sesión</li>
+                </a>
+            </ul>
+
+            <button class="icono-usuario">
+                <img src="../../assets/img/usuario-icono.png">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenido de página -->
+    <section class="contenido-pag">
+        <!-- Titulo de ventana -->
+        <div class="titulo-ventana">
+            <h1 class="titulo">Editar Producto</h1>
+        </div>
+
+        <!-- Contenedor Añadir producto -->
+        <div class="cont-anadir-producto">
+            <!-- Imagen Producto -->
+            <div class="cont-img-producto">
+                <img src="../../assets/img/cuaderno.webp" id="imagenPrevisualizacion">
+                <input type="file" name="" id="seleccionar-imagen" class="seleccionar-imagen" accept=".jpg, .jpeg, .png">
+            </div>
+
+            <!-- Info producto -->
+            <div class="cont-info-producto">
+                <!-- Nombre producto -->
+                <div class="nombre-prod">
+                    <input type="text" name="" id="nombre-prod" placeholder="Nombre Producto: " value="Cuaderno Argollado Norma">
+                </div>
+
+                <div class="cod-prod">
+                    <input type="text" name="" id="cod-prod" placeholder="Código: " value="CAN01">
+                    <select name="" id="select-categoria-prod">
+                        <option value="">Cuadernos</option>
+                        <option value="">Seleccionar Categoría</option>
+                        <option value="">Lapiceros</option>
+                        <option value="">Lápices</option>
+                        <option value="">Borradores</option>
+                    </select>
+                </div>
+
+                <!-- Descripción de producto -->
+                <div class="descripcion-prod">
+                    <textarea name="" id="descripcion-prod" placeholder="Describe aquí el nuevo producto">Cuaderno Argollado 80 hojas marca norma con hojas cuadriculadas</textarea>
+                </div>
+
+                <!-- Precio de producto -->
+                <div class="precio-prod">
+                    <input type="number" name="" id="precio-prod" placeholder="Precio: " step="50" value="12500">
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones Opciones -->
+        <div class="botones-opciones">
+            <!-- Botón: Cancelar -->
+            <a href="Productos.html" class="bott-cancelar"><h2>Cancelar</h2></a>
+            <!-- Botón: Añadir Producto -->
+            <button type="submit" name="btn-añadir-producto" class="bott-añadir-prod" onclick="productoActualizado()"><a href="productos.html">Actualizar Producto</a></button>
+        </div>
+    </section>
