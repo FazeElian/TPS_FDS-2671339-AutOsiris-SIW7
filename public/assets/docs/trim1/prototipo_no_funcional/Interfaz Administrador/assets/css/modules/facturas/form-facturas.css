@@ -1,0 +1,334 @@
+/* Contenedor de nueva factura */
+.cont-factura{
+    height: auto;
+    margin-top: 2rem;
+}
+
+.cont-factura, .cont-info-fact, .cont-productos-fact{
+    display: flex;
+    width: 100%;
+}
+
+.cont-factura, .cont-info-fact{
+    flex-direction: column;
+}
+
+    /* Contenedor información de factura */
+    .cont-info-fact{
+        height: 110px;
+        background-color: #D9D9D9;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+    }
+
+        /* Fecha,  Cliente */
+        #fechaFactura, #seleccionarCliente{
+            display: flex;
+            width: 95%;
+            height: 30px;
+            padding: 0 5px 0;
+            font-size: 15px;
+        }
+
+        #fechaFactura{
+            margin-bottom: 8px;
+        }
+
+    /* Tabla lista de productos de factura */
+    .tab-productos-fact{
+        height: auto;
+        margin: 1.5rem 0 2rem;
+    }
+
+        /* Columnas caracteísticas de factura */
+        .columnas-caract, .filas-datos{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .columnas-caract{
+            height: 35px;
+        }
+
+            .item-columna, .item-fila{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+            }
+
+            .item-columna{
+                background-color: #212EC2;
+                font-size: 17px;
+                color: white;
+            }
+
+        .filas-datos{
+            height: 30px;
+        }
+
+            .nombre-prod, .nombre-prod-dato{
+                width: 50.7%;
+            }
+
+            .cantidad-prod, .cantidad-prod-dato{
+                width: 20%;
+            }
+
+            .precio-prod, .precio-prod-dato{
+                width: 25%;
+            }
+
+            .elim-fila, .elim-fila-dato{
+                width: 4%;
+            }
+
+            .elim-fila-dato{
+                background-color: #D9D9D9;
+                cursor: pointer;
+            }
+
+            .elim-fila img, .elim-fila-dato img{
+                width: 16.5px;
+                height: 20px;
+            }
+
+        #seleccionarProducto, #cantidadProd, #precioProd{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: #D9D9D9;
+            font-size: 13.5px;
+            border: none;
+        }
+
+        #seleccionarProducto{
+            padding: 0 7px 0;
+            border: none;
+        }
+
+        .item-fila input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: none;
+        }
+
+/* Contenedor añadir fila */
+.cont-anadir-fila{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    margin: 2rem 0 1.5rem;
+}
+
+    /* Botón */
+    .btn-anadir-fila{
+        display: flex;
+        width: 200px;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 7px;
+        background-color: #36BBFF;
+        font-size: 17px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+/* Opciones factura */
+.opciones-factura{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+    /* Botón: Cancelar */
+    .bott-cancelar{
+        display: flex;
+        width: 165px;
+        background-color: red;
+        border: 1px solid black;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bott-cancelar h2{
+        color: white;
+        font-size: 17px;
+    }
+
+    /* Botón: Crear factura */
+    .bott-guardar-cambios{
+        display: flex;
+        width: 220px;
+        background-color: #2121E3;
+        border: 1px solid black;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bott-guardar-cambios a h2{
+        color: white;
+        font-size: 17px;
+    }
+
+/* @media */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        .cont-factura{
+            margin-top: 1.5rem;
+        }
+
+        .cont-info-fact{
+            height: 95px;
+        }
+
+        #fechaFactura, #seleccionarCliente{
+            height: 25px;
+            padding: 0 2.5px 0;
+            font-size: 12px;
+        }
+
+        .tab-productos-fact{
+            margin: 1rem 0 1.5rem;
+        }
+
+        .columnas-caract{
+            height: 30px;
+        }
+
+        .item-columna{
+            font-size: 14px;
+        }
+
+        .nombre-prod, .nombre-prod-dato{
+            width: 47.7%;
+        }
+
+        .cantidad-prod, .cantidad-prod-dato{
+            width: 20%;
+        }
+
+        .precio-prod, .precio-prod-dato{
+            width: 25%;
+        }
+
+        .elim-fila, .elim-fila-dato{
+            width: 7%;
+        }
+
+        .elim-fila-dato{
+            background-color: #D9D9D9;
+            cursor: pointer;
+        }
+
+        .elim-fila img, .elim-fila-dato img{
+            width: 16.5px;
+            height: 20px;
+        }
+
+        .elim-fila img, .elim-fila-dato img{
+            width: 14px;
+            height: 18px;
+        }
+
+        #seleccionarProducto, #cantidadProd, #precioProd{
+            font-size: 12px;
+        }
+
+        .opciones-factura{
+            margin-top: 0.5rem;
+        }
+
+        .bott-guardar-cambios{
+            width: 180px;
+            height: 30px;
+        }
+
+        .btn-anadir-fila, .bott-cancelar{
+            height: 30px;
+            width: 150px;
+        }
+
+        .bott-guardar-cambios a h2, .btn-anadir-fila, .bott-cancelar a h2{
+            font-size: 13.5px;
+        }
+    }
+
+    /* @media 425px */
+    @media(max-width: 425px){
+        .cont-info-fact{
+            height: 80px;
+        }
+
+        #fechaFactura, #seleccionarCliente{
+            width: 90%;
+            height: 25%;
+        }
+
+        .columnas-caract{
+            height: 27.5px;
+        }
+
+        .item-columna, #seleccionarProducto, #cantidadProd, #precioProd,
+        .btn-anadir-fila, .bott-cancelar a h2, .bott-guardar-cambios a h2,
+        #fechaFactura, #seleccionarCliente{
+            font-size: 10px;
+        }
+
+        .filas-datos{
+            height: 25px;
+        }
+
+        .nombre-prod, .nombre-prod-dato{
+            width: 48%;
+        }
+
+        .cantidad-prod, .cantidad-prod-dato{
+            width: 20%;
+        }
+
+        .precio-prod, .precio-prod-dato{
+            width: 22%;
+        }
+
+        .elim-fila, .elim-fila-dato{
+            width: 9%;
+        }
+
+        .elim-fila-dato{
+            background-color: #D9D9D9;
+            cursor: pointer;
+        }
+
+        .elim-fila img, .elim-fila-dato img{
+            width: 11px;
+            height: 13px;
+        }
+
+        .cont-anadir-fila, .opciones-factura{
+            height: 27.5px;
+        }
+
+        .btn-anadir-fila, .bott-cancelar, .bott-guardar-cambios{
+            height: 100%;
+        }
+
+        .bott-cancelar{
+            width: 100px;
+        }
+
+        .bott-guardar-cambios, .btn-anadir-fila{
+            width: 120px;
+        }
+    }
