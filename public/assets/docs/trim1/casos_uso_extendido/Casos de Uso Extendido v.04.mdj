@@ -41311,9 +41311,9 @@
 										"$ref": "AAAAAAGK5pjuDnEFjlE="
 									},
 									"font": "Arial;13;0",
-									"left": 280.72998046875,
+									"left": 279.27001953125,
 									"top": 101,
-									"width": 128.15625,
+									"width": 117.59375,
 									"height": 13,
 									"text": "CUE20 - Crear cliente"
 								},
@@ -41326,7 +41326,7 @@
 									"font": "Arial;13;1",
 									"left": 261,
 									"top": 101,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -41383,9 +41383,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 417.5,
-											"top": 188.5,
+											"top": 194,
 											"width": 126,
-											"height": 33,
+											"height": 22,
 											"text": "Ingresar a la vista de Creación de nuevo Cliente",
 											"wordWrap": true
 										},
@@ -41419,9 +41419,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 412.5,
-									"top": 181.5,
+									"top": 187,
 									"width": 136,
-									"height": 45,
+									"height": 34,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5pjuDnEK9VY="
 									},
@@ -41584,9 +41584,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 417.5,
-											"top": 297.5,
+											"top": 303,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "Ingresar datos de Cliente",
 											"wordWrap": true
 										},
@@ -41620,9 +41620,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 412.5,
-									"top": 290.5,
+									"top": 296,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5pjuDnEVqgg="
 									},
@@ -43239,9 +43239,9 @@
 										"$ref": "AAAAAAGK5pt4PXgXqM4="
 									},
 									"font": "Arial;13;0",
-									"left": 272.72998046875,
+									"left": 271.27001953125,
 									"top": 101,
-									"width": 151.287109375,
+									"width": 139.27734375,
 									"height": 13,
 									"text": "CUE21 - Consultar cliente"
 								},
@@ -43254,7 +43254,7 @@
 									"font": "Arial;13;1",
 									"left": 253,
 									"top": 101,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -45345,9 +45345,9 @@
 										"$ref": "AAAAAAGK5puR83zPcRw="
 									},
 									"font": "Arial;13;0",
-									"left": 304.72998046875,
+									"left": 303.27001953125,
 									"top": 61,
-									"width": 129.60986328125,
+									"width": 120.48828125,
 									"height": 13,
 									"text": "CUE22 - Editar cliente"
 								},
@@ -45360,7 +45360,7 @@
 									"font": "Arial;13;1",
 									"left": 285,
 									"top": 61,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -45618,9 +45618,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 457.5,
-											"top": 365.5,
+											"top": 371,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "Cambiar datos de Cliente",
 											"wordWrap": true
 										},
@@ -45654,9 +45654,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 452.5,
-									"top": 358.5,
+									"top": 364,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5puR83zf+9s="
 									},
@@ -47787,9 +47787,9 @@
 										"$ref": "AAAAAAGK5puhAX+euJw="
 									},
 									"font": "Arial;13;0",
-									"left": 296.72998046875,
+									"left": 295.27001953125,
 									"top": 93,
-									"width": 142.603515625,
+									"width": 134.2119140625,
 									"height": 13,
 									"text": "CUE23 - Eliminar cliente"
 								},
@@ -47802,7 +47802,7 @@
 									"font": "Arial;13;1",
 									"left": 277,
 									"top": 93,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -53686,7 +53686,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGK5qA8JJGAU0s="
 					},
-					"name": "CUE18 - Consultar factura",
+					"name": "CUE26 - Consultar venta",
 					"ownedViews": [
 						{
 							"_type": "UMLActorView",
@@ -53885,11 +53885,11 @@
 										"$ref": "AAAAAAGK5qA8JJGMi7g="
 									},
 									"font": "Arial;13;0",
-									"left": 271.27001953125,
+									"left": 272.72998046875,
 									"top": 93,
-									"width": 140.7119140625,
+									"width": 145.5107421875,
 									"height": 13,
-									"text": "CUE18 - Consultar factura"
+									"text": "CUE26 - Consultar venta"
 								},
 								{
 									"_type": "LabelView",
@@ -53900,7 +53900,7 @@
 									"font": "Arial;13;1",
 									"left": 253,
 									"top": 93,
-									"width": 13.27001953125,
+									"width": 14.72998046875,
 									"height": 13,
 									"text": "uc"
 								}
@@ -55203,9 +55203,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 425.5,
-											"top": 195,
+											"top": 189.5,
 											"width": 126,
-											"height": 11,
+											"height": 22,
 											"text": "CUE24 - Registrar venta",
 											"wordWrap": true
 										},
@@ -55239,9 +55239,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 420.5,
-									"top": 188,
+									"top": 182.5,
 									"width": 136,
-									"height": 23,
+									"height": 34,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5qA8JZHOtrs="
 									},
@@ -56310,9 +56310,9 @@
 										"$ref": "AAAAAAGK5qDHGZXVIzU="
 									},
 									"font": "Arial;13;0",
-									"left": 296.72998046875,
+									"left": 295.27001953125,
 									"top": 93,
-									"width": 136.8271484375,
+									"width": 127.71826171875,
 									"height": 13,
 									"text": "CUE27 - Eliminar venta"
 								},
@@ -56325,7 +56325,7 @@
 									"font": "Arial;13;1",
 									"left": 277,
 									"top": 93,
-									"width": 14.72998046875,
+									"width": 13.27001953125,
 									"height": 13,
 									"text": "uc"
 								}
@@ -56857,9 +56857,9 @@
 											},
 											"font": "Arial;11;1",
 											"left": 409.5,
-											"top": 197.5,
+											"top": 203,
 											"width": 126,
-											"height": 22,
+											"height": 11,
 											"text": "CUE24 - Registrar venta",
 											"wordWrap": true
 										},
@@ -56893,9 +56893,9 @@
 									],
 									"font": "Arial;11;0",
 									"left": 404.5,
-									"top": 190.5,
+									"top": 196,
 									"width": 136,
-									"height": 34,
+									"height": 23,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGK5qDHGpXxdNQ="
 									},
