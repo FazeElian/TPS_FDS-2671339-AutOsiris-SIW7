@@ -65,54 +65,25 @@
             <h1 class="titulo">Facturas</h1>
         </div>
 
-        <!-- Buscar factura-->
-        <div class="cont-busqueda">
-            <input type="search" name="buscarFactura" id="buscarFactura" placeholder="Buscar factura por su número">
-        </div>
+        <!-- Opciones de Factura/s -->
+        <div class="opciones-factura">
+            <div class="cont-opciones-factura">
+                <!-- Nueva Factura  -->
+                <button class="cont-nueva-factura">
+                    <a href="crearfactura.html"><img src="../../assets/img/nueva_factura-icono.png" alt=""></a>
+                    <a href="crearfactura.html">Nueva Factura</a>
+                </button>
 
-
-        <!-- Contenedor Facturas -->
-        <div class="cont-facturas">
-            <!-- Contenedor Lista de Facturas -->
-            <div class="cont-lista-facturas">
-                <!-- Tabla Facturas -->
-                <table class="tabla-facturas" id="tabla-facturas">
-                    <!-- Columnas características de factura -->
-                    <tr class="columnas-caract-fact">
-                        <td class="item-columna num-factura">Número</td>
-                        <td class="item-columna fecha-factura">Fecha</td>
-                        <td class="item-columna opciones-factura-tabla">Opciones</td>
-                    </tr>
-
-                    <!-- Filas Datos de Factura -->
-                    <tr class="filas-datos">
-                        <td class="item-fila num-factura-dato">1</td>
-                        <td class="item-fila fecha-factura-dato">01/01/2023</td>
-                        <td class="opciones-factura-tabla-dato">
-                            <a href=".pdf"><button class="btn-factura btn-pdf"><a href="#" class="link-op-fact">PDF</a><img src="../../assets/img/pdf.png" alt="PDF Icono"></button></a>
-                            <a href="verFactura.html"><button class="btn-factura btn-ver"><a href="verFactura.html" class="link-op-fact">Ver</a><a href="verFactura.html"><img src="../../assets/img/show.png" alt="Ver Icono" class="icono-op-fact"></button></a>
-                            <a href="editarfactura.html"><button class="btn-factura btn-editar"><a href="editarfactura.html" class="link-op-fact">Editar</a><a href="editarfactura.html"><img src="../../assets/img/editar-icono.png" alt="Editar Icono"></a></button></a>
-                            <button class="btn-factura btn-eliminar" onclick="facturaEliminada()"><a href="#" class="link-op-fact">Eliminar</a><img src="../../assets/img/eliminar-icono.png" alt="Eliminar Icono"></button>
-                        </td>
-                    </tr>
-                </table>
+                <!-- Roles de Factura -->
+                <button class="cont-roles-factura">
+                    <a href="../clientes/clientes.html"><img src="../../assets/img/clientes-factura-icono.png" alt=""></a>
+                    <a href="../clientes/clientes.html">Clientes</a>
+                </button>
             </div>
 
-            <!-- Contenedor Opciones de Factura/s -->
-            <div class="cont-opciones-factura">
-                <!-- Opciones de factura -->
-                <div class="opciones-factura">
-                    <!-- Nueva Factura  -->
-                    <button class="cont-opcion-factura">
-                        <a href="crearfactura.html"><img src="../../assets/img/nueva_factura-icono.png" alt="Nueva Factura Icono"></a>
-                        <a href="crearfactura.html" class="link-sect-fact">Nueva Factura</a>
-                    </button>
-                    <!-- Clientes de Factura -->
-                    <button class="cont-opcion-factura">
-                        <a href="../clientes/clientes.html"><img src="../../assets/img/clientes-factura-icono.png" alt=""></a>
-                        <a href="../clientes/clientes.html" class="link-sect-fact">Clientes</a>
-                    </button>
-                </div>
+            <!-- Búsqueda -->
+            <div class="cont-busqueda">
+                <input type="search" name="buscarFactura" id="buscarFactura" placeholder="Busca una factura aquí">
             </div>
         </div>
     </section>
