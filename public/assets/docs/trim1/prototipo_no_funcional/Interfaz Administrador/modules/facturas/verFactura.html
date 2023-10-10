@@ -10,14 +10,10 @@
     <link rel="stylesheet" href="../../assets/css/styles.css">
 
     <!-- Hoja de estilos de este archivo  -->
-    <link rel="stylesheet" href="../../assets/css/modules/facturas/form-facturas.css">
+    <link rel="stylesheet" href="../../assets/css/modules/facturas/ver-factura.css">
 
     <!-- Scripts Generales -->
     <script defer src="../../assets/js/modules/scripts.js"></script>
-
-    <!-- Scripts para este archivo -->
-    <script defer src="../../assets/js/modules/facturas/crearFactura.js"></script>
-    <script defer src="../../assets/js/modules/facturas/alertasFacturas.js"></script>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="../../assets/img/icons/favicon.png" type="image/x-icon">
@@ -63,7 +59,7 @@
     <section class="contenido-pag">
         <!-- Titulo de ventana -->
         <div class="titulo-ventana">
-            <h1 class="titulo">Crear Factura</h1>
+            <h1 class="titulo">Factura: 001</h1>
         </div>
 
         <!-- Contenedor de nueva factura -->
@@ -71,15 +67,11 @@
             <!-- Contenedor información de factura -->
             <div class="cont-info-fact">
                 <!-- Fecha -->
-                <input type="date" name="fecha" id="fechaFactura" placeholder="Seleccionar una fecha">
+                <input type="date" name="fecha" id="fechaFactura" placeholder="Seleccionar una fecha" value="2023-10-09">
 
                 <!-- Cliente -->
                 <select name="cliente" id="seleccionarCliente">
-                    <option value="">Seleccionar cliente</option>
                     <option value="">Proveedor</option>
-                    <option value="">.</option>
-                    <option value="">.</option>
-                    <option value="">.</option>
                 </select>
             </div>
 
@@ -90,30 +82,35 @@
                     <td class="item-columna nombre-prod">Nombre producto</td>
                     <td class="item-columna cantidad-prod">Cantidad</td>
                     <td class="item-columna precio-prod">Precio /u</td>
-                    <td class="item-columna elim-fila"><img src="../../assets/img/icono-eliminar-rojo.png" alt=""></td>
                 </tr>
 
                 <!-- Filas datos -->
+                <tr class="filas-datos">
+                    <td class="item-fila nombre-prod-dato">Cuaderno Argollado Norma</td>
+                    <td class="item-fila cantidad-prod-dato">5</td>
+                    <td class="item-fila precio-prod-dato">12500</td>
+                </tr>
+                <tr class="filas-datos">
+                    <td class="item-fila nombre-prod-dato">Lapicero negro Offi-Esco</td>
+                    <td class="item-fila cantidad-prod-dato">2</td>
+                    <td class="item-fila precio-prod-dato">1200</td>
+                </tr>
+                <tr class="filas-datos">
+                    <td class="item-fila nombre-prod-dato">Lapicero negro Offi-Esco</td>
+                    <td class="item-fila cantidad-prod-dato">2</td>
+                    <td class="item-fila precio-prod-dato">1200</td>
+                </tr>
+                <tr class="columnas-caract cols-total">
+                    <td class="item-columna texto-total">Total</td>
+                    <td class="item-columna cantidad-total">Total</td>
+                    <td class="item-columna precio-total">Total</td>
+                </tr>
             </table>
+        </div>
 
-            <!-- Contenedor añadir fila -->
-            <div class="cont-anadir-fila">
-                <!-- Botón -->
-                <div class="btn-anadir-fila" id="btn-anadir-fila">
-                    Añadir Producto
-                </div>
-            </div>
-
-            <!-- Opciones Factura -->
-            <div class="opciones-factura">
-                <!-- Botón: Cancelar -->
-                <button class="bott-cancelar">
-                    <a href="facturas.html"><h2>Cancelar</h2></a>
-                </button>
-                <button class="bott-guardar-cambios">
-                    <a href="facturas.html" onclick="facturaCreada()"><h2>Crear Factura</h2></a>
-                </button>
-            </div>
+        <!-- Contenedor Botón Volver -->
+        <div class="cont-volver">
+            <a href="facturas.html" class="link-btn-volver"><button class="btn-volver"><img src="../../assets/img/volver_flecha-icono.png" alt=""><h2>Volver</h2></button></a>
         </div>
     </section>
 </body>
