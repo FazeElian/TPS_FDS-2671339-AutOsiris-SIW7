@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador | Perfil</title>
+
+    <!-- Hoja de estilos generales -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+    <!-- Hoja de estilos de este archivo  -->
+    <link rel="stylesheet" href="../../assets/css/modules/ventas/ventas.css">
+
+    <!-- Scripts Generales -->
+    <script defer src="../../assets/js/modules/scripts.js"></script>
+
+    <!-- Scripts para este archivo -->
+    <script defer src="../../assets/js/modules/ventas/alertasVentas.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/img/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="menu_sup">
+        <nav class="nav-inicio">
+            <!-- Icono de Menú responsive -->
+            <button class="icono-menu">
+                <div class="icono-menu-responsive">
+                    <img src="../../assets/img/menu-icono.png">
+                </div>
+                <div class="icono-menu-pc">
+                    <a href="../../index.html"><img src="../../assets/img/index.png"></a>
+                </div>
+            </button>
+            <ul class="lista_nav-inicio">
+                <li class="item_nav-inicio"><a href="../../index.html">Inicio</a></li>
+                <li class="item_nav-inicio"><a href="../estadisticas/estadisticas.html">Estadísticas</a></li>
+                <li class="item_nav-inicio"><a href="../ventas/ventas.html">Ventas</a></li>
+                <li class="item_nav-inicio li-facturas"><a href="../facturas/facturas.html">Facturas</a></li>
+                <li class="item_nav-inicio"><a href="../productos/productos.html">Productos</a></li>
+                <li class="item_nav-inicio li-inventarios"><a href="../inventarios/inventarios.html">Inventarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navegación de ítems Usuario -->
+        <nav class="nav-usuario">
+            <ul class="lista_nav-usuario">
+                <a href="../perfil/Perfil.html"><li class="item_nav-usuario">Mi perfil</li></a>
+                <a href="#"><li class="item_nav-usuario cerrar_sesion">Cerrar Sesión</li>
+                </a>
+            </ul>
+
+            <button class="icono-usuario">
+                <img src="../../assets/img/usuario-icono.png">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenido de página -->
+    <section class="contenido-pag">
+        <!-- Titulo de ventana -->
+        <div class="titulo-ventana">
+            <h1 class="titulo">Ventas</h1>
+        </div>
+
+        <!-- Contenedor opciones de ventas -->
+        <div class="cont-ops-ventas">
+            <!-- Contenedor Registrar Venta -->
+            <div class="cont-registrar-venta">
+                <!-- Botón -->
+                <button class="btn-registrar-venta">
+                    <a href="registrarventa.html"><h2>Registrar venta</h2></a>
+                    <a href="registrarventa.html"><img src="../../assets/img/anadir-icono.png" alt="Botón Registrar Venta"></a>
+                </button>
+            </div>
+
+            <!-- Contenedor Filtrar venta -->
+            <div class="cont-filtrar-venta">
+                <select name="filtrarVenta" id="filtrarVenta">
+                    <option value="">Filtrar ventas por</option>
+                    <option value="">Filtrar por fecha de creación</option>
+                    <option value="">Filtrar por fecha de última actualización</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Tabla Ventas -->
+        <table class="tabla-ventas">
+            <!-- Columnas -->
+            <tr class="columnas-caract">
+                <td class="item-columna no-venta">Número</td>
+                <td class="item-columna fecha-venta">Fecha</td>
+                <td class="item-columna total-venta">Total</td>
+                <td class="item-columna acciones-venta">Acciones</td>
+            </tr>
+
+            <!-- Filas -->
+            <tr class="filas-dato">
+                <td class="item-fila no-venta-dato">1</td>
+                <td class="item-fila fecha-venta-dato">01/01/2023</td>
+                <td class="item-fila total-venta-dato">7500 $</td>
+                <td class="item-fila acciones-venta-dato">
+                    <button class="btn-editar-venta">
+                        <a href="editarventa.html" class="link-btn-opcion">Editar </a><a href="editarventa.html"><img src="../../assets/img/editar-icono.png" alt=""></a>
+                    </button>
+                    <button class="btn-eliminar-venta" onclick="ventaEliminada()">
+                        <a href="ventas.html" class="link-btn-opcion">Eliminar </a><a href="ventas.html"><img src="../../assets/img/eliminar-icono.png" alt=""></a>
+                    </button>
+                </td>
+            </tr>
+            <tr class="filas-dato">
+                <td class="item-fila no-venta-dato">2</td>
+                <td class="item-fila fecha-venta-dato">01/01/2023</td>
+                <td class="item-fila total-venta-dato">7500 $</td>
+                <td class="item-fila acciones-venta-dato">
+                    <button class="btn-editar-venta">
+                        <a href="editarventa.html" class="link-btn-opcion">Editar </a><a href="editarventa.html"><img src="../../assets/img/editar-icono.png" alt=""></a>
+                    </button>
+                    <button class="btn-eliminar-venta" onclick="ventaEliminada()">
+                        <a href="ventas.html" class="link-btn-opcion">Eliminar </a><a href="ventas.html"><img src="../../assets/img/eliminar-icono.png" alt=""></a>
+                    </button>
+                </td>
+            </tr>
+            <tr class="filas-dato">
+                <td class="item-fila no-venta-dato">3</td>
+                <td class="item-fila fecha-venta-dato">01/01/2023</td>
+                <td class="item-fila total-venta-dato">7500 $</td>
+                <td class="item-fila acciones-venta-dato">
+                    <button class="btn-editar-venta">
+                        <a href="editarventa.html" class="link-btn-opcion">Editar </a><a href="editarventa.html"><img src="../../assets/img/editar-icono.png" alt=""></a>
+                    </button>
+                    <button class="btn-eliminar-venta" onclick="ventaEliminada()">
+                        <a href="ventas.html" class="link-btn-opcion">Eliminar </a><a href="ventas.html"><img src="../../assets/img/eliminar-icono.png" alt=""></a>
+                    </button>
+                </td>
+            </tr>
+            <tr class="filas-dato">
+                <td class="item-fila no-venta-dato">4</td>
+                <td class="item-fila fecha-venta-dato">01/01/2023</td>
+                <td class="item-fila total-venta-dato">7500 $</td>
+                <td class="item-fila acciones-venta-dato">
+                    <button class="btn-editar-venta">
+                        <a href="editarventa.html" class="link-btn-opcion">Editar </a><a href="editarventa.html"><img src="../../assets/img/editar-icono.png" alt=""></a>
+                    </button>
+                    <button class="btn-eliminar-venta" onclick="ventaEliminada()">
+                        <a href="ventas.html" class="link-btn-opcion">Eliminar </a><a href="ventas.html"><img src="../../assets/img/eliminar-icono.png" alt=""></a>
+                    </button>
+                </td>
+            </tr>
+            <tr class="filas-dato">
+                <td class="item-fila no-venta-dato">5</td>
+                <td class="item-fila fecha-venta-dato">01/01/2023</td>
+                <td class="item-fila total-venta-dato">7500 $</td>
+                <td class="item-fila acciones-venta-dato">
+                    <button class="btn-editar-venta">
+                        <a href="editarventa.html" class="link-btn-opcion">Editar </a><a href="editarventa.html"><img src="../../assets/img/editar-icono.png" alt=""></a>
+                    </button>
+                    <button class="btn-eliminar-venta" onclick="ventaEliminada()">
+                        <a href="ventas.html" class="link-btn-opcion">Eliminar </a><a href="ventas.html"><img src="../../assets/img/eliminar-icono.png" alt=""></a>
+                    </button>
+                </td>
+            </tr>
+            <tr class="filas-dato">
+                <td class="item-fila no-venta-dato">6</td>
+                <td class="item-fila fecha-venta-dato">01/01/2023</td>
+                <td class="item-fila total-venta-dato">7500 $</td>
+                <td class="item-fila acciones-venta-dato">
+                    <button class="btn-editar-venta">
+                        <a href="editarventa.html" class="link-btn-opcion">Editar </a><a href="editarventa.html"><img src="../../assets/img/editar-icono.png" alt=""></a>
+                    </button>
+                    <button class="btn-eliminar-venta" onclick="ventaEliminada()">
+                        <a href="ventas.html" class="link-btn-opcion">Eliminar </a><a href="ventas.html"><img src="../../assets/img/eliminar-icono.png" alt=""></a>
+                    </button>
+                </td>
+            </tr>
+            <tr class="filas-dato">
+                <td class="item-fila no-venta-dato">7</td>
+                <td class="item-fila fecha-venta-dato">01/01/2023</td>
+                <td class="item-fila total-venta-dato">7500 $</td>
+                <td class="item-fila acciones-venta-dato">
+                    <button class="btn-editar-venta">
+                        <a href="editarventa.html" class="link-btn-opcion">Editar </a><a href="editarventa.html"><img src="../../assets/img/editar-icono.png" alt=""></a>
+                    </button>
+                    <button class="btn-eliminar-venta" onclick="ventaEliminada()">
+                        <a href="ventas.html" class="link-btn-opcion">Eliminar </a><a href="ventas.html"><img src="../../assets/img/eliminar-icono.png" alt=""></a>
+                    </button>
+                </td>
+            </tr>
+            <tr class="filas-dato">
+                <td class="item-fila no-venta-dato">8</td>
+                <td class="item-fila fecha-venta-dato">01/01/2023</td>
+                <td class="item-fila total-venta-dato">7500 $</td>
+                <td class="item-fila acciones-venta-dato">
+                    <button class="btn-editar-venta">
+                        <a href="editarventa.html" class="link-btn-opcion">Editar </a><a href="editarventa.html"><img src="../../assets/img/editar-icono.png" alt=""></a>
+                    </button>
+                    <button class="btn-eliminar-venta" onclick="ventaEliminada()">
+                        <a href="ventas.html" class="link-btn-opcion">Eliminar </a><a href="ventas.html"><img src="../../assets/img/eliminar-icono.png" alt=""></a>
+                    </button>
+                </td>
+            </tr>
+            <tr class="filas-dato">
+                <td class="item-fila no-venta-dato">9</td>
+                <td class="item-fila fecha-venta-dato">01/01/2023</td>
+                <td class="item-fila total-venta-dato">7500 $</td>
+                <td class="item-fila acciones-venta-dato">
+                    <button class="btn-editar-venta">
+                        <a href="editarventa.html" class="link-btn-opcion">Editar </a><a href="editarventa.html"><img src="../../assets/img/editar-icono.png" alt=""></a>
+                    </button>
+                    <button class="btn-eliminar-venta" onclick="ventaEliminada()">
+                        <a href="ventas.html" class="link-btn-opcion">Eliminar </a><a href="ventas.html"><img src="../../assets/img/eliminar-icono.png" alt=""></a>
+                    </button>
+                </td>
+            </tr>
+            <tr class="filas-dato">
+                <td class="item-fila no-venta-dato">10</td>
+                <td class="item-fila fecha-venta-dato">01/01/2023</td>
+                <td class="item-fila total-venta-dato">7500 $</td>
+                <td class="item-fila acciones-venta-dato">
+                    <button class="btn-editar-venta">
+                        <a href="editarventa.html" class="link-btn-opcion">Editar </a><a href="editarventa.html"><img src="../../assets/img/editar-icono.png" alt=""></a>
+                    </button>
+                    <button class="btn-eliminar-venta" onclick="ventaEliminada()">
+                        <a href="ventas.html" class="link-btn-opcion">Eliminar </a><a href="ventas.html"><img src="../../assets/img/eliminar-icono.png" alt=""></a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

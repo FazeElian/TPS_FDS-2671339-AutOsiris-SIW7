@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador | Perfil</title>
+
+    <!-- Hoja de estilos generales -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+    <!-- Hoja de estilos de este archivo  -->
+    <link rel="stylesheet" href="../../assets/css/modules/facturas/form-facturas.css">
+    <link rel="stylesheet" href="../../assets/css/modules/ventas/form-ventas.css">
+
+    <!-- Scripts Generales -->
+    <script defer src="../../assets/js/modules/scripts.js"></script>
+
+    <!-- Scripts para este archivo -->
+    <script defer src="../../assets/js/modules/ventas/alertasVentas.js"></script>
+    <script defer src="../../assets/js/modules/facturas/crearFactura.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/img/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="menu_sup">
+        <nav class="nav-inicio">
+            <!-- Icono de Menú responsive -->
+            <button class="icono-menu">
+                <div class="icono-menu-responsive">
+                    <img src="../../assets/img/menu-icono.png">
+                </div>
+                <div class="icono-menu-pc">
+                    <a href="../../index.html"><img src="../../assets/img/index.png"></a>
+                </div>
+            </button>
+            <ul class="lista_nav-inicio">
+                <li class="item_nav-inicio"><a href="../../index.html">Inicio</a></li>
+                <li class="item_nav-inicio"><a href="../estadisticas/estadisticas.html">Estadísticas</a></li>
+                <li class="item_nav-inicio"><a href="../ventas/ventas.html">Ventas</a></li>
+                <li class="item_nav-inicio li-facturas"><a href="../facturas/facturas.html">Facturas</a></li>
+                <li class="item_nav-inicio"><a href="../productos/productos.html">Productos</a></li>
+                <li class="item_nav-inicio li-inventarios"><a href="../inventarios/inventarios.html">Inventarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navegación de ítems Usuario -->
+        <nav class="nav-usuario">
+            <ul class="lista_nav-usuario">
+                <a href="../perfil/Perfil.html"><li class="item_nav-usuario">Mi perfil</li></a>
+                <a href="#"><li class="item_nav-usuario cerrar_sesion">Cerrar Sesión</li>
+                </a>
+            </ul>
+
+            <button class="icono-usuario">
+                <img src="../../assets/img/usuario-icono.png">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenido de página -->
+    <section class="contenido-pag">
+        <!-- Titulo de ventana -->
+        <div class="titulo-ventana">
+            <h1 class="titulo">Registrar Venta</h1>
+        </div>
+            <!-- Contenedor de nueva factura -->
+            <div class="cont-factura">
+                <!-- Tabla lista de productos de factura -->
+                <table class="tab-productos-fact tabla-registro-venta" id="listaProductos">
+                    <!-- Columnas características de lista de productos -->
+                    <tr class="columnas-caract">
+                        <td class="item-columna nombre-prod">Nombre producto</td>
+                        <td class="item-columna cantidad-prod">Cantidad</td>
+                        <td class="item-columna precio-prod">Precio /u</td>
+                        <td class="item-columna elim-fila"><img src="../../assets/img/icono-eliminar-rojo.png" alt=""></td>
+                    </tr>
+
+                    <!-- Filas datos -->
+                </table>
+
+                <!-- Contenedor añadir fila -->
+                <div class="cont-anadir-fila">
+                    <!-- Botón -->
+                    <div class="btn-anadir-fila" id="btn-anadir-fila">
+                        Añadir Producto
+                    </div>
+                </div>
+
+                <!-- Opciones Factura -->
+                <div class="opciones-factura">
+                    <!-- Botón: Cancelar -->
+                    <button class="bott-cancelar">
+                        <a href="ventas.html"><h2>Cancelar</h2></a>
+                    </button>
+                    <button class="bott-guardar-cambios">
+                        <a href="ventas.html" onclick="ventaRegistrada()"><h2>Registrar Venta</h2></a>
+                    </button>
+                </div>
+            </div>
+    </section>
+</body>
+</html>
