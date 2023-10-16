@@ -17,11 +17,11 @@
         </tr>
         <tr class="filas-datos">
             <td class="nombre-rol-dato item-fila">
-                {{ Form::text('name', $role->name, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => 'Escribe aquí nombre de nuevo rol', "id" => "nombre"]) }}
+                {{ Form::text('name', $customer->name, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => 'Escribe aquí nombre de nuevo cliente', "id" => "nombre"]) }}
             </td>
 
             <td class="descripcion-rol-dato item-fila">
-                {{ Form::text('description', $role->description, ['class' => 'form-control' . ($errors->has('description') ? ' is-invalid' : ''), 'placeholder' => 'Describe aquí nuevo rol', "id" => "descripcion"]) }}
+                {{ Form::text('description', $customer->description, ['class' => 'form-control' . ($errors->has('description') ? ' is-invalid' : ''), 'placeholder' => 'Describe aquí nuevo cliente', "id" => "descripcion"]) }}
             </td>
         </tr>
     </table>
