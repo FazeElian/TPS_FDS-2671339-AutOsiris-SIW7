@@ -31,7 +31,7 @@
             </div>
 
             <div class="barra_busqueda">
-                <input type="search" name="barra_busqueda" id="barra_busqueda" placeholder="  Buscar Producto">
+                <input type="search" name="barra_busqueda" id="barra_busqueda" placeholder="Buscar Producto">
             </div>
         </div>
 
@@ -45,7 +45,7 @@
                         <!-- Formulario de producto -->
                         <form action="{{ route("products.create") }}" method="post" class="form-producto">
                             <div class="img-producto">
-                                <img src="{{ asset("storage")."/".$product->image }}" alt="Este producto no tiene una imagen">
+                                <img src="{{ asset("storage")."/".$product->image }}">
                             </div>
 
                             <div class="info-producto">

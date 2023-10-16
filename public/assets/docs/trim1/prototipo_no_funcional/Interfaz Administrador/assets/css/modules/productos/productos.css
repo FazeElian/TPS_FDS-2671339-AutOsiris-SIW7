@@ -21,7 +21,7 @@
         border: 1px solid black;
         padding: 0 7px 0;
     }
-    
+
     /* Barra búsqueda */
     .barra_busqueda{
         display: flex;
@@ -560,11 +560,11 @@
                     width: 12px;
                     height: 12px;
                 }
-                
+
                 .editar-prod{
-                    width: 22%;   
+                    width: 22%;
                     margin: 0;
-                    margin-left: 2rem;                 
+                    margin-left: 2rem;
                 }
 
                 .editar-prod, .eliminar-prod{
@@ -609,7 +609,7 @@
             margin-top: 25px;
             align-items: center;
         }
-        
+
             #ordenar_por, #barra_busqueda{
                 font-size: 9px;
             }
@@ -710,7 +710,7 @@
                     font-size: 8px;
                     font-weight: lighter;
                 }
-    
+
                 .acciones-prod{
                     display: flex;
                 }

@@ -20,11 +20,10 @@
         </div>
         <!-- Número de usuarios actuales de tu Tienda Online -->
         <div class="num-usuarios">
-            <img src="">
+            <img src="{{ asset("assets/img/Admin/modules/estadistica-cantidad-ventas-porcentaje.jpg") }}">
 
             <div class="usuarios">
-                <h2>Número de usuarios actuales de tu Tienda Online</h2>
-
+                <h2>Porcentaje de Ventas</h2>
                 <div class="num">
                     <h2>346</h2>
                 </div>
@@ -33,11 +32,10 @@
 
         <!-- Visitas  diarias de tu sitio web -->
         <div class="visitas-diarias">
-            <img src="">
+            <img src="{{ asset("assets/img/Admin/modules/estadisticas-total-ventas.png") }}">
 
             <div class="visitas">
-                <h2>Visitas diarias de tu sitio web</h2>
-
+                <h2>Ventas Diarias</h2>
                 <div class="num">
                     <h2>1203</h2>
                 </div>
@@ -54,7 +52,7 @@
                 <!-- Fila 1 - Productos -->
                 <div class="cont-productos1">
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -70,7 +68,7 @@
                         </div>
                     </div>
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -86,7 +84,7 @@
                         </div>
                     </div>
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -106,7 +104,7 @@
                 <!-- Fila 2 - Productos -->
                 <div class="cont-productos2">
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -122,7 +120,7 @@
                         </div>
                     </div>
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -138,7 +136,7 @@
                         </div>
                     </div>
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -158,7 +156,7 @@
                 <!-- Fila 3 Responsive - Productos -->
                 <div class="cont-productos3">
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -174,7 +172,7 @@
                         </div>
                     </div>
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -190,7 +188,7 @@
                         </div>
                     </div>
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -206,7 +204,7 @@
                         </div>
                     </div>
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -222,7 +220,7 @@
                         </div>
                     </div>
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -238,7 +236,7 @@
                         </div>
                     </div>
                     <div class="contenedor_de_producto">
-                        <img src="assets/img/cuaderno.webp">
+                        <img src="{{ asset("assets/img/Admin/modules/cuaderno.webp") }}">
 
                         <div class="info-prod">
                             <div class="nombre-prod">
@@ -254,10 +252,10 @@
                         </div>
                     </div>
                 </div>
-
             </section>
         </div>
-    </div>
+        </div>
+    </section>
 </section>
 </body>
 </html>

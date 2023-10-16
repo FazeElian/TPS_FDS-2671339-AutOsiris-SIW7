@@ -8,9 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Administrador | Inventarios</title>
 
-    {{-- Hojas de estilos complementaria para sección de búsqueda --}}
-    <link rel="stylesheet" href="{{ asset("assets/css/Admin/modules/Products/products-styles.css") }}">
-
     {{-- Hoja de estilos para este archivo --}}
     <link rel="stylesheet" href="{{ asset("assets/css/Admin/modules/Inventories/inventories.css") }}">
 </head>
@@ -33,7 +30,7 @@
             <div class="ordenar_por">
             </div>
             <div class="barra_busqueda">
-                <input type="search" name="barra_busqueda" id="barra_busqueda" placeholder="  Buscar Producto">
+                <input type="search" name="barra_busqueda" id="barra_busqueda" placeholder="Buscar Producto">
             </div>
         </div>
 

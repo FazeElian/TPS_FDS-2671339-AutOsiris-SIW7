@@ -27,22 +27,22 @@
         <div class="cont-info-producto">
             <!-- Nombre producto -->
             <div class="nombre-prod">
-                {{ Form::text('name', $product->name, ['class' => '' . ($errors->has('name') ? ' is-invalid' : ''), 'id' => 'nombre-prod', 'placeholder' => '  Nombre Producto: ']) }}
+                {{ Form::text('name', $product->name, ['class' => '' . ($errors->has('name') ? ' is-invalid' : ''), 'id' => 'nombre-prod', 'placeholder' => 'Nombre Producto: ']) }}
             </div>
 
             <div class="cod-prod">
-                {{ Form::text('code', $product->code, ['class' => '' . ($errors->has('code') ? ' is-invalid' : ''), 'id' => 'cod-prod', 'placeholder' => '  Código: ']) }}
+                {{ Form::text('code', $product->code, ['class' => '' . ($errors->has('code') ? ' is-invalid' : ''), 'id' => 'cod-prod', 'placeholder' => 'Código: ']) }}
                 {{ Form::select('categorie_id', $categories, $product->categorie_id, ['class' => '' . ($errors->has('categorie_id') ? ' is-invalid' : ''), 'id' => 'select-categoria-prod', "placeholder"=> "Seleccionar Categoría"]) }}
             </div>
 
             <!-- Descripción de producto -->
             <div class="descripcion-prod">
-                {{ Form::text('description' ,$product->description, ['class' => '' . ($errors->has('description') ? ' is-invalid' : ''), 'id' => 'descripcion-prod', 'placeholder' => '  Describe aquí el nuevo producto']) }}
+                {{ Form::textarea('description', $product->description, ['class' => '' . ($errors->has('description') ? ' is-invalid' : ''), 'id' => 'descripcion-prod', 'placeholder' => 'Describe aquí el nuevo producto']) }}
             </div>
 
             <!-- Precio de producto -->
             <div class="precio-prod">
-                {{ Form::number('price', $product->price, ['class' => '' . ($errors->has('price') ? ' is-invalid' : ''), 'id' => 'precio-prod', 'placeholder' => '  Precio:', 'step' => '50']) }}
+                {{ Form::number('price', $product->price, ['class' => '' . ($errors->has('price') ? ' is-invalid' : ''), 'id' => 'precio-prod', 'placeholder' => 'Precio:', 'step' => '50']) }}
             </div>
         </div>
     </div>
