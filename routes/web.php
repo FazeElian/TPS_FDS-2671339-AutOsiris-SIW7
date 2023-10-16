@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController; //Categorías de producto
 use App\Http\Controllers\ProductController; // Productos
 use App\Http\Controllers\Perfile; // Perfil
-use App\Http\Controllers\RoleController; // Roles
+use App\Http\Controllers\CustomerController; // Roles
 use App\Http\Controllers\Statistics; // Estadísticas
 use App\Http\Controllers\InventoryController; // Inventarios
 use App\Http\Controllers\Sales; // Ventas
@@ -41,8 +41,8 @@ Route::resource('products', ProductController::class)->middleware("auth");
 // Ruta Perfil
 Route::resource('perfile', Perfile::class)->middleware("auth");
 
-// Ruta Roles
-Route::resource('roles', RoleController::class)->middleware("auth");
+// Ruta Clientes
+Route::resource('factures/customers', CustomerController::class)->middleware("auth");
 
 // Ruta Estadísticas
 Route::resource('statistics', Statistics::class)->middleware("auth");
@@ -52,6 +52,3 @@ Route::resource('inventories', InventoryController::class)->middleware("auth");
 
 // Ruta Ventas
 Route::resource('sales', Sales::class)->middleware("auth");
-
-// Ruta Facturas
-Route::resource('factures', FactureController::class)->middleware("auth");

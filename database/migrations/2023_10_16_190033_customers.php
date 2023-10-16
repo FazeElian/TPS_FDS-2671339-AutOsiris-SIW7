@@ -11,15 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('factures', function (Blueprint $table) {
+        Schema::create('customers', function (Blueprint $table) {
             $table->engine="InnoDB";
             $table->bigIncrements('id');
-            $table->bigInteger("role_id")->unsigned();
-            $table->date('date');
+            $table->string("name", 50);
+            $table->string("description", 100)->default("Este cliente no tiene una descripción");
             $table->timestamps();
-
-            // Llave foránea a Tabla Roles
-            $table->foreign("role_id")->references("id")->on("roles")->onDelete("cascade");
         });
     }
 

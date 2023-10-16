@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Role;
+use App\Models\Customer;
 use Illuminate\Http\Request;
 
 /**
- * Class RoleController
+ * Class CustomerController
  * @package App\Http\Controllers
  */
-class RoleController extends Controller
+class CustomerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,10 +18,10 @@ class RoleController extends Controller
      */
     public function index()
     {
-        $roles = Role::paginate();
+        $customers = Customer::paginate();
 
-        return view('Admin.role.index', compact('roles'))
-            ->with('i', (request()->input('page', 1) - 1) * $roles->perPage());
+        return view('Admin.customer.index', compact('customers'))
+            ->with('i', (request()->input('page', 1) - 1) * $customers->perPage());
     }
 
     /**
@@ -31,8 +31,8 @@ class RoleController extends Controller
      */
     public function create()
     {
-        $role = new Role();
-        return view('Admin.role.create', compact('role'));
+        $customer = new Customer();
+        return view('Admin.customer.create', compact('customer'));
     }
 
     /**
@@ -43,12 +43,12 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        request()->validate(Role::$rules);
+        request()->validate(Customer::$rules);
 
-        $role = Role::create($request->all());
+        $customer = Customer::create($request->all());
 
-        return redirect()->route('roles.index')
-            ->with('success', 'Role created successfully.');
+        return redirect()->route('customers.index')
+            ->with('created', 'Cliente creado con éxito');
     }
 
     /**
@@ -59,9 +59,9 @@ class RoleController extends Controller
      */
     public function show($id)
     {
-        $role = Role::find($id);
+        $customer = Customer::find($id);
 
-        return view('Admin.role.show', compact('role'));
+        return view('Admin.customer.show', compact('customer'));
     }
 
     /**
@@ -72,26 +72,26 @@ class RoleController extends Controller
      */
     public function edit($id)
     {
-        $role = Role::find($id);
+        $customer = Customer::find($id);
 
-        return view('Admin.role.edit', compact('role'));
+        return view('Admin.customer.edit', compact('customer'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @param  Role $role
+     * @param  Customer $customer
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Role $role)
+    public function update(Request $request, Customer $customer)
     {
-        request()->validate(Role::$rules);
+        request()->validate(Customer::$rules);
 
-        $role->update($request->all());
+        $customer->update($request->all());
 
-        return redirect()->route('roles.index')
-            ->with('success', 'Role updated successfully');
+        return redirect()->route('customers.index')
+            ->with('updated', 'Los cambios de cliente han sido actualizados');
     }
 
     /**
@@ -101,9 +101,9 @@ class RoleController extends Controller
      */
     public function destroy($id)
     {
-        $role = Role::find($id)->delete();
+        $customer = Customer::find($id)->delete();
 
-        return redirect()->route('roles.index')
-            ->with('success', 'Role deleted successfully');
+        return redirect()->route('customers.index')
+            ->with('deleted', 'Cliente eliminado');
     }
 }
