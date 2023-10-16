@@ -1,4 +1,46 @@
-    /* Texto - Título: Productos */
+/* Filtros de búsqueda */
+.filtros-busqueda{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+    /* Ordenar por */
+    .ordenar_por{
+        display: flex;
+        width: 45%;
+        height: 100%;
+    }
+
+    #ordenar_por{ /* Input */
+        border-radius: 0;
+        width: 60%;
+        font-size: 14px;
+        border: 1px solid black;
+    }
+
+    /* Barra búsqueda */
+    .barra_busqueda{
+        display: flex;
+        width: 55%;
+        height: 100%;
+        justify-content: end;
+    }
+
+    #barra_busqueda{
+        border-radius: 5px;
+        width: 50%;
+        font-size: 14px;
+        border: 1px solid black;
+    }
+
+    #barra_busqueda, #ordenar_por{
+        padding: 0 10px 0;
+    }
+
+  /* Texto - Título: Productos */
     .texto-productos{
         display: flex;
         width: 100%;
@@ -94,7 +136,6 @@
                 background-color: #212EC2;
             }
 
-            /* Icono eliminar */
             .acciones{
                 display: flex;
                 width: 15%;
@@ -372,7 +413,7 @@
             font-size: 17px;
         }
 
-        /* Botón: Crear factura */
+        /* Botón: Registrar inventario */
         .bott-guardar-cambios{
             display: flex;
             width: 200px;
@@ -383,7 +424,7 @@
             align-items: center;
         }
 
-        .bott-guardar-cambios h2{
+        .bott-guardar-cambios a h2{
             color: white;
             font-size: 17px;
         }
@@ -391,71 +432,44 @@
 /* @Media */
     /* @media 1024px */
         @media(max-width: 1024px){
-        /* Botón Limpiar y Filtro: Seleccionar mes */
-        .cont-limpiar_filtro{
+        /* Filtros de búsqueda */
+        .filtros-busqueda{
             display: flex;
             width: 100%;
-            height: 25px;
-            margin-top: 30px;
+            height: 22.5px;
+            margin-top: 25px;
             justify-content: space-between;
         }
 
-            /* Botón: Limpiar */
-            .cont-bott-limpiar{
+            /* Ordenar por */
+            .ordenar_por{
                 display: flex;
-                width: 45%;
+                width: 35%;
                 height: 100%;
             }
 
-            .bott-limpiar{
-                width: 24%;
-                border: 1px solid black;
-                border-radius: 7px;
-            }
-
-            .bott-limpiar h2{
+            #ordenar_por{
+                border-radius: 0;
+                width: 60%;
                 font-size: 12px;
+                border: 1px solid black;
+                padding: 0 3px 0;
             }
 
-            /* Filtro: Seleccionar Mes */
-            .cont-seleccionar-mes{
+            /* Barra búsqueda */
+            .barra_busqueda{
                 display: flex;
-                width: 40%;
+                width: 65%;
                 height: 100%;
                 justify-content: end;
             }
 
-            #seleccionar-mes{
-                width: 80%;
-                font-size: 15px;
-            }
-
-        /* Contenido Meses */
-        #contenido-Enero, #contenido-Febrero,
-        #contenido-Marzo, #contenido-Abril,
-        #contenido-Mayo, #contenido-Junio,
-        #contenido-Julio, #contenido-Agosto,
-        #contenido-Septiembre, #contenido-Octubre,
-        #contenido-Noviembre, #contenido-Diciembre{
-            display: none;
-            flex-direction: column;
-        }
-
-            /* Texto - Título: Productos */
-            .texto-productos{
-                display: flex;
-                width: 100%;
-                height: 45px;
-                background-color: #212EC2;
-                margin-top: 40px;
+            #barra_busqueda{
+                border-radius: 5px;
+                width: 50%;
+                font-size: 12px;
                 border: 1px solid black;
-                align-items: center;
-            }
-
-            .texto-productos h1{
-                color: white;
-                font-size: 21px;
-                margin-left: 15px;
+                padding: 0 7px 0;
             }
 
         /* Tabla productos */
@@ -486,81 +500,41 @@
 
                     /* Número de producto */
                     .num-prod{
-                        display: flex;
                         width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
                     }
 
                     /* Código de producto */
                     .cod-prod{
-                        display: flex;
                         width: 7.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
                     }
 
                     /* Nombre Producto */
                     .nombre-prod{
-                        display: flex;
                         width: 46%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
                     }
 
                     /* Existencias Iniciales */
                     .existencias-prod{
-                        display: flex;
                         width: 15.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
                     }
 
                     /* Entradas */
                     .entradas-prod{
-                        display: flex;
-                        width: 6.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
+                        width: 12%;
                     }
 
                     /* Salidas */
                     .salidas-prod{
-                        display: flex;
-                        width: 6%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
+                        width: 10%;
                     }
 
                     /* Stock */
                     .stock-prod{
-                        display: flex;
                         width: 8%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
                     }
 
-                    /* Icono eliminar */
-                    .icono-eliminar{
-                        display: flex;
-                        width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    .icono-eliminar img{
-                        display: flex;
-                        width: 15px;
-                        height: 18px;
-                        cursor: pointer;
+                    .acciones, .acciones-dato{
+                        width: 17.5%;
                     }
 
             /* Columnas datos de filas */
@@ -575,7 +549,6 @@
 
                     /* Número de producto */
                     .num-prod-dato{
-                        display: flex;
                         width: 5%;
                         height: 100%;
                         border: 1px solid black;
@@ -629,32 +602,12 @@
                         text-align: center;
                     }
 
-                    /* Existencias Iniciales */
-                    .existencias-prod-dato{
-                        display: flex;
-                        width: 15.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                    }
 
-                    #existencias-prod-input{
-                        display: flex;
-                        width: 100%;
-                        height: 100%;
-                        font-size: 10px;
-                        border: 0;
-                        background-color:#C0C0C0;
-                    }
-
-                    #existencias-prod-input::-webkit-input-placeholder {
-                        text-align: center;
-                    }
 
                     /* Entradas */
                     .entradas-prod-dato{
                         display: flex;
-                        width: 6.5%;
+                        width: 12%;
                         height: 100%;
                         border: 1px solid black;
                         background-color: #C0C0C0;
@@ -676,7 +629,7 @@
                     /* Salidas */
                     .salidas-prod-dato{
                         display: flex;
-                        width: 8%;
+                        width: 10%;
                         height: 100%;
                         border: 1px solid black;
                         background-color: #C0C0C0;
@@ -698,7 +651,7 @@
                     /* Stock */
                     .stock-prod-dato{
                         display: flex;
-                        width: 6%;
+                        width: 8%;
                         height: 100%;
                         border: 1px solid black;
                         background-color: #C0C0C0;
@@ -717,32 +670,16 @@
                         text-align: center;
                     }
 
-                    /* Eliminar fila */
-                    .elim-fila{
-                        display: flex;
-                        /* width: 100%; */
-                        height: 100%;
-                        border:0;
-                        background-color: white;
-                        justify-content: center;
-                        align-items: center;
+                    .num-prod-dato, .cod-prod-dato, .nombre-prod-dato,
+                    .entradas-prod-dato, .salidas-prod-dato, .stock-prod-dato,
+                    .btn-editar-inventario a h2, .btn-eliminar-inventario h2
+                    {
+                        font-size: 10px;
                     }
 
-                    .elim-fila img{
-                        display: flex;
-                        width: 15px;
-                        height: 18px;
-                        cursor: pointer;
-                    }
-
-                    #bott-eliminar-fila{
-                        display: flex;
-                        width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: white;
-                        justify-content: center;
-                        align-items: center;
+                    .btn-editar-inventario img, .btn-eliminar-inventario img{
+                        width: 10px;
+                        height: 10px;
                     }
 
     /* Opciones de Filas */
@@ -795,7 +732,7 @@
                 font-size: 15px;
             }
 
-            /* Botón: Crear factura */
+            /* Botón: Registrar inventario */
             .bott-guardar-cambios{
                 display: flex;
                 width: 180px;
@@ -806,7 +743,7 @@
                 align-items: center;
             }
 
-            .bott-guardar-cambios h2{
+            .bott-guardar-cambios a h2{
                 color: white;
                 font-size: 15px;
             }
@@ -814,72 +751,17 @@
 
     /* @media 768px */
     @media(max-width: 768px){
-        /* Botón Limpiar y Filtro: Seleccionar mes */
-        .cont-limpiar_filtro{
-            display: flex;
-            width: 100%;
-            height: 25px;
-            margin-top: 30px;
-            justify-content: space-between;
+        #ordenar_por{
+            width: 80%;
         }
 
-            /* Botón: Limpiar */
-            .cont-bott-limpiar{
-                display: flex;
-                width: 45%;
-                height: 100%;
-            }
-
-            .bott-limpiar{
-                width: 24%;
-                border: 1px solid black;
-                border-radius: 7px;
-            }
-
-            .bott-limpiar h2{
-                font-size: 12px;
-            }
-
-            /* Filtro: Seleccionar Mes */
-            .cont-seleccionar-mes{
-                display: flex;
-                width: 40%;
-                height: 100%;
-                justify-content: end;
-            }
-
-            #seleccionar-mes{
-                width: 80%;
-                font-size: 15px;
-            }
-
-        /* Contenido Meses */
-        #contenido-Enero, #contenido-Febrero,
-        #contenido-Marzo, #contenido-Abril,
-        #contenido-Mayo, #contenido-Junio,
-        #contenido-Julio, #contenido-Agosto,
-        #contenido-Septiembre, #contenido-Octubre,
-        #contenido-Noviembre, #contenido-Diciembre{
-            display: none;
-            flex-direction: column;
+        #barra_busqueda{
+            width: 65%;
         }
 
-            /* Texto - Título: Productos */
-            .texto-productos{
-                display: flex;
-                width: 100%;
-                height: 45px;
-                background-color: #212EC2;
-                margin-top: 40px;
-                border: 1px solid black;
-                align-items: center;
-            }
-
-            .texto-productos h1{
-                color: white;
-                font-size: 21px;
-                margin-left: 15px;
-            }
+        #ordenar_por, #barra_busqueda{
+            font-size: 10.2px;
+        }
 
         /* Tabla productos */
         .tabla-productos{
@@ -907,83 +789,21 @@
                     text-align: center;
                 }
 
-                    /* Número de producto */
-                    .num-prod{
-                        display: flex;
-                        width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
+                    .num-prod, .num-prod-dato{
+                        width: 6%;
                     }
 
-                    /* Código de producto */
-                    .cod-prod{
-                        display: flex;
-                        width: 7.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
+                    .nombre-prod, .nombre-prod-dato{
+                        width: 47.5%;
                     }
 
-                    /* Nombre Producto */
-                    .nombre-prod{
-                        display: flex;
-                        width: 42%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
+                    .entradas-prod, .salidas-prod, .stock-prod,
+                    .entradas-prod-dato, .salidas-prod-dato, .stock-prod-dato{
+                        width: 10%;
                     }
 
-                    /* Existencias Iniciales */
-                    .existencias-prod{
-                        display: flex;
-                        width: 15.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    /* Entradas */
-                    .entradas-prod{
-                        display: flex;
-                        width: 8.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    /* Salidas */
-                    .salidas-prod{
-                        display: flex;
-                        width: 8%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    /* Stock */
-                    .stock-prod{
-                        display: flex;
-                        width: 8%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    /* Icono eliminar */
-                    .icono-eliminar{
-                        display: flex;
-                        width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    .icono-eliminar img{
-                        display: flex;
-                        width: 15px;
-                        height: 18px;
-                        cursor: pointer;
+                    .acciones, .acciones-dato{
+                        width: 15%;
                     }
 
             /* Columnas datos de filas */
@@ -996,49 +816,6 @@
                 margin-top: 3px;
             }
 
-                    /* Número de producto */
-                    .num-prod-dato{
-                        display: flex;
-                        width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 10px;
-                    }
-
-                    /* Código de producto */
-                    .cod-prod-dato{
-                        display: flex;
-                        width: 7.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                    }
-
-                    #cod-prod-input{
-                        display: flex;
-                        width: 100%;
-                        height: 100%;
-                        font-size: 10px;
-                        border: 0;
-                        background-color:#C0C0C0;
-                    }
-
-                    #cod-prod-input::-webkit-input-placeholder {
-                        text-align: center;
-                    }
-
-                    /* Nombre producto */
-                    .nombre-prod-dato{
-                        display: flex;
-                        width: 42%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                    }
-
                     #nombre-prod-input{
                         display: flex;
                         width: 100%;
@@ -1050,37 +827,6 @@
 
                     #nombre-prod-input::-webkit-input-placeholder {
                         text-align: center;
-                    }
-
-                    /* Existencias Iniciales */
-                    .existencias-prod-dato{
-                        display: flex;
-                        width: 15.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                    }
-
-                    #existencias-prod-input{
-                        display: flex;
-                        width: 100%;
-                        height: 100%;
-                        font-size: 10px;
-                        border: 0;
-                        background-color:#C0C0C0;
-                    }
-
-                    #existencias-prod-input::-webkit-input-placeholder {
-                        text-align: center;
-                    }
-
-                    /* Entradas */
-                    .entradas-prod-dato{
-                        display: flex;
-                        width: 8.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
                     }
 
                     #entradas-prod-input{
@@ -1096,15 +842,6 @@
                         text-align: center;
                     }
 
-                    /* Salidas */
-                    .salidas-prod-dato{
-                        display: flex;
-                        width: 8%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                    }
-
                     #salidas-prod-input{
                         display: flex;
                         width: 100%;
@@ -1116,15 +853,6 @@
 
                     #salidas-prod-input::-webkit-input-placeholder {
                         text-align: center;
-                    }
-
-                    /* Stock */
-                    .stock-prod-dato{
-                        display: flex;
-                        width: 8%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
                     }
 
                     #stock-prod-input{
@@ -1140,102 +868,34 @@
                         text-align: center;
                     }
 
-                    /* Eliminar fila */
-                    .elim-fila{
-                        display: flex;
-                        /* width: 100%; */
-                        height: 100%;
-                        border:0;
-                        background-color: white;
-                        justify-content: center;
-                        align-items: center;
+                    .btn-editar-inventario img, .btn-eliminar-inventario img{
+                        width: 10px;
+                        height: 10px;
+                        margin: 0;
                     }
 
-                    .elim-fila img{
-                        display: flex;
-                        width: 15px;
-                        height: 18px;
-                        cursor: pointer;
-                    }
-
-                    #bott-eliminar-fila{
-                        display: flex;
-                        width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: white;
-                        justify-content: center;
-                        align-items: center;
+                    .btn-editar-inventario h2, .btn-eliminar-inventario h2{
+                        display: none;
                     }
     }
 
     @media (Max-width: 425px){
-        /* Botón Limpiar y Filtro: Seleccionar mes */
-        .cont-limpiar_filtro{
-            display: flex;
-            width: 100%;
-            height: 20px;
-            margin-top: 30px;
-            justify-content: space-between;
+        .filtros-busqueda{
+            height: auto;
         }
 
-            /* Botón: Limpiar */
-            .cont-bott-limpiar{
-                display: flex;
-                width: 45%;
-                height: 100%;
-            }
-
-            .bott-limpiar{
-                width: 60%;
-                border: 1px solid black;
-                border-radius: 7px;
-            }
-
-            .bott-limpiar h2{
-                font-size: 12px;
-            }
-
-            /* Filtro: Seleccionar Mes */
-            .cont-seleccionar-mes{
-                display: flex;
-                width: 50%;
-                height: 100%;
-                justify-content: end;
-            }
-
-            #seleccionar-mes{
-                width: 100%;
-                font-size: 12px;
-            }
-
-        /* Contenido Meses */
-        #contenido-Enero, #contenido-Febrero,
-        #contenido-Marzo, #contenido-Abril,
-        #contenido-Mayo, #contenido-Junio,
-        #contenido-Julio, #contenido-Agosto,
-        #contenido-Septiembre, #contenido-Octubre,
-        #contenido-Noviembre, #contenido-Diciembre{
-            display: none;
-            flex-direction: column;
+        #barra_busqueda, #ordenar_por{
+            font-size: 8.5px;
         }
 
-            /* Texto - Título: Productos */
-            .texto-productos{
-                display: flex;
-                width: 100%;
-                height: 25px;
-                background-color: #212EC2;
-                margin-top: 40px;
-                border: 1px solid black;
-                align-items: center;
-            }
+        #ordenar_por{
+            padding: 2px 3px 2px;
+        }
 
-            .texto-productos h1{
-                color: white;
-                font-size: 14px;
-                margin-left: 15px;
-            }
+        #barra_busqueda{
+            width: 80%;
+            padding: 3px 7px 3px;
+        }
 
         /* Tabla productos */
         .tabla-productos{
@@ -1259,87 +919,25 @@
                 .item-columna{
                     justify-content: center;
                     align-items: center;
-                    font-size: 4px;
+                    font-size: 5.5px;
                     text-align: center;
                 }
 
-                    /* Número de producto */
-                    .num-prod{
-                        display: flex;
-                        width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
+                    .num-prod, .num-prod-dato{
+                        width: 6%;
                     }
 
-                    /* Código de producto */
-                    .cod-prod{
-                        display: flex;
-                        width: 7.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
+                    .nombre-prod, .nombre-prod-dato{
+                        width: 45%;
                     }
 
-                    /* Nombre Producto */
-                    .nombre-prod{
-                        display: flex;
-                        width: 42%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
+                    .entradas-prod, .salidas-prod, .stock-prod,
+                    .entradas-prod-dato, .salidas-prod-dato, .stock-prod-dato{
+                        width: 11%;
                     }
 
-                    /* Existencias Iniciales */
-                    .existencias-prod{
-                        display: flex;
-                        width: 15.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    /* Entradas */
-                    .entradas-prod{
-                        display: flex;
-                        width: 8.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    /* Salidas */
-                    .salidas-prod{
-                        display: flex;
-                        width: 8%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    /* Stock */
-                    .stock-prod{
-                        display: flex;
-                        width: 8%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    /* Icono eliminar */
-                    .icono-eliminar{
-                        display: flex;
-                        width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #212EC2;
-                    }
-
-                    .icono-eliminar img{
-                        display: flex;
-                        width: 7px;
-                        height: 8px;
-                        cursor: pointer;
+                    .acciones, .acciones-dato{
+                        width: 14%;
                     }
 
             /* Columnas datos de filas */
@@ -1352,48 +950,9 @@
                 margin-top: 3px;
             }
 
-                    /* Número de producto */
-                    .num-prod-dato{
-                        display: flex;
-                        width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 6px;
-                    }
-
-                    /* Código de producto */
-                    .cod-prod-dato{
-                        display: flex;
-                        width: 7.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                    }
-
-                    #cod-prod-input{
-                        display: flex;
-                        width: 100%;
-                        height: 100%;
-                        font-size: 6px;
-                        border: 0;
-                        background-color:#C0C0C0;
-                    }
-
-                    #cod-prod-input::-webkit-input-placeholder {
-                        text-align: center;
-                    }
-
-                    /* Nombre producto */
-                    .nombre-prod-dato{
-                        display: flex;
-                        width: 42%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                    }
+            .item-fila{
+                font-size: 5.5px;
+            }
 
                     #nombre-prod-input{
                         display: flex;
@@ -1406,37 +965,6 @@
 
                     #nombre-prod-input::-webkit-input-placeholder {
                         text-align: center;
-                    }
-
-                    /* Existencias Iniciales */
-                    .existencias-prod-dato{
-                        display: flex;
-                        width: 15.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                    }
-
-                    #existencias-prod-input{
-                        display: flex;
-                        width: 100%;
-                        height: 100%;
-                        font-size: 6px;
-                        border: 0;
-                        background-color:#C0C0C0;
-                    }
-
-                    #existencias-prod-input::-webkit-input-placeholder {
-                        text-align: center;
-                    }
-
-                    /* Entradas */
-                    .entradas-prod-dato{
-                        display: flex;
-                        width: 8.5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
                     }
 
                     #entradas-prod-input{
@@ -1452,15 +980,6 @@
                         text-align: center;
                     }
 
-                    /* Salidas */
-                    .salidas-prod-dato{
-                        display: flex;
-                        width: 8%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
-                    }
-
                     #salidas-prod-input{
                         display: flex;
                         width: 100%;
@@ -1472,15 +991,6 @@
 
                     #salidas-prod-input::-webkit-input-placeholder {
                         text-align: center;
-                    }
-
-                    /* Stock */
-                    .stock-prod-dato{
-                        display: flex;
-                        width: 8%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: #C0C0C0;
                     }
 
                     #stock-prod-input{
@@ -1496,96 +1006,27 @@
                         text-align: center;
                     }
 
-                    /* Eliminar fila */
-                    .elim-fila{
-                        display: flex;
-                        /* width: 100%; */
-                        height: 100%;
-                        border:0;
-                        background-color: white;
-                        justify-content: center;
-                        align-items: center;
+                    .btn-editar-inventario img, .btn-eliminar-inventario img{
+                        width: 6.5px;
+                        height: 6.5px;
                     }
-
-                    .elim-fila img{
-                        display: flex;
-                        width: 7px;
-                        height: 8px;
-                        cursor: pointer;
-                    }
-
-                    #bott-eliminar-fila{
-                        display: flex;
-                        width: 5%;
-                        height: 100%;
-                        border: 1px solid black;
-                        background-color: white;
-                        justify-content: center;
-                        align-items: center;
-                    }
-
-        /* Opciones de Filas */
-        .opciones-filas{
-            display: flex;
-            width: 100%;
-            height: 25px;
-            margin-top: 100px;
-        }
-
-            /* Añadir Fila */
-            .añadir-fila{
-                display: flex;
-                width: 70px;
-                border: 1px solid black;
-                background-color: #1988CF;
-                border-radius: 7px;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-            }
-
-            .añadir-fila h2{
-                color: white;
-                font-size: 8px;
-            }
 
             /* Opciones inventarios */
             .opciones-inventarios{
                 display: flex;
                 width: 100%;
-                height: 25px;
-                margin-top:20px;
+                margin-top: 20px;
                 justify-content: space-between;
             }
 
-                /* Botón: Cancelar */
-                .bott-cancelar{
-                    display: flex;
-                    width: 65px;
-                    background-color: red;
-                    border: 1px solid black;
-                    border-radius: 7px;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .bott-cancelar h2{
-                    color: white;
-                    font-size: 8px;
-                }
-
                 /* Botón: Guardar cambios */
                 .bott-guardar-cambios{
-                    display: flex;
-                    width: 65px;
-                    background-color: #2121E3;
-                    border: 1px solid black;
+                    width: 100px;
+                    height: 25px;
                     border-radius: 7px;
-                    justify-content: center;
-                    align-items: center;
                 }
 
-                .bott-guardar-cambios h2{
+                .bott-guardar-cambios a h2{
                     color: white;
                     font-size: 8px;
                 }
