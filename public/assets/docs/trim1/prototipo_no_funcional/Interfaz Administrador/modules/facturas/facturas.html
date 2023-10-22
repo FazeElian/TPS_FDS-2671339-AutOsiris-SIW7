@@ -65,16 +65,11 @@
             <h1 class="titulo">Facturas</h1>
         </div>
 
-        <!-- Opciones de Factura/s -->
-        <div class="opciones-factura">
-            <div class="cont-opciones-factura">
-                <!-- Nueva Factura  -->
-                <button class="cont-nueva-factura">
-                    <a href="crearfactura.html"><img src="../../assets/img/nueva_factura-icono.png" alt=""></a>
-                    <a href="crearfactura.html">Nueva Factura</a>
-                </button>
+        <!-- Buscar factura-->
+        <div class="cont-busqueda">
+            <input type="search" name="buscarFactura" id="buscarFactura" placeholder="Buscar factura por su número">
+        </div>
 
-<<<<<<< HEAD
         <!-- Contenedor Facturas -->
         <div class="cont-facturas">
             <!-- Contenedor Lista de Facturas -->
@@ -100,18 +95,23 @@
                         </td>
                     </tr>
                 </table>
-=======
-                <!-- Roles de Factura -->
-                <button class="cont-roles-factura">
-                    <a href="../clientes/clientes.html"><img src="../../assets/img/clientes-factura-icono.png" alt=""></a>
-                    <a href="../clientes/clientes.html">Clientes</a>
-                </button>
->>>>>>> c61f14631cd49d5407c4901f7ad495f4f0f32fdf
             </div>
 
-            <!-- Búsqueda -->
-            <div class="cont-busqueda">
-                <input type="search" name="buscarFactura" id="buscarFactura" placeholder="Busca una factura aquí">
+            <!-- Contenedor Opciones de Factura/s -->
+            <div class="cont-opciones-factura">
+                <!-- Opciones de factura -->
+                <div class="opciones-factura">
+                    <!-- Nueva Factura  -->
+                    <button class="cont-opcion-factura">
+                        <a href="crearfactura.html"><img src="../../assets/img/nueva_factura-icono.png" alt="Nueva Factura Icono"></a>
+                        <a href="crearfactura.html" class="link-sect-fact">Nueva Factura</a>
+                    </button>
+                    <!-- Clientes de Factura -->
+                    <button class="cont-opcion-factura">
+                        <a href="../clientes/clientes.html"><img src="../../assets/img/clientes-factura-icono.png" alt=""></a>
+                        <a href="../clientes/clientes.html" class="link-sect-fact">Clientes</a>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
