@@ -66,7 +66,7 @@ class FactureController extends Controller
 
         $facture->products()->sync($productData);
 
-        return redirect()->route('factures.index')->with('success', 'Factura creada con éxito');
+        return redirect()->route('factures.index')->with('created', 'Factura creada con éxito');
     }
 
     public function show($id)
@@ -116,7 +116,7 @@ class FactureController extends Controller
         $facture->total = $total;
         $facture->save();
 
-        return redirect()->route('factures.index')->with('success', 'Factura actualizada con éxito');
+        return redirect()->route('factures.index')->with('updated', 'Factura actualizada con éxito');
     }
 
     public function destroy($id)

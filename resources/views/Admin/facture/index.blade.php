@@ -84,67 +84,24 @@
         </div>
     </section>
 
-        {{-- <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <div style="display: flex; justify-content: space-between; align-items: center;">
-
-                                <span id="card_title">
-                                    <h2 class="my-3">Lista de Facturas</h2>
-                                </span>
-
-                                <div class="float-right">
-                                    <a href="{{ route('factures.create') }}" class="btn btn-primary btn-sm float-right px-3"  data-placement="left">
-                                      Nueva Factura
-                                    </a>
-                                </div>
-                                <div class="float-right">
-                                    <a href="{{ route("customers.index") }}" class="btn btn-primary btn-sm float-right px-3"  data-placement="left">
-                                      Clientes
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-hover">
-                                    <thead class="thead">
-                                        <tr>
-                                            <th>No Fila</th>
-                                            <th>Número de factura</th>
-                                            <th>Fecha</th>
-                                            <th>Fecha última actualización</th>
-                                            <th>Acciones</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach ($factures as $facture)
-                                            <tr>
-                                                <td>{{ ++$i }}</td>
-                                                <td> {{ $facture->id }}</td>
-                                                <td>{{ $facture->date }}</td>
-                                                <td>{{ $facture->updated_at }}</td>
-                                                <td>
-                                                    <form action="{{ route('factures.destroy',$facture->id) }}" method="POST">
-                                                        <a class="btn btn-sm btn-primary " href="{{ route('factures.show', $facture->id) }}">Ver</a>
-                                                        <a class="btn btn-sm btn-success" href="{{ route('factures.edit', $facture->id) }}">Editar</a>
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    {!! $factures->links() !!}
-                </div>
-            </div>
-        </div> --}}
+    {{-- Alertas de acciones de factura --}}
+        {{-- Alerta de factura creada --}}
+        @if (session('created'))
+            <script>
+                alert("{{ session('created') }}");
+            </script>
+        @endif
+        {{-- Alerta de factura actualizada --}}
+        @if (session('updated'))
+            <script>
+                alert("{{ session('updated') }}");
+            </script>
+        @endif
+        {{-- Alerta de factura eliminada --}}
+        @if (session('deleted'))
+            <script>
+                alert("{{ session('deleted') }}");
+            </script>
+        @endif
 </body>
 </html>
