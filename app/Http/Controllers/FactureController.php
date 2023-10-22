@@ -5,6 +5,7 @@ use App\Models\Product;
 use App\Models\Customer;
 use App\Models\Facture;
 use Illuminate\Http\Request;
+use Barryvdh\DomPDF\Facade\PDF; // Importamos librería para exportación de PDF de factura
 
 class FactureController extends Controller
 {
@@ -123,5 +124,19 @@ class FactureController extends Controller
         $facture = Facture::find($id)->delete();
 
         return redirect()->route('factures.index')->with('deleted', 'Factura eliminada con éxito');
+    }
+
+    // Función para generar factura
+    public function showPDF($id)
+    {
+        $facture = Facture::find($id); // Busca la factura por su ID
+
+        if ($facture) {
+            $pdf = PDF::loadView("Admin.facture.pdf", ["facture" => $facture]);
+            return $pdf->stream();
+        } else {
+            // Manejar el caso en el que no se encuentra la factura
+            return redirect()->route('factures.index')->with('error', 'Factura no encontrada');
+        }
     }
 }

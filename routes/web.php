@@ -44,6 +44,9 @@ Route::resource('perfile', Perfile::class)->middleware("auth");
 // Ruta Facturas
 Route::resource('factures', FactureController::class)->middleware("auth");
 
+// Ruta de PDF de factura
+Route::get("factures/showPDF/{id}", [\App\Http\Controllers\FactureController::class, "showPDF"])->name("factures.pdf");
+
 // Ruta Clientes
 Route::resource('customers', CustomerController::class)->middleware("auth");
 
