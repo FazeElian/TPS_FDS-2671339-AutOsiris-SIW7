@@ -165,9 +165,9 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-        // Barryvdh\DomPDF\ServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class, // Configuración Service Provider para PDF de factura
         App\Providers\RouteServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
     ])->toArray(),
@@ -186,6 +186,7 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class, // PDF
     ])->toArray(),
 
 ];

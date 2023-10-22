@@ -185,6 +185,14 @@
                 background-color: red;
             }
 
+            .eliminar-fact{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                border-left: 0;
+                background-color: red;
+            }
+
             .btn-ver, .btn-editar, .btn-eliminar{
                 border-left: none;
             }
@@ -321,6 +329,14 @@
             border: 1px solid black;
         }
 
+        .eliminar-fact{
+            border: none;
+        }
+
+        .eliminar-fact{
+            font-size: 0;
+        }
+
         .cont-opcion-factura{
             width: 70px;
             height: 70px;
@@ -421,5 +437,14 @@
 
         .item-fila, .btn-factura{
             font-size: 9.2px;
+        }
+
+        .btn-eliminar{
+            border: 1px solid black;
+            margin-left: 1px;
+        }
+
+        .eliminar-fact{
+            font-size: 0;
         }
     }
