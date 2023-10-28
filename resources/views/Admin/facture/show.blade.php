@@ -21,17 +21,20 @@
 
         <!-- Contenedor de nueva factura -->
         <div class="cont-factura">
-            <h1>Número de la factura: {{ $facture->id }} </h1>
-            <br>
-
             <!-- Contenedor información de factura -->
             <div class="cont-info-fact">
+                {{-- Número de la Factura --}}
+                <div class="num-fact">
+                    <h2>Número de la factura:</h2> <h3>{{ $facture->id }}</h3>
+                </div>
                 <!-- Fecha -->
-                <div id="fechaFactura"> Fecha: {{ $facture->date }}</div>
+                <div class="fecha-fact">
+                    <h2>Fecha:</h2> <h3>{{ $facture->date }}</h3>
+                </div>
 
                 <!-- Cliente -->
-                <div id="seleccionarCliente">
-                    Cliente: {{ $facture->customer->name }}
+                <div class="cliente-fact">
+                    <h2>Cliente: </h2> <h3>{{ $facture->customer->name }}</h3>
                 </div>
             </div>
 
