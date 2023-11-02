@@ -214,7 +214,7 @@ INSERT INTO `products` (`id`, `name`, `code`, `categorie_id`, `description`, `im
 -- Estructura de tabla para la tabla `roles`
 --
 
-CREATE TABLE `roles` (
+CREATE TABLE `customers` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `name` varchar(50) NOT NULL,
   `description` varchar(150) NOT NULL DEFAULT 'Este rol no tiene una descripción',
@@ -223,10 +223,10 @@ CREATE TABLE `roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Volcado de datos para la tabla `roles`
+-- Volcado de datos para la tabla `customers`
 --
 
-INSERT INTO `roles` (`id`, `name`, `description`, `created_at`, `updated_at`) VALUES
+INSERT INTO `customers` (`id`, `name`, `description`, `created_at`, `updated_at`) VALUES
 (1, 'Cliente', 'Cliente común que compra en el negocio físico', '2023-09-09 05:14:24', '2023-10-02 02:53:11'),
 (2, 'Colegio Adventista del Norte', 'Colegio Adventista - procesos, impresiones, compras grandes, etc', '2023-09-10 06:03:36', '2023-09-15 02:41:07');
 
@@ -321,9 +321,9 @@ ALTER TABLE `products`
   ADD KEY `products_categorie_id_foreign` (`categorie_id`);
 
 --
--- Indices de la tabla `roles`
+-- Indices de la tabla `customers`
 --
-ALTER TABLE `roles`
+ALTER TABLE `customers`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -380,9 +380,9 @@ ALTER TABLE `products`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
--- AUTO_INCREMENT de la tabla `roles`
+-- AUTO_INCREMENT de la tabla `customers`
 --
-ALTER TABLE `roles`
+ALTER TABLE `customers`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
@@ -399,7 +399,7 @@ ALTER TABLE `users`
 -- Filtros para la tabla `factures`
 --
 ALTER TABLE `factures`
-  ADD CONSTRAINT `factures_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `factures_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `customers` (`id`) ON DELETE CASCADE;
 
 --
 -- Filtros para la tabla `inventories`
