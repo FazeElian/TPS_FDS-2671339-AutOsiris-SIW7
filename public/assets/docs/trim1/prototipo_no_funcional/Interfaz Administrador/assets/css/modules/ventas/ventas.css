@@ -1,0 +1,330 @@
+/* Contenedor opciones de ventas */
+.cont-ops-ventas{
+    display: flex;
+    width: 100%;
+    height: 65px;
+    margin: 2rem 0 1.5rem;
+}
+
+    /* Contenedor Registrar venta, Contenedor Filtrar venta */
+    .cont-registrar-venta, .cont-filtrar-venta{
+        display: flex;
+        width: 50%;
+        height: 100%;
+    }
+
+    .cont-filtrar-venta{
+        justify-content: end;
+        align-items: center;
+    }
+
+    .btn-registrar-venta{
+        display: flex;
+        width: 45%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #D9D9D9;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .btn-registrar-venta:hover{
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    .btn-registrar-venta img{
+        display: flex;
+        width: 35px;
+        height: 35px;
+        margin-left: 15px;
+    }
+
+    .btn-registrar-venta a h2{
+        font-size: 20px;
+    }
+
+    #filtrarVenta{
+        display: flex;
+        width: 60%;
+        height: 30px;
+        font-size: 14px;
+        border: 1px solid black;
+        padding: 0 7px;
+    }
+
+/* Tabla Ventas */
+.tabla-ventas{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+    /* Columnas */
+    .columnas-caract, .filas-dato{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .columnas-caract{
+        height: 35px;
+    }
+
+    .filas-dato{
+        height: 32px;
+        margin: 4px 0 0;
+    }
+
+        .item-columna, .item-fila{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .item-columna{
+            font-size: 16.5px;
+            color: white;
+            background-color: #212EC2;
+        }
+
+        .item-fila{
+            font-size: 15px;
+            color: black;
+            background-color: #D9D9D9;
+        }
+
+        /* No */
+        .no-venta, .no-venta-dato{
+            width: 15.5%;
+        }
+
+        /* Fecha */
+        .fecha-venta, .fecha-venta-dato{
+            width: 25%;
+        }
+
+        /* Total */
+        .total-venta, .total-venta-dato{
+            width: 29%;
+        }
+
+        /* Acciones */
+        .acciones-venta, .acciones-venta-dato{
+            width: 30%;
+        }
+
+        .acciones-venta-dato{
+            justify-content: space-between;
+            border: 0;
+        }
+
+    /* Botones Acciones */
+        .btn-editar-venta, .btn-eliminar-venta{
+            display: flex;
+            width: 49.6%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .btn-editar-venta{
+            background-color: #1988CF;
+        }
+
+        .btn-eliminar-venta{
+            background-color: red;
+        }
+
+        .btn-editar-venta a, .btn-eliminar-venta a{
+            font-size: 15px;
+        }
+
+        .btn-editar-venta a img, .btn-eliminar-venta a img{
+            display: flex;
+            width: 14px;
+            height: 14px;
+            margin-left: 5px;
+        }
+
+/* @media */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        .cont-ops-ventas{
+            height: 50px;
+            margin: 1rem 0 1rem;
+        }
+
+        .btn-registrar-venta{
+            width: 50%;
+        }
+
+        .btn-registrar-venta a h2{
+            font-size: 0.9rem;
+        }
+
+        .btn-registrar-venta img{
+            width: 22.5px;
+            height: 22.5px;
+        }
+
+        #filtrarVenta{
+            width: 80%;
+            height: 28px;
+            font-size: 14px;
+        }
+
+        .columnas-caract{
+            height: 32.5px;
+        }
+
+        .item-columna{
+            font-size: 15px;
+        }
+
+        .filas-dato{
+            height: 27.5px;
+        }
+
+        .item-fila, .btn-editar-venta a h2, .btn-eliminar-venta a h2{
+            font-size: 13px;
+        }
+
+        .btn-editar-venta a img, .btn-eliminar-venta a img{
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    /* @media 768px */
+    @media(max-width: 768px){
+        .cont-ops-ventas{
+            height: 45px;
+        }
+
+        .btn-registrar-venta{
+            width: 65%;
+        }
+
+        .btn-registrar-venta a h2{
+            font-size: 12px;
+            font-weight: lighter;
+        }
+
+        #filtrarVenta{
+            width: 85%;
+            height: 25px;
+            font-size: 12px;
+        }
+
+        .columnas-caract{
+            height: 30px;
+        }
+
+        .item-columna{
+            font-size: 12px;
+        }
+
+        .filas-dato{
+            height: 25px;
+        }
+
+        .item-fila, .btn-editar-venta a, .btn-eliminar-venta a{
+            font-size: 10px;
+        }
+
+        .btn-editar-venta a img, .btn-eliminar-venta a img{
+            width: 9px;
+            height: 9px;
+        }
+    }
+
+    /* @media 425px */
+    @media(max-width: 425px){
+        .cont-ops-ventas{
+            flex-direction: column-reverse;
+            height: 100px;
+            margin: 1.5rem 0 0;
+        }
+
+        .cont-registrar-venta, .cont-filtrar-venta{
+            width: 100%;
+            height: 50%;
+            justify-content: end;
+        }
+
+        .cont-registrar-venta{
+            margin: -0.5rem 0 0;
+        }
+
+        .cont-filtrar-venta{
+            align-items: start;
+        }
+
+        .btn-registrar-venta{
+            width: 60%;
+            height: 90%;
+        }
+
+        .btn-registrar-venta a h2{
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .btn-registrar-venta img{
+            margin-left: 8px;
+        }
+
+        #filtrarVenta{
+            width: 70%;
+            height: 25px;
+            padding: 0;
+            padding-left: 5px;
+        }
+
+        .tabla-ventas{
+            margin-top: 0.5rem;
+        }
+
+        .link-btn-opcion{
+            display: none;
+        }
+
+        .columnas-caract{
+            height: 25px;
+        }
+
+        .item-columna{
+            font-size: 10px;
+        }
+
+        .filas-dato{
+            height: 22.5px;
+        }
+
+        .item-fila{
+            font-size: 9.2px;
+        }
+
+        .num-factura, .num-factura-dato{
+            width: 22%;
+        }
+
+        .fecha-factura, .fecha-factura-dato{
+            width: 25%;
+        }
+
+        .opciones-factura-tabla, .opciones-factura-tabla-dato{
+            width: 49.5%;
+        }
+
+        .btn-editar-venta a img, .btn-eliminar-venta a img{
+            margin: 0;
+        }
+    }

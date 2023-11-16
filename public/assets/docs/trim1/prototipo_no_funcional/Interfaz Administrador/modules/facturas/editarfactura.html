@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facturas | Crear</title>
+
+    <!-- Hoja de estilos generales -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+    <!-- Hoja de estilos de este archivo  -->
+    <link rel="stylesheet" href="../../assets/css/modules/facturas/form-facturas.css">
+
+    <!-- Scripts Generales -->
+    <script defer src="../../assets/js/modules/scripts.js"></script>
+
+    <!-- Scripts para este archivo -->
+    <script defer src="../../assets/js/modules/facturas/crearFactura.js"></script>
+    <script defer src="../../assets/js/modules/facturas/alertasFacturas.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/img/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="menu_sup">
+        <nav class="nav-inicio">
+            <!-- Icono de Menú responsive -->
+            <button class="icono-menu">
+                <div class="icono-menu-responsive">
+                    <img src="../../assets/img/menu-icono.png">
+                </div>
+                <div class="icono-menu-pc">
+                    <a href="../../index.html"><img src="../../assets/img/index.png"></a>
+                </div>
+            </button>
+            <ul class="lista_nav-inicio">
+                <li class="item_nav-inicio"><a href="../../index.html">Inicio</a></li>
+                <li class="item_nav-inicio"><a href="../estadisticas/estadisticas.html">Estadísticas</a></li>
+                <li class="item_nav-inicio"><a href="../ventas/ventas.html">Ventas</a></li>
+                <li class="item_nav-inicio li-facturas"><a href="../facturas/facturas.html">Facturas</a></li>
+                <li class="item_nav-inicio"><a href="../productos/productos.html">Productos</a></li>
+                <li class="item_nav-inicio li-inventarios"><a href="../inventarios/inventarios.html">Inventarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navegación de ítems Usuario -->
+        <nav class="nav-usuario">
+            <ul class="lista_nav-usuario">
+                <a href="../perfil/Perfil.html"><li class="item_nav-usuario">Mi perfil</li></a>
+                <a href="#"><li class="item_nav-usuario cerrar_sesion">Cerrar Sesión</li>
+                </a>
+            </ul>
+
+            <button class="icono-usuario">
+                <img src="../../assets/img/usuario-icono.png">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenido de página -->
+    <section class="contenido-pag">
+        <!-- Titulo de ventana -->
+        <div class="titulo-ventana">
+            <h1 class="titulo">Editar Factura</h1>
+        </div>
+
+        <!-- Contenedor de nueva factura -->
+        <div class="cont-factura">
+            <!-- Contenedor información de factura -->
+            <div class="cont-info-fact">
+                <!-- Fecha -->
+                <input type="date" name="fecha" id="fechaFactura" placeholder="Seleccionar una fecha" value="2023-10-10">
+
+                <!-- Cliente -->
+                <select name="cliente" id="seleccionarCliente">
+                    <option value="">Proveedor</option>
+                    <option value="">.</option>
+                    <option value="">.</option>
+                    <option value="">.</option>
+                </select>
+            </div>
+
+            <!-- Tabla lista de productos de factura -->
+            <table class="tab-productos-fact" id="listaProductos">
+                <!-- Columnas características de lista de productos -->
+                <tr class="columnas-caract">
+                    <td class="item-columna nombre-prod">Nombre producto</td>
+                    <td class="item-columna cantidad-prod">Cantidad</td>
+                    <td class="item-columna precio-prod">Precio /u</td>
+                    <td class="item-columna elim-fila"><img src="../../assets/img/icono-eliminar-rojo.png" alt=""></td>
+                </tr>
+
+                <!-- Filas datos -->
+                <tr class="filas-datos">
+                    <td class="item-fila nombre-prod-dato">
+                        <select name="" id="seleccionarProducto">
+                            <option value="">Cuaderno Argollado Norma</option>
+                        </select>
+                    </td>
+                    <td class="item-fila cantidad-prod"><input type="number" name="" id="cantidadProd" value="2"></td>
+                    <td class="item-fila precio-prod"><input type="number" name="" id="precioProd" value="12500"></td>
+                    <td class="item-fila elim-fila-dato"><img src="../../assets/img/icono-eliminar-rojo.png" alt="Eliminar Producto"></td>
+                </tr>
+                <tr class="filas-datos">
+                    <td class="item-fila nombre-prod-dato">
+                        <select name="" id="seleccionarProducto">
+                            <option value="">Lapicero negro Offi-Esco</option>
+                        </select>
+                    </td>
+                    <td class="item-fila cantidad-prod"><input type="number" name="" id="cantidadProd" value="4"></td>
+                    <td class="item-fila precio-prod"><input type="number" name="" id="precioProd" value="1200"></td>
+                    <td class="item-fila elim-fila-dato"><img src="../../assets/img/icono-eliminar-rojo.png" alt="Eliminar Producto"></td>
+                </tr>
+                <tr class="filas-datos">
+                    <td class="item-fila nombre-prod-dato">
+                        <select name="" id="seleccionarProducto">
+                            <option value="">Lapicero rojo Offi-Esco</option>
+                        </select>
+                    </td>
+                    <td class="item-fila cantidad-prod"><input type="number" name="" id="cantidadProd" value="4"></td>
+                    <td class="item-fila precio-prod"><input type="number" name="" id="precioProd" value="1100"></td>
+                    <td class="item-fila elim-fila-dato"><img src="../../assets/img/icono-eliminar-rojo.png" alt="Eliminar Producto"></td>
+                </tr>
+            </table>
+
+            <!-- Contenedor añadir fila -->
+            <div class="cont-anadir-fila">
+                <!-- Botón -->
+                <div class="btn-anadir-fila" id="btn-anadir-fila">
+                    Añadir Producto
+                </div>
+            </div>
+
+            <!-- Opciones Factura -->
+            <div class="opciones-factura">
+                <!-- Botón: Cancelar -->
+                <button class="bott-cancelar">
+                    <a href="facturas.html"><h2>Cancelar</h2></a>
+                </button>
+                <button class="bott-guardar-cambios">
+                    <a href="facturas.html" onclick="facturaActualizada()"><h2>Actualizar Factura</h2></a>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

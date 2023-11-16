@@ -1,0 +1,1040 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Cambria";
+}
+
+body{
+    background-color: #F1F1F1;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Contenido Escondido */
+.dp-hidden{
+    display: flex;
+    visibility: hidden;
+}
+
+/* Contenido no existente */
+.dp-none{
+    display: none;
+}
+
+/* Icono menú Responsive */
+.icono-menu-responsive{
+    display: none;
+}
+
+/* Icono menú PC */
+.icono-menu-pc{
+    display: flex;
+}
+
+/* No hay registros */
+.no-records{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: #D9D9D9;
+}
+
+/* Error por falta de caracteres */
+/* .character-error{
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+} */
+
+/* Menú Superior */
+.menu_sup{
+    display: flex;
+    width: 92%;
+    height: 80px;
+    background-color: #212EC2;
+    border: 2px solid black;
+    margin: 0 4%;
+    margin-top: 80px;
+}
+
+    /* Icono de menú responsive */
+    .icono-menu{
+        display: flex;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        margin: 0 40px;
+        margin-top: 15px;
+    }
+
+    .icono-menu img{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Navegación de ítems Inicio */
+    .nav-inicio{
+        display: flex;
+        width: 70%;
+        align-items: flex-start;
+    }
+
+        /* Lista Nav - Inicio */
+        .lista_nav-inicio{
+            display: flex;
+            list-style: none;
+        }
+
+        /* Ítem de Nav - Inicio */
+        .item_nav-inicio{
+            display: flex;
+            color: white;
+            font-size: 20px;
+            margin: 20px 12px;
+            padding: 5px 20px;
+        }
+
+        .item_nav-inicio a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .item_nav-inicio:hover{
+            background-color: black;
+            transition: 1.5s;
+            border-radius: 7px;
+        }
+
+    /* Navegación de ítems Usuario */
+    .nav-usuario{
+        display: flex;
+        width: 30%;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+        /* Icono de Usuario responsive */
+        .icono-usuario{
+            order: 0;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            margin: 0 40px;
+            margin-top: 15px;
+        }
+
+        .icono-usuario img{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Lista Nav - Usuario */
+        .lista_nav-usuario{
+            display: flex;
+            flex-direction: column;
+            background-color: #212EC2;
+            border: 2px solid black;
+            position: fixed;
+            margin-top: 76px;
+            right: -100%;
+            width: 17%;
+            height: calc(90% - 70px);
+            overflow-y: auto;
+            transition: right 0.5s;
+            border-top: #212EC2;
+        }
+
+        /* Hacer visible Nav - Usuario */
+        .nav_usuario-visible{
+            right: 4%;
+        }
+
+        /* Ítem de Nav - Inicio */
+        .item_nav-usuario{
+            display: flex;
+            color: white;
+            font-size: 20px;
+            margin: 20px 15px;
+        }
+
+        .item_nav-usuario a{
+            color: white;
+            text-decoration: none;
+        }
+
+            /* Inventarios */
+            .li-facturas{
+                display: flex;
+            }
+
+            /* Facturas */
+            .li-inventarios{
+                display: flex;
+            }
+
+        /*  Li - Cerrar sesión */
+        .cerrar_sesion{
+            background-color: red;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+/* Contenido de página */
+.contenido-pag{
+    display: flex;
+    width: 80%;
+    height: 2000px;
+    margin: 0 10%;
+    margin-top: 40px;
+    flex-direction: column; /* Poner contenedores uno encima del otro como columna */
+}
+
+    /* Título de ventana */
+    .titulo-ventana{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background-color: #212EC2;
+        border: 2px solid black;
+        align-items: center;
+    }
+
+        .titulo-ventana h1{
+            color: white;
+            font-size: 28px;
+            margin: 5px 20px;
+        }
+
+    /* Bienvenida */
+    .bienvenida{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+        /* Título Texto de Bienvenida */
+        .contenido-pag h1{
+            display: flex;
+            font-size: 35px;
+        }
+
+        /* Párrafo texto de bienvenida */
+        .contenido-pag p{
+            display: flex;
+            width: 100%;
+            font-size: 15px;
+            margin-top: 30px;
+        }
+
+    /* Ventas hoy */
+    .cont-ventas-hoy{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+        /* Div Texto */
+        .ventas-hoy{
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background-color: #212EC2;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+            .ventas-hoy h2{
+                color: white;
+                font-size: 25px;
+                margin-left: 20px;
+            }
+
+        /* Tabla ventas hoy */
+        .tabla-ventas-hoy{
+            display: flex;
+            width: 100%;
+            height: 96%;
+            margin-top: 30px;
+            flex-direction: column;
+        }
+
+            /* Columnas características de producto */
+            .columnas-caract{
+                display: flex;
+                width: 100%;
+                height: 55px;
+                color: white;
+                justify-content: space-between;
+            }
+
+                /* Item Columna y Fila*/
+                .item-columna{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 15px;
+                }
+
+                    /* Número de producto */
+                    .num-producto{
+                        display: flex;
+                        width: 9.4%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Descripción de producto */
+                    .descripcion-producto{
+                        display: flex;
+                        width: 50%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Cantidad de producto */
+                    .cantidad-producto{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Precio de producto */
+                    .precio-producto{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+            /* Columnas datos de filas */
+            .filas-datos{
+                display: flex;
+                width: 100%;
+                height: 35px;
+                color: black;
+                margin-top: 3px;
+                justify-content: space-between;
+            }
+
+                /* Ítem fila */
+                .item-fila{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                }
+
+                    /* Número de producto */
+                    .num-producto-dato{
+                        display: flex;
+                        width: 9.4%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Decripción de producto */
+                    .descripcion-producto-dato{
+                        display: flex;
+                        width: 50%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Cantidad de producto */
+                    .cantidad-producto-dato{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Precio producto */
+                    .precio-producto-dato{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+            /* Total */
+            .columna-total{
+                display: flex;
+                width: 100%;
+                height: 50px;
+                color: black;
+                margin-top: 3px;
+                justify-content: space-between;
+            }
+
+                /* Ítem Total */
+                .item-total{
+                    font-size: 15px;
+                    background-color: blue;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    /* Total texto */
+                    .total{
+                        display: flex;
+                        width: 59.6%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Total Cantidad */
+                    .total-cantidad{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Total Precio */
+                    .total-precio{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+/* Footer - Pie de página */
+.pie_de_pagina{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: #212EC2;
+    border: 2px solid black;
+    margin-top: 400px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+    .cont-footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cont-footer h2{
+        color: white;
+        font-size: 13px;
+        margin: 0;
+        text-align: center;
+    }
+
+/* @Media - Diseño Responsive */
+@media(max-width:1024px){
+    /* Título de ventana */
+    .titulo-ventana{
+        height: 40px;
+        align-items: center;
+    }
+
+    .titulo-ventana h1{
+        font-size: 22px;
+    }
+
+    /* Menú superior */
+    .menu_sup{
+        height: 50px;
+        margin-top: 40px;
+    }
+
+    .icono-menu{
+        width: 32px;
+        height: 32px;
+        margin: 0 25px;
+        margin-top: 7.5px;
+    }
+
+    /* Icono menú Responsive */
+    .icono-menu-responsive{
+        display: flex;
+    }
+
+    /* Icono menú PC */
+    .icono-menu-pc{
+        display: none;
+    }
+
+    .icono-usuario{
+        width: 30px;
+        height: 30px;
+        margin: 0 22.5px;
+        margin-top: 7px;
+    }
+
+    /* Lista de Navegación - Inicio */
+    .lista_nav-inicio{
+        flex-direction: column;
+        background-color: #212EC2;
+        border: 2px solid black;
+        position: fixed;
+        margin-top: 46px;
+        left: -100%;
+        width: 30%;
+        height: calc(100% - 70px);
+        overflow-y: auto;
+        transition: left 0.5s;
+        border-top: #212EC2;
+    }
+
+        /* Ítem de Nav - Inicio */
+        .item_nav-inicio{
+            display: flex;
+            color: white;
+            font-size: 15px;
+            margin: 15px 5px;
+            margin-bottom: -5px;
+        }
+
+        /* Hacer visible Nav - Menú */
+        .nav_inicio-visible{
+            left: 4%;
+        }
+
+    /* Lista de navegación - Usuario */
+    .lista_nav-usuario{
+        display: flex;
+        flex-direction: column;
+        background-color: #212EC2;
+        border: 2px solid black;
+        position: fixed;
+        margin-top: 46px;
+        right: -100%;
+        width: 17%;
+        height: calc(54% - 70px);
+        overflow-y: auto;
+        transition: right 0.5s;
+        border-top: #212EC2;
+    }
+
+        /* Ítem de Nav - Inicio */
+        .item_nav-usuario{
+            display: flex;
+            color: white;
+            font-size: 15px;
+            margin: 15px;
+        }
+
+            /* Inventarios */
+            .li-facturas{
+                display: flex;
+            }
+
+            /* Facturas */
+            .li-inventarios{
+                display: flex;
+            }
+
+        /* Hacer visible Nav - Usuario */
+        .nav_usuario-visible{
+            right: 4%;
+        }
+
+    /* Bienvenida */
+    .bienvenida{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+        /* Título Texto de Bienvenida */
+        .contenido-pag h1{
+            display: flex;
+            font-size: 25px;
+        }
+
+        /* Párrafo texto de bienvenida */
+        .contenido-pag p{
+            display: flex;
+            width: 100%;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+
+    /* Ventas hoy */
+    .cont-ventas-hoy{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+        /* Div Texto */
+        .ventas-hoy{
+            display: flex;
+            width: 100%;
+            height: 40px;
+            background-color: #212EC2;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+            .ventas-hoy h2{
+                color: white;
+                font-size: 17.5px;
+                margin-left: 20px;
+            }
+
+        /* Tabla ventas hoy */
+        .tabla-ventas-hoy{
+            display: flex;
+            width: 100%;
+            height: 96%;
+            margin-top: 30px;
+            flex-direction: column;
+        }
+
+            /* Columnas características de producto */
+            .columnas-caract{
+                display: flex;
+                width: 100%;
+                height: 40px;
+                color: white;
+                justify-content: space-between;
+            }
+
+                /* Item Columna y Fila*/
+                .item-columna{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 12px;
+                }
+
+                    /* Número de producto */
+                    .num-producto{
+                        display: flex;
+                        width: 9.4%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Descripción de producto */
+                    .descripcion-producto{
+                        display: flex;
+                        width: 50%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Cantidad de producto */
+                    .cantidad-producto{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+                    /* Precio de producto */
+                    .precio-producto{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #212EC2;
+                    }
+
+            /* Columnas datos de filas */
+            .filas-datos{
+                display: flex;
+                width: 100%;
+                height: 25px;
+                color: black;
+                margin-top: 3px;
+                justify-content: space-between;
+            }
+
+                /* Ítem fila */
+                .item-fila{
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 10px;
+                }
+
+                    /* Número de producto */
+                    .num-producto-dato{
+                        display: flex;
+                        width: 9.4%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Decripción de producto */
+                    .descripcion-producto-dato{
+                        display: flex;
+                        width: 50%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Cantidad de producto */
+                    .cantidad-producto-dato{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+                    /* Precio producto */
+                    .precio-producto-dato{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #C0C0C0;
+                    }
+
+            /* Total */
+            .columna-total{
+                display: flex;
+                width: 100%;
+                height: 40px;
+                color: black;
+                margin-top: 3px;
+                justify-content: space-between;
+            }
+
+                /* Ítem Total */
+                .item-total{
+                    font-size: 12px;
+                    background-color: blue;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .item-total h3{
+                    align-self: center;
+                }
+
+                    /* Total texto */
+                    .total{
+                        display: flex;
+                        width: 59.6%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Total Cantidad */
+                    .total-cantidad{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+                    /* Total Precio */
+                    .total-precio{
+                        display: flex;
+                        width: 20%;
+                        height: 100%;
+                        border: 1px solid black;
+                        background-color: #5C7362;
+                    }
+
+    /* Footer - Pie de página */
+    .pie_de_pagina{
+        display: flex;
+        width: 100%;
+        height: 120px;
+        background-color: #212EC2;
+        border: 2px solid black;
+        margin-top: 400px;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .cont-footer{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .cont-footer h2{
+            color: white;
+            font-size: 10px;
+            margin: 0;
+            text-align: center;
+        }
+}
+
+    /* @Media 768px */
+    @media(max-width: 768px){
+        .lista_nav-usuario{
+            width: 24%;
+            height: calc(54% - 70px);
+            border-top: #212EC2;
+        }
+
+        /* Ventas hoy */
+        .cont-ventas-hoy{
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin-top: 50px;
+            flex-direction: column;
+        }
+
+            /* Div Texto */
+            .ventas-hoy{
+                display: flex;
+                width: 100%;
+                height: 40px;
+                background-color: #212EC2;
+                align-items: center;
+                border: 1px solid black;
+            }
+
+                .ventas-hoy h2{
+                    color: white;
+                    font-size: 17px;
+                    margin-left: 20px;
+                }
+
+            /* Tabla ventas hoy */
+            .tabla-ventas-hoy{
+                display: flex;
+                width: 100%;
+                height: 96%;
+                margin-top: 30px;
+                flex-direction: column;
+            }
+
+                /* Columnas características de producto */
+                .columnas-caract{
+                    display: flex;
+                    width: 100%;
+                    height: 40px;
+                    color: white;
+                    justify-content: space-between;
+                }
+
+                    /* Item Columna y Fila*/
+                    .item-columna{
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 8.5px;
+                    }
+
+                        /* Número de producto */
+                        .num-producto{
+                            display: flex;
+                            width: 9.4%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                        /* Descripción de producto */
+                        .descripcion-producto{
+                            display: flex;
+                            width: 50%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                        /* Cantidad de producto */
+                        .cantidad-producto{
+                            display: flex;
+                            width: 20%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                        /* Precio de producto */
+                        .precio-producto{
+                            display: flex;
+                            width: 20%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #212EC2;
+                        }
+
+                /* Columnas datos de filas */
+                .filas-datos{
+                    display: flex;
+                    width: 100%;
+                    height: 25px;
+                    color: black;
+                    margin-top: 3px;
+                    justify-content: space-between;
+                }
+
+                    /* Ítem fila */
+                    .item-fila{
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 7px;
+                    }
+
+                        /* Número de producto */
+                        .num-producto-dato{
+                            display: flex;
+                            width: 9.4%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+                        /* Decripción de producto */
+                        .descripcion-producto-dato{
+                            display: flex;
+                            width: 50%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+                        /* Cantidad de producto */
+                        .cantidad-producto-dato{
+                            display: flex;
+                            width: 20%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+                        /* Precio producto */
+                        .precio-producto-dato{
+                            display: flex;
+                            width: 20%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #C0C0C0;
+                        }
+
+                /* Total */
+                .columna-total{
+                    display: flex;
+                    width: 100%;
+                    height: 30px;
+                    color: black;
+                    margin-top: 3px;
+                    justify-content: space-between;
+                }
+
+                    /* Ítem Total */
+                    .item-total{
+                        font-size: 8.5px;
+                        background-color: blue;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                        /* Total texto */
+                        .total{
+                            display: flex;
+                            width: 59.6%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #5C7362;
+                        }
+
+                        /* Total Cantidad */
+                        .total-cantidad{
+                            display: flex;
+                            width: 20%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #5C7362;
+                        }
+
+                        /* Total Precio */
+                        .total-precio{
+                            display: flex;
+                            width: 20%;
+                            height: 100%;
+                            border: 1px solid black;
+                            background-color: #5C7362;
+                        }
+
+        /* Footer - Pie de página */
+        .pie_de_pagina{
+            display: flex;
+            width: 100%;
+            height: 100px;
+            background-color: #212EC2;
+            border: 2px solid black;
+            margin-top: 400px;
+            margin-bottom: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .cont-footer{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .cont-footer h2{
+                color: white;
+                font-size: 7px;
+                margin: 0;
+                text-align: center;
+            }
+    }
+
+    @media(max-width: 425px){
+        /* Lista de Navegación - Inicio */
+        .lista_nav-inicio{
+            width: 50%;
+        }
+
+        /* Lista de navegación - Usuario */
+        .lista_nav-usuario{
+            width: 40%;
+        }
+
+        .cerrar_sesion{
+            border-radius: 5px;
+            text-align: center;
+        }
+    }
+
+    @media(max-width: 340px){
+        /* Lista de Navegación - Inicio */
+        .lista_nav-inicio{
+            width: 57.5%;
+        }
+    }

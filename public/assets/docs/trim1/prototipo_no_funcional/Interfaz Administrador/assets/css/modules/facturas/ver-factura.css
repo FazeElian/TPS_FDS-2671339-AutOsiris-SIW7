@@ -1,0 +1,301 @@
+/* Contenedor de nueva factura */
+.cont-factura{
+    height: auto;
+    margin-top: 2rem;
+}
+
+.cont-factura, .cont-info-fact, .cont-productos-fact{
+    display: flex;
+    width: 100%;
+}
+
+.cont-factura, .cont-info-fact{
+    flex-direction: column;
+}
+
+    /* Contenedor información de factura */
+    .cont-info-fact{
+        height: 110px;
+        background-color: #D9D9D9;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+    }
+
+        /* Fecha,  Cliente */
+        #fechaFactura, #seleccionarCliente{
+            display: flex;
+            width: 95%;
+            height: 30px;
+            padding: 0 5px 0;
+            font-size: 15px;
+        }
+
+        #fechaFactura{
+            margin-bottom: 8px;
+        }
+
+    /* Tabla lista de productos de factura */
+    .tab-productos-fact{
+        height: auto;
+        margin: 1.5rem 0 2rem;
+    }
+
+        /* Columnas caracteísticas de factura */
+        .columnas-caract, .filas-datos{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .columnas-caract{
+            height: 35px;
+        }
+
+            .item-columna, .item-fila{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+            }
+
+            .item-columna{
+                background-color: #212EC2;
+                font-size: 17px;
+                color: white;
+            }
+
+            .item-fila{
+                background-color: #D9D9D9;
+                font-size: 14px;
+            }
+
+        .filas-datos{
+            height: 30px;
+        }
+
+            .cols-total{
+                display: flex;
+                margin: 3px 0 0;
+                justify-content: space-between;
+            }
+
+            .nombre-prod, .nombre-prod-dato, .texto-total{
+                width: 54.7%;
+            }
+
+            .cantidad-prod, .cantidad-prod-dato, .cantidad-total{
+                width: 20%;
+            }
+
+            .precio-prod, .precio-prod-dato, .precio-total{
+                width: 25%;
+            }
+
+        #seleccionarProducto, #cantidadProd, #precioProd{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: #D9D9D9;
+            font-size: 13.5px;
+            border: none;
+        }
+
+        #seleccionarProducto{
+            padding: 0 7px 0;
+            border: none;
+        }
+
+    /* Contenedor Volver */
+    .cont-volver{
+        display: flex;
+        width: 100%;
+        height: 35px;
+    }
+
+    .link-btn-volver{
+        display: flex;
+        width: auto;
+        height: 100%;
+    }
+
+    .btn-volver{
+        display: flex;
+        width: 160px;
+        height: 100%;
+        background-color: #808080;
+        border: 1px solid black;
+        border-radius: 7px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .btn-volver:hover{
+        background-color: #D9D9D9;
+        transition: 0.3s;
+    }
+
+    .btn-volver img{
+        display: flex;
+        width: 14px;
+        height: 14px;
+    }
+
+    .btn-volver h2{
+        font-size: 17px;
+        margin-left: 8px;
+        font-weight: lighter;
+    }
+
+/* @media */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        .cont-factura{
+            margin-top: 1.5rem;
+        }
+
+        .cont-info-fact{
+            height: 95px;
+        }
+
+        #fechaFactura, #seleccionarCliente{
+            height: 25px;
+            padding: 0 2.5px 0;
+            font-size: 12px;
+        }
+
+        .tab-productos-fact{
+            margin: 1rem 0 1.5rem;
+        }
+
+        .columnas-caract{
+            height: 30px;
+        }
+
+        .item-columna{
+            font-size: 14px;
+        }
+
+        .filas-datos{
+            height: 27.5px;
+        }
+
+        .item-fila{
+            font-size: 12px;
+        }
+
+        .nombre-prod, .nombre-prod-dato, .texto-total{
+            width: 54.7%;
+        }
+
+        .cantidad-prod, .cantidad-prod-dato, .cantidad-total{
+            width: 20%;
+        }
+
+        .precio-prod, .precio-prod-dato, .precio-total{
+            width: 25%;
+        }
+
+        #seleccionarProducto, #cantidadProd, #precioProd{
+            font-size: 12px;
+        }
+
+        .cont-volver{
+            height: 30px;
+        }
+
+        .btn-volver{
+            width: 140px;
+        }
+
+        .btn-volver h2{
+            font-size: 14px;
+        }
+
+        .btn-volver img{
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    /* @media 768px */
+    @media(max-width: 768px){
+        .cont-volver{
+            height: 27.5px;
+        }
+
+        .btn-volver{
+            width: 125px;
+        }
+
+        .btn-volver h2{
+            font-size: 12.5px;
+        }
+
+        .btn-volver img{
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    /* @media 425px */
+    @media(max-width: 425px){
+        .cont-info-fact{
+            height: 80px;
+        }
+
+        #fechaFactura, #seleccionarCliente{
+            width: 90%;
+            height: 25%;
+        }
+
+        .columnas-caract{
+            height: 27.5px;
+        }
+
+        .item-columna, #seleccionarProducto, #cantidadProd, #precioProd,
+        .btn-anadir-fila, .bott-cancelar a h2, .bott-guardar-cambios a h2,
+        #fechaFactura, #seleccionarCliente{
+            font-size: 10px;
+        }
+
+        .filas-datos{
+            height: auto;
+        }
+
+        .item-fila{
+            padding: 4px 0 4px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .nombre-prod, .nombre-prod-dato, .texto-total{
+            width: 55%;
+        }
+
+        .cantidad-prod, .cantidad-prod-dato, .cantidad-total{
+            width: 21%;
+        }
+
+        .precio-prod, .precio-prod-dato, .precio-total{
+            width: 23%;
+        }
+
+        .cont-volver{
+            height: 25px;
+        }
+
+        .btn-volver{
+            width: 100px;
+        }
+
+        .btn-volver h2{
+            font-size: 11px;
+        }
+
+        .btn-volver img{
+            width: 8px;
+            height: 8px;
+        }
+    }

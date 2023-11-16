@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facturas | Clientes</title>
+
+    <!-- Hoja de estilos generales -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+    <!-- Hoja de estilos de este archivo  -->
+    <link rel="stylesheet" href="../../assets/css/modules/clientes/clientes.css">
+
+    <!-- Scripts Generales -->
+    <script defer src="../../assets/js/modules/scripts.js"></script>
+
+    <!-- Scripts para este archivo -->
+    <script defer src="../../assets/js/modules/clientes/alertasClientes.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/img/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="menu_sup">
+        <nav class="nav-inicio">
+            <!-- Icono de Menú responsive -->
+            <button class="icono-menu">
+                <div class="icono-menu-responsive">
+                    <img src="../../assets/img/menu-icono.png">
+                </div>
+                <div class="icono-menu-pc">
+                    <a href="../../index.html"><img src="../../assets/img/index.png"></a>
+                </div>
+            </button>
+            <ul class="lista_nav-inicio">
+                <li class="item_nav-inicio"><a href="../../index.html">Inicio</a></li>
+                <li class="item_nav-inicio"><a href="../estadisticas/estadisticas.html">Estadísticas</a></li>
+                <li class="item_nav-inicio"><a href="../ventas/ventas.html">Ventas</a></li>
+                <li class="item_nav-inicio li-facturas"><a href="../facturas/facturas.html">Facturas</a></li>
+                <li class="item_nav-inicio"><a href="../productos/productos.html">Productos</a></li>
+                <li class="item_nav-inicio li-inventarios"><a href="../inventarios/inventarios.html">Inventarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navegación de ítems Usuario -->
+        <nav class="nav-usuario">
+            <ul class="lista_nav-usuario">
+                <a href="../perfil/Perfil.html"><li class="item_nav-usuario">Mi perfil</li></a>
+                <a href="#"><li class="item_nav-usuario cerrar_sesion">Cerrar Sesión</li>
+                </a>
+            </ul>
+
+            <button class="icono-usuario">
+                <img src="../../assets/img/usuario-icono.png">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenido de página -->
+    <section class="contenido-pag">
+        <!-- Titulo de ventana -->
+        <div class="titulo-ventana">
+            <h1 class="titulo">Clientes</h1>
+        </div>
+
+        <!-- Tabla clientes -->
+        <table class="tabla-clientes" id="tabla-clientes">
+            <tr class="columnas-caract">
+                <td class="no item-columna">No</td>
+                <td class="nombre-cliente item-columna">Nombre</td>
+                <td class="descripcion-cliente item-columna">Descripción</td>
+                <td class="acciones-cliente item-columna">Acciones</td>
+            </tr>
+
+            <tr class="filas-datos">
+                <td class="no-dato item-fila">1</td>
+                <td class="nombre-cliente-dato item-fila">Proveedor</td>
+                <td class="descripcion-cliente-dato item-fila">Proveedor de los productos</td>
+                <td class="acciones-cliente-dato item-fila">
+                    <button class="btn-editar">
+                        <a href="editarcliente.html"><h2>Editar</h2></a>
+                        <a href="editarcliente.html"><img src="../../assets/img/editar-icono.png"></a>
+                    </button>
+                    <form action="" method="POST" class="eliminar-cliente">
+                        <button class="btn-eliminar" onclick="clienteEliminado()">
+                            <h2>Eliminar</h2>
+                            <img src="../../assets/img/eliminar-icono.png">
+                        </button>
+                    </form>
+                </td>
+            </tr>
+
+                <!-- No hay registros de Clientes -->
+                <!-- <tr class="filas-datos">
+                    <td class="no-records item-fila">No hay Registros de clientes</td>
+                </tr> -->
+        </table>
+
+        <!-- Opciones clientes -->
+        <div class="opciones-clientes">
+            <!-- Botón: Cancelar -->
+            <button class="dp-hidden">
+            </button>
+            <button class="bott-guardar-cambios">
+                <a href="crearcliente.html"><h2>Crear cliente</h2></a>
+            </button>
+        </div>
+    </section>
+</body>
+</html>

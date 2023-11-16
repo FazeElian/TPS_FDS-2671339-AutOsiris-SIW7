@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clientes | Editar</title>
+
+    <!-- Hoja de estilos generales -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+    <!-- Hoja de estilos de este archivo  -->
+    <link rel="stylesheet" href="../../assets/css/modules/clientes/form-clientes.css">
+
+    <!-- Scripts Generales -->
+    <script defer src="../../assets/js/modules/scripts.js"></script>
+
+    <!-- Scripts para este archivo -->
+    <script defer src="../../assets/js/modules/clientes/alertasClientes.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../assets/img/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú superior -->
+    <header class="menu_sup">
+        <nav class="nav-inicio">
+            <!-- Icono de Menú responsive -->
+            <button class="icono-menu">
+                <div class="icono-menu-responsive">
+                    <img src="../../assets/img/menu-icono.png">
+                </div>
+                <div class="icono-menu-pc">
+                    <a href="../../index.html"><img src="../../assets/img/index.png"></a>
+                </div>
+            </button>
+            <ul class="lista_nav-inicio">
+                <li class="item_nav-inicio"><a href="../../index.html">Inicio</a></li>
+                <li class="item_nav-inicio"><a href="../estadisticas/estadisticas.html">Estadísticas</a></li>
+                <li class="item_nav-inicio"><a href="../ventas/ventas.html">Ventas</a></li>
+                <li class="item_nav-inicio li-facturas"><a href="../facturas/facturas.html">Facturas</a></li>
+                <li class="item_nav-inicio"><a href="../productos/productos.html">Productos</a></li>
+                <li class="item_nav-inicio li-inventarios"><a href="../inventarios/inventarios.html">Inventarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Navegación de ítems Usuario -->
+        <nav class="nav-usuario">
+            <ul class="lista_nav-usuario">
+                <a href="../perfil/Perfil.html"><li class="item_nav-usuario">Mi perfil</li></a>
+                <a href="#"><li class="item_nav-usuario cerrar_sesion">Cerrar Sesión</li>
+                </a>
+            </ul>
+
+            <button class="icono-usuario">
+                <img src="../../assets/img/usuario-icono.png">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Contenido de página -->
+    <section class="contenido-pag">
+        <!-- Titulo de ventana -->
+        <div class="titulo-ventana">
+            <h1 class="titulo">Editar Cliente</h1>
+        </div>
+
+        <!-- Tabla Clientes -->
+        <table class="tabla-clientes" id="tabla-clientes">
+            <tr class="columnas-caract">
+                <td class="nombre-rol item-columna">Nombre</td>
+                <td class="descripcion-rol item-columna">Descripción</td>
+            </tr>
+            <tr class="filas-datos">
+                <td class="nombre-rol-dato item-fila">
+                    <input type="text" name="" id="nombre" placeholder="Escribe aquí nombre de nuevo cliente" value="Proveedor">
+                </td>
+
+                <td class="descripcion-rol-dato item-fila">
+                    <input type="text" name="" id="descripcion" placeholder="Describe aquí nuevo cliente" value="Provee los productos">
+                </td>
+            </tr>
+        </table>
+
+        <!-- Opciones clientes -->
+        <div class="opciones-clientes">
+            <!-- Botón: Cancelar -->
+            <button class="dp-hidden">
+            </button>
+            <button class="bott-guardar-cambios">
+                <a href="clientes.html" onclick="clienteActualizado()"><h2>Actualizar cliente</h2></a>
+            </button>
+        </div>
+    </section>
+</body>
+</html>
