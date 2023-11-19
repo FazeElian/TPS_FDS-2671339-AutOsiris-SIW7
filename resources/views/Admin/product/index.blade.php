@@ -37,92 +37,82 @@
 
         {{-- Sección de lista de productos --}}
         <section class="productos">
-            <!-- Contenedor de todas las cajas de todos los productos -->
-            <section class="sect-productos">
+            {{-- Tabla Productos --}}
+            <table class="tabla-prods">
+                <tr class="columnas-caract">
+                    <td class="item-columna no-prod">No</td>
+                    <td class="item-columna nombre-prod">Nombre</td>
+                    <td class="item-columna categoria-prod">Categoría</td>
+                    <td class="item-columna acciones-prod">Acciones</td>
+                </tr>
                 @forelse ($products as $product)
-                    <!-- Contenedor de producto -->
-                    <div class="cont-producto">
-                        <!-- Formulario de producto -->
-                        <form action="{{ route("products.create") }}" method="post" class="form-producto">
-                            <div class="img-producto">
-                                <img src="{{ asset("storage")."/".$product->image }}">
-                            </div>
-
-                            <div class="info-producto">
-                                <h1>Nombre: {{ $product->name }}</h1>
-                                <h4 class="title-descrip"><b>Descripción:</b></h4>
-                                <p>{{ $product->description}} </p>
-                                <h2>Precio: {{ number_format($product->price, 0, ',', '.') }}</h2>
-                                <h3>Código: {{ $product->code}} </h3>
-                            </div>
-                        </form>
-
-                        <!-- Acciones Producto -->
-                        <div class="acciones-prod">
-                            <!-- Categoría de producto -->
-                            <div class="categoria-prod">
-                                <h2>Categoría Producto: {{ $product->category->name}}</h2>
-                            </div>
-
-                            <!-- Editar producto -->
-                            <button class="editar-prod">
-                                <a href="{{ route("products.edit", $product->id) }}"><h2>Editar</h2>
-                                <img src="{{ asset("assets/img/Admin/modules/editar-icono.png") }}"></a>
+                    <tr class="filas-datos">
+                        <td class="item-fila no-prod-dato">{{ ++$i }}</td>
+                        <td class="item-fila nombre-prod-dato"><a href="{{ route("products.show", $product->id) }}">{{ $product->name }}</a></td>
+                        <td class="item-fila categoria-prod-dato">{{ $product->category->name }}</td>
+                        <td class="acciones-prod-dato">
+                            {{-- Boton editar --}}
+                            <button class="btn-op btn-editar">
+                                <a href="{{ route("products.edit", $product->id) }}">
+                                    <img src="{{ asset("assets/img/Admin/modules/editar-icono.png") }}" alt="Editar Producto Icono" class="img-icon-op">
+                                </a>
+                                <a href="{{ route("products.edit", $product->id) }}">
+                                    <h2>Editar</h2>
+                                </a>
                             </button>
-
-                            <form action="{{ route('products.destroy',$product->id) }}" method="POST" class="eliminar-prod">
+                            <form action="{{ route('products.destroy', $product->id) }}" method="POST" class="btn-op btn-eliminar">
                                 <!-- Eliminar producto -->
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn-eliminar" type="submit" onclick="return confirm('¿Estás seguro de que deseas eliminar este producto?')">
-                                    <h2>Eliminar</h2>
-                                    <img src="{{ asset("assets/img/Admin/modules/eliminar-icono.png") }}">
+                                <button class="btn-op btn-eliminar elim-prod" onclick="return confirm('Estás seguro que deseas eliminar este producto?')">
+                                    <a href="{{ route("products.destroy", $product->id) }}"><img src="{{ asset("assets/img/Admin/modules/eliminar-icono.png") }}" alt="Eliminar Producto Icono"></a>
+                                    <a href="{{ route("products.destroy", $product->id) }}"><h2>Eliminar</h2></a>
                                 </button>
                             </form>
-                        </div>
-                    </div>
-
+                        </td>
+                    </tr>
                 @empty
-                    <div class="no-records-prod">
-                        <h2>No hay productos</h2>
-                    </div>
+                    <tr class="filas-datos">
+                        <td class="item-fila no-records">No hay Registros de Productos</td>
+                    </tr>
                 @endforelse
-            </section>
-                <!-- Contenedor de opciones de producto -->
-                <div class="opciones-producto">
-                    <!-- Añadir producto -->
-                    <div class="añadir-prod">
-                        <a href="{{ route("products.create") }}"><img src="{{ asset("assets/img/Admin/modules/anadir-icono.png") }}"></a>
-                        <a href="{{ route("products.create") }}"><h1>Añadir </h1><h1>producto</h1></a>
-                    </div>
+            </table>
 
-                    {{-- Alerta de producto creado --}}
-                    @if (session('created'))
-                        <script>
-                            alert("{{ session('created') }}");
-                        </script>
-                    @endif
-
-                    {{-- Alerta de producto actualizado --}}
-                    @if (session('updated'))
-                        <script>
-                            alert("{{ session('updated') }}");
-                        </script>
-                    @endif
-
-                    {{-- Alerta de producto eliminado --}}
-                    @if (session('deleted'))
-                        <script>
-                            alert("{{ session('deleted') }}");
-                        </script>
-                    @endif
-
-                    <!-- Categorías producto -->
-                    <div class="añadir-prod">
-                        <a href="{{ route("categories.index") }}"><img src="{{ asset("assets/img/Admin/modules/categorias-icono.png") }}"></a>
-                        <a href="{{ route("categories.index") }}"><h1>Categorías </h1><h1>productos</h1></a>
-                    </div>
+            <!-- Contenedor de opciones de producto -->
+            <div class="opciones-producto">
+                <!-- Añadir producto -->
+                <div class="añadir-prod">
+                    <a href="{{ route("products.create") }}"><img src="{{ asset("assets/img/Admin/modules/anadir-icono.png") }}"></a>
+                    <a href="{{ route("products.create") }}"><h1>Añadir </h1><h1>producto</h1></a>
                 </div>
+
+                {{-- Alerta de producto creado --}}
+                @if (session('created'))
+                    <script>
+                        alert("{{ session('created') }}");
+                    </script>
+                @endif
+
+                {{-- Alerta de producto actualizado --}}
+                @if (session('updated'))
+                    <script>
+                        alert("{{ session('updated') }}");
+                    </script>
+                @endif
+
+                {{-- Alerta de producto eliminado --}}
+                @if (session('deleted'))
+                    <script>
+                        alert("{{ session('deleted') }}");
+                    </script>
+                @endif
+
+                <!-- Categorías producto -->
+                <div class="añadir-prod">
+                    <a href="{{ route("categories.index") }}"><img src="{{ asset("assets/img/Admin/modules/categorias-icono.png") }}"></a>
+                    <a href="{{ route("categories.index") }}"><h1>Categorías </h1><h1>productos</h1></a>
+                </div>
+            </div>
         </section>
     </section>
 </body>
