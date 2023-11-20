@@ -101,22 +101,22 @@
 
     .acciones-prod-dato{
         display: flex;
+        height: auto;
         min-height: 30px;
-        justify-content: space-between;
-        align-items: center;
         font-size: 15px;
-        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5.5px 0 0;
     }
 
         /* Botones */
         .btn-op{
             display: flex;
-            height: 100%;
-            cursor: pointer;
+            width: 100%;
             border: 1px solid black;
             align-items: center;
             justify-content: center;
-            padding: 10px;
+            padding: 11.5px 10px 11.5px;
         }
 
         .btn-op img{
@@ -133,14 +133,14 @@
 
             /* Editar */
             .btn-editar{
+                width: 45%;
                 background-color: #1988CF;
-                width: 47%;
             }
 
             /* Eliminar */
             .btn-eliminar{
+                width: 54.5%;
                 background-color: red;
-                width: 52.5%;
                 flex-direction: row;
             }
 
@@ -148,7 +148,6 @@
                 display: flex;
                 width: 100%;
                 height: 100%;
-                border: none;
             }
 
             .filas-datos {
@@ -157,6 +156,7 @@
                 min-height: 20px; /* Establece una altura mínima para las filas */
                 justify-content: space-between;
                 background-color: #F1F1F1;
+                margin: 3px 0 10px;
             }
 
             .item-fila {
@@ -242,6 +242,10 @@
                 font-size: 12.5px;
             }
 
+    .tabla-prods{
+        width: 80%;
+    }
+
     .columnas-caract{
         height: 30px;
     }
@@ -254,8 +258,21 @@
         font-size: 12px;
     }
 
+    .btn-op{
+        padding: 4.5px 3px 4.5px;
+    }
+
+    .filas-datos{
+        margin: 3px 0 1.2rem;
+    }
+
     .item-fila{
-        padding: 7px;
+        min-height: 30px;
+        padding: 1.2rem 5px 1.2rem;
+    }
+
+    .btn-op{
+        padding: 12px 10px 12px;
     }
 
     .btn-op img{
@@ -302,6 +319,16 @@
 
     /* @media 768px */
     @media(max-width: 768px){
+        /* Filtros de búsqueda */
+        .filtros-busqueda{
+            height: 20px;
+        }
+
+            #ordenar_por,
+            #barra_busqueda{
+                font-size: 10px;
+            }
+
         .columnas-caract, .filas-datos{
             height: 25px;
         }
@@ -313,7 +340,7 @@
 
         .nombre-prod,
         .nombre-prod-dato {
-            width: 39%;
+            width: 48.5%;
         }
 
         .categoria-prod,
@@ -323,14 +350,19 @@
 
         .acciones-prod,
         .acciones-prod-dato {
-            width: 30%;
+            width: 20%;
+        }
+
+        .acciones-prod-dato{
+            margin: 5px 0 0;
         }
 
         .btn-op{
-            width: 49.5%;
+            padding: 14px 10px 14px;
         }
 
-        .btn-op a h2{
+        .btn-op a h2,
+        .btn-eliminar a h2{
             display: none;
         }
 
@@ -339,6 +371,15 @@
             margin: 0;
             width: 11px;
             height: 11px;
+        }
+
+        .btn-editar,
+        .btn-eliminar{
+            width: 49.5%;
+        }
+
+        .elim-prod{
+            width: 100%;
         }
 
         .añadir-prod{
@@ -394,6 +435,11 @@
         flex-direction: column-reverse;
     }
 
+    .tabla-prods{
+        margin: -5rem 0 0;
+        width: 100%;
+    }
+
     /* Contenedor de opciones de producto */
     .opciones-producto{
         display: flex;
@@ -433,6 +479,7 @@
         .btn-op a img{
             width: 10px;
             height: 10px;
+            margin: 0;
         }
 
         /* No hay Registros */
@@ -460,34 +507,49 @@
 
     /* @media 320px */
     @media(max-width: 320px){
-        .cont-producto{
-            height: 150px;
-        }
-
-        .info-producto h1{
+        .item-columna{
             font-size: 9px;
         }
 
-        .info-producto h4{
-            font-size: 8px;
+        /* No */
+        .no-prod,
+        .no-prod-dato {
+            width: 11%;
         }
 
-        .info-producto p{
-            font-size: 7px;
-            margin-top: -2px;
+        /* Nombre */
+        .nombre-prod,
+        .nombre-prod-dato {
+            width: 35.5%;
         }
 
-        .eliminar-prod{
-            margin-left: -30px;
-            margin-right: 5px;
+        /* Precio */
+        .categoria-prod,
+        .categoria-prod-dato {
+            width: 20.5%;
         }
 
-        .eliminar-prod, .editar-prod{
-            margin-top: -0.8rem;
+        /* Acciones */
+        .acciones-prod,
+        .acciones-prod-dato {
+            width: 32%;
         }
 
-        .categoria-prod{
-            width: 45%;
+        .acciones-prod-dato{
+            margin: 16.5px 0 0;
+        }
+
+        .filas-datos{
+            margin: 3px 0 2.5rem;
+        }
+
+        .item-fila{
+            min-height: 50px;
+            padding: 1.8rem 3px 2rem;
+        }
+
+        .btn-op{
+            padding: 25.5px 0 25.5px;
         }
 
         /* No hay Registros */

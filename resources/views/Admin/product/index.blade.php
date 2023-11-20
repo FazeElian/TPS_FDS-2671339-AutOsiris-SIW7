@@ -60,7 +60,7 @@
                                     <h2>Editar</h2>
                                 </a>
                             </button>
-                            <form action="{{ route('products.destroy', $product->id) }}" method="POST" class="btn-op btn-eliminar">
+                            <form action="{{ route('products.destroy', $product->id) }}" method="POST" class="btn-eliminar">
                                 <!-- Eliminar producto -->
                                 @csrf
                                 @method('DELETE')
