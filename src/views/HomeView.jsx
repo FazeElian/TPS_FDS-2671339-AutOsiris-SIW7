@@ -1,9 +1,9 @@
 export default function HomeView(){
     return (
         // <Contenido página
-        <section class="contenido-pag">
+        <section class="content-page">
             {/* Bienvenida */}
-            <div class="bienvenida">
+            <div class="welcome">
                 <h1>¡Bienvenido Administrador!</h1>
                 <p>Aquí encontrarás las novedades con respecto a tu negocio y su administración</p>
             </div>

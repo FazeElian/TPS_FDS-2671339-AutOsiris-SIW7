@@ -1,0 +1,345 @@
+/* Sección productos */
+.sect-products{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+/* Contenedor Tabla Productos */
+.cont-table-prods{
+    display: flex;
+    width: 62.5%;
+    height: auto;
+}
+
+    /* Tabla Productos */
+    .table-products{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+        /* Columnas - Encabezado de tabla */
+        .thead{
+            display: flex;
+            width: 100%;
+            height: auto;
+            max-height: 40px;
+            justify-content: space-between;
+        }
+
+            /* Columna */
+            .col{
+                display: flex;
+                width: auto;
+                height: auto;
+                padding: 8px 12px 8px;
+                background-color: #212EC2;
+                border: 1px solid black;
+                align-items: center;
+                justify-content: center;
+                font-size: 17px;
+                color: white;
+            }
+
+        /* Filas - Cuerpo/contenido de tabla */
+        .tbody{
+            display: flex;
+            width: 100%;
+            height: auto;
+            justify-content: space-between;
+            margin: 2px 0 0;
+        }
+
+            /* Fila */
+            .row{
+                display: flex;
+                width: auto;
+                height: auto;
+                padding: 7px 12px 7px;
+                background-color: #D9D9D9;
+                border: 1px solid black;
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                text-align: center;
+            }
+
+            /* Columna: No */
+            /* Fila: No */
+            .col-no,
+            .row-no{
+                width: 10%;
+            }
+
+            /* Columna: Nombre */
+            /* Fila: Nombre */
+            .col-name,
+            .row-name{
+                width: 40%;
+            }
+
+            /* Columna: Categoría */
+            /* Fila: Categoría */
+            .col-category,
+            .row-category{
+                width: 25%;
+            }
+
+            /* Columna: Acciones */
+            /* Fila: Acciones */
+            .col-actions,
+            .row-actions{
+                width: 24.5%;
+            }
+
+            .row-actions{
+                justify-content: space-between;
+                padding: 0;
+                border: none;
+                background: transparent;
+            }
+
+            /* Acciones de Producto */
+                /* Estilo Botón */
+                .btn-prod{
+                    display: flex;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                    border: 1px solid black;
+                    cursor: pointer;
+                }
+
+                .btn-prod:hover{
+                    opacity: 0.8;
+                    transition: .3s;
+                }
+
+                .btn-prod a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .btn-prod a img{
+                    width: 12px;
+                    height: 12px;
+                    margin-right: 5px;
+                }
+
+                .btn-prod a h2{
+                    font-size: 15px;
+                    font-weight: lighter;
+                }
+
+                /* Editar */
+                .btn-edit{
+                    width: 45%;
+                    background-color: #1988CF;
+                }
+
+                /* Eliminar */
+                .btn-delete{
+                    width: 54.5%;
+                    background-color: red;
+                }
+
+/* Contenedor opciones productos */
+.cont-ops-prods{
+    display: flex;
+    width: 35%;
+    height: auto;
+    flex-direction: column;
+}
+
+    /* Contenedor Opción Productos: */
+    /* Añadir Producto, Categorías de Productos */
+    .cont-op-prods{
+        display: flex;
+        width: 100%;
+        height: 160px;
+        align-items: center;
+        justify-content: center;
+        background-color: #D9D9D9;
+        margin-bottom: 1rem;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    .cont-op-prods a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cont-op-prods a img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .cont-op-prods a h2{
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: lighter;
+        margin-left: 10px;
+    }
+
+/* Responsive 1440px */
+@media (max-width: 1440px){
+    .col{
+        padding: 6px 12px 6px;
+        font-size: 15px;
+    }
+
+    .row{
+        padding: 5px 12px 5px;
+    }
+
+    .row,
+    .btn-prod a h2{
+        font-size: 13px;
+    }
+
+    .btn-prod img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .row-actions{
+        padding: 0;
+    }
+
+    .cont-ops-prods{
+        width: 30%;
+    }
+
+    .cont-op-prods{
+        height: 130px;
+    }
+
+    .cont-op-prods a h2{
+        font-size: 20px;
+    }
+
+    .cont-table-prods{
+        width: 65%;
+    }
+}
+
+/* Responsive 1024px */
+@media (max-width: 1024px){
+    .cont-table-prods{
+        width: 80%;
+    }
+
+    .cont-ops-prods{
+        width: auto;
+    }
+
+    .cont-op-prods{
+        width: 100px;
+        height: 100px;
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    .cont-op-prods a{
+        flex-direction: column;
+    }
+
+    .cont-op-prods a img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .cont-op-prods a h2{
+        font-size: 14px;
+        margin: 5px 0 0;
+    }
+    
+    .btn-prod a h2{
+        display: none;
+    }
+
+    .btn-prod a img{
+        margin: 0;
+    }
+
+    .btn-edit,
+    .btn-delete{
+        width: 49.5%;
+    }
+
+    .col-name,
+    .row-name{
+        width: 44%;
+    }
+
+    .col-actions,
+    .row-actions{
+        width: 20.5%;
+    }
+}
+
+/* Responsive 425px */
+@media (max-width: 425px){
+    .sect-products{
+        flex-direction: column-reverse;
+    }
+
+    .cont-ops-prods{
+        width: 100%;
+        height: 65px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 0 1rem;
+    }
+
+    .cont-op-prods{
+        width: 47.5%;
+        height: 100%;
+    }
+
+    .cont-op-prods a{
+        width: auto;
+        flex-direction: row;
+    }
+
+    .cont-op-prods a img{
+        width: 25px;
+        height: 25px;
+        margin: 0;
+    }
+
+    .cont-op-prods a h2{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .cont-table-prods{
+        width: 100%;
+    }
+
+    .col{
+        font-size: 12px;
+    }
+
+    .col-name,
+    .row-name{
+        width: 36%;
+    }
+
+    .col-category,
+    .row-category{
+        width: 26%;
+    }
+
+    .col-actions,
+    .row-actions{
+        width: 26.5%;
+    }
+}

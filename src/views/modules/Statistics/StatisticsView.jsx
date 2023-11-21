@@ -1,5 +1,5 @@
 // Estilos para este componente
-import "../../../assets/css/views/Statistics/StatisticsView.css";
+import "../../../assets/css/views/Admin/Statistics/StatisticsView.css";
 
 // Imágenes - Iconos
     import TotalPorcentSales from "../../../assets/img/statistics-total-porcent-sales.jpg";
@@ -10,9 +10,9 @@ export default function StatisticsView(){
     return (
         <>
             {/* Contenido de página */}
-            <section class="contenido-pag">
+            <section class="content-page">
                 {/* Titulo de ventana */}
-                <div class="titulo-ventana">
+                <div class="title-page">
                     <h1>Estadísticas</h1>
                 </div>
                 {/* Número de usuarios actuales de tu Tienda Online */}

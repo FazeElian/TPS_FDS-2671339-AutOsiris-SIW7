@@ -194,7 +194,7 @@ a{
         }
 
 /* Contenido de página */
-.contenido-pag{
+.content-page{
     display: flex;
     width: 80%;
     height: 2000px;
@@ -204,7 +204,7 @@ a{
 }
 
     /* Título de ventana */
-    .titulo-ventana{
+    .title-page{
         display: flex;
         width: 100%;
         height: 50px;
@@ -213,27 +213,27 @@ a{
         align-items: center;
     }
 
-        .titulo-ventana h1{
+        .title-page h1{
             color: white;
             font-size: 28px;
             margin: 5px 20px;
         }
 
     /* Bienvenida */
-    .bienvenida{
+    .welcome{
         width: 100%;
         display: flex;
         flex-direction: column;
         margin-top: 30px;
     }
         /* Título Texto de Bienvenida */
-        .contenido-pag h1{
+        .content-page h1{
             display: flex;
             font-size: 35px;
         }
 
         /* Párrafo texto de bienvenida */
-        .contenido-pag p{
+        .content-page p{
             display: flex;
             width: 100%;
             font-size: 15px;
@@ -453,12 +453,12 @@ a{
 /* @Media - Diseño Responsive */
 @media(max-width:1024px){
     /* Título de ventana */
-    .titulo-ventana{
+    .title-page{
         height: 40px;
         align-items: center;
     }
 
-    .titulo-ventana h1{
+    .title-page h1{
         font-size: 22px;
     }
 
@@ -561,20 +561,20 @@ a{
         }
 
     /* Bienvenida */
-    .bienvenida{
+    .welcome{
         width: 85%;
         display: flex;
         flex-direction: column;
         margin-top: 15px;
     }
         /* Título Texto de Bienvenida */
-        .contenido-pag h1{
+        .content-page h1{
             display: flex;
             font-size: 25px;
         }
 
         /* Párrafo texto de bienvenida */
-        .contenido-pag p{
+        .content-page p{
             display: flex;
             width: 100%;
             font-size: 12px;

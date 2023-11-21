@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 
 // Importación de componentes
   // Encabezado de vistas de Usuarios
-  import HeaderUsers from "./components/HeaderUsers";
+  // import HeaderUsers from "./components/HeaderUsers";
 
   // Encabezado de App
   import HeaderAdmin from "./components/HeaderAdmin";
@@ -24,6 +24,9 @@ import { Routes, Route } from "react-router-dom";
   // Estadísticas
   import StatisticsView from "./views/modules/Statistics/StatisticsView";
 
+  // Productos
+  import ProductsView from "./views/modules/Products/ProductsView";
+
 function App() {
   return (
     // Creación de rutas - Interfaz Administrador
@@ -40,7 +43,7 @@ function App() {
           <Route path="statistics" element={<StatisticsView />} /> {/* Estadísticas */}
           <Route path="sales" /> {/* Ventas */}
           <Route path="factures" /> {/* Facturas */}
-          <Route path="products" /> {/* Productos */}
+          <Route path="products" element={<ProductsView />} /> {/* Productos */}
           <Route path="inventories" /> {/* Inventarios */}
           <Route path="user">
             <Route path="profile" ></Route> {/* Perfil */}
