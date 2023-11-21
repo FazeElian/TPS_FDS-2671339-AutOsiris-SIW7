@@ -392,7 +392,7 @@
     .opciones-inventario{
         display: flex;
         width: 100%;
-        height: 35px;
+        height: 37px;
         margin-top: 60px;
         justify-content: space-between;
     }
@@ -416,17 +416,18 @@
         /* Botón: Registrar inventario */
         .bott-guardar-cambios{
             display: flex;
-            width: 200px;
+            width: auto;
             background-color: #2121E3;
             border: 1px solid black;
             border-radius: 7px;
             justify-content: center;
             align-items: center;
+            padding: 10px 2rem 10px;
         }
 
         .bott-guardar-cambios a h2{
             color: white;
-            font-size: 17px;
+            font-size: 18px;
         }
 
 /* @Media */
@@ -735,7 +736,7 @@
             /* Botón: Registrar inventario */
             .bott-guardar-cambios{
                 display: flex;
-                width: 180px;
+                width: auto;
                 background-color: #2121E3;
                 border: 1px solid black;
                 border-radius: 7px;
@@ -746,6 +747,11 @@
             .bott-guardar-cambios a h2{
                 color: white;
                 font-size: 15px;
+            }
+
+            .no-records-inventories{
+                height: 30px;
+                font-size: 12px;
             }
         }
 
@@ -877,6 +883,11 @@
                     .btn-editar-inventario h2, .btn-eliminar-inventario h2{
                         display: none;
                     }
+
+        .no-records-inventories{
+            height: 25px;
+            font-size: 10px;
+        }
     }
 
     @media (Max-width: 425px){
@@ -947,7 +958,7 @@
                 height: 15px;
                 color: white;
                 color: black;
-                margin-top: 3px;
+                margin-top: 1px;
             }
 
             .item-fila{
@@ -1021,7 +1032,7 @@
 
                 /* Botón: Guardar cambios */
                 .bott-guardar-cambios{
-                    width: 100px;
+                    width: auto;
                     height: 25px;
                     border-radius: 7px;
                 }
@@ -1030,4 +1041,9 @@
                     color: white;
                     font-size: 8px;
                 }
+
+        .no-records-inventories{
+            height: 20px;
+            font-size: 8px;
+        }
     }

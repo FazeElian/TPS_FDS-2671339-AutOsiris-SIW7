@@ -20,7 +20,7 @@ class CategoryController extends Controller
     {
         $categories = Category::paginate();
 
-        return view('admin.category.index', compact('categories'))
+        return view('Admin.category.index', compact('categories'))
             ->with('i', (request()->input('page', 1) - 1) * $categories->perPage());
     }
 
@@ -32,7 +32,7 @@ class CategoryController extends Controller
     public function create()
     {
         $category = new Category();
-        return view('admin.category.create', compact('category'));
+        return view('Admin.category.create', compact('category'));
     }
 
     /**
@@ -60,7 +60,7 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
 
-        return view('admin.category.show', compact('category'));
+        return view('Admin.category.show', compact('category'));
     }
 
     /**
@@ -73,7 +73,7 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
 
-        return view('admin.category.edit', compact('category'));
+        return view('Aqdmin.category.edit', compact('category'));
     }
 
     /**
