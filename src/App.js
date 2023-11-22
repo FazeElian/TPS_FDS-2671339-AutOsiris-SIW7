@@ -30,8 +30,6 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <h1><a href="admin/home">Ir al Index</a></h1>
-
       {/* Creación de rutas - Interfaz Administrador */}
       <Routes>
         <Route path="/">
