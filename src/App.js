@@ -1,7 +1,7 @@
 import React from "react";
 
 // Dom de React para Rutas
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // Importación de componentes
   // Encabezado de vistas de Usuarios
