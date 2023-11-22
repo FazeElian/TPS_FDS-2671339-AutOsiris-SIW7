@@ -15,13 +15,13 @@ export default function PaginationContainer(){
             {/* Paginación */}
             <div className="paginate">
                 {/* Botones Paginación */}
-                <button className="btn-pag btn-img"><a href="f"><img src={LeftPagination} alt="" /></a></button>
-                <button className="btn-pag"><a href="products/page?=1">1</a></button>
-                <button className="btn-pag"><a href="products/page?=2">2</a></button>
-                <button className="btn-pag"><a href="products/page?=3">...</a></button>
-                <button className="btn-pag"><a href="products/page?=4">7</a></button>
-                <button className="btn-pag"><a href="products/page?=5">8</a></button>
-                <button className="btn-pag btn-img"><a href="f"><img src={RightPagination} alt="" /></a></button>
+                <button className="btn-pag btn-img"><a href="products"><img src={LeftPagination} alt="" /></a></button>
+                <button className="btn-pag"><a href="products">1</a></button>
+                <button className="btn-pag"><a href="products">2</a></button>
+                <button className="btn-pag"><a href="products">...</a></button>
+                <button className="btn-pag"><a href="products">7</a></button>
+                <button className="btn-pag"><a href="products">8</a></button>
+                <button className="btn-pag btn-img"><a href="products"><img src={RightPagination} alt="" /></a></button>
             </div>
         </div>
     )

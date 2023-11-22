@@ -54,7 +54,7 @@ export default function ProductsView(){
                     <div className="cont-ops-prods">
                         {/* Añadir Producto */}
                         <div className="cont-op-prods">
-                            <a href="new">
+                            <a href="products">
                                 <img src={AddIcon} alt="" />
                                 <h2>Añadir Producto</h2>
                             </a>
@@ -62,7 +62,7 @@ export default function ProductsView(){
 
                         {/* Categorías de Productos */}
                         <div className="cont-op-prods">
-                            <a href="new">
+                            <a href="products">
                                 <img src={CategoriesIcon} alt="" />
                                 <h2>Categorías Productos</h2>
                             </a>
