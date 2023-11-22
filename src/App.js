@@ -30,7 +30,7 @@ import { Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
     <>
-      <h1><Link to={HomeView}></Link> Ir al Index</h1>
+      <h1><a href="admin/home">Ir al Index</a></h1>
 
       {/* Creación de rutas - Interfaz Administrador */}
       <Routes>
