@@ -38,21 +38,21 @@ export default function HeaderAdmin(){
                     {/* Lista navegación  */}
                     <ul className="lista_nav-inicio">
                         <li className="item_nav-inicio"><Link to="/admin/home" >Inicio</Link></li>
-                        <li className="item_nav-inicio"><a href="/admin/statistics">Estadísticas</a></li>
-                        <li className="item_nav-inicio"><a href="/admin/sales">Ventas</a></li>
-                        <li className="item_nav-inicio li-facturas"><a href="/admin/factures">Facturas</a></li>
-                        <li className="item_nav-inicio"><a href="/admin/products">Productos</a></li>
-                        <li className="item_nav-inicio li-inventarios"><a href="/admin/inventories">Inventarios</a></li>
+                        <li className="item_nav-inicio"><Link to="/admin/statistics">Estadísticas</Link></li>
+                        <li className="item_nav-inicio"><Link to="/admin/sales">Ventas</Link></li>
+                        <li className="item_nav-inicio li-facturas"><Link to="/admin/factures">Facturas</Link></li>
+                        <li className="item_nav-inicio"><Link to="/admin/products">Productos</Link></li>
+                        <li className="item_nav-inicio li-inventarios"><Link to="/admin/inventories">Inventarios</Link></li>
                     </ul>
                 </nav>
         
                 {/* Navegación de ítems Usuario */}
                 <nav className="nav-usuario">
                     <ul className="lista_nav-usuario">
-                        <a href="/admin/user/profile"><li className="item_nav-usuario">Mi perfil</li></a>
-                        <a href="/">
+                        <Link to="/admin/user/profile"><li className="item_nav-usuario">Mi perfil</li></Link>
+                        <Link to="/">
                             <li className="item_nav-usuario cerrar_sesion">Cerrar Sesión</li>
-                        </a>
+                        </Link>
                     </ul>
 
                     <button className="icono-usuario">
