@@ -1,5 +1,5 @@
 // Estilos para este componente
-import "../../../assets/css/views/Admin/Statistics/StatisticsView.css";
+// import "../../../assets/css/views/Admin/Statistics/StatisticsView.css";
 
 // Imágenes - Iconos
     import TotalPorcentSales from "../../../assets/img/statistics-total-porcent-sales.jpg";
