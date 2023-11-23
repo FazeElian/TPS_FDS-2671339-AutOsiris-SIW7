@@ -27,6 +27,10 @@ import { Routes, Route } from "react-router-dom";
   // Productos
   import ProductsView from "./views/modules/Products/ProductsView";
 
+// Importación vista Error 404 - Página no encontrada
+import Error404AdminView from "./views/Exceptions/Error404AdminView";
+import Error404CustomerView from "./views/Exceptions/Error404CustomerView";
+
 function App() {
   return (
     <Routes>
@@ -36,14 +40,20 @@ function App() {
 
       {/* Rutas para la interfaz de Administrador */}
       <Route path="admin/*" element={<HeaderAdmin />}>
-        <Route index element={<HomeView />} /> {/* Página principal */}
+        <Route path="home" element={<HomeView />} /> {/* Página principal */}
         <Route path="statistics" element={<StatisticsView />} /> {/* Estadísticas */}
         <Route path="sales" /> {/* Ventas */}
         <Route path="factures" /> {/* Facturas */}
         <Route path="products" element={<ProductsView />} /> {/* Productos */}
         <Route path="inventories" /> {/* Inventarios */}
         <Route path="user/profile" /> {/* Perfil */}
+
+        {/* Ruta Error 404 - Página no encontrada */}
+        <Route path="*" element={<Error404AdminView />} /> {/* Vista Administrador */}
       </Route>
+
+      {/* Ruta Error 404 - Página no encontrada */}
+      <Route path="*" element={<Error404CustomerView />} /> {/* Vista Cliente */}
     </Routes>
   );
 }
