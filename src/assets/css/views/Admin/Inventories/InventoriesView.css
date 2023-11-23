@@ -16,7 +16,7 @@
     }
 
         /* Columna */
-        .col-inventories{
+        .col-inventorie{
             display: flex;
             width: auto;
             height: auto;
@@ -53,15 +53,15 @@
 
         /* Columna: No */
         /* Fila: No */
-        .col-no-inventories,
-        .row-no-inventories{
+        .col-no-inventorie,
+        .row-no-inventorie{
             width: 8%;
         }
 
         /* Columna: Nombre */
         /* Fila: Nombre */
-        .col-name-inventories,
-        .row-name-inventories{
+        .col-name-inventorie,
+        .row-name-inventorie{
             width: 31%;
         }
         
@@ -71,23 +71,23 @@
         /* Fila: Salidas */
         /* Columna: Stock */
         /* Fila: Stock */
-        .col-initial-stock-inventories,
-        .row-initial-stock-inventories,
-        .col-outputs-inventories,
-        .row-outputs-inventories,
-        .col-stock-inventories,
-        .row-stock-inventories{
+        .col-initial-stock-inventorie,
+        .row-initial-stock-inventorie,
+        .col-outputs-inventorie,
+        .row-outputs-inventorie,
+        .col-stock-inventorie,
+        .row-stock-inventorie{
             width: 12%;
         }
 
         /* Columna: Acciones */
         /* Fila: Acciones */
-        .col-actions-inventories,
-        .row-actions-inventories{
+        .col-actions-inventorie,
+        .row-actions-inventorie{
             width: 24.5%;
         }
 
-        .row-actions-inventories{
+        .row-actions-inventorie{
             justify-content: space-between;
             padding: 0;
             border: none;
@@ -105,38 +105,44 @@
                 border: 1px solid black;
                 cursor: pointer;
             }
+            
             .btn-prod:hover{
                 opacity: 0.8;
                 transition: .3s;
             }
+
             .btn-prod a{
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
+
             .btn-prod a img{
                 width: 12px;
                 height: 12px;
                 margin-right: 5px;
             }
+
             .btn-prod a h2{
                 font-size: 15px;
                 font-weight: lighter;
             }
+
             /* Editar */
-            .btn-edit{
+            .btn-edit-inventorie{
                 width: 45%;
                 background-color: #1988CF;
             }
+
             /* Eliminar */
-            .btn-delete{
+            .btn-delete-inventorie{
                 width: 54.5%;
                 background-color: red;
             }
 
 /* Responsive 1440px */
 @media (max-width: 1440px){
-    .col-inventories{
+    .col-inventorie{
         padding: 6px 12px 6px;
         font-size: 15px;
     }
@@ -155,7 +161,7 @@
         height: 10px;
     }
 
-    .row-actions-inventories{
+    .row-actions-inventorie{
         padding: 0;
     }
 }
@@ -170,59 +176,59 @@
         margin: 0;
     }
 
-    .btn-edit,
-    .btn-delete{
+    .btn-edit-inventorie,
+    .btn-delete-inventorie{
         width: 49.5%;
     }
 
-    .col-name-inventories,
-    .row-name-inventories{
+    .col-name-inventorie,
+    .row-name-inventorie{
         width: 44%;
     }
 
-    .col-initial-stock-inventories,
-    .row-initial-stock-inventories,
-    .col-outputs-inventories,
-    .row-outputs-inventories,
-    .col-stock-inventories,
-    .row-stock-inventories{
+    .col-initial-stock-inventorie,
+    .row-initial-stock-inventorie,
+    .col-outputs-inventorie,
+    .row-outputs-inventorie,
+    .col-stock-inventorie,
+    .row-stock-inventorie{
         width: 11%;
     }
 
-    .col-actions-inventories,
-    .row-actions-inventories{
+    .col-actions-inventorie,
+    .row-actions-inventorie{
         width: 14.5%;
     }
 }
 
 /* Responsive 425px */
 @media (max-width: 425px){
-    .col-inventories{
+    .col-inventorie{
         font-size: 12px;
     }
 
-    .col-name-inventories,
-    .row-name-inventories{
+    .col-name-inventorie,
+    .row-name-inventorie{
         width: 24%;
     }
 
-    .col-initial-stock-inventories,
-    .row-initial-stock-inventories{
+    .col-initial-stock-inventorie,
+    .row-initial-stock-inventorie{
         width: 18.5%;
     }
 
-    .col-outputs-inventories,
-    .row-outputs-inventories{
+    .col-outputs-inventorie,
+    .row-outputs-inventorie{
         width: 15%;
     }
 
-    .col-stock-inventories,
-    .row-stock-inventories{
+    .col-stock-inventorie,
+    .row-stock-inventorie{
         width: 13.5%;
     }
 
-    .col-actions-inventories,
-    .row-actions-inventories{
+    .col-actions-inventorie,
+    .row-actions-inventorie{
         width: 17.5%;
     }
 

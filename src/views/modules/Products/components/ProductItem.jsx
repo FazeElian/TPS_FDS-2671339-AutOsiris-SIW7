@@ -30,20 +30,20 @@ class DataProductItem extends React.Component {
     const { id, name, category } = this.props.dataProduct;
     return (
       // Fila Producto
-      <tr className="tbody">
-          <td className="row row-no">{id}</td>
-          <td className="row row-name"><a href="products/product/{name}">{name}</a></td>
-          <td className="row row-category">{category}</td>
+      <tr className="tbody-products">
+          <td className="row-product row-no-product">{id}</td>
+          <td className="row-product row-name-product"><a href="products/product/{name}">{name}</a></td>
+          <td className="row-product row-category-product">{category}</td>
 
           {/* Acciones de Productos */}
-          <td className="row row-actions">
-            <button className="btn-prod btn-edit">
+          <td className="row-product row-actions-product">
+            <button className="btn-prod btn-edit-product">
               <a href="products/product/edit/{name}">
                 <img src={EditIcon} alt="" />
                 <h2>Editar</h2>
               </a>
             </button>
-            <button className="btn-prod btn-delete">
+            <button className="btn-prod btn-delete-product">
               <a href="products/product/delete/{name}">
                 <img src={DeleteIcon} alt="" />
                 <h2>Eliminar</h2>

@@ -1,20 +1,20 @@
-/* Sección productos */
-.sect-products{
+/* Sección facturas */
+.sect-factures{
     display: flex;
     width: 100%;
     height: auto;
     justify-content: space-between;
 }
 
-/* Contenedor Tabla Productos */
-.cont-table-prods{
+/* Contenedor Tabla Facturas */
+.cont-table-factures{
     display: flex;
     width: 62.5%;
     height: auto;
 }
 
-    /* Tabla Productos */
-    .table-products{
+    /* Tabla Facturas */
+    .table-factures{
         display: flex;
         width: 100%;
         height: auto;
@@ -22,7 +22,7 @@
     }
 
         /* Columnas - Encabezado de tabla */
-        .thead-products{
+        .thead-factures{
             display: flex;
             width: 100%;
             height: auto;
@@ -31,7 +31,7 @@
         }
 
             /* Columna */
-            .col-product{
+            .col-facture{
                 display: flex;
                 width: auto;
                 height: auto;
@@ -45,7 +45,7 @@
             }
 
         /* Filas - Cuerpo/contenido de tabla */
-        .tbody-products{
+        .tbody-factures{
             display: flex;
             width: 100%;
             height: auto;
@@ -54,7 +54,7 @@
         }
 
             /* Fila */
-            .row-product{
+            .row-facture{
                 display: flex;
                 width: auto;
                 height: auto;
@@ -69,33 +69,33 @@
 
             /* Columna: No */
             /* Fila: No */
-            .col-no-product,
-            .row-no-product{
+            .col-no-facture,
+            .row-no-facture{
                 width: 10%;
             }
 
             /* Columna: Nombre */
             /* Fila: Nombre */
-            .col-name-product,
-            .row-name-product{
-                width: 40%;
+            .col-date-facture,
+            .row-date-facture{
+                width: 20%;
             }
 
             /* Columna: Categoría */
             /* Fila: Categoría */
-            .col-category-product,
-            .row-category-product{
-                width: 25%;
+            .col-customer-facture,
+            .row-customer-facture{
+                width: 33%;
             }
 
             /* Columna: Acciones */
             /* Fila: Acciones */
-            .col-actions-product,
-            .row-actions-product{
-                width: 24.5%;
+            .col-actions-facture,
+            .row-actions-facture{
+                width: 36.5%;
             }
 
-            .row-actions-product{
+            .row-actions-facture{
                 justify-content: space-between;
                 padding: 0;
                 border: none;
@@ -136,29 +136,35 @@
                     font-weight: lighter;
                 }
 
+                /* PDF */
+                .btn-pdf-facture{
+                    width: 29%;
+                    background-color: white;
+                }
+
                 /* Editar */
-                .btn-edit-product{
-                    width: 45%;
+                .btn-edit-facture{
+                    width: 30%;
                     background-color: #1988CF;
                 }
 
                 /* Eliminar */
-                .btn-delete-product{
-                    width: 54.5%;
+                .btn-delete-facture{
+                    width: 40.5%;
                     background-color: red;
                 }
 
-/* Contenedor opciones productos */
-.cont-ops-prods{
+/* Contenedor opciones facturas */
+.cont-ops-factures{
     display: flex;
     width: 35%;
     height: auto;
     flex-direction: column;
 }
 
-    /* Contenedor Opción Productos: */
-    /* Añadir Producto, Categorías de Productos */
-    .cont-op-prods{
+    /* Contenedor Opción Facturas: */
+    /* Añadir Producto, Categorías de Facturas */
+    .cont-op-factures{
         display: flex;
         width: 100%;
         height: 160px;
@@ -170,18 +176,18 @@
         text-align: center;
     }
 
-    .cont-op-prods a{
+    .cont-op-factures a{
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .cont-op-prods a img{
+    .cont-op-factures a img{
         width: 50px;
         height: 50px;
     }
 
-    .cont-op-prods a h2{
+    .cont-op-factures a h2{
         text-decoration: none;
         font-size: 22px;
         font-weight: lighter;
@@ -190,16 +196,16 @@
 
 /* Responsive 1440px */
 @media (max-width: 1440px){
-    .col-product{
+    .col-facture{
         padding: 6px 12px 6px;
         font-size: 15px;
     }
 
-    .row-product{
+    .row-facture{
         padding: 5px 12px 5px;
     }
 
-    .row-product,
+    .row-facture,
     .btn-prod a h2{
         font-size: 13px;
     }
@@ -209,54 +215,54 @@
         height: 10px;
     }
 
-    .row-actions-product{
+    .row-actions-facture{
         padding: 0;
     }
 
-    .cont-ops-prods{
+    .cont-ops-factures{
         width: 30%;
     }
 
-    .cont-op-prods{
+    .cont-op-factures{
         height: 130px;
     }
 
-    .cont-op-prods a h2{
+    .cont-op-factures a h2{
         font-size: 20px;
     }
 
-    .cont-table-prods{
+    .cont-table-factures{
         width: 65%;
     }
 }
 
 /* Responsive 1024px */
 @media (max-width: 1024px){
-    .cont-table-prods{
+    .cont-table-factures{
         width: 80%;
     }
 
-    .cont-ops-prods{
+    .cont-ops-factures{
         width: auto;
     }
 
-    .cont-op-prods{
+    .cont-op-factures{
         width: 100px;
         height: 100px;
         padding: 1rem;
         cursor: pointer;
     }
 
-    .cont-op-prods a{
+    .cont-op-factures a{
         flex-direction: column;
     }
 
-    .cont-op-prods a img{
+    .cont-op-factures a img{
         width: 25px;
         height: 25px;
     }
 
-    .cont-op-prods a h2{
+    .cont-op-factures a h2{
         font-size: 14px;
         margin: 5px 0 0;
     }
@@ -269,29 +275,29 @@
         margin: 0;
     }
 
-    .btn-edit-product,
-    .btn-delete-product{
+    .btn-edit,
+    .btn-delete{
         width: 49.5%;
     }
 
-    .col-name-product,
-    .row-name-product{
+    .col-date-factures,
+    .row-date-factures{
         width: 44%;
     }
 
-    .col-actions,
-    .row-actions{
+    .col-actions-factures,
+    .row-actions-factures{
         width: 20.5%;
     }
 }
 
 /* Responsive 425px */
 @media (max-width: 425px){
-    .sect-products{
+    .sect-factures{
         flex-direction: column-reverse;
     }
 
-    .cont-ops-prods{
+    .cont-ops-factures{
         width: 100%;
         height: 65px;
         flex-direction: row;
@@ -299,47 +305,42 @@
         margin: 0 0 1rem;
     }
 
-    .cont-op-prods{
+    .cont-op-factures{
         width: 47.5%;
         height: 100%;
     }
 
-    .cont-op-prods a{
+    .cont-op-factures a{
         width: auto;
         flex-direction: row;
     }
 
-    .cont-op-prods a img{
+    .cont-op-factures a img{
         width: 25px;
         height: 25px;
         margin: 0;
     }
 
-    .cont-op-prods a h2{
+    .cont-op-factures a h2{
         font-size: 12px;
         margin: 0;
     }
 
-    .cont-table-prods{
+    .cont-table-factures{
         width: 100%;
     }
 
-    .col-product{
+    .col-facture{
         font-size: 12px;
     }
 
-    .col-name-product,
-    .row-name-product{
-        width: 36%;
+    .row-facture{
+        font-size: 10px;
     }
 
-    .col-category-product,
-    .row-category-product{
-        width: 26%;
-    }
-
-    .col-actions-product,
-    .row-actions-product{
-        width: 26.5%;
+    .btn-pdf-facture,
+    .btn-edit-facture,
+    .btn-delete-facture{
+        width: 32.5%;
     }
 }
