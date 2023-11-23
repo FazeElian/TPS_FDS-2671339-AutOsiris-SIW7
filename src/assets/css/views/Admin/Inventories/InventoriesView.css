@@ -1,0 +1,238 @@
+/* Tabla Inventarios */
+.table-inventories{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+    /* Columnas - Encabezado de tabla */
+    .thead{
+        display: flex;
+        width: 100%;
+        height: auto;
+        max-height: 40px;
+        justify-content: space-between;
+    }
+
+        /* Columna */
+        .col{
+            display: flex;
+            width: auto;
+            height: auto;
+            padding: 8px 12px 8px;
+            background-color: #212EC2;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            color: white;
+        }
+
+    /* Filas - Cuerpo/contenido de tabla */
+    .tbody{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        margin: 2px 0 0;
+    }
+        /* Fila */
+        .row{
+            display: flex;
+            width: auto;
+            height: auto;
+            padding: 7px 12px 7px;
+            background-color: #D9D9D9;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        /* Columna: No */
+        /* Fila: No */
+        .col-no,
+        .row-no{
+            width: 8%;
+        }
+
+        /* Columna: Nombre */
+        /* Fila: Nombre */
+        .col-name,
+        .row-name{
+            width: 31%;
+        }
+        
+        /* Columna: Entradas */
+        /* Fila: Entradas */
+        /* Columna: Salidas */
+        /* Fila: Salidas */
+        /* Columna: Stock */
+        /* Fila: Stock */
+        .col-initial-stock,
+        .row-initial-stock,
+        .col-outputs,
+        .row-outputs,
+        .col-stock,
+        .row-stock{
+            width: 12%;
+        }
+
+        /* Columna: Acciones */
+        /* Fila: Acciones */
+        .col-actions,
+        .row-actions{
+            width: 24.5%;
+        }
+
+        .row-actions{
+            justify-content: space-between;
+            padding: 0;
+            border: none;
+            background: transparent;
+        }
+
+        /* Acciones de Producto */
+            /* Estilo Botón */
+            .btn-prod{
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+            .btn-prod:hover{
+                opacity: 0.8;
+                transition: .3s;
+            }
+            .btn-prod a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .btn-prod a img{
+                width: 12px;
+                height: 12px;
+                margin-right: 5px;
+            }
+            .btn-prod a h2{
+                font-size: 15px;
+                font-weight: lighter;
+            }
+            /* Editar */
+            .btn-edit{
+                width: 45%;
+                background-color: #1988CF;
+            }
+            /* Eliminar */
+            .btn-delete{
+                width: 54.5%;
+                background-color: red;
+            }
+
+/* Responsive 1440px */
+@media (max-width: 1440px){
+    .col{
+        padding: 6px 12px 6px;
+        font-size: 15px;
+    }
+
+    .row{
+        padding: 5px 12px 5px;
+    }
+
+    .row,
+    .btn-prod a h2{
+        font-size: 13px;
+    }
+
+    .btn-prod img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .row-actions{
+        padding: 0;
+    }
+}
+
+
+/* Responsive 1024px */
+@media (max-width: 1024px){
+    .btn-prod a h2{
+        display: none;
+    }
+
+    .btn-prod a img{
+        margin: 0;
+    }
+
+    .btn-edit,
+    .btn-delete{
+        width: 49.5%;
+    }
+
+    .col-name,
+    .row-name{
+        width: 44%;
+    }
+
+    .col-initial-stock,
+    .row-initial-stock,
+    .col-outputs,
+    .row-outputs,
+    .col-stock,
+    .row-stock{
+        width: 11%;
+    }
+
+    .col-actions,
+    .row-actions{
+        width: 14.5%;
+    }
+}
+
+/* Responsive 425px */
+@media (max-width: 425px){
+    .col{
+        font-size: 12px;
+    }
+
+    .col-name,
+    .row-name{
+        width: 24%;
+    }
+
+    .col-category,
+    .row-category{
+        width: 26%;
+    }
+
+    .col-initial-stock,
+    .row-initial-stock{
+        width: 18.5%;
+    }
+
+    .col-outputs,
+    .row-outputs{
+        width: 15%;
+    }
+
+    .col-stock,
+    .row-stock{
+        width: 13.5%;
+    }
+
+    .col-actions,
+    .row-actions{
+        width: 17.5%;
+    }
+
+    .btn-prod{
+        width: 48%;
+    }
+}

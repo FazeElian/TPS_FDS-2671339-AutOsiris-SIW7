@@ -1,0 +1,65 @@
+/* Contenedor botón Nuevo registro */
+.cont-button-new{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 3rem 0 0;
+    justify-content: end;
+}
+
+/* Botón nuevo registro */
+.btn-new{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 7px 2rem 7px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #212EC2;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.btn-new:hover{
+    opacity: 0.8;
+    transition: .3s;
+}
+
+.btn-new a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn-new a img{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin-left: 7px;
+}
+
+/* Responsive 1440px */
+@media (max-width: 1440px){
+    .cont-button-new{
+        margin: 2.5rem 0 0;
+    }
+
+    .btn-new{
+        padding: 5px 1.5rem 5px;
+    }
+
+    .btn-new a{
+        font-size: 15px;
+    }
+
+    .btn-new a img{
+        width: 24px;
+        height: 24px;
+    }
+}
