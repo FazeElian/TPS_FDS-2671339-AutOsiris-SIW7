@@ -9,7 +9,7 @@ import "../../../assets/css/views/Admin/Factures/FacturesView.css";
     import FactureItem from "./components/FactureItem.jsx";
 
     // Paginación de Registros
-    // import PaginationContainer from "../../../components/Admin/PaginationContainer.jsx";
+    import PaginationContainer from "../../../components/Admin/PaginationContainer.jsx";
 
 // Imágenes - Iconos
     // Añadir Factura Icono
@@ -69,6 +69,8 @@ export default function FacturesView(){
                         </div>
                     </div>
                 </div>
+
+                <PaginationContainer />
             </section>
         </>
     )
