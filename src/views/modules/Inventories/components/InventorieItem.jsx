@@ -29,22 +29,22 @@ class DataInventorieItem extends React.Component {
     const { id, name, initialStock, outputs, stock } = this.props.dataProductInventorie;
     return (
         // Fila Producto
-        <tr className="tbody">
-            <td className="row-inventorie row-no-inventories">{id}</td>
-            <td className="row-inventorie row-name-inventories">{name}</td>
-            <td className="row-inventorie row-initial-stock-inventories">{initialStock}</td>
-            <td className="row-inventorie row-outputs-inventories">{outputs}</td>
-            <td className="row-inventorie row-stock-inventories">{stock}</td>
+        <tr className="tbody-inventories">
+            <td className="row-inventorie row-no-inventorie">{id}</td>
+            <td className="row-inventorie row-name-inventorie">{name}</td>
+            <td className="row-inventorie row-initial-stock-inventorie">{initialStock}</td>
+            <td className="row-inventorie row-outputs-inventorie">{outputs}</td>
+            <td className="row-inventorie row-stock-inventorie">{stock}</td>
 
             {/* Acciones de Productos */}
-            <td className="row-inventorie row-actions-inventories">
-            <button className="btn-prod btn-edit">
+            <td className="row-inventorie row-actions-inventorie">
+            <button className="btn-prod btn-edit-inventorie">
                 <a href="inventories/product/edit/{name}">
                 <img src={EditIcon} alt="" />
                 <h2>Editar</h2>
                 </a>
             </button>
-            <button className="btn-prod btn-delete">
+            <button className="btn-prod btn-delete-inventorie">
                 <a href="inventories/product/delete/{name}">
                 <img src={DeleteIcon} alt="" />
                 <h2>Eliminar</h2>
