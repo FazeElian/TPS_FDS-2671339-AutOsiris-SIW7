@@ -27,6 +27,9 @@ import { Routes, Route } from "react-router-dom";
   // Productos
   import ProductsView from "./views/modules/Products/ProductsView";
 
+  // Inventarios
+  import InventoriesView from "./views/modules/Inventories/InventoriesView";
+
 // Importación vista Error 404 - Página no encontrada
 import Error404AdminView from "./views/Exceptions/Error404AdminView";
 import Error404CustomerView from "./views/Exceptions/Error404CustomerView";
@@ -45,7 +48,7 @@ function App() {
         <Route path="sales" /> {/* Ventas */}
         <Route path="factures" /> {/* Facturas */}
         <Route path="products" element={<ProductsView />} /> {/* Productos */}
-        <Route path="inventories" /> {/* Inventarios */}
+        <Route path="inventories" element={<InventoriesView />} /> {/* Inventarios */}
         <Route path="user/profile" /> {/* Perfil */}
 
         {/* Ruta Error 404 - Página no encontrada */}

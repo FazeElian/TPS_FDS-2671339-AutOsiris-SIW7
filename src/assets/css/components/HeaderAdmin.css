@@ -79,8 +79,8 @@ a{
 
     .icono-menu img{
         display: flex;
-        width: 100%;
-        height: 100%;
+        width: 45px;
+        height: 45px;
     }
 
     /* Navegación de ítems Inicio */
@@ -473,6 +473,11 @@ a{
         height: 32px;
         margin: 0 25px;
         margin-top: 7.5px;
+    }
+
+    .icono-menu img{
+        width: 100%;
+        height: 100%;
     }
 
     /* Icono menú Responsive */
