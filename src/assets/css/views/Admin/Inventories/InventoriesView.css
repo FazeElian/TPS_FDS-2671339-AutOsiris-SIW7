@@ -7,7 +7,7 @@
 }
 
     /* Columnas - Encabezado de tabla */
-    .thead{
+    .thead-inventories{
         display: flex;
         width: 100%;
         height: auto;
@@ -16,7 +16,7 @@
     }
 
         /* Columna */
-        .col{
+        .col-inventories{
             display: flex;
             width: auto;
             height: auto;
@@ -30,7 +30,7 @@
         }
 
     /* Filas - Cuerpo/contenido de tabla */
-    .tbody{
+    .tbody-inventories{
         display: flex;
         width: 100%;
         height: auto;
@@ -38,7 +38,7 @@
         margin: 2px 0 0;
     }
         /* Fila */
-        .row{
+        .row-inventorie{
             display: flex;
             width: auto;
             height: auto;
@@ -53,15 +53,15 @@
 
         /* Columna: No */
         /* Fila: No */
-        .col-no,
-        .row-no{
+        .col-no-inventories,
+        .row-no-inventories{
             width: 8%;
         }
 
         /* Columna: Nombre */
         /* Fila: Nombre */
-        .col-name,
-        .row-name{
+        .col-name-inventories,
+        .row-name-inventories{
             width: 31%;
         }
         
@@ -71,23 +71,23 @@
         /* Fila: Salidas */
         /* Columna: Stock */
         /* Fila: Stock */
-        .col-initial-stock,
-        .row-initial-stock,
-        .col-outputs,
-        .row-outputs,
-        .col-stock,
-        .row-stock{
+        .col-initial-stock-inventories,
+        .row-initial-stock-inventories,
+        .col-outputs-inventories,
+        .row-outputs-inventories,
+        .col-stock-inventories,
+        .row-stock-inventories{
             width: 12%;
         }
 
         /* Columna: Acciones */
         /* Fila: Acciones */
-        .col-actions,
-        .row-actions{
+        .col-actions-inventories,
+        .row-actions-inventories{
             width: 24.5%;
         }
 
-        .row-actions{
+        .row-actions-inventories{
             justify-content: space-between;
             padding: 0;
             border: none;
@@ -136,16 +136,16 @@
 
 /* Responsive 1440px */
 @media (max-width: 1440px){
-    .col{
+    .col-inventories{
         padding: 6px 12px 6px;
         font-size: 15px;
     }
 
-    .row{
+    .row-inventorie{
         padding: 5px 12px 5px;
     }
 
-    .row,
+    .row-inventorie,
     .btn-prod a h2{
         font-size: 13px;
     }
@@ -155,11 +155,10 @@
         height: 10px;
     }
 
-    .row-actions{
+    .row-actions-inventories{
         padding: 0;
     }
 }
-
 
 /* Responsive 1024px */
 @media (max-width: 1024px){
@@ -176,59 +175,54 @@
         width: 49.5%;
     }
 
-    .col-name,
-    .row-name{
+    .col-name-inventories,
+    .row-name-inventories{
         width: 44%;
     }
 
-    .col-initial-stock,
-    .row-initial-stock,
-    .col-outputs,
-    .row-outputs,
-    .col-stock,
-    .row-stock{
+    .col-initial-stock-inventories,
+    .row-initial-stock-inventories,
+    .col-outputs-inventories,
+    .row-outputs-inventories,
+    .col-stock-inventories,
+    .row-stock-inventories{
         width: 11%;
     }
 
-    .col-actions,
-    .row-actions{
+    .col-actions-inventories,
+    .row-actions-inventories{
         width: 14.5%;
     }
 }
 
 /* Responsive 425px */
 @media (max-width: 425px){
-    .col{
+    .col-inventories{
         font-size: 12px;
     }
 
-    .col-name,
-    .row-name{
+    .col-name-inventories,
+    .row-name-inventories{
         width: 24%;
     }
 
-    .col-category,
-    .row-category{
-        width: 26%;
-    }
-
-    .col-initial-stock,
-    .row-initial-stock{
+    .col-initial-stock-inventories,
+    .row-initial-stock-inventories{
         width: 18.5%;
     }
 
-    .col-outputs,
-    .row-outputs{
+    .col-outputs-inventories,
+    .row-outputs-inventories{
         width: 15%;
     }
 
-    .col-stock,
-    .row-stock{
+    .col-stock-inventories,
+    .row-stock-inventories{
         width: 13.5%;
     }
 
-    .col-actions,
-    .row-actions{
+    .col-actions-inventories,
+    .row-actions-inventories{
         width: 17.5%;
     }
 

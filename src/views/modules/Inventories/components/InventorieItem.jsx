@@ -30,14 +30,14 @@ class DataInventorieItem extends React.Component {
     return (
         // Fila Producto
         <tr className="tbody">
-            <td className="row row-no">{id}</td>
-            <td className="row row-name">{name}</td>
-            <td className="row row-initial-stock">{initialStock}</td>
-            <td className="row row-outputs">{outputs}</td>
-            <td className="row row-stock">{stock}</td>
+            <td className="row-inventorie row-no-inventories">{id}</td>
+            <td className="row-inventorie row-name-inventories">{name}</td>
+            <td className="row-inventorie row-initial-stock-inventories">{initialStock}</td>
+            <td className="row-inventorie row-outputs-inventories">{outputs}</td>
+            <td className="row-inventorie row-stock-inventories">{stock}</td>
 
             {/* Acciones de Productos */}
-            <td className="row row-actions">
+            <td className="row-inventorie row-actions-inventories">
             <button className="btn-prod btn-edit">
                 <a href="inventories/product/edit/{name}">
                 <img src={EditIcon} alt="" />

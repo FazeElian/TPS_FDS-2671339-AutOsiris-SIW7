@@ -30,13 +30,13 @@ export default function InventoriesView(){
                 {/* Tabla Inventarios */}
                 <table className="table-inventories">
                     {/* Columnas - Encabezado de tabla */}
-                    <tr className="thead">
-                        <td className="col col-no">No</td>
-                        <td className="col col-name">Nombre</td>
-                        <td className="col col-initial-stock">Entradas</td>
-                        <td className="col col-outputs">Salidas</td>
-                        <td className="col col-stock">Stock</td>
-                        <td className="col col-actions">Acciones</td>
+                    <tr className="thead-inventories">
+                        <td className="col col-no-inventories">No</td>
+                        <td className="col col-name-inventories">Nombre</td>
+                        <td className="col col-initial-stock-inventories">Entradas</td>
+                        <td className="col col-outputs-inventories">Salidas</td>
+                        <td className="col col-stock-inventories">Stock</td>
+                        <td className="col col-actions-inventories">Acciones</td>
                     </tr>
 
                     {/* Filas - Cuerpo/contenido de tabla */}
