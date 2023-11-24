@@ -38,7 +38,6 @@ export default function HeaderAdmin(){
                     {/* Lista navegación  */}
                     <ul className="lista_nav-inicio">
                         <li className="item_nav-inicio"><Link to="/admin/home" >Inicio</Link></li>
-                        <li className="item_nav-inicio"><Link to="/admin/statistics">Estadísticas</Link></li>
                         <li className="item_nav-inicio"><Link to="/admin/sales">Ventas</Link></li>
                         <li className="item_nav-inicio li-facturas"><Link to="/admin/factures">Facturas</Link></li>
                         <li className="item_nav-inicio"><Link to="/admin/products">Productos</Link></li>

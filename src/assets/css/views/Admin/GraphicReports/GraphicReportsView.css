@@ -1,0 +1,160 @@
+/* Sección Reportes Gráficos */
+.sect-graphic-reports{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 2rem 0 0;
+    flex-direction: column;
+}
+
+/* Fila de gráficos */
+.row-graphics{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin: 0 0 2rem;
+}
+
+/* Contenedor de Gráfico */
+.cont-graph{
+    flex-direction: column;
+    padding: 4rem 3rem 4rem;
+    background-color: #D9D9D9;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+    .cont-graph h2{
+        font-size: 22.5px;
+        font-weight: lighter;
+    }
+
+/* Contenedor Rectangular */
+.cont-width-62{
+    display: flex;
+    width: 35%;
+    height: 550px;
+}
+
+/* Contenedor Cuadrado */
+.cont-width-35{
+    width: 62.5%;
+    height: 550px;
+}
+
+.chart-35,
+.chart-62{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-35{
+    margin: 1rem 0 0;
+}
+
+.chart-62{
+    margin: 0 0 2rem;
+}
+
+/* Responsive 1440px */
+@media (max-width: 1440px){
+    .cont-graph{
+        padding: 2.5rem 2rem 2.5rem;
+    }
+
+    .cont-graph h2{
+        font-size: 18px;
+    }
+
+    .cont-width-35,
+    .cont-width-62{
+        max-height: 450px;
+    }
+}
+
+/* Responsive 1024px */
+@media (max-width: 1024px){
+    .sect-graphic-reports{
+        margin: 0;
+    }
+
+    .row-graphics{
+        flex-direction: column-reverse;
+    }
+
+    .cont-graph{
+        min-height: 500px;
+        margin: 2rem 0 0;
+        border-radius: 1.5rem;
+    }
+
+    .cont-width-35,
+    .cont-width-62{
+        width: 100%;
+        padding: 3rem 6rem 3rem;
+    }
+    
+    .chart-35{
+        max-height: 100%;
+        margin: 0.5rem 1rem 2rem;
+    }
+}
+
+/* Responsive 768px */
+@media (max-width: 768px){
+    .cont-graph h2{
+        margin: 1rem 0 1rem;
+        font-size: 19px;
+    }
+
+    .cont-width-62{
+        min-height: 500px;
+        padding: 4rem 2rem 4rem;
+    }
+
+    .cont-width-35{
+        min-height: 250px;
+        padding: 2rem;
+    }
+}
+
+/* Responsive 425px */
+@media (max-width: 425px){
+    .cont-graph{
+        padding: 1rem;
+        margin: 1rem 0 0;
+    }
+
+    .row-graphics{
+        margin: 0;
+    }
+
+    .cont-graph h2{
+        font-size: 17px;
+        padding: 0 1rem 0;
+    }
+
+    .cont-width-35{
+        height: auto;
+    }
+
+    .chart-62{
+        height: 40%;
+        min-height: 120px;
+    }
+
+    .cont-width-62{
+        min-height: 300px;
+        padding: 0 1rem 0;
+    }
+
+    .chart-35{
+        width: 80%;
+        min-height: 30%;
+        margin: 0;
+    }
+}

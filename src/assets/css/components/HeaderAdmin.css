@@ -213,6 +213,10 @@ a{
         align-items: center;
     }
 
+    .title-section-reports{
+        margin: 2rem 0 0.5rem;
+    }
+
         .title-page h1{
             color: white;
             font-size: 28px;
