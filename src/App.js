@@ -21,9 +21,6 @@ import { Routes, Route } from "react-router-dom";
   // Home - Página Principal
   import HomeView from "./views/HomeView";
 
-  // Estadísticas
-  import StatisticsView from "./views/modules/Statistics/StatisticsView";
-
   // Productos
   import ProductsView from "./views/modules/Products/ProductsView";
 
@@ -47,7 +44,6 @@ function App() {
       {/* Rutas para la interfaz de Administrador */}
       <Route path="admin/*" element={<HeaderAdmin />}>
         <Route path="home" element={<HomeView />} /> {/* Página principal */}
-        <Route path="statistics" element={<StatisticsView />} /> {/* Estadísticas */}
         <Route path="sales" /> {/* Ventas */}
         <Route path="factures" element={<FacturesView />} /> {/* Facturas */}
         <Route path="products" element={<ProductsView />} /> {/* Productos */}
