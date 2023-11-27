@@ -2,7 +2,7 @@
 import "../../../assets/css/views/Admin/Factures/FacturesView.css";
 
 // Importación Link desde react-router-dom para ir a vistas enrutadas
-import { Link } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 
 // Componentes de componente de vista
     // Filtros de búsqueda
@@ -20,10 +20,16 @@ import { Link } from "react-router-dom";
     
     // Clientes Icono
     import CustomersIcon from "../../../assets/img/icons/Customers.png";
+import CustomersView from "../Customers/CustomersView.jsx";
 
 export default function FacturesView(){
     return(
         <>
+            {/* Creación subrutas a partir de este componente */}
+            <Routes>
+                <Route path="customers" element={<CustomersView />} />
+            </Routes>
+
             {/* Contenido de página */}
             <section className="content-page">
                 {/* Titulo de ventana */}
