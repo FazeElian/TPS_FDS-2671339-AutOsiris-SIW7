@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Categoría 1",
+        "description": "Descripción Categoría 1"
+    },
+    {
+        "id": 2,
+        "name": "Categoría 2",
+        "description": "Descripción Categoría 2"
+    },
+    {
+        "id": 3,
+        "name": "Categoría 3",
+        "description": "Descripción Categoría 3"
+    },
+    {
+        "id": 4,
+        "name": "Categoría 4",
+        "description": "Descripción Categoría 4"
+    },
+    {
+        "id": 5,
+        "name": "Categoría 5",
+        "description": "Descripción Categoría 5"
+    },
+    {
+        "id": 6,
+        "name": "Categoría 6",
+        "description": "Descripción Categoría 6"
+    },
+    {
+        "id": 7,
+        "name": "Categoría 7",
+        "description": "Descripción Categoría 7"
+    },
+    {
+        "id": 8,
+        "name": "Categoría 8",
+        "description": "Descripción Categoría 8"
+    },
+    {
+        "id": 9,
+        "name": "Categoría 9",
+        "description": "Descripción Categoría 9"
+    },
+    {
+        "id": 10,
+        "name": "Categoría 10",
+        "description": "Descripción Categoría 10"
+    }
+]

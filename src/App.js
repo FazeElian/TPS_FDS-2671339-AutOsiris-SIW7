@@ -24,6 +24,9 @@ import { Routes, Route } from "react-router-dom";
   // Productos
   import ProductsView from "./views/modules/Products/ProductsView";
 
+  // Categorías de Productos
+  import CategoriesView from "./views/modules/Categories/CategoriesView";
+
   // Inventarios
   import InventoriesView from "./views/modules/Inventories/InventoriesView";
 
@@ -50,7 +53,9 @@ function App() {
         <Route path="factures/*" element={<FacturesView />} /> {/* Facturas */}
         <Route path="factures/customers" element={<CustomersView />} /> {/* Clientes de Facturas */}
 
-        <Route path="products" element={<ProductsView />} /> {/* Productos */}
+        <Route path="products/*" element={<ProductsView />} /> {/* Productos */}
+        <Route path="products/categories" element={<CategoriesView />} />
+
         <Route path="inventories" element={<InventoriesView />} /> {/* Inventarios */}
         <Route path="user/profile" /> {/* Perfil */}
 
