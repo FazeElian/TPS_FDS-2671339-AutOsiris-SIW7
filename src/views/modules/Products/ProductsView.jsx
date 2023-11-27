@@ -1,6 +1,8 @@
 // Estilos para este archivo
 import "../../../assets/css/views/Admin/Products/ProductsView.css";
 
+import { Link } from "react-router-dom";
+
 // Componentes de componente de vista
     // Filtros de búsqueda
     import SearchSection from "./components/SearchSection.jsx"
@@ -62,10 +64,10 @@ export default function ProductsView(){
 
                         {/* Categorías de Productos */}
                         <div className="cont-op-prods">
-                            <a href="products">
+                            <Link to="categories">
                                 <img src={CategoriesIcon} alt="" />
                                 <h2>Categorías Productos</h2>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
