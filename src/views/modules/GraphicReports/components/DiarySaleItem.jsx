@@ -13,11 +13,11 @@ import React from 'react';
 class DiarySale extends React.Component {
     render() {
         return (
-        <div>
-                {dataDiarySale.map(item => (
+        <tbody className="">
+            {dataDiarySale.map(item => (
                 <DataDiarySale key={item.id} dataDiarySale={item} />
             ))}
-        </div>
+        </tbody>
     );
   }
 }
@@ -29,24 +29,24 @@ class DataDiarySale extends React.Component {
         const { id, hour, total } = this.props.dataDiarySale;
     return (
         // Fila Producto
-        <tr className="tbody-diary-sales">
+        <tr className='tbody-diary-sales'>
             <td className="row-diary-sale row-no-diary-sale">{id}</td>
             <td className="row-diary-sale row-hour-diary-sale">{hour}</td>
             <td className="row-diary-sale row-total-diary-sale">{total}</td>
             {/* Acciones de Productos */}
             <td className="row-diary-sale row-actions-diary-sale">
-            <button className="btn-prod btn-edit-diary-sale">
-                <a href="diary-sales/product/edit/{name}">
-                <img src={EditIcon} alt="" />
-                <h2>Editar</h2>
-                </a>
-            </button>
-            <button className="btn-prod btn-delete-diary-sale">
-                <a href="diary-sales/product/delete/{name}">
-                <img src={DeleteIcon} alt="" />
-                <h2>Eliminar</h2>
-                </a>
-            </button>
+                <button className="btn-prod btn-edit-diary-sale">
+                    <a href="diary-sales/product/edit/{name}">
+                    <img src={EditIcon} alt="" />
+                    <h2>Editar</h2>
+                    </a>
+                </button>
+                <button className="btn-prod btn-delete-diary-sale">
+                    <a href="diary-sales/product/delete/{name}">
+                    <img src={DeleteIcon} alt="" />
+                    <h2>Eliminar</h2>
+                    </a>
+                </button>
             </td>
         </tr>
     );

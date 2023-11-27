@@ -38,12 +38,12 @@ export default function ProductsView(){
                         {/* Tabla Productos */}
                         <table className="table-products">
                             {/* Columnas - Encabezado de tabla */}
-                            <tr className="thead-products">
-                                <td className="col-product col-no-product">No</td>
-                                <td className="col-product col-name-product">Nombre</td>
-                                <td className="col-product col-category-product">Categoría</td>
-                                <td className="col-product col-actions-product">Acciones</td>
-                            </tr>
+                            <tbody className="thead-products">
+                                <tr className="col-product col-no-product"><td>No</td></tr>
+                                <tr className="col-product col-name-product"><td>Nombre</td></tr>
+                                <tr className="col-product col-category-product"><td>Categoría</td></tr>
+                                <tr className="col-product col-actions-product"><td>Acciones</td></tr>
+                            </tbody>
 
                             {/* Filas - Cuerpo/contenido de tabla */}
                             <ProductItem />

@@ -11,6 +11,9 @@ import "../../../assets/css/views/Admin/Customers/CustomersView.css";
     // Paginación de Registros
     import PaginationContainer from "../../../components/Admin/PaginationContainer.jsx";
 
+    // Botón: Volver
+    import TurnBackButton from "./components/TurnBackButton.jsx";
+
 export default function CustomersView(){
     return(
         <>
@@ -27,12 +30,12 @@ export default function CustomersView(){
                 {/* Tabla Clientes */}
                 <table className="table-customers">
                     {/* Columnas - Encabezado de tabla */}
-                    <tr className="thead-customers">
-                        <td className="col-customer col-no-customer">No</td>
-                        <td className="col-customer col-name-customer">Nombre</td>
-                        <td className="col-customer col-description-customer">Descripción</td>
-                        <td className="col-customer col-actions-customer">Acciones</td>
-                    </tr>
+                    <thead className="thead-customers">
+                        <tr className="col-customer col-no-customer"><td>No</td></tr>
+                        <tr className="col-customer col-name-customer"><td>Nombre</td></tr>
+                        <tr className="col-customer col-description-customer"><td>Descripción</td></tr>
+                        <tr className="col-customer col-actions-customer"><td>Acciones</td></tr>
+                    </thead>
 
                     {/* Filas - Cuerpo/contenido de tabla */}
                     <CustomerItem />
@@ -40,6 +43,9 @@ export default function CustomersView(){
 
                 {/* Componente paginación de registros */}
                 <PaginationContainer />
+
+                {/* Componente botón: volver */}
+                <TurnBackButton />
             </section>
         </>
     )

@@ -17,12 +17,12 @@ export default function TableDiarySales(){
             </div>
             <table className="table-diary-sales">
                 {/* Columnas - Encabezado de tabla */}
-                <tr className="thead-diary-sales">
-                    <td className="col-diary-sale col-no-diary-sale">No</td>
-                    <td className="col-diary-sale col-hour-diary-sale">Hora</td>
-                    <td className="col-diary-sale col-total-diary-sale">Total</td>
-                    <td className="col-diary-sale col-actions-diary-sale">Acciones</td>
-                </tr>
+                <thead className="thead-diary-sales">
+                    <tr className="col-diary-sale col-no-diary-sale"><td>No</td></tr>
+                    <tr className="col-diary-sale col-hour-diary-sale"><td>Hora</td></tr>
+                    <tr className="col-diary-sale col-total-diary-sale"><td>Total</td></tr>
+                    <tr className="col-diary-sale col-actions-diary-sale"><td>Acciones</td></tr>
+                </thead>
 
                 {/* Filas - Cuerpo/contenido de tabla */}
                 <DiarySaleItem />

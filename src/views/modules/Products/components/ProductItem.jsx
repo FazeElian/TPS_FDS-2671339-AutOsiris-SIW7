@@ -14,11 +14,11 @@ import dataProduct from '../../../../json/views/Admin/productsTable.json';
 class ProductItem extends React.Component {
   render() {
     return (
-      <div>
+      <thead className="">
         {dataProduct.map(item => (
           <DataProductItem key={item.id} dataProduct={item} />
         ))}
-      </div>
+      </thead>
     );
   }
 }
@@ -31,25 +31,25 @@ class DataProductItem extends React.Component {
     return (
       // Fila Producto
       <tr className="tbody-products">
-          <td className="row-product row-no-product">{id}</td>
-          <td className="row-product row-name-product"><a href="products/product/{name}">{name}</a></td>
-          <td className="row-product row-category-product">{category}</td>
+        <td className="row-product row-no-product">{id}</td>
+        <td className="row-product row-name-product"><a href="products/product/{name}">{name}</a></td>
+        <td className="row-product row-category-product">{category}</td>
 
-          {/* Acciones de Productos */}
-          <td className="row-product row-actions-product">
-            <button className="btn-prod btn-edit-product">
-              <a href="products/product/edit/{name}">
-                <img src={EditIcon} alt="" />
-                <h2>Editar</h2>
-              </a>
-            </button>
-            <button className="btn-prod btn-delete-product">
-              <a href="products/product/delete/{name}">
-                <img src={DeleteIcon} alt="" />
-                <h2>Eliminar</h2>
-              </a>
-            </button>
-          </td>
+        {/* Acciones de Productos */}
+        <td className="row-product row-actions-product">
+          <button className="btn-prod btn-edit-product">
+            <a href="products/product/edit/{name}">
+              <img src={EditIcon} alt="" />
+              <h2>Editar</h2>
+            </a>
+          </button>
+          <button className="btn-prod btn-delete-product">
+            <a href="products/product/delete/{name}">
+              <img src={DeleteIcon} alt="" />
+              <h2>Eliminar</h2>
+            </a>
+          </button>
+        </td>
       </tr>
     );
   }

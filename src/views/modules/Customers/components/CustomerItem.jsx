@@ -13,11 +13,11 @@ import dataCustomer from '../../../../json/views/Admin/customersTable.json';
 class CustomerItem extends React.Component {
     render() {
         return (
-            <div>
+            <thead className="">
                 {dataCustomer.map(item => (
                     <DataCustomerItem key={item.id} dataCustomer={item} />
                 ))}
-            </div>
+            </thead>
         );
     }
 }
