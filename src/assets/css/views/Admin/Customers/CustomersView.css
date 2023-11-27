@@ -1,0 +1,197 @@
+/* Tabla Clientes */
+.table-customers{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+    /* Columnas - Encabezado de tabla */
+    .thead-customers{
+        display: flex;
+        width: 100%;
+        height: auto;
+        max-height: 40px;
+        justify-content: space-between;
+    }
+
+        /* Columna */
+        .col-customer{
+            display: flex;
+            width: auto;
+            height: auto;
+            padding: 8px 12px 8px;
+            background-color: #212EC2;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            color: white;
+        }
+
+    /* Filas - Cuerpo/contenido de tabla */
+    .tbody-customers{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        margin: 2px 0 0;
+    }
+        /* Fila */
+        .row-customer{
+            display: flex;
+            width: auto;
+            height: auto;
+            padding: 7px 12px 7px;
+            background-color: #D9D9D9;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        /* Columna: No */
+        /* Fila: No */
+        .col-no-customer,
+        .row-no-customer{
+            width: 8%;
+        }
+
+        /* Columna: Nombre */
+        /* Fila: Nombre */
+        .col-name-customer,
+        .row-name-customer{
+            width: 31%;
+        }
+
+        /* Columna: Descripción */
+        /* Fila: Descripción */
+        .col-description-customer,
+        .row-description-customer{
+            width: 36%;
+        }
+        
+
+        /* Columna: Acciones */
+        /* Fila: Acciones */
+        .col-actions-customer,
+        .row-actions-customer{
+            width: 24.5%;
+        }
+
+        .row-actions-customer{
+            justify-content: space-between;
+            padding: 0;
+            border: none;
+            background: transparent;
+        }
+
+        /* Acciones de Producto */
+            /* Estilo Botón */
+            .btn-prod{
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+            
+            .btn-prod:hover{
+                opacity: 0.8;
+                transition: .3s;
+            }
+
+            .btn-prod a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .btn-prod a img{
+                width: 12px;
+                height: 12px;
+                margin-right: 5px;
+            }
+
+            .btn-prod a h2{
+                font-size: 15px;
+                font-weight: lighter;
+            }
+
+            /* Editar */
+            .btn-edit-customer{
+                width: 45%;
+                background-color: #1988CF;
+            }
+
+            /* Eliminar */
+            .btn-delete-customer{
+                width: 54.5%;
+                background-color: red;
+            }
+
+/* Responsive 1440px */
+@media (max-width: 1440px){
+    .col-customer{
+        padding: 6px 12px 6px;
+        font-size: 15px;
+    }
+
+    .row-customer{
+        padding: 5px 12px 5px;
+    }
+
+    .row-customer,
+    .btn-prod a h2{
+        font-size: 13px;
+    }
+
+    .btn-prod img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .row-actions-customer{
+        padding: 0;
+    }
+}
+
+/* Responsive 1024px */
+@media (max-width: 1024px){
+    .btn-prod a h2{
+        display: none;
+    }
+
+    .btn-prod a img{
+        margin: 0;
+    }
+
+    .btn-edit-customer,
+    .btn-delete-customer{
+        width: 49.5%;
+    }
+
+}
+
+/* Responsive 425px */
+@media (max-width: 425px){
+    .col-customer{
+        font-size: 12px;
+    }
+
+    .col-name-customer,
+    .row-name-customer{
+        width: 29%;
+    }
+
+    .row-customer{
+        font-size: 10px;
+    }
+
+    .btn-prod{
+        width: 49%;
+    }
+}

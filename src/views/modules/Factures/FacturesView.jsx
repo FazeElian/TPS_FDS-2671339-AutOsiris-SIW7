@@ -1,6 +1,9 @@
 // Estilos para este archivo
 import "../../../assets/css/views/Admin/Factures/FacturesView.css";
 
+// Importación Link desde react-router-dom para ir a vistas enrutadas
+import { Link } from "react-router-dom";
+
 // Componentes de componente de vista
     // Filtros de búsqueda
     import SearchFacture from "./components/SearchFacture"
@@ -62,10 +65,10 @@ export default function FacturesView(){
 
                         {/* Cliente */}
                         <div className="cont-op-factures">
-                            <a href="factures">
+                            <Link to="customers">
                                 <img src={CustomersIcon} alt="" />
                                 <h2>Clientes</h2>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
