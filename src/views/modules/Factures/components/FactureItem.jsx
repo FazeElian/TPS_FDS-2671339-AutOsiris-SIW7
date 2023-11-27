@@ -16,11 +16,11 @@ import dataFacture from '../../../../json/views/Admin/facturesTable.json';
 class ProductItem extends React.Component {
     render() {
         return (
-            <div>
+            <tbody className="">
                 {dataFacture.map(item => (
                     <DataFactureItem key={item.id} dataFacture={item} />
                 ))}
-            </div>
+            </tbody>
         );
     }
 }

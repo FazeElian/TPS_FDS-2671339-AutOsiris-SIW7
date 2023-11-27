@@ -4,8 +4,8 @@ import "../../../../assets/css/components/Admin/SearchSection.css";
 export default function SearchSection (){
     return(
         // Filtros de Búsqueda
-        <div class="cont-search">
-            <div class="order-by">
+        <div className="cont-search">
+            <div className="order-by">
                 <select name="order-by" id="order-by">
                     <option value="">Ordenar Por</option>
                     <option value="A-Z">A-Z</option>
@@ -13,7 +13,7 @@ export default function SearchSection (){
                 </select>
             </div>
 
-            <div class="search-bar">
+            <div className="search-bar">
                 <input type="search" name="search-bar" id="search-bar" placeholder="Buscar Producto" />
             </div>
         </div>

@@ -47,8 +47,7 @@ function App() {
       {/* Rutas para la interfaz de Administrador */}
       <Route path="admin/*" element={<HeaderAdmin />}>
         <Route path="home" element={<HomeView />} /> {/* Página principal */}
-        <Route path="sales" /> {/* Ventas */}
-        <Route path="factures" element={<FacturesView />} /> {/* Facturas */}
+        <Route path="factures/*" element={<FacturesView />} /> {/* Facturas */}
         <Route path="factures/customers" element={<CustomersView />} /> {/* Clientes de Facturas */}
 
         <Route path="products" element={<ProductsView />} /> {/* Productos */}

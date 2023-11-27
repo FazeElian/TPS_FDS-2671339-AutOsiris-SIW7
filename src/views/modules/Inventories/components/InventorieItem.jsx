@@ -13,11 +13,11 @@ import dataProductInventorie from '../../../../json/views/Admin/inventoriesTable
 class InventorieItem extends React.Component {
     render() {
         return (
-        <div>
+        <tbody className="">
             {dataProductInventorie.map(item => (
             <DataInventorieItem key={item.id} dataProductInventorie={item} />
             ))}
-        </div>
+        </tbody>
     );
   }
 }
@@ -30,14 +30,14 @@ class DataInventorieItem extends React.Component {
     return (
         // Fila Producto
         <tr className="tbody-inventories">
-            <td className="row-inventorie row-no-inventorie">{id}</td>
-            <td className="row-inventorie row-name-inventorie">{name}</td>
-            <td className="row-inventorie row-initial-stock-inventorie">{initialStock}</td>
-            <td className="row-inventorie row-outputs-inventorie">{outputs}</td>
-            <td className="row-inventorie row-stock-inventorie">{stock}</td>
+          <td className="row-inventorie row-no-inventorie">{id}</td>
+          <td className="row-inventorie row-name-inventorie">{name}</td>
+          <td className="row-inventorie row-initial-stock-inventorie">{initialStock}</td>
+          <td className="row-inventorie row-outputs-inventorie">{outputs}</td>
+          <td className="row-inventorie row-stock-inventorie">{stock}</td>
 
-            {/* Acciones de Productos */}
-            <td className="row-inventorie row-actions-inventorie">
+          {/* Acciones de Productos */}
+          <td className="row-inventorie row-actions-inventorie">
             <button className="btn-prod btn-edit-inventorie">
                 <a href="inventories/product/edit/{name}">
                 <img src={EditIcon} alt="" />
@@ -50,7 +50,7 @@ class DataInventorieItem extends React.Component {
                 <h2>Eliminar</h2>
                 </a>
             </button>
-            </td>
+          </td>
         </tr>
     );
   }

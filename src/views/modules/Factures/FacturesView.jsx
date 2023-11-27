@@ -47,12 +47,12 @@ export default function FacturesView(){
                         {/* Tabla Productos */}
                         <table className="table-factures">
                             {/* Columnas - Encabezado de tabla */}
-                            <tr className="thead-factures">
-                                <td className="col-facture col-no-facture">No</td>
-                                <td className="col-facture col-date-facture">Fecha</td>
-                                <td className="col-facture col-customer-facture">Cliente</td>
-                                <td className="col-facture col-actions-facture">Acciones</td>
-                            </tr>
+                            <thead className="thead-factures">
+                                <tr className="col-facture col-no-facture"><td>No</td></tr>
+                                <tr className="col-facture col-date-facture"><td>Fecha</td></tr>
+                                <tr className="col-facture col-customer-facture"><td>Cliente</td></tr>
+                                <tr className="col-facture col-actions-facture"><td>Acciones</td></tr>
+                            </thead>
 
                             {/* Filas - Cuerpo/contenido de tabla */}
                             <FactureItem />
