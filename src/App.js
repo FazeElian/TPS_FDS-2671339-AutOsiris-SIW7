@@ -21,6 +21,9 @@ import { Routes, Route } from "react-router-dom";
   // Home - Página Principal
   import HomeView from "./views/HomeView";
 
+  // Ventas
+  import SalesView from "./views/modules/Sales/SalesView";
+
   // Productos
   import ProductsView from "./views/modules/Products/ProductsView";
 
@@ -50,6 +53,8 @@ function App() {
       {/* Rutas para la interfaz de Administrador */}
       <Route path="admin/*" element={<HeaderAdmin />}>
         <Route path="home" element={<HomeView />} /> {/* Página principal */}
+        <Route path="sales" element={<SalesView />} />
+
         <Route path="factures/*" element={<FacturesView />} /> {/* Facturas */}
         <Route path="factures/customers" element={<CustomersView />} /> {/* Clientes de Facturas */}
 
