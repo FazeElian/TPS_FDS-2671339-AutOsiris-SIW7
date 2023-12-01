@@ -19,8 +19,17 @@
         </div>
 
         <!-- Buscar factura-->
-        <div class="cont-busqueda">
-            <input type="search" name="buscarFactura" id="buscarFactura" placeholder="Buscar factura por su número">
+        <div class="filtros-busqueda">
+            <div class="ordenar_por">
+                <select name="ordenar_por" id="ordenar_por">
+                    <option value="Ordenar Por">Ordenar Por</option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Precio">Precio</option>
+                </select>
+            </div>
+            <div class="barra_busqueda">
+                <input type="search" name="buscarFactura" id="barra_busqueda" placeholder="Buscar factura por su número">
+            </div>
         </div>
 
         <!-- Contenedor Facturas -->
@@ -31,7 +40,7 @@
                 <table class="tabla-facturas" id="tabla-facturas">
                     <!-- Columnas características de factura -->
                     <tr class="columnas-caract-fact">
-                        <td class="item-columna num-factura">Número</td>
+                        <td class="item-columna num-factura">No</td>
                         <td class="item-columna fecha-factura">Fecha</td>
                         <td class="item-columna opciones-factura-tabla">Opciones</td>
                     </tr>
