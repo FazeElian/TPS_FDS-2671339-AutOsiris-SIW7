@@ -145,19 +145,19 @@
     /* Botón: Registrar inventario */
     .bott-guardar-cambios{
         display: flex;
-        width: 200px;
+        width: auto;
         background-color: #2121E3;
         border: 1px solid black;
         border-radius: 7px;
         justify-content: center;
         align-items: center;
+        padding: 10px 2rem 10px;
     }
 
     .bott-guardar-cambios a h2{
         color: white;
-        font-size: 17px;
+        font-size: 18px;
     }
-
 
 /* @media */
     /* @media 1024px */
@@ -179,8 +179,7 @@
         }
 
         .bott-guardar-cambios{
-            width: 180px;
-            height: 30px;
+            padding: 10px 2rem 10px;
         }
 
         .bott-guardar-cambios a h2{
@@ -207,7 +206,6 @@
         }
 
         .bott-guardar-cambios{
-            width: 160px;
             height: 27.5px;
         }
 
@@ -236,8 +234,8 @@
 
 
         .bott-guardar-cambios{
-            width: 150px;
             height: 25px;
+            padding: 10px 1.5rem 10px;
         }
 
         .bott-guardar-cambios a h2{

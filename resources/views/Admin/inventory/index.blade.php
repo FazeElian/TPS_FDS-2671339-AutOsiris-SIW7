@@ -37,12 +37,12 @@
         <!-- Tabla Productos -->
         <table class="tabla-productos" id="tabla-productos">
             <tr class="columnas-caract">
-                <td class="num-prod item-columna"><h3>No</h3></td>
-                <td class="nombre-prod item-columna"> <h3>Nombre Producto </h3></td>
-                <td class="entradas-prod item-columna"><h3>Entradas</h3></td>
-                <td class="salidas-prod item-columna"><h3>Salidas</h3></td>
-                <td class="stock-prod item-columna"><h3>Stock</h3></td>
-                <td class="acciones item-columna"><h3>Acciones</h3></td>
+                <td class="num-prod item-columna">No</td>
+                <td class="nombre-prod item-columna"> Nombre Producto </td>
+                <td class="entradas-prod item-columna">Entradas</td>
+                <td class="salidas-prod item-columna">Salidas</td>
+                <td class="stock-prod item-columna">Stock</td>
+                <td class="acciones item-columna">Acciones</td>
             </tr>
             <!-- Mostrar productos -->
             @forelse ($inventories as $inventory)
@@ -69,7 +69,7 @@
                 </tr>
             @empty
                 <tr class="filas-datos">
-                    <td class="no-records-inventories">No hay registros de inventario para productos</td>
+                    <td class="item-fila no-records">No hay Registros de Inventarios de Productos</td>
                 </tr>
             @endforelse
         </table>
