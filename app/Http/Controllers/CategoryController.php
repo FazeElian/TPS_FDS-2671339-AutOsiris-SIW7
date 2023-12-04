@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB; // Para consultas desde tablas para buscador
 
 /**
  * Class CategoryController
@@ -14,14 +15,28 @@ class CategoryController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $categories = Category::paginate();
 
-        return view('Admin.category.index', compact('categories'))
-            ->with('i', (request()->input('page', 1) - 1) * $categories->perPage());
+        // Obtenemos valor de input de búsqueda
+        $inputSearchValue = trim($request->get("categorieSearch"));
+
+        // Autoincrementable para Columna No de vista
+        $a = 0;
+        $i = $a++;
+
+        // Realiza las consultas a las tablas junto con la tabla categorías
+        $categories = DB::table("categories")
+        ->select("id", "name", "description")
+        ->where("name", "LIKE", "%" . $inputSearchValue . "%")
+        ->orWhere("id", "LIKE", "%" . $inputSearchValue . "%")
+        ->orderBy("name", "asc")
+        ->paginate(10);
+
+        return view('Admin.category.index', compact("categories", "i", "inputSearchValue"));
     }
 
     /**
@@ -73,7 +88,7 @@ class CategoryController extends Controller
     {
         $category = Category::find($id);
 
-        return view('Aqdmin.category.edit', compact('category'));
+        return view('Admin.category.edit', compact('category'));
     }
 
     /**
