@@ -1,52 +1,52 @@
 [
     {
       "id": 1,
-      "name": "Nombre Producto 1",
-      "category": "Categoría producto 1"
+      "name": "Cuaderno Argollado 80 hojas Norma",
+      "category": "Cuadernos"
     },
     {
       "id": 2,
-      "name": "Nombre Producto 2",
-      "category": "Categoría producto 2"
+      "name": "Lapicero negro Offi-Esco",
+      "category": "Escritura"
     },
     {
       "id": 3,
-      "name": "Nombre Producto 3",
-      "category": "Categoría producto 3"
+      "name": "Borrador de nata Pelikan",
+      "category": "Borradores"
     },
     {
         "id": 4,
-        "name": "Nombre Producto 4",
-        "category": "Categoría producto 4"
+        "name": "Carpeta legajadora Offi-Esco",
+        "category": "Oficina"
     },
     {
         "id": 5,
-        "name": "Nombre Producto 5",
-        "category": "Categoría producto 5"
+        "name": "Post It",
+        "category": "Oficina"
     },
     {
         "id": 6,
-        "name": "Nombre Producto 6",
-        "category": "Categoría producto 6"
+        "name": "Lapicero rojo Offi-Esco",
+        "category": "Escritura"
     },
     {
         "id": 7,
-        "name": "Nombre Producto 7",
-        "category": "Categoría producto 7"
+        "name": "Lápiz grafito Faber Castell",
+        "category": "Escritura"
     },
     {
         "id": 8,
-        "name": "Nombre Producto 8",
-        "category": "Categoría producto 8"
+        "name": "Borrador miga de pan Pelikan",
+        "category": "Borradores"
     },
     {
         "id": 9,
-        "name": "Nombre Producto 9",
-        "category": "Categoría producto 9"
+        "name": "Block Cuadriculado 80 hojas Norma",
+        "category": "Hojas y blocks"
     },
     {
         "id": 10,
-        "name": "Nombre Producto 10",
-        "category": "Categoría producto 10"
+        "name": "Marcadores Norma 12 unidades",
+        "category": "Decoración"
     }
   ]
