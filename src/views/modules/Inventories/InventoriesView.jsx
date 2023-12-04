@@ -3,7 +3,7 @@ import "../../../assets/css/views/Admin/Inventories/InventoriesView.css";
 
 // Compontentes para componentes de vista
     // Filtros de búsqueda
-    import SearchSection from "../Products/components/SearchSection"
+    import SearchSection from "./components/SearchSection"
 
     // Item - Fila Inventario
     import InventorieItem from "./components/InventorieItem";

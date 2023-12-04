@@ -1,14 +1,15 @@
 // Estilos para este archivo
 import "../../../assets/css/views/Admin/Products/ProductsView.css";
 
+// Estilos para búsqueda
+import "../../../assets/css/components/Admin/SearchSection.css";
+
 import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react'
 
 // Componentes de componente de vista
-    // Filtros de búsqueda
-    import SearchSection from "./components/SearchSection.jsx"
-
-    // Item - Fila Producto
-    import ProductItem from "./components/ProductItem.jsx";
+    // JSON - Lista de Productos
+    import dataProductsList from "../../../json/views/Admin/productsTable.json";
 
     // Paginación de Registros
     import PaginationContainer from "../../../components/Admin/PaginationContainer.jsx";
@@ -20,8 +21,42 @@ import { Link } from "react-router-dom";
     // Categorías Icono
     import CategoriesIcon from "../../../assets/img/icons/Categories.png";
 
+    // Editar Icono
+    import EditIcon from "../../../assets/img/icons/Edit.png";
+
+    // Eliminar Icono
+    import DeleteIcon from "../../../assets/img/icons/Delete.png";
+
 export default function ProductsView(){
-    return(
+    // Hooks de useState
+    const [ products, setUsers] = useState([])
+    const [ search, setSearch ] = useState("") // Valor inicial vacío
+
+    // Función para traer datos de Arreglos JSON    
+    const showData = async () => {
+        setUsers(dataProductsList);
+    }
+
+    // Método de filtrado
+    const results = !search
+    ? products
+    : products.filter(
+        (dataProduct) =>
+          dataProduct.title?.toLowerCase().includes(search.toLowerCase()) ||
+          dataProduct.category?.toLowerCase().includes(search.toLowerCase())
+    );
+
+    // Función de búsqueda
+    const searcher = (e) => {
+        setSearch(e.target.value);
+        // console.log(e.target.value);
+    }
+
+    useEffect ( () => {
+        showData()
+    }, [])
+
+    return (
         <>
             {/* Contenido de página */}
             <section className="content-page">
@@ -30,8 +65,27 @@ export default function ProductsView(){
                     <h1>Productos</h1>
                 </div>
 
-                {/* Componente Filtros de Búsqueda */}
-                <SearchSection />
+                {/* Filtros de Búsqueda */}
+                <div className="cont-search">
+                    <div className="order-by">
+                        <select name="order-by" id="order-by">
+                            <option value="">Ordenar Por</option>
+                            <option value="A-Z">A-Z</option>
+                            <option value="Precio">Precio</option>
+                        </select>
+                    </div>
+
+                    <div className="search-bar">
+                        <input 
+                            type="search" 
+                            name="search-bar" 
+                            id="search-bar" 
+                            placeholder="Buscar Producto" 
+                            value={search} // Valor que se actualiza todo el tiempo
+                            onChange={searcher} // Evento cuando el valor del input cambia - detecta el cambio
+                        />
+                    </div>
+                </div>
 
                 {/* Componente Sección Productos */}
                 <div className="sect-products">
@@ -48,7 +102,30 @@ export default function ProductsView(){
                             </tbody>
 
                             {/* Filas - Cuerpo/contenido de tabla */}
-                            <ProductItem />
+                                <tbody className="">
+                                    { results.map( (product) => (
+                                        <tr className="tbody-products" key={product.id}>
+                                            <td className="row-product row-no-product">{product.id}</td>
+                                            <td className="row-product row-name-product"><a href="products/product/{name}">{product.name}</a></td>
+                                            <td className="row-product row-category-product">{product.category}</td>
+                                            {/* Acciones de Productos */}
+                                            <td className="row-product row-actions-product">
+                                                <button className="btn-prod btn-edit-product">
+                                                <a href="products/product/edit/{name}">
+                                                    <img src={EditIcon} alt="" />
+                                                    <h2>Editar</h2>
+                                                </a>
+                                                </button>
+                                                <button className="btn-prod btn-delete-product">
+                                                <a href="products/product/delete/{name}">
+                                                    <img src={DeleteIcon} alt="" />
+                                                    <h2>Eliminar</h2>
+                                                </a>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
                         </table>
                     </div>
 
