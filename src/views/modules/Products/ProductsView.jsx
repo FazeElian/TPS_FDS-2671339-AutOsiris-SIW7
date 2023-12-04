@@ -42,7 +42,7 @@ export default function ProductsView(){
     ? products
     : products.filter(
         (dataProduct) =>
-          dataProduct.title?.toLowerCase().includes(search.toLowerCase()) ||
+          dataProduct.name?.toLowerCase().includes(search.toLowerCase()) ||
           dataProduct.category?.toLowerCase().includes(search.toLowerCase())
     );
 
