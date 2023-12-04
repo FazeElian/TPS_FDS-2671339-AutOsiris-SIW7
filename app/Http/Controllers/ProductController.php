@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
 // Guardar Imagen en el storage
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Storage;
@@ -20,13 +20,28 @@ class ProductController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * @param  \Illuminate\Http\Request $request
      */
-    public function index()
+    public function index(Request $request)
     {
-        $products = Product::paginate();
+        // Obtenemos valor de input de búsqueda
+        $inputSearchValue = trim($request->get("productSearch"));
 
-        return view('Admin.product.index', compact('products'))
-            ->with('i', (request()->input('page', 1) - 1) * $products->perPage());
+        // Autoincrementable para Columna No de vista
+        $a = 0;
+        $i = $a++;
+
+        // Realiza las consultas a las tablas junto con la tabla categorías
+        $products = Product::with('category')
+        ->select("id", "name", "categorie_id")
+        ->where("name", "LIKE", "%" . $inputSearchValue . "%")
+        ->orWhere("categorie_id", "LIKE", "%" . $inputSearchValue . "%")
+        ->orderBy("name", "asc")
+        ->paginate(10);
+
+        $categories = Category::select("id", "name")->get();
+
+        return view('Admin.product.index', compact("products", "categories" ,"inputSearchValue", "i"));
     }
 
     /**

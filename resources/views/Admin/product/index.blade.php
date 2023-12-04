@@ -30,9 +30,9 @@
                 </select>
             </div>
 
-            <div class="barra_busqueda">
-                <input type="search" name="barra_busqueda" id="barra_busqueda" placeholder="Buscar Producto">
-            </div>
+            <form action="{{ route("products.index") }}" method="get" class="barra_busqueda">
+                <input type="search" name="productSearch" id="barra_busqueda" placeholder="Buscar Producto" value="{{ $inputSearchValue }}" class="barra_busqueda">
+            </form>
         </div>
 
         {{-- Sección de lista de productos --}}
