@@ -5,7 +5,7 @@ import "../../../assets/css/views/Admin/Products/ProductsView.css";
 import "../../../assets/css/components/Admin/SearchSection.css";
 
 import { Link } from "react-router-dom";
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react"
 
 // Componentes de componente de vista
     // JSON - Lista de Productos
@@ -29,13 +29,70 @@ import React, { useState, useEffect } from 'react'
 
 export default function ProductsView(){
     // Hooks de useState
-    const [ products, setUsers] = useState([])
+    const [ products, setProducts] = useState([])
     const [ search, setSearch ] = useState("") // Valor inicial vacío
 
     // Función para traer datos de Arreglos JSON    
     const showData = async () => {
-        setUsers(dataProductsList);
+        setProducts(dataProductsList);
     }
+
+    // Variables de estado de <select> para ordenar según la opción
+    const [sortOrder, setSortOrder] = useState();
+
+    // Función para ordenar productos por orden alfabético de forma descendente
+    const handleAlphabeticSort = () => {
+        const sortedProduct = [...dataProductsList].sort((a, b) => {
+            if (sortOrder === "descending") {
+                return b.name.localeCompare(a.name);
+            } else {
+                return a.name.localeCompare(b.name);
+            }
+        });
+
+        setProducts(sortedProduct);
+        setSortOrder(sortOrder === "descending" ? "descending" : "descending");
+    };
+
+    // Función para ordenar productos de forma descendente 
+    const handleDescendentSort = () => {
+        const sortedProduct = [...dataProductsList].sort((a,b) => {
+            return b.id - a.id;
+        });
+
+        setProducts(sortedProduct);
+        setSortOrder(sortOrder === "descending" ? "descending" : "descending");
+    };
+
+    // Función para ordenar productos de forma descendente 
+    const handleAscendentSort = () => {
+        const sortedProduct = [...dataProductsList].sort((a,b) => {
+            return a.id - b.id;
+        });
+
+        setProducts(sortedProduct);
+        setSortOrder(sortOrder === "ascending" ? "ascending" : "ascending");
+    };
+
+    // Función que se ejecutará al seleccionar una opción
+    const [selectedOption, setSelectedOption] = useState("");
+
+    const handleOptionSelect = (event) => {
+        const selectedValue = event.target.value;
+        setSelectedOption(selectedValue);
+
+        // Aquí puedes llamar a la función asociada a la opción seleccionada
+        if (selectedValue === "alphabetic-order") {
+            // Llama a la función asociada a ordenar alfabéticamente (descendente)
+            handleAlphabeticSort();
+        } else if (selectedValue === "ascending") {
+            // Llama a la función asociada a ordenar alfabéticamente (ascendente)
+            handleAscendentSort();
+        } else if (selectedValue === "descending") {
+            // Llama a la función asociada a ordenar alfabéticamente (ascendente)
+            handleDescendentSort();
+        }
+    };
 
     // Método de filtrado
     const results = !search
@@ -68,10 +125,17 @@ export default function ProductsView(){
                 {/* Filtros de Búsqueda */}
                 <div className="cont-search">
                     <div className="order-by">
-                        <select name="order-by" id="order-by">
-                            <option value="">Ordenar Por</option>
-                            <option value="A-Z">A-Z</option>
-                            <option value="Precio">Precio</option>
+                        <select 
+                            name="order-by" 
+                            id="order-by" 
+                            value={selectedOption} 
+                            onChange={handleOptionSelect}
+                            defaultValue={handleAscendentSort}
+                        >
+                            <option value={handleAscendentSort}>Ordenar por</option>
+                            <option value="alphabetic-order">Orden alfábetico (A-Z)</option>
+                            <option value="ascending">Ascendente (10-1)</option>
+                            <option value="descending">Descendente (1-10)</option>
                         </select>
                     </div>
 
