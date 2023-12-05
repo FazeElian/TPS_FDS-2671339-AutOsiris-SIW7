@@ -29,9 +29,10 @@
         <div class="filtros-busqueda">
             <div class="ordenar_por">
             </div>
-            <div class="barra_busqueda">
-                <input type="search" name="barra_busqueda" id="barra_busqueda" placeholder="Buscar Producto">
-            </div>
+
+            <form action="{{ route("inventories.index") }}" method="get" class="barra_busqueda">
+                <input type="search" name="inventorieSearch" id="barra_busqueda" placeholder="Buscar Producto">
+            </form>
         </div>
 
         <!-- Tabla Productos -->

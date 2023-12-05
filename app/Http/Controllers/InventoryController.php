@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Inventory;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB; // Para consultas desde tablas para buscador
 
 /**
  * Class InventoryController
@@ -15,15 +16,35 @@ class InventoryController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $inventories = Inventory::paginate();
+        // Obtenemos el valor de búsqueda del formulario
+        $inputSearchValue = trim($request->get("inventorieSearch"));
 
-        return view('Admin.inventory.index', compact('inventories'))
-            ->with('i', (request()->input('page', 1) - 1) * $inventories->perPage());
+        // Contador autoincrementable para la columna "No" en la vista
+        $a = 0;
+        $i = $a++;
+
+        // Realizamos consultas a las tablas junto con la tabla de productos
+        $inventories = Inventory::with(['product' => function ($query) use ($inputSearchValue) {
+            // Aplicamos una condición de búsqueda en la relación 'product' por el nombre
+            $query->where('name', 'LIKE', "%{$inputSearchValue}%");
+        }])
+            ->select("inventories.id", "inventories.product_id", "inventories.initial_stock", "inventories.output", "inventories.stock")
+            ->whereHas('product', function ($query) use ($inputSearchValue) {
+                // Aplicamos una condición de búsqueda en la relación 'product' por el nombre
+                $query->where('name', 'LIKE', "%{$inputSearchValue}%");
+            })
+            ->orWhere("inventories.id", "LIKE", "%" . $inputSearchValue . "%")
+            ->orderBy("inventories.product_id", "asc")
+            ->paginate(10);
+
+        return view('Admin.inventory.index', compact("inventories", "i", "inputSearchValue"));
     }
+
 
     /**
      * Show the form for creating a new resource.
