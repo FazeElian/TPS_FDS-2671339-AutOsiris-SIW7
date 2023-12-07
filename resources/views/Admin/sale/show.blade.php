@@ -9,7 +9,7 @@
     <title>Ver Venta | No {{ $sale->id }} </title>
 
     {{-- Estilos para este archivo --}}
-    <link rel="stylesheet" href="{{ asset("assets/css/Admin/modules/sales/show-styles.css") }}">
+    <link rel="stylesheet" href="{{ asset("assets/css/Admin/modules/Sales/show-styles.css") }}">
 </head>
 <body>
     <!-- Contenido de página -->
