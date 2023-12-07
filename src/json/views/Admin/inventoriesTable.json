@@ -1,72 +1,72 @@
 [
     {
         "id": 1,
-        "name": "Nombre Producto 1",
+        "name": "Cuaderno Argollado 80 hojas Norma",
         "initialStock": 20,
-        "outputs": 20,
-        "stock": 10
+        "outputs": 12,
+        "stock": 8
     },
     {
         "id": 2,
-        "name": "Nombre Producto 2",
+        "name": "Lapicero negro Offi-Esco",
         "initialStock": 20,
-        "outputs": 20,
-        "stock": 10
+        "outputs": 12,
+        "stock": 8
     },
     {
         "id": 3,
-        "name": "Nombre Producto 3",
+        "name": "Borrador de nata Pelikan",
         "initialStock": 20,
-        "outputs": 20,
-        "stock": 10
+        "outputs": 12,
+        "stock": 8
     },
     {
         "id": 4,
-        "name": "Nombre Producto 4",
+        "name": "Carpeta legajadora Offi-Esco",
         "initialStock": 20,
-        "outputs": 20,
-        "stock": 10
+        "outputs": 12,
+        "stock": 8
     },
     {
         "id": 5,
-        "name": "Nombre Producto 5",
+        "name": "Post It",
         "initialStock": 20,
-        "outputs": 20,
-        "stock": 10
+        "outputs": 12,
+        "stock": 8
     },
     {
         "id": 6,
-        "name": "Nombre Producto 6",
+        "name": "Lapicero rojo Offi-Esco",
         "initialStock": 20,
-        "outputs": 20,
-        "stock": 10
+        "outputs": 12,
+        "stock": 8
     },
     {
         "id": 7,
-        "name": "Nombre Producto 7",
+        "name": "Lápiz grafito Faber Castell",
         "initialStock": 20,
-        "outputs": 20,
-        "stock": 10
+        "outputs": 12,
+        "stock": 8
     },
     {
         "id": 8,
-        "name": "Nombre Producto 8",
+        "name": "Borrador miga de pan Pelikan",
         "initialStock": 20,
-        "outputs": 20,
-        "stock": 10
+        "outputs": 12,
+        "stock": 8
     },
     {
         "id": 9,
-        "name": "Nombre Producto 9",
+        "name": "Block Cuadriculado 80 hojas Norma",
         "initialStock": 20,
-        "outputs": 20,
-        "stock": 10
+        "outputs": 12,
+        "stock": 8
     },
     {
         "id": 10,
-        "name": "Nombre Producto 10",
+        "name": "Marcadores Norma 12 unidades",
         "initialStock": 20,
-        "outputs": 20,
-        "stock": 10
+        "outputs": 12,
+        "stock": 8
     }
 ]
