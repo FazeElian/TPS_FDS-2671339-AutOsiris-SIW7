@@ -10,7 +10,7 @@ use App\Http\Controllers\Perfile; // Perfil
 use App\Http\Controllers\CustomerController; // Roles
 use App\Http\Controllers\Statistics; // Estadísticas
 use App\Http\Controllers\InventoryController; // Inventarios
-use App\Http\Controllers\Sales; // Ventas
+use App\Http\Controllers\SaleController; // Ventas
 use App\Http\Controllers\FactureController; // Facturas
 
 /*
@@ -57,4 +57,4 @@ Route::resource('statistics', Statistics::class)->middleware("auth");
 Route::resource('inventories', InventoryController::class)->middleware("auth");
 
 // Ruta Ventas
-Route::resource('sales', Sales::class)->middleware("auth");
+Route::resource('sales', SaleController::class)->middleware("auth");
