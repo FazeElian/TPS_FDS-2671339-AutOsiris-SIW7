@@ -21,7 +21,7 @@ class SaleController extends Controller
         $products = Product::all();
         $sale = new Sale();
 
-        return view('Admin.Sale.create', compact('sale', 'products'));
+        return view('Admin.sale.create', compact('sale', 'products'));
     }
 
     public function store(Request $request)
