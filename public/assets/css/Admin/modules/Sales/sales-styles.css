@@ -1,0 +1,486 @@
+/* Filtros de búsqueda */
+.filtros-busqueda{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+    /* Ordenar por */
+    .ordenar_por{
+        display: flex;
+        width: 45%;
+        height: 100%;
+    }
+
+    #ordenar_por{ /* Input */
+        border-radius: 0;
+        width: 60%;
+        font-size: 14px;
+        border: 1px solid black;
+        padding: 0 7px 0;
+    }
+
+    /* Barra búsqueda */
+    .barra_busqueda{
+        display: flex;
+        width: 55%;
+        height: 100%;
+        justify-content: end;
+        border-radius: 5px;
+    }
+
+    #barra_busqueda{
+        border-radius: 5px;
+        width: 50%;
+        font-size: 14px;
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+/* Contenedor ventas */
+.cont-ventas{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin: 2.5rem 0 0;
+}
+
+    /* Contenedor lista de ventas */
+    .cont-lista-ventas{
+        width: 70%;
+    }
+
+    /* Contenedor Opciones de ventas */
+    .cont-opciones-venta{
+        width: 30.5%;
+    }
+
+    .cont-ventas, .cont-opciones-venta{
+        display: flex;
+        height: 100%;
+    }
+
+    .cont-opciones-venta, .opciones-venta{
+        flex-direction: column;
+        align-items: end;
+    }
+
+        /* Opciones venta */
+        .opciones-venta{
+            display: flex;
+            width: 90%;
+        }
+
+        /* Contenedor opción venta */
+        .cont-opcion-venta{
+            display: flex;
+            width: 100%;
+            min-height: 150px;
+            max-height: 200px;
+            background-color: #D9D9D9;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .link-sect-venta,
+        .cont-opcion-venta a h2{
+            font-size: 22px;
+            margin-left: 10px;
+            font-weight: lighter;
+        }
+
+        .cont-opcion-venta img{
+            width: 70px;
+            height: 70px;
+        }
+
+        .no-records{
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+
+    /* Tabla ventas */
+    .tabla-ventas{
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+        .columnas-caract-venta{
+            display: flex;
+            width: 100%;
+            color: white;
+            justify-content: space-between;
+            height: 35px;
+        }
+
+        .item-columna{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 16.5px;
+            color: white;
+            background-color: #212EC2;
+            border: 1px solid black;
+        }
+
+            .num-venta, .num-venta-dato{
+                display: flex;
+                width: 20%;
+            }
+
+            .fecha-venta, .fecha-venta-dato{
+                display: flex;
+                width: 20%;
+            }
+
+            .total-venta, .total-venta-dato{
+                display: flex;
+                width: 19%;
+            }
+
+            .opciones-venta-tabla, .opciones-venta-tabla-dato{
+                display: flex;
+                width: 40.5%;
+            }
+
+            .opciones-venta-tabla-dato{
+                justify-content: space-between;
+            }
+
+    /* Columnas datos de filas */
+    .filas-datos{
+        display: flex;
+        width: 100%;
+        height: 35px;
+        color: black;
+        margin-top: 3px;
+    }
+
+    .item-fila{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        background-color: #D9D9D9;
+        border: 1px solid black;
+    }
+
+        /* Botones Opciones venta */
+        .btn-venta{
+            display: flex;
+            height: 100%;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn-venta img{
+            width: 13.5px;
+            height: 13.5px;
+            margin-left: 7px;
+        }
+
+            /* Ver */
+            .btn-ver{
+                width: 28.5%;
+                background-color: #36BBFF;
+            }
+
+            .btn-venta a img{
+                margin-top: 5px;
+            }
+
+            /* Editar */
+            .btn-editar{
+                width: 35%;
+                background-color: #1988CF;
+            }
+
+            /* Eliminar */
+            .btn-eliminar{
+                width: 35.5%;
+                background-color: red;
+            }
+
+            .eliminar-venta{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-color: red;
+            }
+
+/* @media */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        .cont-busqueda{
+            margin: 2rem 0 1rem;
+            height: 32.5px;
+        }
+
+        #buscarventa{
+            width: 52.5%;
+        }
+
+        .link-sect-venta{
+            display: none;
+        }
+
+        .cont-lista-ventas{
+            width: 120%;
+        }
+
+        .cont-opcion-venta{
+            width: 120px;
+            height: 120px;
+            min-width: 100px;
+            min-height: 100px;
+        }
+
+        .cont-opcion-venta img{
+            margin: 0;
+            width: 55px;
+            height: 55px;
+        }
+
+        .columnas-caract-venta{
+            height: 32.5px;
+        }
+
+        .item-columna{
+            font-size: 15px;
+        }
+
+        .filas-datos{
+            height: 27.5px;
+        }
+
+        .item-fila, .btn-venta{
+            font-size: 13px;
+        }
+
+        .btn-venta img{
+            width: 10px;
+            height: 10px;
+        }
+
+
+        .btn-venta a img{
+            margin-top: 5px;
+        }
+    }
+
+    /* @media 768px */
+    @media(max-width: 768px){
+        .cont-busqueda{
+            height: 27.5px;
+            margin: 2rem 0 1.5rem;
+        }
+
+        #buscarventa{
+            font-size: 11.7px;
+        }
+
+        .btn-venta img{
+            margin: 0;
+        }
+
+        .link-op-venta{
+            display: none;
+        }
+
+        .columnas-caract-venta{
+            height: 30px;
+        }
+
+        .item-columna{
+            font-size: 12px;
+        }
+
+        .filas-datos{
+            height: 25px;
+        }
+
+        .item-fila, .btn-venta{
+            font-size: 10px;
+        }
+
+        .btn-venta img{
+            width: 12px;
+            height: 12px;
+        }
+
+        .num-venta, .num-venta-dato{
+            width: 20%;
+        }
+
+        .fecha-venta, .fecha-venta-dato{
+            width: 20%;
+        }
+
+        .total-venta, .total-venta-dato{
+            width: 20.5%;
+        }
+
+        .opciones-venta-tabla, .opciones-venta-tabla-dato{
+            width: 38.5%;
+        }
+
+        .opciones-venta-tabla-dato{
+            justify-content: space-between;
+        }
+
+        .btn-editar, .btn-eliminar, .btn-ver{
+            width: 32.8%;
+        }
+
+        .eliminar-venta{
+            font-size: 0;
+        }
+
+        .cont-opcion-venta{
+            width: 70px;
+            height: 70px;
+            min-width: 60px;
+            min-height: 60px;
+        }
+
+        .cont-opcion-venta img{
+            width: 30px;
+            height: 30px;
+        }
+
+        .btn-venta a img{
+            margin-top: 3.5px;
+        }
+    }
+
+    /* @media 425px */
+    @media(max-width: 425px){
+        .cont-busqueda{
+            margin: 1.5rem 0 1rem;
+            height: 26px;
+        }
+
+        /* Filtros de búsqueda */
+        .filtros-busqueda{
+            height: 15px;
+            margin-top: 25px;
+            align-items: center;
+        }
+
+            #ordenar_por, #barra_busqueda{
+                font-size: 9px;
+            }
+
+            #ordenar_por{
+                width: 70%;
+            }
+
+            #barra_busqueda{
+                width: 100%;
+            }
+
+            .ordenar_por, .barra_busqueda{
+                width: 50%;
+                height: 18px;
+            }
+
+        .cont-ventas{
+            flex-direction: column-reverse;
+            margin: 0;
+            height: auto;
+        }
+
+        .cont-lista-ventas{
+            width: 100%;
+            margin: 0;
+        }
+
+        .cont-opciones-venta{
+            width: 100%;
+            max-height: 50px;
+            height: 50px;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .opciones-venta{
+            width: 100%;
+            height: 100%;
+            align-items: start;
+            justify-content: center;
+        }
+
+        .cont-opcion-venta{
+            width: auto;
+            height: 100%;
+            padding: 0 1rem 0;
+            margin: 0;
+        }
+
+        .cont-opcion-venta img{
+            margin: 0;
+            width: 20px;
+            height: 20px;
+        }
+
+        .link-sect-venta,
+        .cont-opcion-venta a h2{
+            display: flex;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+
+        .btn-venta img{
+            width: 10px;
+            height: 10px;
+        }
+
+        .columnas-caract-venta{
+            height: 25px;
+        }
+
+        .item-columna{
+            font-size: 10px;
+        }
+
+        .filas-datos{
+            height: 22.5px;
+        }
+
+        .num-venta, .num-venta-dato{
+            width: 19%;
+        }
+
+        .fecha-venta, .fecha-venta-dato{
+            width: 21%;
+        }
+
+        .total-venta, .total-venta-dato{
+            width: 21.5%;
+        }
+
+        .opciones-venta-tabla, .opciones-venta-tabla-dato{
+            width: 37.5%;
+        }
+
+        .item-fila, .btn-venta{
+            font-size: 9.2px;
+        }
+
+        .eliminar-venta{
+            font-size: 0;
+        }
+    }
