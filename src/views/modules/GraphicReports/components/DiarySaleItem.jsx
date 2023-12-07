@@ -32,7 +32,7 @@ class DataDiarySale extends React.Component {
         <tr className='tbody-diary-sales'>
             <td className="row-diary-sale row-no-diary-sale">{id}</td>
             <td className="row-diary-sale row-hour-diary-sale">{hour}</td>
-            <td className="row-diary-sale row-total-diary-sale">{total}</td>
+            <td className="row-diary-sale row-total-diary-sale">{total} $</td>
             {/* Acciones de Productos */}
             <td className="row-diary-sale row-actions-diary-sale">
                 <button className="btn-prod btn-edit-diary-sale">
