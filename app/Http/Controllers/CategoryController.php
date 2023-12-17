@@ -20,9 +20,20 @@ class CategoryController extends Controller
      */
     public function index(Request $request)
     {
-
         // Obtenemos valor de input de búsqueda
-        $inputSearchValue = trim($request->get("categorieSearch"));
+        $inputSearchValue = trim($request->get("searchCategory"));
+
+        $categories = Category::paginate();
+
+        return view('Admin.category.index', compact('categories', "inputSearchValue"))
+            ->with('i', (request()->input('page', 1) - 1) * $categories->perPage());
+    }
+
+    // Función para buscar categorías
+    public function search(Request $request)
+    {
+        // Obtenemos valor de input de búsqueda
+        $inputSearchValue = trim($request->get("searchCategory"));
 
         // Autoincrementable para Columna No de vista
         $a = 0;
@@ -30,11 +41,11 @@ class CategoryController extends Controller
 
         // Realiza las consultas a las tablas junto con la tabla categorías
         $categories = DB::table("categories")
-        ->select("id", "name", "description")
-        ->where("name", "LIKE", "%" . $inputSearchValue . "%")
-        ->orWhere("id", "LIKE", "%" . $inputSearchValue . "%")
-        ->orderBy("name", "asc")
-        ->paginate(10);
+            ->select("id", "name", "description")
+            ->where("name", "LIKE", "%" . $inputSearchValue . "%")
+            ->orWhere("id", "LIKE", "%" . $inputSearchValue . "%")
+            ->orderBy("name", "asc")
+            ->paginate(10);
 
         return view('Admin.category.index', compact("categories", "i", "inputSearchValue"));
     }
@@ -71,12 +82,12 @@ class CategoryController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        $category = Category::find($id);
+    // public function show($id)
+    // {
+    //     $category = Category::find($id);
 
-        return view('Admin.category.show', compact('category'));
-    }
+    //     return view('Admin.category.index', compact('category'));
+    // }
 
     /**
      * Show the form for editing the specified resource.

@@ -26,8 +26,8 @@
         </div>
 
         <!-- Barra de búsqueda -->
-        <form action="{{ route("categories.index") }}" method="get" class="cont-barra-busqueda">
-            <input type="search" name="categorieSearch" id="barraBusqueda" placeholder="Buscar categoría de productos" value="{{ $inputSearchValue }}">
+        <form action="{{ route("categories.search") }}" method="get" class="cont-barra-busqueda">
+            <input type="search" name="searchCategory" id="barraBusqueda" placeholder="Buscar categoría de productos" value="{{ $inputSearchValue }}">
         </form>
 
         <!-- Tabla categorías -->

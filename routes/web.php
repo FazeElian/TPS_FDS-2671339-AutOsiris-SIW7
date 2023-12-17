@@ -33,7 +33,10 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Ruta Categorías Productos
-Route::resource('products/categories', CategoryController::class)->middleware("auth");
+Route::resource('products/categories', CategoryController::class)->middleware("auth")->except(['show']);
+
+    // Ruta para buscar Categorías de productos
+    Route::get('products/categories/search', [CategoryController::class, 'search'])->name('categories.search');
 
 // Ruta Productos
 Route::resource('products', ProductController::class)->middleware("auth");
