@@ -33,15 +33,15 @@ class UserTest extends TestCase
     public function test_a_user_can_login() {
         // Crear un usuario de prueba
         $user = User::factory()->create([
-            'name' => "name example",
-            'email' => 'test@example.com',
+            'name' => "name2 example",
+            'email' => 'test2@example.com',
             'password' => bcrypt('password'), // Cifrar contraseña
         ]);
 
         // Visitar la página de inicio de sesión
         $response = $this->post('/login', [
-            'name' => "name example",
-            'email' => 'test@example.com',
+            'name' => "name2 example",
+            'email' => 'test2@example.com',
             'password' => 'password',
         ]);
 
