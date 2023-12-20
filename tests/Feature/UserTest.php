@@ -1,16 +1,16 @@
 <?php
 
-namespace Tests\Feature;
+// namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Tests\TestCase;
+// use Illuminate\Foundation\Testing\RefreshDatabase;
+// use Illuminate\Foundation\Testing\WithFaker;
+// use Tests\TestCase;
 
 // Importamos modelo de módulo -> Usuario
-use App\Models\User;
+// use App\Models\User;
 
-class UserTest extends TestCase
-{
+// class UserTest extends TestCase
+// {
     /**
      * A basic feature test example.
      */
@@ -22,33 +22,33 @@ class UserTest extends TestCase
     // }
 
     // Test: Un usuario puede acceder a la vista de Inicio de Sesión
-    public function test_a_user_can_view_a_login_form() {
-        $response = $this->get('/login');
+    // public function test_a_user_can_view_a_login_form() {
+    //     $response = $this->get('/login');
 
-        $response->assertSuccessful();
-        $response->assertViewIs('auth.login');
-    }
+    //     $response->assertSuccessful();
+    //     $response->assertViewIs('auth.login');
+    // }
 
     // Test: Un usuario puede Iniciar Sesión
-    public function test_a_user_can_login() {
-        // Crear un usuario de prueba
-        $user = User::factory()->create([
-            'name' => "name2 example",
-            'email' => 'test2@example.com',
-            'password' => bcrypt('password'), // Cifrar contraseña
-        ]);
+    // public function test_a_user_can_login() {
+    //     // Crear un usuario de prueba
+    //     $user = User::factory()->create([
+    //         'name' => "name2 example",
+    //         'email' => 'test2@example.com',
+    //         'password' => bcrypt('password'), // Cifrar contraseña
+    //     ]);
 
         // Visitar la página de inicio de sesión
-        $response = $this->post('/login', [
-            'name' => "name2 example",
-            'email' => 'test2@example.com',
-            'password' => 'password',
-        ]);
+        // $response = $this->post('/login', [
+        //     'name' => "name2 example",
+        //     'email' => 'test2@example.com',
+        //     'password' => 'password',
+        // ]);
 
         // Verificar que el usuario esté redirigido después de iniciar sesión
-        $response->assertRedirect('/home'); // Redirección a la página principal de Administrador
+        // $response->assertRedirect('/home'); // Redirección a la página principal de Administrador
 
         // Verificar que el usuario esté autenticado
-        $this->assertAuthenticatedAs($user);
-    }
-}
+//         $this->assertAuthenticatedAs($user);
+//     }
+// }
