@@ -1,25 +1,30 @@
 <?php
 
-// namespace Tests\Feature;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
-// use Illuminate\Foundation\Testing\WithFaker;
-// use Tests\TestCase;
+namespace Tests\Feature;
+
+
+use Illuminate\Foundation\Testing\RefreshDatabase;
+
+use Illuminate\Foundation\Testing\WithFaker;
+
+use Tests\TestCase;
+
 
 // Importamos modelo de módulo -> Usuario
-// use App\Models\User;
+use App\Models\User;
 
-// class UserTest extends TestCase
-// {
+class UserTest extends TestCase
+{
     /**
      * A basic feature test example.
      */
-    // public function test_example(): void
-    // {
-    //     $response = $this->get('/');
+    public function test_example(): void
+    {
+        $response = $this->get('/login'); // Verificar que el usuario pueda acceder a la ruta de la vista de Inicio de sesión
 
-    //     $response->assertStatus(200);
-    // }
+        $response->assertStatus(200);
+    }
 
     // Test: Un usuario puede acceder a la vista de Inicio de Sesión
     // public function test_a_user_can_view_a_login_form() {
@@ -49,6 +54,6 @@
         // $response->assertRedirect('/home'); // Redirección a la página principal de Administrador
 
         // Verificar que el usuario esté autenticado
-//         $this->assertAuthenticatedAs($user);
-//     }
-// }
+        // $this->assertAuthenticatedAs($user);
+    // }
+}
