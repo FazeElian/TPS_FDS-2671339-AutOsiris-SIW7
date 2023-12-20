@@ -2,13 +2,13 @@
 
 namespace Tests\Feature;
 
-// use Illuminate\Foundation\Testing\RefreshDatabase;
-// use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
 
 use Tests\TestCase;
 
 // Importamos modelo de módulo -> Usuario
-// use App\Models\User;
+use App\Models\User;
 
 class UserTest extends TestCase
 {
@@ -38,26 +38,19 @@ class UserTest extends TestCase
         $response->assertViewIs('auth.register');
     }
 
-    // Test: Un usuario puede Iniciar Sesión
-    // public function test_a_user_can_login() {
-    //     // Crear un usuario de prueba
-    //     $user = User::factory()->create([
-    //         'name' => "name2 example",
-    //         'email' => 'test2@example.com',
-    //         'password' => bcrypt('password'), // Cifrar contraseña
-    //     ]);
+    // Test: Un usuario puede Registrarse
+    public function test_a_user_can_register() {
+        // Creación usuario de prueba
+        $user = User::factory()->create([
+            "name" => "name test example",
+            "email" => "emailtest@example.ex",
+            "password" => "12345",
+        ])->toArray();
 
-        // Visitar la página de inicio de sesión
-        // $response = $this->post('/login', [
-        //     'name' => "name2 example",
-        //     'email' => 'test2@example.com',
-        //     'password' => 'password',
-        // ]);
+        $response = $this->post("/register", $user); // Va a recolectar los datos de $user en la ruta register
+        $response->assertRedirect("/"); // Redirección a la página principal
 
-        // Verificar que el usuario esté redirigido después de iniciar sesión
-        // $response->assertRedirect('/home'); // Redirección a la página principal de Administrador
-
-        // Verificar que el usuario esté autenticado
-        // $this->assertAuthenticatedAs($user);
-    // }
+        // Verificar que el usuario se haya almacenado correctamente en la base de datos
+        $this->assertDatabaseHas("users", $user);
+    }
 }
