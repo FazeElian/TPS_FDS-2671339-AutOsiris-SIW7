@@ -30,6 +30,14 @@ class UserTest extends TestCase
         $response->assertViewIs('auth.login');
     }
 
+    // Test: Un usuario puede acceder a la vista de Registro de Usuario
+    public function test_a_user_can_view_a_register_form() {
+        $response = $this->get('/register');
+
+        $response->assertSuccessful();
+        $response->assertViewIs('auth.register');
+    }
+
     // Test: Un usuario puede Iniciar Sesión
     // public function test_a_user_can_login() {
     //     // Crear un usuario de prueba
