@@ -105,6 +105,10 @@ a{
             padding: 5px 20px;
         }
 
+        .item_nav-inicio img{
+            display: none;
+        }
+
         .item_nav-inicio a{
             color: white;
             text-decoration: none;
@@ -489,6 +493,13 @@ a{
         display: flex;
     }
 
+    .btn-menu-responsive{
+        background: transparent;
+        width: auto;
+        height: auto;
+        border: none;
+    }
+
     /* Icono menú PC */
     .icono-menu-pc{
         display: none;
@@ -503,31 +514,53 @@ a{
 
     /* Lista de Navegación - Inicio */
     .lista_nav-inicio{
+        display: flex;
+        position: absolute;
+        top: 5.5rem;
+        width: 25%;
+        min-width: 200px;
+        max-width: 30%;
+        height: -webkit-fill-available;
+        overflow: auto;
+        transition: .3s;
         flex-direction: column;
+        transform: translateX(-120%);
+        left: 4%;
         background-color: #212EC2;
         border: 2px solid black;
-        position: fixed;
-        margin-top: 46px;
-        left: -100%;
-        width: 30%;
-        height: calc(100% - 70px);
-        overflow-y: auto;
-        transition: left 0.5s;
-        border-top: #212EC2;
+        border-top: none;
+        z-index: 2;
+        padding: 2rem 0 2rem;
     }
 
-        /* Ítem de Nav - Inicio */
-        .item_nav-inicio{
-            display: flex;
-            color: white;
-            font-size: 15px;
-            margin: 15px 5px;
-            margin-bottom: -5px;
+        .lista_nav-inicio.active{ 
+            transform: translate(0) !important;
         }
 
-        /* Hacer visible Nav - Menú */
-        .nav_inicio-visible{
-            left: 4%;
+        .item_nav-inicio{
+            display: flex;
+            width: auto;
+            font-size: 15px;
+            margin: 0 1.5rem 1rem;
+            border-radius: 0;
+            border: 1px solid #212EC2;
+            padding: 0 0 1rem;
+        }
+
+        .item_nav-inicio:hover{
+            background: transparent;
+        }
+
+        .item_nav-inicio a{
+            display: flex;
+            align-items: center;
+        }
+
+        .item_nav-inicio img{
+            display: flex;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
         }
 
     /* Lista de navegación - Usuario */
