@@ -1,0 +1,47 @@
+/* Contenedor Perfil */
+.cont-profile{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #D9D9D9;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 1rem 0 0;
+    padding: 2rem 2.5rem 2rem;
+    flex-direction: column;
+}
+
+    /* Item de información de perfil */
+    .item-profile-info{
+        display: flex;
+        list-style: none;
+        font-size: 16px;
+        margin: 0.5rem 0 0.5rem;
+        align-items: center;
+    }
+
+    .item-profile-info b{
+        margin-right: 8px;
+    }
+
+/* Responsive 1440px */
+@media (max-width: 1440px){
+    .item-profile-info{
+        font-size: 14px;
+    }
+}
+
+/* Responsive 425px */
+@media (max-width: 425px){
+    .cont-profile{
+        padding: 1rem 1.5rem 1rem;
+    }
+
+    .item-profile-info{
+        font-size: 12px;
+    }
+
+    .item-profile-info b{
+        margin-right: 4px;
+    }
+}
