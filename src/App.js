@@ -33,6 +33,9 @@ import { Routes, Route } from "react-router-dom";
   // Inventarios
   import InventoriesView from "./views/modules/Inventories/InventoriesView";
 
+  // Perfil
+  import ProfileView from "./views/modules/Profile/ProfileView";
+
   // Facturas
   import FacturesView from "./views/modules/Factures/FacturesView";
 
@@ -53,7 +56,7 @@ function App() {
       {/* Rutas para la interfaz de Administrador */}
       <Route path="admin/*" element={<HeaderAdmin />}>
         <Route path="home" element={<HomeView />} /> {/* Página principal */}
-        <Route path="sales" element={<SalesView />} />
+        <Route path="sales" element={<SalesView />} /> {/* Ventas */}
 
         <Route path="factures/*" element={<FacturesView />} /> {/* Facturas */}
         <Route path="factures/customers" element={<CustomersView />} /> {/* Clientes de Facturas */}
@@ -62,7 +65,7 @@ function App() {
         <Route path="products/categories" element={<CategoriesView />} />
 
         <Route path="inventories" element={<InventoriesView />} /> {/* Inventarios */}
-        <Route path="user/profile" /> {/* Perfil */}
+        <Route path="profile" element={<ProfileView />} /> {/* Perfil */}
 
         {/* Ruta Error 404 - Página no encontrada */}
         <Route path="*" element={<Error404AdminView />} /> {/* Vista Administrador */}
