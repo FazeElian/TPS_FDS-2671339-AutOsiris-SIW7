@@ -15,12 +15,20 @@
 
     /* Contenedor información de factura */
     .cont-info-fact{
-        height: 110px;
+        height: auto;
         background-color: #D9D9D9;
         border: 1px solid black;
         justify-content: center;
         align-items: center;
+        padding: 2rem 0 2rem;
     }
+
+        .cont-info-fact label{
+            display: flex;
+            width: 95%;
+            height: 30px;
+            font-size: 17px;
+        }
 
         /* Fecha,  Cliente */
         #fechaFactura, #seleccionarCliente{
@@ -190,7 +198,13 @@
         }
 
         .cont-info-fact{
-            height: 95px;
+            padding: 1rem 0 1rem;
+        }
+
+        .cont-info-fact label{
+            font-size: 14px;
+            height: auto;
+            padding: 0 0 5px;
         }
 
         #fechaFactura, #seleccionarCliente{
@@ -267,13 +281,15 @@
 
     /* @media 425px */
     @media(max-width: 425px){
-        .cont-info-fact{
-            height: 80px;
+        .cont-info-fact label{
+            width: 90%;
+            font-size: 12px;
         }
 
         #fechaFactura, #seleccionarCliente{
             width: 90%;
-            height: 25%;
+            height: 27%;
+            padding: 2px;
         }
 
         .columnas-caract{

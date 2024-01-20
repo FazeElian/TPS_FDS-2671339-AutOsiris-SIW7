@@ -7,9 +7,6 @@
 
     {{-- Estilos para este archivo --}}
     <link rel="stylesheet" href="{{ asset("assets/css/Admin/modules/Factures/form-styles.css") }}">
-
-    {{-- Scripts --}}
-
 </head>
 <body>
     <!-- Contenedor de nueva factura -->
@@ -17,8 +14,12 @@
         <!-- Contenedor información de factura -->
         <div class="cont-info-fact">
             <!-- Fecha -->
+            <label for="date">Fecha:</label>
             {{ Form::date('date', $facture->date, ['class' => 'form-control' . ($errors->has('date') ? ' is-invalid' : ''), 'placeholder' => 'Seleccionar una fecha', "id" => "fechaFactura", "name" => "date"]) }}
+            <br>
+
             <!-- Cliente -->
+            <label for="customer_id">Cliente:</label>
             {{ Form::select('customer_id', $customers, $facture->customer_id, ['class' => 'form-control' . ($errors->has('customer_id') ? ' is-invalid' : ''), "id" => "seleccionarCliente", "placeholder" => "Seleccionar cliente", "name" => "customer_id" ]) }}
         </div>
 
@@ -103,7 +104,7 @@
             productPrice.className = "item-fila precio-prod";
 
             // deleteRowBtn.innerHTML = '<td class="item-fila elim-fila-dato"><button type="button" onclick="removeRow(this)">Eliminar</button></td>';
-            deleteRowBtn.innerHTML = '<td><img src="{{ asset("assets/img/Admin/modules/icono-eliminar-rojo.png") }}" alt="Eliminar Producto"></td>';
+            deleteRowBtn.innerHTML = '<td><img src="{{ asset("assets/img/Admin/modules/icono-eliminar-rojo.png") }}" alt="Eliminar Producto" onclick="removeRow(this)"></td>';
             deleteRowBtn.className = "item-fila elim-fila-dato";
         });
 
