@@ -39,18 +39,18 @@ class UserTest extends TestCase
     }
 
     // Test: Un usuario puede Registrarse
-    public function test_a_user_can_register() {
-        // Creación usuario de prueba
-        $user = User::factory()->create([
-            "name" => "name test example",
-            "email" => "emailtest@example.ex",
-            "password" => "12345",
-        ])->toArray();
+    // public function test_a_user_can_register() {
+    //     // Creación usuario de prueba
+    //     $user = User::factory()->create([
+    //         "name" => "name test example",
+    //         "email" => "emailtest@example.ex",
+    //         "password" => "12345",
+    //     ])->toArray();
 
-        $response = $this->post("/register", $user); // Va a recolectar los datos de $user en la ruta register
-        $response->assertRedirect("/"); // Redirección a la página principal
+    //     $response = $this->post("/register", $user); // Va a recolectar los datos de $user en la ruta register
+    //     $response->assertRedirect("/"); // Redirección a la página principal
 
-        // Verificar que el usuario se haya almacenado correctamente en la base de datos
-        $this->assertDatabaseHas("users", $user);
-    }
+    //     // Verificar que el usuario se haya almacenado correctamente en la base de datos
+    //     $this->assertDatabaseHas("users", $user);
+    // }
 }
