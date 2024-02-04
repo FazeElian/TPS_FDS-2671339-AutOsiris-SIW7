@@ -49,6 +49,7 @@
 
         // Agregar la clase "filas-datos" al nuevo elemento <tr>
         newRow.classList.add("filas-datos");
+
         const productName = newRow.insertCell(0);
         const productQuantity = newRow.insertCell(1);
         const productPrice = newRow.insertCell(2);
@@ -88,7 +89,7 @@
         productPrice.className = "item-fila precio-prod";
 
         // deleteRowBtn.innerHTML = '<td class="item-fila elim-fila-dato"><button type="button" onclick="removeRow(this)">Eliminar</button></td>';
-        deleteRowBtn.innerHTML = '<td><img src="{{ asset("assets/img/Admin/modules/icono-eliminar-rojo.png") }}" alt="Eliminar Producto"></td>';
+        deleteRowBtn.innerHTML = '<td><img src="{{ asset("assets/img/Admin/modules/icono-eliminar-rojo.png") }}" alt="Eliminar Producto" onclick="removeRow(this)"></td>';
         deleteRowBtn.className = "item-fila elim-fila-dato";
     });
 
@@ -99,15 +100,19 @@
         // Elimina la fila
         row.remove();
     }
+
     // Agregar un evento de cambio al select generado dinámicamente
     document.addEventListener('change', function(event) {
         const target = event.target;
+
         // Verificar si el elemento cambiado es un select de producto
         if (target && target.tagName === 'SELECT' && target.name === 'product_id[]') {
             const selectedProductId = target.value;
             const priceField = target.parentNode.nextElementSibling.nextElementSibling.querySelector('input[name="price[]"]');
+
             // Buscar el producto seleccionado en la lista de productos disponibles
             const selectedProduct = {!! json_encode($products) !!}.find(product => product.id == selectedProductId);
+
             // Actualizar el campo de precio con el precio del producto seleccionado
             if (selectedProduct) {
                 priceField.value = selectedProduct.price;
