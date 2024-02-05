@@ -82,8 +82,10 @@ class FactureController extends Controller
         $facture = Facture::find($id);
         $customers = Customer::pluck('name', 'id');
         $products = $facture->products;
+        $allProducts = Product::all();
+        $selectedProducts = $facture->products;
 
-        return view('Admin.facture.edit', compact('facture', 'products', 'customers'));
+        return view('Admin.facture.edit', compact('facture', 'products', 'customers', 'allProducts', 'selectedProducts'));
     }
 
     public function update(Request $request, $id)

@@ -19,6 +19,17 @@
             <form method="POST" action="{{ route('factures.store') }}"  role="form" enctype="multipart/form-data">
                 @csrf
                 @include('Admin.facture.form')
+
+                <!-- Opciones Factura -->
+                <div class="opciones-factura">
+                    <!-- Botón: Cancelar -->
+                    <button class="bott-cancelar" type="button">
+                        <a href="{{ route("factures.index") }}"><h2>Cancelar</h2></a>
+                    </button>
+                    <button class="bott-guardar-cambios" type="submit">
+                        <a href="#"><h2>Crear factura</h2></a>
+                    </button>
+                </div>
             </form>
     </section>
 </body>
