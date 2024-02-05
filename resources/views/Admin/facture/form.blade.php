@@ -44,17 +44,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Opciones Factura -->
-    <div class="opciones-factura">
-        <!-- Botón: Cancelar -->
-        <button class="bott-cancelar" type="button">
-            <a href="{{ route("factures.index") }}"><h2>Cancelar</h2></a>
-        </button>
-        <button class="bott-guardar-cambios" type="submit">
-            <a href="#"><h2>Crear factura</h2></a>
-        </button>
-    </div>
 </body>
 </html>
     <script>

@@ -53,7 +53,7 @@
                             <td class="opciones-factura-tabla-dato">
                                 <a href=".pdf"><button class="btn-factura btn-pdf"><a href="{{ route("factures.pdf", ['id' => $facture->id]) }}" target="_blank" class="link-op-fact">PDF</a><img src="{{ asset("assets/img/Admin/modules/pdf-factura-icono.png") }}" alt="PDF Icono"></button></a>
                                 <a href="{{ route('factures.show', $facture->id) }}"><button class="btn-factura btn-ver"><a href="{{ route('factures.show', $facture->id) }}" class="link-op-fact">Ver</a><a href="{{ route('factures.show', $facture->id) }}"><img src="{{ asset("assets/img/Admin/modules/ver-factura-icono.png") }}" alt="Ver Icono" class="icono-op-fact"></button></a>
-                                <a href="#"><button class="btn-factura btn-editar"><a href="#" class="link-op-fact">Editar</a><a href="#"><img src="{{ asset("assets/img/Admin/modules/editar-icono.png") }}" alt="Editar Icono"></a></button></a>
+                                <a href="{{ route("factures.edit", $facture->id) }}"><button class="btn-factura btn-editar"><a href="{{ route("factures.edit", $facture->id) }}" class="link-op-fact">Editar</a><a href="{{ route("factures.edit", $facture->id) }}"><img src="{{ asset("assets/img/Admin/modules/editar-icono.png") }}" alt="Editar Icono"></a></button></a>
 
                                 <form action="{{ route('factures.destroy', $facture->id) }}" method="POST" class="btn-eliminar">
                                     @csrf

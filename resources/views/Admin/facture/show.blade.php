@@ -69,7 +69,7 @@
         <div class="cont-volver">
             <a href="{{ route("factures.index") }}" class="link-btn-volver">
                 <button class="btn-volver">
-                    <img src="{{ asset("assets/img/Admin/modules/volver_flecha-icono.png") }}" alt="Volver icono">
+                    <img src="{{ asset("assets/img/Admin/modules/volver-flecha-icono-negro.png") }}" alt="Volver icono">
                     <h2>Volver</h2>
                 </button>
             </a>
