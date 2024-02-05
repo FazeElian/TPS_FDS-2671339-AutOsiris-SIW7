@@ -77,8 +77,10 @@ class SaleController extends Controller
     {
         $sale = Sale::find($id);
         $products = $sale->products;
+        $allProducts = Product::all();
+        $selectedProducts = $sale->products;
 
-        return view('Admin.sale.edit', compact('sale', 'products'));
+        return view('Admin.sale.edit', compact('sale', 'products', 'allProducts', 'selectedProducts'));
     }
 
     public function update(Request $request, $id)

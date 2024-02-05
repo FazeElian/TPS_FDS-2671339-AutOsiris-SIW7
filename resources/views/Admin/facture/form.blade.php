@@ -15,7 +15,7 @@
         <div class="cont-info-fact">
             <!-- Fecha -->
             <label for="date">Fecha:</label>
-            {{ Form::date('date', $facture->date, ['class' => 'form-control' . ($errors->has('date') ? ' is-invalid' : ''), 'placeholder' => 'Seleccionar una fecha', "id" => "fechaFactura", "name" => "date"]) }}
+                {{ Form::date('date', $facture->date ?? now()->toDateString(), ['class' => 'inp-venta' . ($errors->has('date') ? ' is-invalid' : ''), 'placeholder' => 'Seleccionar una fecha', "id" => "fechaFactura", "name" => "date"]) }}
             <br>
 
             <!-- Cliente -->
