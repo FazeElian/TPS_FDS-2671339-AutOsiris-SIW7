@@ -54,7 +54,7 @@
                             <td class="item-fila total-venta-dato">{{ $sale->total }} $</td>
                             <td class="opciones-venta-tabla-dato">
                                 <a href="{{ route('sales.show', $sale->id) }}"><button class="btn-venta btn-ver"><a href="{{ route('sales.show', $sale->id) }}" class="link-op-venta">Ver</a><a href="{{ route('sales.show', $sale->id) }}"><img src="{{ asset("assets/img/Admin/modules/ver-factura-icono.png") }}" alt="Ver Icono" class="icono-op-venta"></button></a>
-                                <a href="{{ route('sales.edit', $sale->id) }}"><button class="btn-venta btn-editar"><a href="#" class="link-op-venta">Editar</a><a href="#"><img src="{{ asset("assets/img/Admin/modules/editar-icono.png") }}" alt="Editar Icono"></a></button></a>
+                                <a href="{{ route('sales.edit', $sale->id) }}"><button class="btn-venta btn-editar"><a href="{{ route('sales.edit', $sale->id) }}" class="link-op-venta">Editar</a><a href="{{ route('sales.edit', $sale->id) }}"><img src="{{ asset("assets/img/Admin/modules/editar-icono.png") }}" alt="Editar Icono"></a></button></a>
                                 <form action="{{ route('sales.destroy', $sale->id) }}" method="POST" class="btn-eliminar">
                                     @csrf
                                     @method('DELETE')
@@ -108,7 +108,7 @@
             </script>
         @endif
 
-        @section('content')
+        {{-- @section('content')
         <canvas id="myChart" width="400" height="150"></canvas>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -142,7 +142,7 @@
                     }
                 });
             }, true);
-        </script>
-    @endsection
+        </script> --}}
+        {{-- @endsection --}}
 </body>
 </html>
