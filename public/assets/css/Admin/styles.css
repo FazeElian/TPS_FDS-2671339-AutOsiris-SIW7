@@ -7,6 +7,7 @@
 
 body{
     background-color: #F1F1F1;
+    overflow-x: hidden;
 }
 
 a{
@@ -145,12 +146,12 @@ a{
 
         /* Lista Nav - Usuario */
         .lista_nav-usuario{
-            display: flex;
+            display: block;
             flex-direction: column;
             background-color: #212EC2;
             border: 2px solid black;
-            position: fixed;
-            margin-top: 76px;
+            position: absolute;
+            top: 158px;
             right: -100%;
             width: 17%;
             height: calc(90% - 70px);
@@ -495,13 +496,15 @@ a{
 
     /* Lista de Navegación - Inicio */
     .lista_nav-inicio{
+        display: block;
         flex-direction: column;
         background-color: #212EC2;
         border: 2px solid black;
-        position: fixed;
-        margin-top: 46px;
+        position: absolute;
+        top: 88px;
         left: -100%;
-        width: 30%;
+        width: 25%;
+        width: 220px;
         height: calc(100% - 70px);
         overflow-y: auto;
         transition: left 0.5s;
@@ -524,15 +527,16 @@ a{
 
     /* Lista de navegación - Usuario */
     .lista_nav-usuario{
-        display: flex;
+        display: none;
         flex-direction: column;
         background-color: #212EC2;
         border: 2px solid black;
-        position: fixed;
-        margin-top: 46px;
-        right: -100%;
+        position: absolute;
+        top: 88px;
+        right: 4%;
         width: 17%;
-        height: calc(54% - 70px);
+        min-width: 180px;
+        height: calc(40% - 70px);
         overflow-y: auto;
         transition: right 0.5s;
         border-top: #212EC2;
@@ -558,7 +562,7 @@ a{
 
         /* Hacer visible Nav - Usuario */
         .nav_usuario-visible{
-            right: 4%;
+            display: flex;
         }
 
     /* Bienvenida */
@@ -800,7 +804,9 @@ a{
     /* @Media 768px */
     @media(max-width: 768px){
         .lista_nav-usuario{
-            width: 24%;
+            position: absolute;
+            width: 5%;
+            max-width: 100px;
             height: calc(54% - 70px);
             border-top: #212EC2;
         }
@@ -1019,7 +1025,8 @@ a{
     @media(max-width: 425px){
         /* Lista de Navegación - Inicio */
         .lista_nav-inicio{
-            width: 50%;
+            width: 25%;
+            min-width: 200px;
         }
 
         /* Lista de navegación - Usuario */
@@ -1030,12 +1037,5 @@ a{
         .cerrar_sesion{
             border-radius: 5px;
             text-align: center;
-        }
-    }
-
-    @media(max-width: 340px){
-        /* Lista de Navegación - Inicio */
-        .lista_nav-inicio{
-            width: 57.5%;
         }
     }
