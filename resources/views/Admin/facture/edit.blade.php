@@ -102,7 +102,6 @@
         const table = document.getElementById('listaProductos').getElementsByTagName('tbody')[0]; // Cambia el índice a 0
         const newRow = table.insertRow(table.rows.length);
 
-        // Agregar la clase "filas-datos" al nuevo elemento <tr>
         newRow.classList.add("filas-datos");
 
         const productName = newRow.insertCell(0);
@@ -110,70 +109,47 @@
         const productPrice = newRow.insertCell(2);
         const deleteRowBtn = newRow.insertCell(3);
 
-        // Obtener la lista de productos disponibles (puedes pasarla desde el controlador)
-        const productList = {!! json_encode($products) !!};
-
-        // Crear un elemento select y agregar opciones para cada producto
+        const productList = {!! json_encode($allProducts) !!};
         const select = document.createElement('select');
         select.name = 'product_id[]';
         select.id = "seleccionarProducto";
-        productName.classList.add('item-fila', 'nombre-prod-dato'); // Agregar clases CSS
+        productName.classList.add('item-fila', 'nombre-prod-dato');
 
-        // Agregar una opción por defecto "Seleccionar producto" al inicio
         const defaultOption = document.createElement('option');
-        defaultOption.value = ''; // Valor vacío
+        defaultOption.value = '';
         defaultOption.text = 'Seleccionar producto';
         select.appendChild(defaultOption);
 
         for (const product of productList) {
             const option = document.createElement('option');
-            option.value = product.id; // Asignar el valor del ID del producto
-            option.text = product.name; // Mostrar el nombre del producto en la opción
+            option.value = product.id;
+            option.text = product.name;
             select.appendChild(option);
         }
 
-        // Agregar el select a la celda
         productName.appendChild(select);
 
-        // Cantidad de Producto
         productQuantity.innerHTML = '<td><input type="number" name="quantity[]" id="cantidadProd" placeholder="#"></td>';
         productQuantity.className = "item-fila cantidad-prod";
 
-        // Precio de Producto
         productPrice.innerHTML = '<td><input type="number" name="price[]" id="precioProd" placeholder="$$$"></td>';
         productPrice.className = "item-fila precio-prod";
 
-        // deleteRowBtn.innerHTML = '<td class="item-fila elim-fila-dato"><button type="button" onclick="removeRow(this)">Eliminar</button></td>';
-        deleteRowBtn.innerHTML = '<td><img src="{{ asset("assets/img/Admin/modules/icono-eliminar-rojo.png") }}" alt="Eliminar Producto" onclick="removeRow(this)"></td>';
-        deleteRowBtn.className = "item-fila elim-fila-dato";
-    });
+        // Agregar un listener de cambio al select para obtener el precio del producto seleccionado
+        select.addEventListener('change', function() {
+            const selectedProductId = select.value;
 
-    // Función para eliminar filas
-    function removeRow(button){
-        // Obtén la fila actual a través del botón
-        const row = button.parentElement.parentElement;
-        // Elimina la fila
-        row.remove();
-    }
-
-    // Agregar un evento de cambio al select generado dinámicamente
-    document.addEventListener('change', function(event) {
-        const target = event.target;
-
-        // Verificar si el elemento cambiado es un select de producto
-        if (target && target.tagName === 'SELECT' && target.name === 'product_id[]') {
-            const selectedProductId = target.value;
-            const priceField = target.parentNode.nextElementSibling.nextElementSibling.querySelector('input[name="price[]"]');
-
-            // Buscar el producto seleccionado en la lista de productos disponibles
-            const selectedProduct = {!! json_encode($products) !!}.find(product => product.id == selectedProductId);
+            // Buscar el producto seleccionado en la lista de productos
+            const selectedProduct = productList.find(product => product.id == selectedProductId);
 
             // Actualizar el campo de precio con el precio del producto seleccionado
             if (selectedProduct) {
-                priceField.value = selectedProduct.price;
-            } else {
-                priceField.value = ''; // Si el producto no se encuentra, se limpia el campo de precio
+                const priceInput = productPrice.querySelector('input');
+                priceInput.value = selectedProduct.price;
             }
-        }
+        });
+
+        deleteRowBtn.innerHTML = '<td><img src="{{ asset("assets/img/Admin/modules/icono-eliminar-rojo.png") }}" alt="Eliminar Producto" onclick="removeRow(this)"></td>';
+        deleteRowBtn.className = "item-fila elim-fila-dato";
     });
 </script>
