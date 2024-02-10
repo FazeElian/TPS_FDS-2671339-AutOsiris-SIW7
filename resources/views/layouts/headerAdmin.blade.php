@@ -55,11 +55,10 @@
                 </button>
                 <ul class="lista_nav-inicio">
                     <li class="item_nav-inicio"><a href="{{ route("home") }}">Inicio</a></li>
-                    <li class="item_nav-inicio"><a href="{{ route("statistics.index") }}">Estadísticas</a></li>
-                    <li class="item_nav-inicio"><a href="{{ route("sales.index") }}">Ventas</a></li>
-                    <li class="item_nav-inicio li-facturas"><a href="{{ route("factures.index") }}">Facturas</a></li>
                     <li class="item_nav-inicio"><a href="{{ route("products.index") }}">Productos</a></li>
                     <li class="item_nav-inicio li-inventarios"><a href="{{ route("inventories.index") }}">Inventarios</a></li>
+                    <li class="item_nav-inicio"><a href="{{ route("sales.index") }}">Ventas</a></li>
+                    <li class="item_nav-inicio li-facturas"><a href="{{ route("factures.index") }}">Facturas</a></li>
                 </ul>
             </nav>
 
