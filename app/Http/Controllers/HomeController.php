@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+// Modelo de ventas
+use App\Models\Sale;
+
 class HomeController extends Controller
 {
     /**
@@ -23,6 +26,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $sales = Sale::paginate();
+
+        // Filtrar ventas registradas hoy
+        $todaySales = Sale::whereDate('created_at', now()->toDateString())->get();
+
+        return view('home', compact('sales', 'todaySales'))
+            ->with('i', (request()->input('page', 1) - 1) * $sales->perPage());
     }
 }

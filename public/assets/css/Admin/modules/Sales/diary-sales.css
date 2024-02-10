@@ -1,0 +1,237 @@
+.tabla-ventas-diarias{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 25px 0 0;
+}
+
+    .columnas-caract-venta{
+        display: flex;
+        width: 100%;
+        color: white;
+        justify-content: space-between;
+        height: 35px;
+    }
+
+    .item-columna{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 16.5px;
+        color: white;
+        background-color: #212EC2;
+        border: 1px solid black;
+    }
+
+        .num-venta, .num-venta-dato{
+            display: flex;
+            width: 20%;
+        }
+
+        .total-venta, .total-venta-dato{
+            display: flex;
+            width: 32%;
+        }
+
+        .opciones-venta-tabla, .opciones-venta-tabla-dato{
+            display: flex;
+            width: 47.5%;
+        }
+
+        .opciones-venta-tabla-dato{
+            justify-content: space-between;
+        }
+
+/* Columnas datos de filas */
+.filas-datos{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    color: black;
+    margin-top: 3px;
+}
+
+    .item-fila{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #D9D9D9;
+        border: 1px solid black;
+    }
+
+        .item-fila h2{
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+    /* Botones Opciones venta */
+    .btn-venta{
+        display: flex;
+        height: 100%;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn-venta img{
+        width: 13.5px;
+        height: 13.5px;
+        margin-left: 7px;
+    }
+
+        /* Ver */
+        .btn-ver{
+            width: 29%;
+            background-color: #36BBFF;
+        }
+
+        .btn-venta a img{
+            margin-top: 5px;
+        }
+
+        /* Editar */
+        .btn-editar{
+            width: 35%;
+            background-color: #1988CF;
+        }
+
+        /* Eliminar */
+        .btn-eliminar{
+            width: 35.5%;
+            background-color: red;
+        }
+
+        .eliminar-venta{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+        }
+
+/* @media */
+    /* @media 1024px */
+    @media(max-width: 1024px){
+        .columnas-caract-venta{
+            height: 32.5px;
+        }
+
+        .item-columna{
+            font-size: 15px;
+        }
+
+        .filas-datos{
+            height: 27.5px;
+        }
+
+        .item-fila h2, .btn-venta{
+            font-size: 13px;
+        }
+
+        .btn-venta img{
+            width: 10px;
+            height: 10px;
+        }
+
+        .btn-venta a img{
+            margin-top: 5px;
+        }
+    }
+
+/* @media 768px */
+@media(max-width: 768px){
+    .columnas-caract-venta{
+        height: 30px;
+    }
+
+    .item-columna{
+        font-size: 12px;
+    }
+
+    .filas-datos{
+        height: 25px;
+    }
+
+    .item-fila h2, .btn-venta{
+        font-size: 10px;
+    }
+
+    .btn-venta img{
+        width: 12px;
+        height: 12px;
+    }
+
+    .num-venta, .num-venta-dato{
+        width: 20%;
+    }
+
+    .total-venta, .total-venta-dato{
+        width: 30.5%;
+    }
+
+    .opciones-venta-tabla, .opciones-venta-tabla-dato{
+        width: 48.5%;
+    }
+
+    .opciones-venta-tabla-dato{
+        justify-content: space-between;
+    }
+
+    .btn-editar, .btn-eliminar, .btn-ver{
+        width: 32.8%;
+    }
+
+    .cont-opcion-venta{
+        width: 70px;
+        height: 70px;
+        min-width: 60px;
+        min-height: 60px;
+    }
+
+    .cont-opcion-venta img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-venta a img{
+        margin-top: 3.5px;
+    }
+}
+
+/* @media 425px */
+@media(max-width: 425px){
+    .link-op-venta{
+        display: none;
+    }
+
+    .btn-venta img{
+        width: 10px;
+        height: 10px;
+        margin-left: 0;
+    }
+
+    .columnas-caract-venta{
+        height: 25px;
+    }
+
+    .item-columna{
+        font-size: 10px;
+    }
+
+    .filas-datos{
+        height: 22.5px;
+    }
+
+    .item-fila h2, .btn-venta{
+        font-size: 9.2px;
+    }
+
+    .eliminar-venta{
+        font-size: 0;
+    }
+}

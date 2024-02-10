@@ -8,7 +8,6 @@ use App\Http\Controllers\CategoryController; //Categorías de producto
 use App\Http\Controllers\ProductController; // Productos
 use App\Http\Controllers\Perfile; // Perfil
 use App\Http\Controllers\CustomerController; // Roles
-use App\Http\Controllers\Statistics; // Estadísticas
 use App\Http\Controllers\InventoryController; // Inventarios
 use App\Http\Controllers\SaleController; // Ventas
 use App\Http\Controllers\FactureController; // Facturas
@@ -52,9 +51,6 @@ Route::get("factures/showPDF/{id}", [\App\Http\Controllers\FactureController::cl
 
 // Ruta Clientes
 Route::resource('customers', CustomerController::class)->middleware("auth");
-
-// Ruta Estadísticas
-Route::resource('statistics', Statistics::class)->middleware("auth");
 
 // Ruta Inventarios
 Route::resource('inventories', InventoryController::class)->middleware("auth");
