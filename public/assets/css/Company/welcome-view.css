@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cambria";
+
+}
+
+.main-container{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-image: url("https://muchosnegociosrentables.com/wp-content/uploads/2020/07/como-iniciar-una-papeleria-pequena.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+    .container-content{
+        display: flex;
+        width: 600px;
+        height: 320px;
+        background-color: #212EC2;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+        .container-content h1{
+            display: flex;
+            font-size: 30px;
+            color: white;
+            font-weight: lighter;
+        }
+
+        a{
+            text-decoration: none;
+            margin: 2rem 0 0;
+        }
+
+        a .btn-user{
+            display: flex;
+            width: auto;
+            height: auto;
+            padding: 10px 2.5rem 10px;
+            background-color: white;
+            border: 1px solid #212EC2;
+            color: #212EC2;
+            font-size: 17.5px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        a .btn-user:hover{
+            border: 1px solid white;
+            background-color: #212EC2;
+            color: white;
+            transition: .3s ease-in;
+        }
+
+@media (max-width: 1440px){
+    .container-content{
+        width: 520px;
+        height: 280px;
+    }
+
+    .container-content h1{
+        font-size: 25px;
+    }
+
+    a .btn-user{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1024px){
+    .container-content{
+        width: 470px;
+        height: 240px;
+    }
+
+    .container-content h1{
+        font-size: 22px;
+    }
+
+    a .btn-user{
+        padding: 8px 2rem 8px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 425px){
+    .main-container{
+        height: 100vh;
+    }
+
+    .container-content{
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+        padding: 2rem 1rem 2rem;
+        text-align: center;
+    }
+
+    .container-content h1{
+        font-size: 22px;
+    }
+
+    a .btn-user{
+        padding: 8px 2rem 8px;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 1024px){
+    .container-content{
+        width: 470px;
+        height: 240px;
+        margin: -4rem 0 0;
+    }
+
+    .container-content h1{
+        font-size: 22px;
+    }
+
+    a{
+        margin: 1.5rem 0 0;
+    }
+
+    a .btn-user{
+        padding: 8px 2rem 8px;
+        border-radius: 5px;
+    }
+}
