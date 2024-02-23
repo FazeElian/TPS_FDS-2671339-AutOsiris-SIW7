@@ -25,9 +25,7 @@
             @if (Route::has('login'))
                 @auth
                     <a href="{{ url("/home") }}">
-                        <button class="btn-user">
-                            Ir al Sistema
-                        </button>
+                        <button class="btn-user">Ir al Dashboard</button>
                     </a>
                 @else
                     <a href="{{ route("login") }}">
