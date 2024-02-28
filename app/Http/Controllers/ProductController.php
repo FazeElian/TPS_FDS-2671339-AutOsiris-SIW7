@@ -37,7 +37,7 @@ class ProductController extends Controller
         ->where("name", "LIKE", "%" . $inputSearchValue . "%")
         ->orWhere("categorie_id", "LIKE", "%" . $inputSearchValue . "%")
         ->orderBy("name", "asc")
-        ->paginate(10);
+        ->paginate(8); // Paginación de registros
 
         $categories = Category::select("id", "name")->get();
 
