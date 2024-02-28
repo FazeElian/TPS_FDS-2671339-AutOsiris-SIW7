@@ -5,30 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    {{-- Hoja de estilos para este archivo --}}
-    <link rel="stylesheet" href="{{ asset("assets/css/Admin/modules/Categories/form-styles.css") }}">
-
     {{-- Scripts para validación de formulario --}}
-    <script defer src="{{ asset("assets/js/Admin/modules/Categories/categoriesValidation.js") }}"></script>
+    <script defer src="{{ asset("assets/js/Admin/modules/Roles/rolesValidation.js") }}"></script>
 </head>
 <body>
-    <table class="tabla-categorias" id="tabla-categorias">
-        <!-- Columnas -->
+    <!-- Tabla Roles -->
+    <table class="tabla-roles" id="tabla-roles">
         <tr class="columnas-caract">
-            <td class="cantidad-prod item-columna">Nombre categoría</td>
-            <td class="nombre-categoria item-columna">Descripción</td>
+            <td class="nombre-rol item-columna">Nombre</td>
+            <td class="descripcion-rol item-columna">Descripción</td>
         </tr>
         <tr class="filas-datos">
-            <td class="cantidad-prod-dato item-fila">
-                {{ Form::text('name', $category->name, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => 'Escribe aquí nombre de nueva categoría', 'id' => 'nombre']) }}
-                {!! $errors->first('name', "<script>alert('El nombre de la categoría es un dato obligatorio');") !!}
+            <td class="nombre-rol-dato item-fila">
+                {{ Form::text('name', $category->name, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => 'Escribe aquí nombre de nuevo cliente', "id" => "nombre"]) }}
             </td>
 
-            <td class="nombre-categoria-dato item-fila">
-                {{ Form::text('description', $category->description, ['class' => 'form-control' . ($errors->has('description') ? ' is-invalid' : ''), 'placeholder' => 'Describe aquí nueva categoría','id' => 'descripcion']) }}
+            <td class="descripcion-rol-dato item-fila">
+                {{ Form::text('description', $category->description, ['class' => 'form-control' . ($errors->has('description') ? ' is-invalid' : ''), 'placeholder' => 'Describe aquí nuevo cliente', "id" => "descripcion"]) }}
             </td>
         </tr>
     </table>
-</body>
-</html>
-
