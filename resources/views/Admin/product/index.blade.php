@@ -11,6 +11,9 @@
 
     {{-- Hoja de estilos de este archivo --}}
     <link rel="stylesheet" href="{{ asset("assets/css/Admin/modules/Products/products-styles.css") }}">
+
+    {{-- Hoja de estilos para la paginación de registros --}}
+    <link rel="stylesheet" href="{{ asset("assets/css/Admin/paginacion-registros.css")}}">
 </head>
 <body>
     <!-- Contenido de página -->
@@ -78,7 +81,7 @@
                 @endforelse
             </table>
 
-            <!-- Contenedor de opciones de producto -->
+            {{-- Contenedor de opciones de producto --}}
             <div class="opciones-producto">
                 <!-- Añadir producto -->
                 <div class="añadir-prod">
@@ -114,6 +117,9 @@
                 </div>
             </div>
         </section>
+
+        {{-- Paginación de registros --}}
+        {{ $products->onEachSide(3)->links('Admin.pagination') }}
     </section>
 </body>
 </html>
