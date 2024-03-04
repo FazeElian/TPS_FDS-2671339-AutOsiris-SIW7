@@ -23,7 +23,7 @@ class CategoryController extends Controller
         // Obtenemos valor de input de búsqueda
         $inputSearchValue = trim($request->get("searchCategory"));
 
-        $categories = Category::paginate();
+        $categories = Category::paginate(8);
 
         return view('Admin.category.index', compact('categories', "inputSearchValue"))
             ->with('i', (request()->input('page', 1) - 1) * $categories->perPage());

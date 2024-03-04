@@ -31,7 +31,7 @@
             </div>
 
             <form action="{{ route("inventories.index") }}" method="get" class="barra_busqueda">
-                <input type="search" name="inventorieSearch" id="barra_busqueda" placeholder="Buscar Producto">
+                <input type="search" name="search" id="barra_busqueda" placeholder="Buscar Producto">
             </form>
         </div>
 
@@ -74,6 +74,9 @@
                 </tr>
             @endforelse
         </table>
+
+        {{-- Paginación de registros --}}
+        {{ $inventories->onEachSide(3)->links('Admin.pagination')}}
 
         <!-- Opciones Inventario -->
         <div class="opciones-inventario">

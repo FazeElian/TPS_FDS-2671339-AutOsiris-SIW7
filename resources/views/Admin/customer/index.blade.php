@@ -56,6 +56,9 @@
             @endforelse
         </table>
 
+        {{-- Paginación de registros --}}
+        {{ $customers->onEachSide(3)->links('Admin.pagination') }}
+
         <!-- Opciones clientes -->
         <div class="opciones-clientes">
             <!-- Botón: Cancelar -->

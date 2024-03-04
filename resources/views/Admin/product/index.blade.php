@@ -11,9 +11,6 @@
 
     {{-- Hoja de estilos de este archivo --}}
     <link rel="stylesheet" href="{{ asset("assets/css/Admin/modules/Products/products-styles.css") }}">
-
-    {{-- Hoja de estilos para la paginación de registros --}}
-    <link rel="stylesheet" href="{{ asset("assets/css/Admin/paginacion-registros.css")}}">
 </head>
 <body>
     <!-- Contenido de página -->
@@ -34,7 +31,7 @@
             </div>
 
             <form action="{{ route("products.index") }}" method="get" class="barra_busqueda">
-                <input type="search" name="productSearch" id="barra_busqueda" placeholder="Buscar Producto" value="{{ $inputSearchValue }}" class="barra_busqueda">
+                <input type="search" name="search" id="barra_busqueda" placeholder="Buscar Producto" value="{{ $inputSearchValue }}" class="barra_busqueda">
             </form>
         </div>
 

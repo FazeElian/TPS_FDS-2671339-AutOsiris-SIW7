@@ -25,7 +25,7 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         // Obtenemos valor de input de búsqueda
-        $inputSearchValue = trim($request->get("productSearch"));
+        $inputSearchValue = trim($request->get("search"));
 
         // Autoincrementable para Columna No de vista
         $a = 0;

@@ -18,7 +18,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        $customers = Customer::paginate();
+        $customers = Customer::paginate(8);
 
         return view('Admin.customer.index', compact('customers'))
             ->with('i', (request()->input('page', 1) - 1) * $customers->perPage());

@@ -91,6 +91,9 @@
                 </div>
             </div>
         </div>
+
+        {{-- Paginación de registros --}}
+        {{ $factures->onEachSide(3)->links('Admin.pagination')}}
     </section>
 
     {{-- Alertas de acciones de factura --}}
