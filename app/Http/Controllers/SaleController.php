@@ -10,7 +10,7 @@ class SaleController extends Controller
 {
     public function index()
     {
-        $sales = Sale::paginate();
+        $sales = Sale::paginate(8);
 
         return view('Admin.sale.index', compact('sales'))
             ->with('i', (request()->input('page', 1) - 1) * $sales->perPage());

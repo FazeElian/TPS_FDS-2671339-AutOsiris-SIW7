@@ -22,7 +22,7 @@ class InventoryController extends Controller
     public function index(Request $request)
     {
         // Obtenemos el valor de búsqueda del formulario
-        $inputSearchValue = trim($request->get("inventorieSearch"));
+        $inputSearchValue = trim($request->get("search"));
 
         // Contador autoincrementable para la columna "No" en la vista
         $a = 0;
@@ -40,7 +40,7 @@ class InventoryController extends Controller
             })
             ->orWhere("inventories.id", "LIKE", "%" . $inputSearchValue . "%")
             ->orderBy("inventories.product_id", "asc")
-            ->paginate(10);
+            ->paginate(8);
 
         return view('Admin.inventory.index', compact("inventories", "i", "inputSearchValue"));
     }

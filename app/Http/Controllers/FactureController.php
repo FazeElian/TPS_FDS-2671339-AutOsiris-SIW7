@@ -11,7 +11,7 @@ class FactureController extends Controller
 {
     public function index()
     {
-        $factures = Facture::paginate();
+        $factures = Facture::paginate(8);
 
         return view('Admin.facture.index', compact('factures'))
             ->with('i', (request()->input('page', 1) - 1) * $factures->perPage());

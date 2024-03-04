@@ -199,7 +199,7 @@ a{
 .contenido-pag{
     display: flex;
     width: 80%;
-    height: 2000px;
+    height: auto;
     margin: 0 10%;
     margin-top: 40px;
     flex-direction: column; /* Poner contenedores uno encima del otro como columna */
