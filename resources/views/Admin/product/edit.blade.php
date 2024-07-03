@@ -34,6 +34,3 @@
     </section>
 </body>
 </html>
-
-{{-- Incluimos el footer --}}
-@extends("layouts.footerAdmin")

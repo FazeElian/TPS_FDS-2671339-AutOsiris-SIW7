@@ -63,5 +63,3 @@
     </section>
 </body>
 </html>
-
-@extends("layouts.footerAdmin")
